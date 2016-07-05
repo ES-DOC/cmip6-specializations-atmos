@@ -57,7 +57,7 @@ class Generator(Parser):
         """
         super(Generator, self).__init__(realm)
 
-        self._ids = [("cmip6-label (long)", "cmip6-id", "cmip6-type", "")]
+        self._ids = [("cmip6-id", "cmip6-label", "cmip6-type", "")]
 
 
     @property
@@ -73,6 +73,8 @@ class Generator(Parser):
 
         """
         return ["{}, {}, {}".format(i, j, k)
+                for i, j, k, _ in self._ids]
+        return ["{}, {}, {}".format(i, j, k)
                 for i, j, k, _ in sorted(self._ids, key=lambda i: i[-1])]
 
 
@@ -80,7 +82,8 @@ class Generator(Parser):
         """Emits a null row.
 
         """
-        self._ids.append(("", "", "", owner.id))
+        if len(self._ids[-1][0]):
+            self._ids.append(("", "", "", owner.id))
 
 
     def set_id(self, owner, identifier=None):
@@ -100,5 +103,5 @@ class Generator(Parser):
         label = " > ".join([get_label(i) for i in identifier.split(".")[1:]])
 
         # Append to managed collection.
-        self._ids.append((label, identifier, _ID_TYPES[type(owner)], identifier))
+        self._ids.append((identifier, label, _ID_TYPES[type(owner)], identifier))
 
