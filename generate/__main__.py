@@ -34,18 +34,15 @@ _GENERATORS = {
 _ENCODINGS = {
     'ids-level-1': 'csv',
     'ids-level-2': 'csv',
-    'ids-level-3': 'csv',
+    'ids-level-3': 'csv'
 }
 
 # Map of generator types to file suffixes.
 _FILE_SUFFIXES = {
     'ids-level-1': 'ids-level-1',
     'ids-level-2': 'ids-level-2',
-    'ids-level-3': 'ids-level-3',
+    'ids-level-3': 'ids-level-3'
 }
-
-class ArgumentError(ValueError):
-    pass
 
 # Set directory from which module is being run.
 _DIR = os.path.dirname(__file__)
@@ -57,7 +54,7 @@ _ARGS.add_argument(
     help="Type of generator to be executed.",
     dest="typeof",
     type=str,
-    default="mm"
+    default="all"
     )
 _ARGS.add_argument(
     "-o", "--output-dir",
@@ -83,31 +80,50 @@ _ARGS.add_argument(
 _ARGS = _ARGS.parse_args()
 
 # Validate inputs.
-if _ARGS.typeof not in _GENERATORS.keys():
+if _ARGS.typeof != 'all' and _ARGS.typeof not in _GENERATORS.keys():
     err = "Unknown generator type [{}].  Validate types = {}."
     err = err.format(_ARGS.typeof, " | ".join(sorted(_GENERATORS.keys())))
-    raise ArgumentError(err)
+    raise ValueError(err)
 
-# Set realm.
-realm = Realm(get_specializations(_ARGS.input_dir, _ARGS.realm))
+# Set target generators to be executed.
+if _ARGS.typeof == 'all':
+    targets = _GENERATORS
+else:
+    targets = {
+        _ARGS.typeof: _GENERATORS[_ARGS.typeof]
+    }
 
-# Run generator.
-generator = _GENERATORS[_ARGS.typeof](realm)
-generator.run()
+logging_output = []
+for generator_type, generator_cls in targets.iteritems():
+    # Set output encoding.
+    try:
+        encoding = _ENCODINGS[generator_type]
+    except KeyError:
+        encoding = generator_type
 
-# Set output encoding.
-try:
-    encoding = _ENCODINGS[_ARGS.typeof]
-except KeyError:
-    encoding = _ARGS.typeof
+    # Set output filename.
+    try:
+        fname = "{}-{}".format(_ARGS.realm, _FILE_SUFFIXES[generator_type])
+    except KeyError:
+        fname = _ARGS.realm
+    finally:
+        if encoding == 'py':
+            fname = fname.replace("-", "_")
 
-# Set output filename.
-try:
-    fname = "{}-{}".format(_ARGS.realm, _FILE_SUFFIXES[_ARGS.typeof])
-except KeyError:
-    fname = _ARGS.realm
+    # Set realm.
+    realm = Realm(get_specializations(_ARGS.input_dir, _ARGS.realm))
 
-# Write output.
-fpath = os.path.join(_ARGS.output_dir, "_{}.{}".format(fname, encoding))
-with open(fpath, 'w') as fstream:
-    fstream.write(generator.output)
+    # Run generator.
+    generator = generator_cls(realm)
+    generator.run()
+
+    # Write generated output to file system.
+    fpath = os.path.join(_ARGS.output_dir, "_{}.{}".format(fname, encoding))
+    with open(fpath, 'w') as fstream:
+        fstream.write(generator.get_output())
+
+    logging_output.append((encoding, fpath))
+
+# Inform user.
+for encoding, fpath in sorted(logging_output):
+    print "ES-DOC :: generated {} file written to --> {}".format(encoding, fpath)

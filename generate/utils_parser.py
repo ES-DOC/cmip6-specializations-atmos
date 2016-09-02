@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+                        # -*- coding: utf-8 -*-
 
 """
 .. module:: parser.py
@@ -9,10 +9,6 @@
 
 
 """
-from utils import log
-
-
-
 class Parser(object):
     """An event driven CMIP6 realm specializations parser.
 
@@ -29,9 +25,10 @@ class Parser(object):
         """Runs the parser raising events as it does so.
 
         """
-        # Raise realm parse event.
         if self.verbose:
             log("parsing: {}".format(self.realm.id))
+
+        # Raise realm parse event.
         self.on_realm_parse(self.realm)
 
         # Parse grid.
@@ -43,12 +40,20 @@ class Parser(object):
             self._parse_key_properties(self.realm, self.realm.key_properties)
 
         # Parse processes.
-        processes = sorted(self.realm.processes, key = lambda p: p.name)
-        for process in processes:
+        for process in self.realm.processes:
             self._parse_process(self.realm, process)
 
         # Raise realm parsed event.
         self.on_realm_parsed(self.realm)
+
+
+    def _sort(self):
+        """Sort collections priot to parsing.
+
+        """
+        self.realm.processes = sorted(self.realm.processes, key=lambda p: p.name)
+        for process in self.realm.processes:
+            process.sub_processes = sorted(process.sub_processes, key=lambda sp: sp.name)
 
 
     def on_realm_parse(self, realm):
@@ -229,8 +234,7 @@ class Parser(object):
         self._parse_details(process)
 
         # Parse child sub-processes.
-        sub_processes = sorted(process.sub_processes, key = lambda sp: sp.name)
-        for sub_process in sub_processes:
+        for sub_process in process.sub_processes:
             self._parse_subprocess(realm, process, sub_process)
 
         # Raise process parsed event.
@@ -258,14 +262,14 @@ class Parser(object):
 
         """
         # Iterate set of details.
-        for detail in sorted(owner.details, key = lambda i: i.id):
+        for detail in owner.details:
             # Raise detail parse event.
             if self.verbose:
                 log("parsing: {}".format(detail.id))
             self.on_detail_parse(owner, detail)
 
             # Iterate set of detail properties.
-            for prop in sorted(detail.properties, key = lambda i: i.id):
+            for prop in detail.properties:
                 # Raise detail-property parse event.
                 if self.verbose:
                     log("parsing: {}".format(prop.id))
@@ -275,3 +279,15 @@ class Parser(object):
                 if prop.enum:
                     for choice in prop.enum.choices:
                         self.on_detail_property_choice_parse(detail, prop, choice)
+
+
+def log(msg):
+    """Outputs a message to log.
+
+    :param str msg: Logging message.
+
+    """
+    if msg.startswith('-'):
+        print(msg)
+    else:
+        print("ES-DOC :: {}".format(msg))

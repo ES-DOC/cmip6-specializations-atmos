@@ -20,6 +20,16 @@ class Specialization(object):
         self.mod = mod
 
 
+    @property
+    def doc_name(self):
+        """A simplified name useful in documentation scenrios.
+
+        """
+        name = self.name
+
+        return " ".join(["{}{}".format(i[0].upper(), i[1:]) for i in name.split("_")])
+
+
 class SpecializationModule(Specialization):
     """Wraps a standard specialization module.
 
@@ -48,6 +58,8 @@ class SpecializationModule(Specialization):
         else:
             self.name = mod.REALM
             self.id = "cmip6.{}".format(self.name)
+        self.name_camel_case = to_camel_case(self.name)
+        self.name_camel_case_spaced = to_camel_case_spaced(self.name)
 
         try:
             self.mod.DETAILS
@@ -111,7 +123,7 @@ class Realm(SpecializationModule):
     """Wraps a realm specialization.
 
     """
-    def __init__(self, specializations):
+    def __init__(self, specializations, sort_collections=False):
         """Instance constructor.
 
         :param tuple specializations: Set of realm related specialization.
@@ -124,21 +136,21 @@ class Realm(SpecializationModule):
 
         self.grid = Grid(self, grid) if grid else None
         self.key_properties = KeyProperties(self, key_properties) if key_properties else None
-        self.processes = [Process(self, i) for i in processes]
+        self.processes = [Process(self, i, sort_collections) for i in processes]
 
 
 class Process(SpecializationModule):
     """Wraps a process specialization.
 
     """
-    def __init__(self, realm, mod):
+    def __init__(self, realm, mod, sort_collections):
         """Instance constructor.
 
         """
         super(Process, self).__init__(realm, mod, "process")
 
         try:
-            self.sub_processes = [SubProcess(self, i, j) for i, j in mod.SUB_PROCESSES.items()]
+            self.sub_processes = [SubProcess(self, i, j, sort_collections) for i, j in mod.SUB_PROCESSES.items()]
         except AttributeError:
             self.sub_processes = []
 
@@ -248,7 +260,7 @@ class SubProcess(Specialization):
     """Wraps a sub-process specialization.
 
     """
-    def __init__(self, process, name, obj):
+    def __init__(self, process, name, obj, sort_collections):
         """Instance constructor.
 
         """
@@ -340,6 +352,47 @@ class DetailProperty(Specialization):
         return "{}.{}".format(self.container.id, self.name)
 
 
+    def short_id(self, idx):
+        return ".".join(self.id.split(".")[idx:])
+
+
+    @property
+    def is_mandatory(self):
+        """Gets flag indicating whether cardinality is mandatory or not.
+
+        """
+        return self.cardinality.split(".")[0] == "0"
+
+
+    @property
+    def is_collection(self):
+        """Gets flag indicating whether property is a collection or not.
+
+        """
+        try:
+            int(self.cardinality.split(".")[1])
+        except ValueError:
+            return True
+        else:
+            return False
+
+    @property
+    def typeof_label(self):
+        """Gets label for the property type.
+
+        """
+        if self.typeof == 'str':
+            return "STRING"
+        elif self.typeof == 'bool':
+            return "BOOLEAN"
+        elif self.typeof == 'int':
+            return "INTEGER"
+        elif self.typeof == 'float':
+            return "FLOAT"
+
+        return self.typeof.upper()
+
+
     @property
     def notes(self):
         """Returns notes.
@@ -373,6 +426,7 @@ class Enum(Specialization):
                         sorted(mod.ENUMERATIONS[name]['members'])]
         if self.is_open:
             self.choices.append(EnumChoice(self, "Other", None))
+
 
     @property
     def notes(self):
@@ -408,3 +462,38 @@ class EnumChoice(Specialization):
             ("Description", self.description.replace("&", "and")),
             ("ID", self.id.lower().replace(" ", "-").replace("_", "-"))
         ]
+
+
+def to_camel_case_spaced(name, separator='_'):
+    """Converts passed name to camel case with space.
+
+    :param str name: A name as specified in ontology specification.
+    :param str separator: Separator to use in order to split name into constituent parts.
+
+    """
+    s = to_camel_case(name, separator)
+    r = s[0]
+    for s in s[1:]:
+        if s.upper() == s:
+            r += " "
+        r += s
+
+    return r
+
+
+def to_camel_case(name, separator='_'):
+    """Converts passed name to camel case.
+
+    :param str name: A name as specified in ontology specification.
+    :param str separator: Separator to use in order to split name into constituent parts.
+
+    """
+    r = ''
+    if name is not None:
+        s = name.split(separator)
+        for s in s:
+            if (len(s) > 0):
+                r += s[0].upper()
+                if (len(s) > 1):
+                    r += s[1:]
+    return r
