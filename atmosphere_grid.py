@@ -40,6 +40,9 @@ DISCRETISATION['grid_discretisation'] = {
 # ====================================================================
 DISCRETISATION_DETAILS = OrderedDict()
 
+#todo check the handling of the dynamical core.  Eric thinks it should be a process in and of itself, check with referees
+#todo see the ocean organisation of grid discretisation which allows resolution to be changed in key properties not in grid
+
 DISCRETISATION_DETAILS['horizontal_discretisation'] = {
     'description': 'Horizontal discretisation scheme',
     'properties': [
