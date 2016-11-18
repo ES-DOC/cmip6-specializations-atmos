@@ -24,7 +24,7 @@ AUTHORS = 'Charlotte Pascoe'
 #
 # Set to realm specialization authors.
 # --------------------------------------------------------------------
-CONTRIBUTORS = 'Name Name (Institute)'
+CONTRIBUTORS = 'CMIP5 version +, Name Name (Institute)'
 
 # --------------------------------------------------------------------
 # CHANGE HISTORY
