@@ -70,7 +70,7 @@ DETAILS['CIM'] = {
 # URL of #details
 # --------------------------------------------------------------------
 
-DETAILS['radiation modulators'] = {
+DETAILS['radiation_modulators'] = {
     'description': 'Atmospheric constituents that interact with the radiation scheme',
     'properties': [
         ('aerosols', 'ENUM:aerosol_types', '1.N',
