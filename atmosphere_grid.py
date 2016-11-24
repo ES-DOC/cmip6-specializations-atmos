@@ -22,7 +22,7 @@ DETAILS['CIM'] = {
             "Keywords to help re-use and discovery of this information."),
         ('citations', 'shared.citation', '0.N',
             "Set of pertinent citations."),
-    ]
+    ],
 }
 # --------------------------------------------------------------------
 # PROCESS IDENTIFIER
@@ -73,7 +73,7 @@ ENUMERATIONS['dynamical_core_discretisation_horizontal_type'] = {
     'members': [
         ('spectral', None),
         ('fixed grid', None),
-    ]
+    ],
 }
 
 ENUMERATIONS['dynamical_core_discretisation_horizontal_method'] = {
@@ -85,7 +85,7 @@ ENUMERATIONS['dynamical_core_discretisation_horizontal_method'] = {
         ('finite volumes', None),
         ('finite difference', None),
         ('centered finite difference', None),
-    ]
+    ],
 }
 
 ENUMERATIONS['dynamical_core_discretisation_horizontal_pole'] = {
@@ -96,5 +96,5 @@ ENUMERATIONS['dynamical_core_discretisation_horizontal_pole'] = {
         ('pole rotation', None),
         ('artificial island', None),
         ('none', None),
-    ]
+    ],
 }
