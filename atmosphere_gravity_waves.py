@@ -142,7 +142,7 @@ ENUMERATIONS['subgrid_scale_orography_attributes'] = {
     'members': [
         ('effect on drag', None),
         ('effect on lifting', None),
-        ]
+    ]
 }
 
 ENUMERATIONS['orographic_gravity_wave_source_mechanisms'] = {
