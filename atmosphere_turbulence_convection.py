@@ -4,6 +4,25 @@ For further information goto http://wordpress.es-doc.org/cmip6-model-specializat
 
 """
 
+from collections import OrderedDict
+DETAILS = OrderedDict()
+PROCESS = OrderedDict()
+SUB_PROCESSES = OrderedDict()
+ENUMERATIONS = OrderedDict()
+
+# Default process details pulled from CIM.
+DETAILS['CIM'] = {
+    'description': 'Convective turbulence and cloud characteristics',
+    'properties':[
+        ('implementation_overview','str', '1.1',
+            "General overview description of the implementation of this part of the process."),
+        ('keywords', 'str', '0.N',
+            "Keywords to help re-use and discovery of this information."),
+        ('citations', 'shared.citation', '0.N',
+            "Set of pertinent citations."),
+    ]
+}
+
 # --------------------------------------------------------------------
 # PROCESS IDENTIFIER
 #
@@ -16,29 +35,11 @@ For further information goto http://wordpress.es-doc.org/cmip6-model-specializat
 # --------------------------------------------------------------------
 # _TYPE = 'cim.2.science.process'
 
-from collections import OrderedDict
-DETAILS = OrderedDict()
-PROCESS = OrderedDict()
-SUB_PROCESSES = OrderedDict()
-ENUMERATIONS = OrderedDict()
 
 # --------------------------------------------------------------------
 # PROCESS: DESCRIPTION
 # --------------------------------------------------------------------
-# DESCRIPTION = 'Characteristics of the atmosphere radiation process'
-
-# Default process details pulled from CIM.
-DETAILS['CIM'] = {
-    'description': 'Atmosphere Convective Turbulence and Clouds',
-    'properties':[
-        ('implementation_overview','str', '1.1',
-            "General overview description of the implementation of this part of the process."),
-        ('keywords', 'str', '0.N',
-            "Keywords to help re-use and discovery of this information."),
-        ('citations', 'shared.citation', '0.N',
-            "Set of pertinent citations."),
-    ]
-}
+# DESCRIPTION = 'Atmosphere convective turbulence and clouds'
 
 # --------------------------------------------------------------------
 # CONTACT

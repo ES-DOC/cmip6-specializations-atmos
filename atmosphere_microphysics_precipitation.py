@@ -4,32 +4,15 @@ For further information goto http://wordpress.es-doc.org/cmip6-model-specializat
 
 """
 
-# --------------------------------------------------------------------
-# PROCESS IDENTIFIER
-#
-# Set to 'cmip6.<REALM>.<PROCESS>', e.g. 'cmip6.atmosphere.radiation'
-# --------------------------------------------------------------------
-# ID = 'cmip6.atmosphere.microphysics_precipitation'
-
-# --------------------------------------------------------------------
-# INTERNAL VARIABLES (do not change)
-# --------------------------------------------------------------------
-# _TYPE = 'cim.2.science.process'
-
 from collections import OrderedDict
 DETAILS = OrderedDict()
 PROCESS = OrderedDict()
 SUB_PROCESSES = OrderedDict()
 ENUMERATIONS = OrderedDict()
 
-# --------------------------------------------------------------------
-# PROCESS: DESCRIPTION
-# --------------------------------------------------------------------
-# DESCRIPTION = 'Characteristics of the atmosphere radiation process'
-
 # Default process details pulled from CIM.
 DETAILS['CIM'] = {
-    'description': 'Cloud Microphysics and Precipitation',
+    'description': 'Cloud microphysics and precipitation characteristics',
     'properties':[
         ('implementation_overview','str', '1.1',
             "General overview description of the implementation of this part of the process."),
@@ -61,6 +44,22 @@ AUTHORS = ''
 # --------------------------------------------------------------------
 QC_STATUS = 'draft'
 
+# --------------------------------------------------------------------
+# PROCESS IDENTIFIER
+#
+# Set to 'cmip6.<REALM>.<PROCESS>', e.g. 'cmip6.atmosphere.radiation'
+# --------------------------------------------------------------------
+# ID = 'cmip6.atmosphere.microphysics_precipitation'
+
+# --------------------------------------------------------------------
+# INTERNAL VARIABLES (do not change)
+# --------------------------------------------------------------------
+# _TYPE = 'cim.2.science.process'
+
+# --------------------------------------------------------------------
+# PROCESS: DESCRIPTION
+# --------------------------------------------------------------------
+# DESCRIPTION = 'Cloud microphysics and precipitation characteristics'
 
 # --------------------------------------------------------------------
 # PROCESS: SUB-PROCESSES

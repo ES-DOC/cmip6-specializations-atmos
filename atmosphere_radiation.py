@@ -3,21 +3,6 @@
 For further information goto http://wordpress.es-doc.org/cmip6-model-specializations.
 
 """
-
-# --------------------------------------------------------------------
-# PROCESS IDENTIFIER
-# This feature is not used in the ocean specialisation,
-# assume is obsolete.
-#
-# Set to 'cmip6.<REALM>.<PROCESS>', e.g. 'cmip6.atmosphere.radiation'
-# --------------------------------------------------------------------
-# ID = 'cmip6.atmosphere.radiation'
-
-# --------------------------------------------------------------------
-# INTERNAL VARIABLES (do not change)
-# --------------------------------------------------------------------
-#_TYPE = 'cim.2.science.process'
-
 from collections import OrderedDict
 
 DETAILS = OrderedDict()
@@ -25,23 +10,6 @@ PROCESS = OrderedDict()
 SUB_PROCESSES = OrderedDict()
 ENUMERATIONS = OrderedDict()
 
-# --------------------------------------------------------------------
-# PROCESS: DESCRIPTION
-# --------------------------------------------------------------------
-# DESCRIPTION = 'Characteristics of the atmosphere radiation process'
-
-# Default process details pulled from CIM.
-DETAILS['CIM'] = {
-    'description': 'Characteristics of the atmosphere radiation process',
-    'properties':[
-        ('implementation_overview','str', '1.1',
-            "General overview description of the implementation of this part of the process."),
-        ('keywords', 'str', '0.N',
-            "Keywords to help re-use and discovery of this information."),
-        ('citations', 'shared.citation', '0.N',
-            "Set of pertinent citations."),
-    ]
-}
 
 # --------------------------------------------------------------------
 # CONTACT
@@ -63,6 +31,38 @@ AUTHORS = ''
 # Set to 'draft' or 'complete'
 # --------------------------------------------------------------------
 QC_STATUS = 'draft'
+
+# --------------------------------------------------------------------
+# PROCESS IDENTIFIER
+# This feature is not used in the ocean specialisation,
+# assume is obsolete.
+#
+# Set to 'cmip6.<REALM>.<PROCESS>', e.g. 'cmip6.atmosphere.radiation'
+# --------------------------------------------------------------------
+# ID = 'cmip6.atmosphere.radiation'
+
+# --------------------------------------------------------------------
+# INTERNAL VARIABLES (do not change)
+# --------------------------------------------------------------------
+#_TYPE = 'cim.2.science.process'
+
+# --------------------------------------------------------------------
+# PROCESS: DESCRIPTION
+# --------------------------------------------------------------------
+# DESCRIPTION = 'Characteristics of the atmosphere radiation process'
+
+# Default process details pulled from CIM.
+DETAILS['CIM'] = {
+    'description': 'Characteristics of the atmosphere radiation process',
+    'properties':[
+        ('implementation_overview','str', '1.1',
+            "General overview description of the implementation of this part of the process."),
+        ('keywords', 'str', '0.N',
+            "Keywords to help re-use and discovery of this information."),
+        ('citations', 'shared.citation', '0.N',
+            "Set of pertinent citations."),
+    ]
+}
 
 # --------------------------------------------------------------------
 # PROCESS: DETAILS
