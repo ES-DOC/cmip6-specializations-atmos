@@ -7,12 +7,32 @@ For further information goto http://wordpress.es-doc.org/cmip6-model-specializat
 
 from collections import OrderedDict
 DETAILS = OrderedDict()
-PROCESS = OrderedDict()
-SUB_PROCESSES = OrderedDict()
 ENUMERATIONS = OrderedDict()
 
-# Default process details pulled from CIM.
-DETAILS['CIM'] = {
+# --------------------------------------------------------------------
+# CONTACT: Set to realm specialization co-ordinator.
+# --------------------------------------------------------------------
+CONTACT = 'Charlotte Pascoe'
+
+# --------------------------------------------------------------------
+# AUTHORS: Set to realm specialization authors (comma delimited).
+# --------------------------------------------------------------------
+AUTHORS = ''
+
+# --------------------------------------------------------------------
+# QUALITY CONTROL STATUS: Set to 'draft' or 'complete'
+# --------------------------------------------------------------------
+QC_STATUS = 'draft'
+
+# --------------------------------------------------------------------
+# DESCRIPTION: Short description of the specialization.
+# --------------------------------------------------------------------
+DESCRIPTION = 'Characteristics of the volcano implementation'
+
+# --------------------------------------------------------------------
+# PROCESS: top level properties
+# --------------------------------------------------------------------
+DETAILS['toplevel'] = {
     'description': 'Characteristics of the treatment of volcanoes in the atmosphere',
     'properties':[
         ('implementation_overview','str', '1.1',
@@ -25,33 +45,8 @@ DETAILS['CIM'] = {
 }
 
 # --------------------------------------------------------------------
-# CONTACT
-#
-# Set to realm specialization co-ordinator.
+# SUB-PROCESS: volcanoes_treatment
 # --------------------------------------------------------------------
-CONTACT = 'Charlotte Pascoe'
-
-# --------------------------------------------------------------------
-# AUTHORS
-#
-# Set to realm specialization authors (comma delimited).
-# --------------------------------------------------------------------
-AUTHORS = ''
-
-# --------------------------------------------------------------------
-# QUALITY CONTROL STATUS
-#
-# Set to 'draft' or 'complete'
-# --------------------------------------------------------------------
-QC_STATUS = 'draft'
-
-
-# --------------------------------------------------------------------
-# PROCESS: DETAILS
-#
-# URL of #details
-# --------------------------------------------------------------------
-
 DETAILS['volcanoes_treatment'] = {
     'description': 'Treatment of volcanoes in the atmosphere',
     'properties': [
@@ -60,7 +55,9 @@ DETAILS['volcanoes_treatment'] = {
     ],
 }
 
-
+# --------------------------------------------------------------------
+# PROCESS: ENUMERATIONS
+# --------------------------------------------------------------------
 ENUMERATIONS['volcanoes_implementation_method'] = {
     'description': 'How volcanic effects are modeled in the atmosphere.',
     'is_open': True,
