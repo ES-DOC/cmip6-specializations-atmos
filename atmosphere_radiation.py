@@ -1,108 +1,88 @@
-# --------------------------------------------------------------------
-# See http://wordpress.es-doc.org for documentation on how to create
-# CMIP6 specialisations
-# --------------------------------------------------------------------
+"""
 
+A realm process sepecialization.
+
+For further information goto http://wordpress.es-doc.org/cmip6-model-specializations.
+"""
+# --------------------------------------------------------------------
+# INTERNAL (do not change)
+# --------------------------------------------------------------------
+from collections import OrderedDict
+
+DETAILS = OrderedDict()
+ENUMERATIONS = OrderedDict()
+
+# --------------------------------------------------------------------
+# CONTACT: Set to realm specialization co-ordinator.
+# --------------------------------------------------------------------
 CONTACT = 'Charlotte Pascoe'
 
-AUTHORS = ''
+# --------------------------------------------------------------------
+# AUTHORS: Set to realm specialization authors (comma delimited).
+# --------------------------------------------------------------------
+AUTHORS = 'Charlotte Pascoe'
 
+# --------------------------------------------------------------------
+# QUALITY CONTROL STATUS: Set to 'draft' or 'complete'
+# --------------------------------------------------------------------
 QC_STATUS = 'draft'
 
 # --------------------------------------------------------------------
-# PROCESS IDENTIFIER
-#
-# Set to 'cmip6.<REALM>.<PROCESS>', e.g. 'cmip6.atmosphere.radiation'
-# --------------------------------------------------------------------
-ID = 'cmip6.atmosphere.radiation'
-
-# --------------------------------------------------------------------
-# INTERNAL VARIABLES (do not change)
-# --------------------------------------------------------------------
-_TYPE = 'cim.2.science.process'
-
-from collections import OrderedDict
-
-# --------------------------------------------------------------------
-# PROCESS: DESCRIPTION
+# DESCRIPTION: Short description of the specialization.
 # --------------------------------------------------------------------
 DESCRIPTION = 'Characteristics of the atmosphere radiation process'
 
 # --------------------------------------------------------------------
-# PROCESS: DETAILS
-#
-# URL of #details
+# PROCESS: top level properties
 # --------------------------------------------------------------------
-DETAILS = OrderedDict()
-
-DETAILS['attributes'] = {
-    'properties' = [
+DETAILS['toplevel'] = {
+    'description': "Top level radiation process properties",
+    'properties': [
         ('aerosol_types', 'ENUM:aerosol_types_attributes', '1.N',
-         'Types of aerosols whose radiative effect is taken into account in the atmospheric model'),
-        ('ghg_types', 'ENUM:ghg_types_attributes', '1.N', 
-         'Types of greenhouse gases whose radiative effect is taken into account in the atmospheric model'),
-        ('cloud_ice', 'ENUM:cloud_ice_properties', '1.N',         
-         'Radiative properties of ice crystals in clouds'),
+            'Types of aerosols whose radiative effect is taken into account in the atmospheric model'),
+        ('ghg_types', 'ENUM:ghg_types_attributes', '1.N',
+            'Types of greenhouse gases whose radiative effect is taken into account in the atmospheric model'),
+        ('cloud_ice', 'ENUM:cloud_ice_properties', '1.N',
+            'Radiative properties of ice crystals in clouds'),
         ('cloud_liquid', 'ENUM:cloud_liquid_properties', '1.N',
-         'Radiative properties of liquid droplets in clouds'),
-    ]
-}
+            'Radiative properties of liquid droplets in clouds'),
+        ]
+    }
 
 # --------------------------------------------------------------------
-# PROCESS: SUB-PROCESSES
-#
-# URL of #sub_process
+# SUB-PROCESS: longwave_scheme
 # --------------------------------------------------------------------
-SUB_PROCESSES = OrderedDict()
-
-SUB_PROCESSES['longwave_scheme'] = {
-    'description': 'Longwave radiation scheme',
-    'details': ['longwave_scheme_details']
-},
-
-SUB_PROCESSES['shortwave_scheme'] = {
-    'description': 'Shortwave radiation scheme',
-    'details': ['shortwave_scheme_details']
-}
-
-# --------------------------------------------------------------------
-# PROCESS: SUB-PROCESSES DETAILS
-#   
-# --------------------------------------------------------------------
-SUB_PROCESS_DETAILS = OrderedDict() # Not necesssary, but consistent
-
-SUB_PROCESS_DETAILS['longwave_scheme_details'] = {
+DETAILS['longwave_scheme'] = {
     'description': 'Longwave radiation scheme',
     'properties': [
         ('scheme_type', 'ENUM:longwave_scheme_type', '1.1',
-         'Longwave radiation scheme type'),
-        ('scheme_method', 'ENUM:longwave_scheme_method', '1.1', 
-         'Longwave radiation scheme method'),
+            'Longwave radiation scheme type'),
+        ('scheme_method', 'ENUM:longwave_scheme_method', '1.1',
+            'Longwave radiation scheme method'),
         ('spectral_intervals', 'int', '1.1',
-         'Longwave radiation scheme spectral intervals'),
-    ]
-}
+            'Longwave radiation scheme spectral intervals'),
+        ]
+    }
 
-SUB_PROCESS_DETAILS['shortwave_scheme_details'] = {
+# --------------------------------------------------------------------
+# SUB-PROCESS: shortwave_scheme
+# --------------------------------------------------------------------
+DETAILS['shortwave_scheme'] = {
     'description': 'Shortwave radiation scheme',
     'properties': [
         ('scheme_type', 'ENUM:shortwave_scheme_type', '1.1',
-         'Shortwave radiation scheme type'),           
+            'Shortwave radiation scheme type'),
         ('spectral_intervals', 'int', '1.1',
-         'Shortwave radiation scheme spectral intervals'),
-    ]
-}
+            'Shortwave radiation scheme spectral intervals'),
+        ]
+    }
 
 # --------------------------------------------------------------------
 # PROCESS: ENUMERATIONS
-#
-# URL of process.html#enuemrations
-# Convention: Do not include the process name in the enumeration 
 # --------------------------------------------------------------------
-ENUMERATIONS = OrderedDict()
-
 ENUMERATIONS['aerosol_types_attributes'] = {
     'description': 'Types of aerosols whose radiative effect is taken into account in the atmospheric model.',
+    'is_open': True,
     'members': [
         ('sulphate', None),
         ('nitrate', None),
@@ -117,13 +97,12 @@ ENUMERATIONS['aerosol_types_attributes'] = {
         ('NAT (nitric acid trihydrate)', None),
         ('NAD (nitric acid dihydrate)', None),
         ('STS (supercooled ternary solution aerosol particle)', None),
-        ('other', None),
-
-    ]
-}
+        ]
+    }
 
 ENUMERATIONS['ghg_types_attributes'] = {
     'description': 'Types of greenhouse gases whose radiative effect is taken into account in the atmospheric model',
+    'is_open': True,
     'members': [
         ('CO2', None),
         ('CH4', None),
@@ -131,51 +110,46 @@ ENUMERATIONS['ghg_types_attributes'] = {
         ('CFC', None),
         ('H2O', None),
         ('O3', None),
-        ('other', None),
-    ]
-}
+        ]
+    }
 
 ENUMERATIONS['cloud_ice_properties'] = {
     'description': 'Radiative properties of ice crystals in clouds',
-    'members': [
-        ('???', None),
-        ('other', None),
-    ]
-}
+    'is_open': True,
+    'members': []
+    }
 
 ENUMERATIONS['cloud_liquid_properties'] = {
     'description': 'Radiative properties of liquid droplets in clouds',
-    'members': [
-        ('???', None),
-        ('other', None),
-    ]
-}
+    'is_open': True,
+    'members': []
+    }
 
 ENUMERATIONS['longwave_scheme_type'] = {
     'description': 'Type of scheme used for longwave radiation parameterisation',
+    'is_open': True,
     'members': [
         ('wide-band model', None),
         ('wide-band model (Morcrette)', None),
         ('K-correlated', None),
         ('K-correlated (RRTM)', None),
-        ('other', None),
-    ]
-}
-             
+        ]
+    }
+
 ENUMERATIONS['longwave_scheme_method'] = {
     'description': 'Method for the radiative transfer calculations used in the longwave scheme',
+    'is_open': True,
     'members': [
         ('two-stream', None),
         ('layer interaction', None),
-        ('other', None),
-    ]
-}
+        ]
+    }
 
 ENUMERATIONS['shortwave_scheme_type'] = {
-    'description': 'Type of scheme used for shortwave radiation parameterisation',   
+    'description': 'Type of scheme used for shortwave radiation parameterisation',
+    'is_open': True,
     'members': [
         ('wide-band model', None),
         ('wide-band model (Fouquart)', None),
-        ('other', None),
-    ]
-}
+        ]
+    }

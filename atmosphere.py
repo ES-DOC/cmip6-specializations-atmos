@@ -1,62 +1,65 @@
+"""A realm sepecialization.
+
+For further information goto http://wordpress.es-doc.org/cmip6-model-specializations.
+
+"""
 # --------------------------------------------------------------------
-# INTERNAL VARIABLES (do not change)
+# INTERNAL (do not change)
 # --------------------------------------------------------------------
-_TYPE = 'cim.2.science.scientific_realm'
+from collections import OrderedDict
+
+DETAILS = OrderedDict()
+ENUMERATIONS = OrderedDict()
 
 # --------------------------------------------------------------------
-# CONTACT
-#
-# Set to realm specialization co-ordinator.
+# CONTACT: Set to realm specialization co-ordinator.
 # --------------------------------------------------------------------
 CONTACT = 'Charlotte Pascoe'
 
 # --------------------------------------------------------------------
-# CONTACT
-#
-# Set to realm specialization authors.
+# AUTHORS: Set to realm specialization authors (comma delimited).
 # --------------------------------------------------------------------
 AUTHORS = 'Charlotte Pascoe'
 
 # --------------------------------------------------------------------
-# QUALITY CONTROL STATUS
-#
-# Set to 'draft' or 'complete'
+# CONTRIBUTORS: Set to realm specialization contributors (comma delimited).
+# --------------------------------------------------------------------
+CONTRIBUTORS = ''
+
+# --------------------------------------------------------------------
+# QUALITY CONTROL STATUS: Set to 'draft' or 'complete'
 # --------------------------------------------------------------------
 QC_STATUS = 'draft'
 
 # --------------------------------------------------------------------
-# REALM IDENTIFIER
-#
-# Set to 'cmip6.<REALM>'
+# CHANGE HISTORY: Set to list: (version, date, comment, who).
 # --------------------------------------------------------------------
-ID = 'cmip6.atmosphere'
+CHANGE_HISTORY = [
+	("0.1.0", "2016-11-29", "Initialised", "Mark Greenslade"),
+]
 
 # --------------------------------------------------------------------
-# REALM: REALM
-#
-# Canonical name for the domain of this scientific realm
+# DESCRIPTION: Scientific context of this scientific realm
+# --------------------------------------------------------------------
+DESCRIPTION = 'Atmosphere realm specialization'
+
+# --------------------------------------------------------------------
+# REALM: Canonical name for the domain of this scientific realm
 # --------------------------------------------------------------------
 REALM = 'atmosphere'
 
 # --------------------------------------------------------------------
-# REALM: GRID
-#
-# The grid used to layout the variables
+# GRID: The grid used to layout the variables
 # --------------------------------------------------------------------
 GRID = 'atmosphere_grid'
 
 # --------------------------------------------------------------------
-# REALM: KEY PROPERTIES
-#
-# Key properties for the domain which differ from model defaults
-# (grid, timestep etc)
+# KEY PROPERTIES: Key properties for the realm which differ from model defaults (grid, timestep etc)
 # --------------------------------------------------------------------
 KEY_PROPERTIES = 'atmosphere_key_properties'
 
 # --------------------------------------------------------------------
-# REALM: PROCESSES
-#
-# Processes simulated within the realm
+# PROCESSES: Processes simulated within the realm
 # --------------------------------------------------------------------
 PROCESSES = [
 	'atmosphere_cloud_scheme',
