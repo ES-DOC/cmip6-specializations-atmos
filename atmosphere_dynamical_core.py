@@ -1,164 +1,119 @@
-"""A realm process sepecialization.
+"""
+
+A realm process sepecialization.
 
 For further information goto http://wordpress.es-doc.org/cmip6-model-specializations.
-
 """
+# --------------------------------------------------------------------
+# INTERNAL (do not change)
+# --------------------------------------------------------------------
 from collections import OrderedDict
 
 DETAILS = OrderedDict()
-PROCESS = OrderedDict()
-SUB_PROCESSES = OrderedDict()
 ENUMERATIONS = OrderedDict()
 
-# Default process details pulled from CIM.
-DETAILS['CIM'] = {
-    'description': 'General characteristics of the atmosphere dynamical core',
-    'properties':[
-        ('implementation_overview', 'str', '1.1',
-            "General overview description of the implementation of this part of the process."),
-        ('keywords', 'str', '0.N',
-            "Keywords to help re-use and discovery of this information."),
-        ('citations', 'shared.citation', '0.N',
-            "Set of pertinent citations."),
-    ]
-}
-
 # --------------------------------------------------------------------
-# CONTACT
-#
-# Set to realm specialization co-ordinator.
+# CONTACT: Set to realm specialization co-ordinator.
 # --------------------------------------------------------------------
 CONTACT = 'Charlotte Pascoe'
 
 # --------------------------------------------------------------------
-# AUTHORS
-#
-# Set to realm specialization authors (comma delimited).
+# AUTHORS: Set to realm specialization authors (comma delimited).
 # --------------------------------------------------------------------
-AUTHORS = ''
+AUTHORS = 'Charlotte Pascoe'
 
 # --------------------------------------------------------------------
-# QUALITY CONTROL STATUS
-#
-# Set to 'draft' or 'complete'
+# QUALITY CONTROL STATUS: Set to 'draft' or 'complete'
 # --------------------------------------------------------------------
 QC_STATUS = 'draft'
 
 # --------------------------------------------------------------------
-# PROCESS IDENTIFIER
-#
-# Set to 'cmip6.<REALM>.<PROCESS>', e.g. 'cmip6.atmosphere.radiation'
+# DESCRIPTION: Short description of the specialization.
 # --------------------------------------------------------------------
-# ID = 'cmip6.atmosphere.dynamical_core'
+DESCRIPTION = 'Characteristics of the dynamical core'
 
 # --------------------------------------------------------------------
-# INTERNAL VARIABLES (do not change)
+# PROCESS: top level properties
 # --------------------------------------------------------------------
-# _TYPE = 'cim.2.science.process'
-
-# --------------------------------------------------------------------
-# PROCESS: DESCRIPTION
-# --------------------------------------------------------------------
-# DESCRIPTION = ''
-
-# --------------------------------------------------------------------
-# PROCESS: DETAILS
-#
-# URL of #details
-# --------------------------------------------------------------------
-# DETAILS = OrderedDict()
-
-DETAILS['timestepping_type'] = {
-    'description': 'Model time step',
-    'properties':[
-        ('timestepping_framework', 'ENUM:timestepping_type', '1.1',
-             'Type of timestepping framework used'),
-    ],
-}
-
-DETAILS['prognostic_variables'] = {
-    'description': 'Prognostic variables',
-    'properties':[
-        ('prognostic_vars', 'ENUM:_prognostic_variables', '1.N',
+DETAILS['toplevel'] = {
+    'description': "Top level dynamical core properties",
+    'properties': [
+        ('timestepping_type', 'ENUM:timestepping_type', '1.1',
+            'Timestepping framework type'),
+        ('prognostic_variables', 'ENUM:prognostic_variables', '1.N',
             'List of the model prognostic variables'),
-    ],
-}
+        ]
+    }
 
 # --------------------------------------------------------------------
 # PROCESS: SUB-PROCESSES
-#
-# URL of #sub_process
 # --------------------------------------------------------------------
-
-SUB_PROCESSES['top_boundary'] = {
+DETAILS['top_boundary'] = {
     'description': 'Type of boundary layer at the top of the model',
     'properties': [
         ('top_boundary_condition', 'ENUM:top_boundary_condition', '1.1',
-         'Top boundary condition'),
+            'Top boundary condition'),
         ('top_heat', 'str', '1.1',
-         'Top boundary heat treatment'),
+            'Top boundary heat treatment'),
         ('top_wind', 'str', '1.1',
-         'Top boundary wind treatment'),
-    ],
-}
+            'Top boundary wind treatment'),
+        ]
+    }
 
-SUB_PROCESSES['lateral_boundary'] = {
+DETAILS['lateral_boundary'] = {
     'description': 'Type of lateral boundary condition (if the model is a regional model)',
     'properties': [
-        ('Lateral_boundary','ENUM:lateral_boundary', '0.1', 'Type of lateral boundary condition'),
-    ],
-}
+        ('condition', 'ENUM:lateral_boundary', '0.1',
+             'Type of lateral boundary condition'),
+        ]
+    }
 
-SUB_PROCESSES['diffusion_horizontal'] = {
+DETAILS['diffusion_horizontal'] = {
     'description': 'Horizontal diffusion scheme',
     'properties': [
-        ('scheme_name', 'ENUM:diffusion_horizontal_scheme_name ', '1.1',
-         'Horizontal diffusion scheme name'),
+        ('scheme_name', 'ENUM:diffusion_horizontal_scheme_name', '1.1',
+             'Horizontal diffusion scheme name'),
         ('scheme_method', 'ENUM:diffusion_horizontal_scheme_method', '1.1',
-         'Horizontal diffusion scheme method'),
-    ],
-}
+             'Horizontal diffusion scheme method'),
+        ]
+    }
 
-SUB_PROCESSES['advection_tracers'] = {
+DETAILS['advection_tracers'] = {
     'description': 'Tracer advection scheme',
     'properties': [
-        ('scheme_name', 'ENUM:advection_tracers_scheme_name ', '1.1',
-         'Tracer advection scheme name'),
+        ('scheme_name', 'ENUM:advection_tracers_scheme_name', '1.1',
+            'Tracer advection scheme name'),
         ('scheme_characteristics', 'ENUM:advection_tracers_scheme_characteristics', '1.N',
-         'Tracer advection scheme characteristics'),
+            'Tracer advection scheme characteristics'),
         ('conserved_quantities', 'ENUM:advection_tracers_conserved_quantities', '1.N',
-         'Tracer advection scheme conserved quantities'),
+            'Tracer advection scheme conserved quantities'),
         ('conservation_method', 'ENUM:advection_tracers_conservation_method', '1.1',
-         'Tracer advection scheme conservation method'),
-    ],
-}
-                  
-SUB_PROCESSES['advection_momentum'] = {
+            'Tracer advection scheme conservation method'),
+        ]
+    }
+
+DETAILS['advection_momentum'] = {
     'description': 'Momentum advection scheme',
     'properties': [
-        ('scheme_name', 'ENUM:advection_momentum_scheme_name ', '1.1',
-         'Momentum advection schemes name'),
+        ('scheme_name', 'ENUM:advection_momentum_scheme_name', '1.1',
+            'Momentum advection schemes name'),
         ('scheme_characteristics', 'ENUM:advection_momentum_scheme_characteristics', '1.N',
          'Momentum advection scheme characteristics'),
         ('scheme_staggering_type', 'ENUM:advection_momentum_scheme_staggering_type', '1.1',
-         'Momentum advection scheme staggering type'),
+            'Momentum advection scheme staggering type'),
         ('conserved_quantities', 'ENUM:advection_momentum_conserved_quantities', '1.N',
-         'Momentum advection scheme conserved quantities'),
+            'Momentum advection scheme conserved quantities'),
         ('conservation_method', 'ENUM:advection_momentum_conservation_method', '1.1',
-         'Momentum advection scheme conservation method'),
-    ],
-}
-
+            'Momentum advection scheme conservation method'),
+        ]
+    }
 
 # --------------------------------------------------------------------
 # PROCESS: ENUMERATIONS
-#
-# URL of process.html#enuemrations
-# Convention: Do not include the process name in the enumeration 
 # --------------------------------------------------------------------
-
 ENUMERATIONS['timestepping_type'] = {
     'description': 'Type of time stepping scheme',
+    'is_open': True,
     'members': [
         ('Adam Bashford', None),
         ('explicit', None),
@@ -169,9 +124,8 @@ ENUMERATIONS['timestepping_type'] = {
         ('Runge Kutta fifth order', None),
         ('Runge Kutta second order', None),
         ('Runge Kutta third order', None),
-    ]
-}
-
+        ]
+    }
 
 ENUMERATIONS['top_boundary_condition'] = {
     'description': 'Type of boundary layer at the top of the model',
@@ -179,20 +133,19 @@ ENUMERATIONS['top_boundary_condition'] = {
     'members': [
         ('sponge layer', None),
         ('radiation boundary condition', None),
-    ]
-}
+        ]
+    }
 
-ENUMERATIONS['lateral_boundary_attribute'] = {
+ENUMERATIONS['lateral_boundary'] = {
     'description': 'Type of lateral boundary condition (if the model is a regional model)',
     'is_open': True,
     'members': [
         ('sponge layer', None),
         ('radiation boundary condition', None),
-        ('none', None),
-    ]
-}
+        ]
+    }
 
-ENUMERATIONS['prognostic_variables_attributes'] = {
+ENUMERATIONS['prognostic_variables'] = {
     'description': 'List of the model prognostic variables',
     'is_open': True,
     'members': [
@@ -208,72 +161,68 @@ ENUMERATIONS['prognostic_variables_attributes'] = {
         ('total water moments', None),
         ('clouds', None),
         ('radiation', None),
-    ]
-}
+        ]
+    }
 
-ENUMERATIONS['diffusion_horizontal_scheme_name'] =  {
+ENUMERATIONS['diffusion_horizontal_scheme_name'] = {
     'description': 'Commonly used name for the horizontal diffusion scheme',
     'is_open': True,
-    'members': [
-        ('???', None),
-    ]
-}
+    'members': []
+    }
 
 ENUMERATIONS['diffusion_horizontal_scheme_method'] = {
     'description': 'Numerical method used by the horizontal diffusion scheme',
     'is_open': True,
     'members': [
         ('iterated Laplacian', None),
-    ]
-}
+        ]
+    }
 
 ENUMERATIONS['advection_tracers_scheme_name'] = {
     'description': 'Commonly used name for the tracer advection scheme',
     'is_open': True,
     'members': [
-        ('Heun', None),
-        ('Roe and VanLeer', None),
-        ('Roe and Superbee', None),
-        ('Prather', None),
-        ('UTOPIA', None),
-    ]
-}
+            ('Heun', None),
+            ('Roe and VanLeer', None),
+            ('Roe and Superbee', None),
+            ('Prather', None),
+            ('UTOPIA', None),
+        ]
+    }
 
-ENUMERATIONS['advection_tracers_scheme_characteistics'] = {
+ENUMERATIONS['advection_tracers_scheme_characteristics'] = {
     'description': 'Characteristics of the numerical scheme used for the advection of tracers',
     'is_open': True,
     'members': [
-        ('Eulerian', None),
-        ('modified Euler', None),
-        ('Lagrangian', None),
-        ('semi-Lagrangian', None),
-        ('cubic semi-Lagrangian', None),
-        ('quintic semi-Lagrangian', None),
-        ('mass-conserving', None),
-        ('finite volume', None),
-        ('flux-corrected', None),
-        ('linear', None),
-        ('quadratic', None),
-        ('quartic', None),
-    ]
-}
+            ('Eulerian', None),
+            ('modified Euler', None),
+            ('Lagrangian', None),
+            ('semi-Lagrangian', None),
+            ('cubic semi-Lagrangian', None),
+            ('quintic semi-Lagrangian', None),
+            ('mass-conserving', None),
+            ('finite volume', None),
+            ('flux-corrected', None),
+            ('linear', None),
+            ('quadratic', None),
+            ('quartic', None),
+        ]
+    }
 
 ENUMERATIONS['advection_tracers_conserved_quantities'] = {
     'description': 'Quantities conserved through the tracers advection scheme',
     'is_open': True,
-    'members': [
-        ('???', None),
-    ]
-}
+    'members': []
+    }
 
 ENUMERATIONS['advection_tracers_conservation_method'] = {
     'description': 'Method used to ensure conservation in the tracers advection scheme',
     'is_open': True,
     'members': [
         ('conservation fixer', None),
-    ]
-}
-   
+        ]
+    }
+
 ENUMERATIONS['advection_momentum_scheme_name'] = {
     'description': 'Commonly used name for the momentum advection scheme',
     'is_open': True,
@@ -281,8 +230,8 @@ ENUMERATIONS['advection_momentum_scheme_name'] = {
         ('VanLeer', None),
         ('Janjic', None),
         ('SUPG (Streamline Upwind Petrov-Galerkin)', None),
-    ]
-}
+        ]
+    }
 
 ENUMERATIONS['advection_momentum_scheme_characteristics'] = {
     'description': 'Characteristics of the numerical scheme used for the advection of momentum',
@@ -293,8 +242,8 @@ ENUMERATIONS['advection_momentum_scheme_characteristics'] = {
         ('cell-centred', None),
         ('staggered grid', None),
         ('semi-staggered grid', None),
-    ]
-}
+        ]
+    }
 
 ENUMERATIONS['advection_momentum_scheme_staggering_type'] = {
     'description': 'If scheme characteristics specify staggered grid, describe the type of staggering',
@@ -304,8 +253,8 @@ ENUMERATIONS['advection_momentum_scheme_staggering_type'] = {
         ('Arakawa C-grid', None),
         ('Arakawa D-grid', None),
         ('Arakawa E-grid', None),
-    ]
-}
+        ]
+    }
 
 ENUMERATIONS['advection_momentum_conserved_quantities'] = {
     'description': 'Quantities conserved through the tracers advection scheme',
@@ -317,13 +266,13 @@ ENUMERATIONS['advection_momentum_conserved_quantities'] = {
         ("Mass", None),
         ("Total energy", None),
         ("Vorticity", None),
-    ]
-}
+        ]
+    }
 
 ENUMERATIONS['advection_momentum_conservation_method'] = {
     'description': 'Method used to ensure conservation in the tracers advection scheme',
     'is_open': True,
     'members': [
-        ('conservation fixer', None),
-    ]
-}
+            ('conservation fixer', None),
+        ]
+    }

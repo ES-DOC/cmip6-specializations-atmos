@@ -1,132 +1,117 @@
-"""A realm process sepecialization.
-
-For further information goto http://wordpress.es-doc.org/cmip6-model-specializations.
-
 """
 
+A realm process sepecialization.
+
+For further information goto http://wordpress.es-doc.org/cmip6-model-specializations.
+"""
+# --------------------------------------------------------------------
+# INTERNAL (do not change)
+# --------------------------------------------------------------------
 from collections import OrderedDict
+
 DETAILS = OrderedDict()
-PROCESS = OrderedDict()
-SUB_PROCESSES = OrderedDict()
 ENUMERATIONS = OrderedDict()
 
-# Default process details pulled from CIM.
-DETAILS['CIM'] = {
-    'description': 'Convective turbulence and cloud characteristics',
-    'properties':[
-        ('implementation_overview','str', '1.1',
-            "General overview description of the implementation of this part of the process."),
-        ('keywords', 'str', '0.N',
-            "Keywords to help re-use and discovery of this information."),
-        ('citations', 'shared.citation', '0.N',
-            "Set of pertinent citations."),
-    ]
-}
-
 # --------------------------------------------------------------------
-# PROCESS IDENTIFIER
-#
-# Set to 'cmip6.<REALM>.<PROCESS>', e.g. 'cmip6.atmosphere.radiation'
-# --------------------------------------------------------------------
-# ID = 'cmip6.atmosphere.turbulance_convection'
-
-# --------------------------------------------------------------------
-# INTERNAL VARIABLES (do not change)
-# --------------------------------------------------------------------
-# _TYPE = 'cim.2.science.process'
-
-
-# --------------------------------------------------------------------
-# PROCESS: DESCRIPTION
-# --------------------------------------------------------------------
-# DESCRIPTION = 'Atmosphere convective turbulence and clouds'
-
-# --------------------------------------------------------------------
-# CONTACT
-#
-# Set to realm specialization co-ordinator.
+# CONTACT: Set to realm specialization co-ordinator.
 # --------------------------------------------------------------------
 CONTACT = 'Charlotte Pascoe'
 
 # --------------------------------------------------------------------
-# AUTHORS
-#
-# Set to realm specialization authors (comma delimited).
+# AUTHORS: Set to realm specialization authors (comma delimited).
 # --------------------------------------------------------------------
-AUTHORS = ''
+AUTHORS = 'Charlotte Pascoe'
 
 # --------------------------------------------------------------------
-# QUALITY CONTROL STATUS
-#
-# Set to 'draft' or 'complete'
+# QUALITY CONTROL STATUS: Set to 'draft' or 'complete'
 # --------------------------------------------------------------------
 QC_STATUS = 'draft'
 
+# --------------------------------------------------------------------
+# DESCRIPTION: Short description of the specialization.
+# --------------------------------------------------------------------
+DESCRIPTION = 'Atmosphere Convective Turbulence and Clouds'
 
-# ====================================================================
-# PROCESS: SUB-PROCESSES
-#
-# URL of #sub_process
-# ====================================================================
+# --------------------------------------------------------------------
+# PROCESS: top level properties
+# --------------------------------------------------------------------
 
+# DEFINE HERE IF REQUIRED
 
-SUB_PROCESSES['boundary_layer_turbulence'] = {
-    'description': 'Properties of the boundary layer turbulence scheme',
+# --------------------------------------------------------------------
+# SUB-PROCESS: boundary_layer_turbulence_scheme
+# --------------------------------------------------------------------
+DETAILS['boundary_layer_turbulence_scheme'] = {
+    'description': 'Boundary layer turbulence scheme',
     'properties': [
         ('scheme_name', 'ENUM:boundary_layer_turbulence_scheme_name', '1.1',
-         'Boundary layer turbulence scheme name'),
+             'Boundary layer turbulence scheme name'),
         ('scheme_type', 'ENUM:boundary_layer_turbulence_scheme_type', '1.1',
-         'Boundary layer turbulence scheme type'),
+             'Boundary layer turbulence scheme type'),
         ('closure_order', 'int', '1.1',
-         'Boundary layer turbulence scheme closure order'),
+             'Boundary layer turbulence scheme closure order'),
         ('counter_gradient', 'bool', '1.1',
-         'Uses boundary layer turbulence scheme counter gradient'),
-    ]
-}
+            'Uses boundary layer turbulence scheme counter gradient'),
+        ]
+    }
 
-SUB_PROCESSES['deep_convection'] = {
-    'description': 'Properties of the deep convection scheme',
+# --------------------------------------------------------------------
+# SUB-PROCESS: deep_convection_scheme
+# --------------------------------------------------------------------
+DETAILS['deep_convection_scheme'] = {
+    'description': 'Deep convection scheme',
     'properties': [
         ('scheme_name', 'str', '1.1',
-         'Deep convection scheme name'),
+             'Deep convection scheme name'),
         ('scheme_type', 'ENUM:deep_convection_scheme_type', '1.1',
-         'Deep convection scheme type'),
+             'Deep convection scheme type'),
         ('scheme_method', 'ENUM:deep_convection_scheme_method', '1.N',
-         'Deep convection scheme method'),
+             'Deep convection scheme method'),
         ('processes', 'ENUM:deep_convection_scheme_processes_attributes', '1.N',
-         'Deep convection scheme processes'),
-    ]
-}
-        
-SUB_PROCESSES['shallow_convection'] = {
-    'description': 'Properties of th shallow convection scheme',
+            'Deep convection scheme processes'),
+        ]
+    }
+
+# --------------------------------------------------------------------
+# SUB-PROCESS: shallow_convection_scheme
+# --------------------------------------------------------------------
+DETAILS['shallow_convection_scheme'] = {
+    'description': 'Shallow convection scheme',
     'properties': [
         ('selection', 'ENUM:shallow_convection_scheme_method', '1.1',
-         'shallow convection scheme method'),
+             'shallow convection scheme method'),
         ('scheme_type', 'ENUM:shallow_convection_scheme_type', '1.1',
-         'shallow convection scheme type'),
+             'shallow convection scheme type'),
         ('scheme_name', 'str', '1.1',
-         'Shallow convection scheme name'),
+             'Shallow convection scheme name'),
         ('processes', 'ENUM:shallow_convection_scheme_processes_attributes', '1.N',
-         'Physical processes taken into account in the parameterisation of shallow convection'),
-    ]
-}
+            'Physical processes taken into account in the parameterisation of shallow convection'),
+        ]
+    }
 
+# --------------------------------------------------------------------
+# SUB-PROCESS: other_convection_scheme_details
+# --------------------------------------------------------------------
+DETAILS['other_convection_scheme_details'] = {
+    'description': 'Other convection scheme.',
+    'properties': [
+        ('scheme_name', 'str', '1.1',
+             'Other convection scheme name'),
+        ('scheme_type', 'ENUM:other_convection_scheme_type', '1.1',
+             'Other convection scheme type'),
+        ]
+    }
 
-# ====================================================================
+# --------------------------------------------------------------------
 # PROCESS: ENUMERATIONS
-#
-# URL of process.html#enuemrations
-# Convention: Do not include the process name in the enumeration 
-# ====================================================================
-
+# --------------------------------------------------------------------
 ENUMERATIONS['boundary_layer_turbulence_scheme_name'] = {
     'description': 'Commonly used name for the boundary layer turbulence scheme.',
     'is_open': True,
     'members': [
         ('Mellor-Yamada', None),
-    ]
-}
+        ]
+    }
 
 ENUMERATIONS['boundary_layer_turbulence_scheme_type'] = {
     'description': 'Type of scheme used for the parameterisation of turbulence in the boundary layer.',
@@ -136,8 +121,8 @@ ENUMERATIONS['boundary_layer_turbulence_scheme_type'] = {
         ('TKE diagnostic', None),
         ('TKE coupled with water', None),
         ('vertical profile of Kz', None),
-    ]
-}
+        ]
+    }
 
 ENUMERATIONS['deep_convection_scheme_type'] = {
     'description': 'Type of scheme used for the parameterisation of deep convection.',
@@ -145,8 +130,8 @@ ENUMERATIONS['deep_convection_scheme_type'] = {
     'members': [
         ('mass-flux', None),
         ('adjustment', None),
-    ]
-}
+        ]
+    }
 
 ENUMERATIONS['deep_convection_scheme_method'] = {
     'description': 'If deep convection uses a mass-flux scheme enter the method used.',
@@ -154,26 +139,26 @@ ENUMERATIONS['deep_convection_scheme_method'] = {
     'members': [
         ('CAPE', 'Mass flux determined by CAPE'),
         ('bulk', 'A bulk mass flux scheme is used'),
-    ]
-}
+        ]
+    }
 
 ENUMERATIONS['shallow_convection_scheme_method'] = {
     'description': 'Method used for shallow convection.',
-    'is_open': True,
+    'is_open': False,
     'members': [
         ('same as deep (unified)', None),
         ('included in boundary layer turbulence', None),
         ('separated', None),
-    ]
-}
+        ]
+    }
 
 ENUMERATIONS['shallow_convection_scheme_type'] = {
     'description': 'Type of scheme used for the parameterisation of shallow convection.',
     'is_open': True,
     'members': [
         ('mass-flux', None),
-    ]
-}
+        ]
+    }
 
 ENUMERATIONS['deep_convection_scheme_processes_attributes'] = {
     'description': 'deep_convection_scheme_processes_attributes',
@@ -186,5 +171,19 @@ ENUMERATIONS['deep_convection_scheme_processes_attributes'] = {
         ('penetrative convection', None),
         ('updrafts and downdrafts', None),
         ('radiative effect of anvils', None),
-    ]
-}
+        ]
+    }
+
+# TODO: define as this was added simply to pass validation
+ENUMERATIONS['shallow_convection_scheme_processes_attributes'] = {
+    'description': 'shallow_convection_scheme_processes_attributes',
+    'is_open': True,
+    'members': []
+    }
+
+# TODO: define as this was added simply to pass validation
+ENUMERATIONS['other_convection_scheme_type'] = {
+    'description': 'other_convection_scheme_type',
+    'is_open': True,
+    'members': []
+    }

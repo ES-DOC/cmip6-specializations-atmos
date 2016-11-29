@@ -1,139 +1,99 @@
-"""A realm process sepecialization.
+"""
+
+A realm process sepecialization.
 
 For further information goto http://wordpress.es-doc.org/cmip6-model-specializations.
-
 """
+# --------------------------------------------------------------------
+# INTERNAL (do not change)
+# --------------------------------------------------------------------
 from collections import OrderedDict
 
 DETAILS = OrderedDict()
-PROCESS = OrderedDict()
-SUB_PROCESSES = OrderedDict()
 ENUMERATIONS = OrderedDict()
 
 # --------------------------------------------------------------------
-# CONTACT
-#
-# Set to realm specialization co-ordinator.
+# CONTACT: Set to realm specialization co-ordinator.
 # --------------------------------------------------------------------
 CONTACT = 'Charlotte Pascoe'
 
 # --------------------------------------------------------------------
-# AUTHORS
-#
-# Set to realm specialization authors (comma delimited).
+# AUTHORS: Set to realm specialization authors (comma delimited).
 # --------------------------------------------------------------------
-AUTHORS = ''
+AUTHORS = 'Charlotte Pascoe'
 
 # --------------------------------------------------------------------
-# QUALITY CONTROL STATUS
-#
-# Set to 'draft' or 'complete'
+# QUALITY CONTROL STATUS: Set to 'draft' or 'complete'
 # --------------------------------------------------------------------
 QC_STATUS = 'draft'
 
 # --------------------------------------------------------------------
-# PROCESS IDENTIFIER
-#
-# Set to 'cmip6.<REALM>.<PROCESS>', e.g. 'cmip6.atmosphere.radiation'
+# DESCRIPTION: Short description of the specialization.
 # --------------------------------------------------------------------
-# ID = 'cmip6.atmosphere.gravity_waves'
+DESCRIPTION = 'Characteristics of the parameterised gravity waves in the atmosphere, whether from orography or other sources.'
 
 # --------------------------------------------------------------------
-# INTERNAL VARIABLES (do not change)
+# PROCESS: top level properties
 # --------------------------------------------------------------------
-# _TYPE = 'cim.2.science.process'
-
-# --------------------------------------------------------------------
-# PROCESS: DESCRIPTION
-# --------------------------------------------------------------------
-# DESCRIPTION = 'Characteristics of the parameterised gravity waves in the atmosphere, whether from orography or other sources.',
-# Default process details pulled from CIM.
-DETAILS['CIM'] = {
-    'description': 'Characteristics of the parameterised gravity waves in the atmosphere, '
-                   'whether from orography or other sources',
+DETAILS['toplevel'] = {
+    'description': "Top level gravity waves properties",
     'properties': [
-        ('implementation_overview','str', '1.1',
-            "General overview description of the implementation of this part of the process."),
-        ('keywords', 'str', '0.N',
-            "Keywords to help re-use and discovery of this information."),
-        ('citations', 'shared.citation', '0.N',
-            "Set of pertinent citations."),
-    ]
-}
-# --------------------------------------------------------------------
-# PROCESS: DETAILS
-#
-# URL of #details
-# --------------------------------------------------------------------
-
-DETAILS['attributes'] = {
-    'description': 'General attributes of the gravity wave parameterisation.',
-    'properties': [
-        ('sponge_layer','ENUM:sponge_layer_attributes', '1.1', 
-         'Sponge layer in the upper levels in order to avoid gravity wave reflection at the top.'),
+        ('sponge_layer', 'ENUM:sponge_layer_attributes', '1.1',
+            'Sponge layer in the upper levels in order to avoid gravity wave reflection at the top.'),
         ('background', 'ENUM:background_attributes', '1.1',
-         'Background wave distribution'),
+            'Background wave distribution'),
         ('subgrid_scale_orography', 'ENUM:subgrid_scale_orography_attributes', '1.N',
-         'Subgrid scale orography effects taken into account.'),
-    ]
-}
+            'Subgrid scale orography effects taken into account.'),
+        ]
+    }
 
 # --------------------------------------------------------------------
-# PROCESS: SUB-PROCESSES
-#
-# URL of #sub_process
+# SUB-PROCESS: orographic_gravity_waves
 # --------------------------------------------------------------------
-
-SUB_PROCESSES['orographic_gravity_waves'] = {
+DETAILS['orographic_gravity_waves'] = {
     'description': 'Gravity waves generated due to the presence of orography',
     'properties': [
-        ('source_mechanisms', 'ENUM:orographic_gravity_waves_source_mechanisms', '1.N',
-         'Orographic gravity wave source mechanisms'),
-        ('calculation_method', 'ENUM:orographic_gravity_waves_calculation_method', '1.N',
-         'Orographic gravity wave calculation method'),
-        ('propagation_scheme', 'ENUM:orographic_gravity_waves_propagation_scheme', '1.1',
-         'Orographic gravity wave propogation scheme'),
-        ('dissipation_scheme', 'ENUM:orographic_gravity_waves_dissipation_scheme', '1.1',
-         'Orographic gravity wave dissipation scheme'),
-    ],
-}
+        ('source_mechanisms', 'ENUM:orographic_gravity_wave_source_mechanisms', '1.N',
+            'Orographic gravity wave source mechanisms'),
+        ('calculation_method', 'ENUM:orographic_gravity_wave_calculation_method', '1.N',
+            'Orographic gravity wave calculation method'),
+        ('propagation_scheme', 'ENUM:orographic_gravity_wave_propagation_scheme', '1.1',
+            'Orographic gravity wave propogation scheme'),
+        ('dissipation_scheme', 'ENUM:orographic_gravity_wave_dissipation_scheme', '1.1',
+            'Orographic gravity wave dissipation scheme'),
+        ]
+    }
 
-SUB_PROCESSES['non_orographic_gravity_waves'] = {
+# --------------------------------------------------------------------
+# SUB-PROCESS: non_orographic_gravity_waves
+# --------------------------------------------------------------------
+DETAILS['non_orographic_gravity_waves'] = {
     'description': 'Gravity waves generated by non-orographic processes.',
     'properties': [
-        ('source_mechanisms', 'ENUM:non_orographic_gravity_waves_source_mechanisms', '1.N',
-         'Non-orographic gravity wave source mechanisms'),
-        ('calculation_method', 'ENUM:non_orographic_gravity_waves_calculation_method', '1.N',
-         'Non-orographic gravity wave calculation method'),
-        ('propagation_scheme', 'ENUM:non_orographic_gravity_waves_propagation_scheme', '1.1',
-         'Non-orographic gravity wave propogation scheme'),
-        ('dissipation_scheme', 'ENUM:non_orographic_gravity_waves_dissipation_scheme', '1.1',
-         'Non-orographic gravity wave dissipation scheme'),
-    ],
-}
-
+        ('source_mechanisms', 'ENUM:non_orographic_gravity_wave_source_mechanisms', '1.N',
+            'Non-orographic gravity wave source mechanisms'),
+        ('calculation_method', 'ENUM:non_orographic_gravity_wave_calculation_method', '1.N',
+            'Non-orographic gravity wave calculation method'),
+        ('propagation_scheme', 'ENUM:non_orographic_gravity_wave_propagation_scheme', '1.1',
+            'Non-orographic gravity wave propogation scheme'),
+        ('dissipation_scheme', 'ENUM:non_orographic_gravity_wave_dissipation_scheme', '1.1',
+            'Non-orographic gravity wave dissipation scheme'),
+        ]
+    }
 
 # --------------------------------------------------------------------
 # PROCESS: ENUMERATIONS
-#
-# URL of process.html#enuemrations
-# Convention: Do not include the process name in the enumeration 
 # --------------------------------------------------------------------
-
 ENUMERATIONS['sponge_layer_attributes'] = {
     'description': 'Gravity waves sponge layer attributes',
     'is_open': True,
-    'members': [
-        ('None', None),
-    ]
-}
+    'members': []
+    }
 
 ENUMERATIONS['background_attributes'] = {
     'description': 'Gravity waves background attributes',
     'is_open': True,
-    'members': [
-        ('None', None),
-    ]
+    'members': []
 }
 
 ENUMERATIONS['subgrid_scale_orography_attributes'] = {
@@ -142,19 +102,19 @@ ENUMERATIONS['subgrid_scale_orography_attributes'] = {
     'members': [
         ('effect on drag', None),
         ('effect on lifting', None),
-    ]
-}
+        ]
+    }
 
 ENUMERATIONS['orographic_gravity_wave_source_mechanisms'] = {
-    'description': 'Physical mechanisms generating orographic gravity waves.',
+    'description': 'Physical mechanisms generatic orographic gravity waves.',
     'is_open': True,
     'members': [
         ('linear mountain waves', None),
         ('hydraulic jump', None),
         ('envelope orography', None),
         ('statistical sub-grid scale variance', None),
-    ]
-}
+        ]
+    }
 
 ENUMERATIONS['orographic_gravity_wave_calculation_method'] = {
     'description': 'Calculation method for orographic gravity waves.',
@@ -162,17 +122,17 @@ ENUMERATIONS['orographic_gravity_wave_calculation_method'] = {
     'members': [
         ('non-linear calculation', None),
         ('more than two cardinal directions', None),
-    ]
-}
+        ]
+    }
 
 ENUMERATIONS['orographic_gravity_wave_propagation_scheme'] = {
-    'description': 'Type of propagation scheme for orographic gravity waves',
+    'description': 'Type of propagation scheme for orgraphic gravity waves',
     'is_open': True,
     'members': [
         ('linear theory', None),
         ('non-linear theory', None),
-    ]
-}
+        ]
+    }
 
 ENUMERATIONS['orographic_gravity_wave_dissipation_scheme'] = {
     'description': 'Type of dissipation scheme for orographic gravity waves.',
@@ -182,8 +142,8 @@ ENUMERATIONS['orographic_gravity_wave_dissipation_scheme'] = {
         ('single wave', None),
         ('spectral', None),
         ('linear', None),
-    ]
-}
+        ]
+    }
 
 ENUMERATIONS['non_orographic_gravity_wave_source_mechanisms'] = {
     'description': 'Physical mechanisms generating non-orographic gravity waves',
@@ -192,17 +152,17 @@ ENUMERATIONS['non_orographic_gravity_wave_source_mechanisms'] = {
         ('convection', None),
         ('precipitation', None),
         ('background spectrum', None),
-    ]
-}
+        ]
+    }
 
 ENUMERATIONS['non_orographic_gravity_wave_calculation_method'] = {
     'description': 'Calculation method for non-orographic gravity waves',
-    'is_open': True,
+    'is_open': False,
     'members': [
         ('spatially dependent', None),
         ('temporally dependent', None),
-    ]
-}
+        ]
+    }
 
 ENUMERATIONS['non_orographic_gravity_wave_propagation_scheme'] = {
     'description': 'Type of propagation scheme for non-orographic gravity waves.',
@@ -210,16 +170,17 @@ ENUMERATIONS['non_orographic_gravity_wave_propagation_scheme'] = {
     'members': [
         ('linear theory', None),
         ('non-linear theory', None),
-    ]
-}
+        ]
+    }
 
 ENUMERATIONS['non_orographic_gravity_wave_dissipation_scheme'] = {
     'description': 'Type of dissipation scheme for non-orographic gravity waves.',
     'is_open': True,
     'members': [
-    ('total wave', None),
+        ('total wave', None),
         ('single wave', None),
         ('spectral', None),
         ('linear', None),
-    ]
-}
+        ('other', None),
+        ]
+    }

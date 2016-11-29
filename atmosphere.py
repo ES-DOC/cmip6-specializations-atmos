@@ -1,89 +1,72 @@
-"""
-A realm sepecialization.
+"""A realm sepecialization.
 
 For further information goto http://wordpress.es-doc.org/cmip6-model-specializations.
 
 """
+# --------------------------------------------------------------------
+# INTERNAL (do not change)
+# --------------------------------------------------------------------
+from collections import OrderedDict
+
+DETAILS = OrderedDict()
+ENUMERATIONS = OrderedDict()
 
 # --------------------------------------------------------------------
-# CONTACT
-#
-# Set to realm specialization co-ordinator.
+# CONTACT: Set to realm specialization co-ordinator.
 # --------------------------------------------------------------------
 CONTACT = 'Charlotte Pascoe'
 
 # --------------------------------------------------------------------
-# AUTHORS
-#
-# Set to realm specialization authors.
+# AUTHORS: Set to realm specialization authors (comma delimited).
 # --------------------------------------------------------------------
 AUTHORS = 'Charlotte Pascoe'
 
 # --------------------------------------------------------------------
-# CONTRIBUTORS
-#
-# Set to realm specialization authors.
+# CONTRIBUTORS: Set to realm specialization contributors (comma delimited).
 # --------------------------------------------------------------------
-CONTRIBUTORS = 'CMIP5 version +, Name Name (Institute)'
+CONTRIBUTORS = ''
 
 # --------------------------------------------------------------------
-# CHANGE HISTORY
-#
-# Set to list: (version, date, comment, who).
-# --------------------------------------------------------------------
-CHANGE_HISTORY = [
-    ("0.1.0", "2016-11-09", "Updated CIM Syntax", "Charlotte Pascoe"),
-]
-
-# --------------------------------------------------------------------
-# QUALITY CONTROL STATUS
-#
-# Set to 'draft' or 'complete'
+# QUALITY CONTROL STATUS: Set to 'draft' or 'complete'
 # --------------------------------------------------------------------
 QC_STATUS = 'draft'
 
 # --------------------------------------------------------------------
-# REALM: DESCRIPTION
-#
-# Scientific context of this scientific realm
+# CHANGE HISTORY: Set to list: (version, date, comment, who).
+# --------------------------------------------------------------------
+CHANGE_HISTORY = [
+	("0.1.0", "2016-11-29", "Initialised", "Mark Greenslade"),
+]
+
+# --------------------------------------------------------------------
+# DESCRIPTION: Scientific context of this scientific realm
 # --------------------------------------------------------------------
 DESCRIPTION = 'Atmosphere realm specialization'
 
-CITATIONS = ('shared.citation', '0.N', "Set of pertinent citations."),
-
 # --------------------------------------------------------------------
-# REALM: REALM
-#
-# Canonical name for the domain of this scientific realm
+# REALM: Canonical name for the domain of this scientific realm
 # --------------------------------------------------------------------
 REALM = 'atmosphere'
 
 # --------------------------------------------------------------------
-# REALM: GRID
-#
-# The grid used to layout the variables
+# GRID: The grid used to layout the variables
 # --------------------------------------------------------------------
 GRID = 'atmosphere_grid'
 
 # --------------------------------------------------------------------
-# REALM: KEY PROPERTIES
-#
-# Key properties for the domain which differ from model defaults
-# (grid, timestep etc)
+# KEY PROPERTIES: Key properties for the realm which differ from model defaults (grid, timestep etc)
 # --------------------------------------------------------------------
 KEY_PROPERTIES = 'atmosphere_key_properties'
 
 # --------------------------------------------------------------------
-# REALM: PROCESSES
-#
-# Processes simulated within the realm
+# PROCESSES: Processes simulated within the realm
 # --------------------------------------------------------------------
 PROCESSES = [
-    'atmosphere_cloud_scheme',
+	'atmosphere_cloud_scheme',
     'atmosphere_cloud_simulator',
     'atmosphere_dynamical_core',
     'atmosphere_gravity_waves',
     'atmosphere_microphysics_precipitation',
     'atmosphere_radiation',
     'atmosphere_turbulence_convection'
-]
+    ]

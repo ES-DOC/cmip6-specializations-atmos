@@ -1,100 +1,72 @@
-"""A realm process sepecialization.
-
-For further information goto http://wordpress.es-doc.org/cmip6-model-specializations.
-
 """
 
+A realm process sepecialization.
+
+For further information goto http://wordpress.es-doc.org/cmip6-model-specializations.
+"""
+# --------------------------------------------------------------------
+# INTERNAL (do not change)
+# --------------------------------------------------------------------
 from collections import OrderedDict
+
 DETAILS = OrderedDict()
-PROCESS = OrderedDict()
-SUB_PROCESSES = OrderedDict()
 ENUMERATIONS = OrderedDict()
 
-# Default process details pulled from CIM.
-DETAILS['CIM'] = {
-    'description': 'Cloud microphysics and precipitation characteristics',
-    'properties':[
-        ('implementation_overview','str', '1.1',
-            "General overview description of the implementation of this part of the process."),
-        ('keywords', 'str', '0.N',
-            "Keywords to help re-use and discovery of this information."),
-        ('citations', 'shared.citation', '0.N',
-            "Set of pertinent citations."),
-    ]
-}
-
 # --------------------------------------------------------------------
-# CONTACT
-#
-# Set to realm specialization co-ordinator.
+# CONTACT: Set to realm specialization co-ordinator.
 # --------------------------------------------------------------------
 CONTACT = 'Charlotte Pascoe'
 
 # --------------------------------------------------------------------
-# AUTHORS
-#
-# Set to realm specialization authors (comma delimited).
+# AUTHORS: Set to realm specialization authors (comma delimited).
 # --------------------------------------------------------------------
-AUTHORS = ''
+AUTHORS = 'Charlotte Pascoe'
 
 # --------------------------------------------------------------------
-# QUALITY CONTROL STATUS
-#
-# Set to 'draft' or 'complete'
+# QUALITY CONTROL STATUS: Set to 'draft' or 'complete'
 # --------------------------------------------------------------------
 QC_STATUS = 'draft'
 
 # --------------------------------------------------------------------
-# PROCESS IDENTIFIER
-#
-# Set to 'cmip6.<REALM>.<PROCESS>', e.g. 'cmip6.atmosphere.radiation'
+# DESCRIPTION: Short description of the specialization.
 # --------------------------------------------------------------------
-# ID = 'cmip6.atmosphere.microphysics_precipitation'
+DESCRIPTION = 'Cloud Microphysics and Precipitation'
 
 # --------------------------------------------------------------------
-# INTERNAL VARIABLES (do not change)
-# --------------------------------------------------------------------
-# _TYPE = 'cim.2.science.process'
-
-# --------------------------------------------------------------------
-# PROCESS: DESCRIPTION
-# --------------------------------------------------------------------
-# DESCRIPTION = 'Cloud microphysics and precipitation characteristics'
-
-# --------------------------------------------------------------------
-# PROCESS: SUB-PROCESSES
-#
-# URL of #sub_process
+# PROCESS: top level properties
 # --------------------------------------------------------------------
 
-SUB_PROCESSES['large_scale_precipitation'] = {
-    'description': 'Properties of the large scale precipitation scheme',
+# DEFINE HERE IF REQUIRED
+
+# --------------------------------------------------------------------
+# SUB-PROCESS: large_scale_precipitation
+# --------------------------------------------------------------------
+DETAILS['large_scale_precipitation'] = {
+    'description': 'Large scale precipitation scheme',
     'properties': [
-        ('scheme_name', 'str', '1.1',
-         'Commonly used name of the large scale precipitation parameterisation scheme'),
+        ('scheme', 'str', '1.1',
+            'Commonly used name of the large scale precipitation parameterisation scheme'),
         ('hydrometeors', 'ENUM:hydrometeor_types', '1.N',
-         'Precipitating hydrometeors taken into account in the large scale precipitation scheme'),
-    ]
-}
+            'Precipitating hydrometeors taken into account in the large scale precipitation scheme'),
+        ]
+    }
 
-SUB_PROCESSES['cloud_microphysics'] = {
-    'description': 'Properties of the cloud microphysics scheme',
+# --------------------------------------------------------------------
+# SUB-PROCESS: cloud_microphysics
+# --------------------------------------------------------------------
+DETAILS['cloud_microphysics'] = {
+    'description': 'Cloud microphysics',
     'properties': [
-        ('scheme_name', 'str', '1.1',
-         'Commonly used name of the microphysics parameterisation scheme.'),
+        ('scheme', 'str', '1.1',
+            'Commonly used name of the microphysics parameterisation scheme.'),
         ('processes', 'ENUM:processes_attributes', '1.N',
-         'Cloud microphysics processes'),
-    ]
-}
-
+            'Cloud microphysics processes'),
+        ]
+    }
 
 # --------------------------------------------------------------------
 # PROCESS: ENUMERATIONS
-#
-# URL of process.html#enuemrations
-# Convention: Do not include the process name in the enumeration 
 # --------------------------------------------------------------------
-
 ENUMERATIONS['hydrometeor_types'] = {
     'description': 'Precipitating hydrometeors taken into account in the large scale precipitation scheme',
     'is_open': True,
@@ -103,8 +75,8 @@ ENUMERATIONS['hydrometeor_types'] = {
         ('snow', None),
         ('hail', None),
         ('graupel', None),
-    ]
-}
+        ]
+    }
 
 ENUMERATIONS['processes_attributes'] = {
     'description': 'Cloud microphysics processes',
@@ -118,6 +90,6 @@ ENUMERATIONS['processes_attributes'] = {
         ('effect of raindrops', None),
         ('effect of snow', None),
         ('effect of graupel', None),
-    ]
-}
+        ]
+    }
 
