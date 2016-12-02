@@ -101,6 +101,5 @@ ENUMERATIONS['processes_attributes'] = {
         ('entrainment', None),
         ('detrainment', None),
         ('bulk cloud', None),
-        ('other', None),
         ]
     }

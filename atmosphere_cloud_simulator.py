@@ -42,7 +42,7 @@ DETAILS['toplevel:isscp_attributes'] = {
             'Cloud simulator ISSCP top height'),
         ('top_height_direction', 'ENUM:isscp_top_height_direction', '1.1',
             'Cloud simulator ISSCP top height direction'),
-        ],
+        ]
     }
 
 DETAILS['toplevel:cosp_attributes'] = {
@@ -97,7 +97,9 @@ ENUMERATIONS['isscp_top_height'] = {
     }
 
 ENUMERATIONS['isscp_top_height_direction'] = {
-    'description': 'Direction for finding the radiance determined cloud-top pressure. Atmosphere pressure level with interpolated temperature equal to the radiance determined cloud-top pressure.',
+    'description': 'Direction for finding the radiance determined cloud-top pressure. '
+                   'Atmosphere pressure level with interpolated temperature equal to '
+                   'the radiance determined cloud-top pressure.',
     'is_open': True,
     'members': [
         ('lowest altitude level', None),
