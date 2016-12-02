@@ -32,10 +32,10 @@ QC_STATUS = 'draft'
 
 
 # --------------------------------------------------------------------
-# SUB-PROCESS: top_insolation_solar_constant
+# SUB-PROCESS: solar_constant
 # --------------------------------------------------------------------
-DETAILS['top_insolation_solar_constant'] = {
-    'description': 'Top of atmosphere insolation',
+DETAILS['solar_constant'] = {
+    'description': 'Solar constant and top of atmosphere insolation characteristics',
     'properties': [
         ('type', 'ENUM:top_insolation_solar_constant_type', '1.1',
          'Time adaptation of the solar constant.'),
@@ -47,10 +47,10 @@ DETAILS['top_insolation_solar_constant'] = {
 }
 
 # --------------------------------------------------------------------
-# SUB-PROCESS: top_insolation_orbital_parameters
+# SUB-PROCESS: orbital_parameters
 # --------------------------------------------------------------------
-DETAILS['top_insolation_orbital_parameters'] = {
-    'description': 'Orbit and insolation characteristics',
+DETAILS['orbital_parameters'] = {
+    'description': 'Orbital parameters and top of atmosphere insolation characteristics',
     'properties': [
         ('type', 'ENUM:top_insolation_orbital_parameters_type', '1.1',
             'Time adaptation of orbital parameters'),
@@ -64,9 +64,9 @@ DETAILS['top_insolation_orbital_parameters'] = {
 }
 
 # --------------------------------------------------------------------
-# SUB-PROCESS: top_insolation_ozone
+# SUB-PROCESS: insolation_ozone
 # --------------------------------------------------------------------
-DETAILS['top_insolation_ozone'] = {
+DETAILS['insolation_ozone'] = {
     'description': 'Impact of solar insolation on stratospheric ozone',
     'properties': [
         ('solar_ozone_impact', 'bool', '1.1',
