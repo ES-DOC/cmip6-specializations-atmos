@@ -59,7 +59,7 @@ DETAILS['orography'] = {
 # ENUMERATIONS
 # --------------------------------------------------------------------
 ENUMERATIONS['model_family_type'] = {
-    'description': 'Type of atmospheric model.',
+    'description': "Type of atmospheric model",
     'is_open': True,
     'members': [
         ('AGCM', 'Atmospheric General Circulation Model'),
@@ -68,7 +68,7 @@ ENUMERATIONS['model_family_type'] = {
     }
 
 ENUMERATIONS['basic_approximations_attributes'] = {
-    'description': 'Basic approximations made in the atmosphere.',
+    'description': "Basic approximations made in the atmosphere",
     'is_open': True,
     'members': [
         ('primitive equations', None),
@@ -82,7 +82,7 @@ ENUMERATIONS['basic_approximations_attributes'] = {
 
 
 ENUMERATIONS['orography_type'] = {
-    'description': 'Time adaptation of the orography.',
+    'description': "Time adaptation of the orography",
     'is_open': False,
     'members': [
         ('present-day', None),
@@ -91,7 +91,7 @@ ENUMERATIONS['orography_type'] = {
     }
 
 ENUMERATIONS['orography_changes'] = {
-    'description': 'If the orography type is modified describe the time adaptation changes.',
+    'description': "If the orography type is modified describe the time adaptation changes",
     'is_open': False,
     'members': [
         ('related to ice sheets', None),
