@@ -85,12 +85,16 @@ DETAILS['non_orographic_gravity_waves'] = {
 # --------------------------------------------------------------------
 # PROCESS: ENUMERATIONS
 # --------------------------------------------------------------------
+
+# TODO: enumeration needs members or to become a string attribute type
 ENUMERATIONS['sponge_layer_attributes'] = {
     'description': 'Gravity waves sponge layer attributes',
     'is_open': True,
     'members': []
     }
 
+
+# TODO: enumeration needs members or to become a string attribute type
 ENUMERATIONS['background_attributes'] = {
     'description': 'Gravity waves background attributes',
     'is_open': True,
