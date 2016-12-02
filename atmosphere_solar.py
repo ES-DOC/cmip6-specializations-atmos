@@ -30,7 +30,6 @@ AUTHORS = ''
 # --------------------------------------------------------------------
 QC_STATUS = 'draft'
 
-
 # --------------------------------------------------------------------
 # SUB-PROCESS: solar_constant
 # --------------------------------------------------------------------
@@ -38,11 +37,11 @@ DETAILS['solar_constant'] = {
     'description': 'Solar constant and top of atmosphere insolation characteristics',
     'properties': [
         ('type', 'ENUM:top_insolation_solar_constant_type', '1.1',
-         'Time adaptation of the solar constant.'),
+             'Time adaptation of the solar constant.'),
         ('fixed_value', 'float', '0.1',
-         'If the solar constant is fixed, enter the value of the solar constant (W m-2).'),
+             'If the solar constant is fixed, enter the value of the solar constant (W m-2).'),
         ('transient_characteristics', 'str', '1.1',
-         'solar constant transient characteristics (W m-2)'),
+             'solar constant transient characteristics (W m-2)'),
     ],
 }
 
@@ -79,7 +78,7 @@ DETAILS['insolation_ozone'] = {
 # --------------------------------------------------------------------
 
 ENUMERATIONS['top_insolation_solar_constant_type'] = {
-    'description': 'Time adaptation of the solar constant.',
+    'description': 'Time adaptation of the solar constant',
     'is_open': False,
     'members': [
         ('fixed', None),
