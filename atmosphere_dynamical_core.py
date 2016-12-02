@@ -36,7 +36,7 @@ DESCRIPTION = 'Characteristics of the dynamical core'
 # PROCESS: top level properties
 # --------------------------------------------------------------------
 DETAILS['toplevel'] = {
-    'description': "Top level dynamical core properties",
+    'description': "General dynamical core properties",
     'properties': [
         ('timestepping_type', 'ENUM:timestepping_type', '1.1',
             'Timestepping framework type'),
