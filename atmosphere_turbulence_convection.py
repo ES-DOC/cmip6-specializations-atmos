@@ -106,7 +106,8 @@ DETAILS['shallow_convection'] = {
 # PROCESS: ENUMERATIONS
 # --------------------------------------------------------------------
 
-# TODO: expand enumeration or set to string entry
+
+# TODO: enumeration needs more members or to become a string attribute type
 ENUMERATIONS['boundary_layer_turbulence_scheme_name'] = {
     'description': 'Commonly used name for the boundary layer turbulence scheme.',
     'is_open': True,
@@ -154,7 +155,7 @@ ENUMERATIONS['shallow_convection_scheme_method'] = {
         ]
     }
 
-# TODO: expand enumeration or set to string entry
+# TODO: enumeration needs members or to become a string attribute type
 ENUMERATIONS['shallow_convection_scheme_type'] = {
     'description': 'Type of scheme used for the parameterisation of shallow convection.',
     'is_open': True,
@@ -177,7 +178,7 @@ ENUMERATIONS['deep_convection_scheme_processes'] = {
         ]
     }
 
-# TODO: expand enumeration or set to string entry
+# TODO: enumeration needs members or to become a string attribute type
 ENUMERATIONS['shallow_convection_scheme_processes'] = {
     'description': 'Processes taken into account by the shallow convection scheme',
     'is_open': True,
