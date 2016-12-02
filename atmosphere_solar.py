@@ -31,6 +31,11 @@ AUTHORS = ''
 QC_STATUS = 'draft'
 
 # --------------------------------------------------------------------
+# DESCRIPTION: Short description of the specialization.
+# --------------------------------------------------------------------
+DESCRIPTION = 'Top of atmosphere solar insolation characteristics'
+
+# --------------------------------------------------------------------
 # SUB-PROCESS: solar_constant
 # --------------------------------------------------------------------
 DETAILS['solar_constant'] = {
