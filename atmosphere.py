@@ -65,7 +65,7 @@ KEY_PROPERTIES = 'atmosphere_key_properties'
 PROCESSES = [
     'atmosphere_dynamical_core',
     'atmosphere_radiation',
-    'atmosphere_turbulence_convection'
+    'atmosphere_turbulence_convection',
     'atmosphere_microphysics_precipitation',
 	'atmosphere_cloud_scheme',
     'atmosphere_cloud_simulator',
