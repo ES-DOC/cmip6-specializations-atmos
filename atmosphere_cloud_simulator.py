@@ -35,7 +35,7 @@ DESCRIPTION = 'Characteristics of the cloud simulator'
 # --------------------------------------------------------------------
 # PROCESS: top level properties
 # --------------------------------------------------------------------
-DETAILS['toplevel:isscp_attributes'] = {
+DETAILS['isscp_attributes'] = {
     'description': 'ISSCP Characteristics',
     'properties': [
         ('top_height', 'ENUM:isscp_top_height', '1.N',
@@ -45,7 +45,7 @@ DETAILS['toplevel:isscp_attributes'] = {
         ]
     }
 
-DETAILS['toplevel:cosp_attributes'] = {
+DETAILS['cosp_attributes'] = {
     'description': 'CFMIP Observational Simulator Package attributes',
     'properties': [
         ('run_configuration', 'ENUM:cosp_run_configuration', '1.1',
@@ -59,12 +59,12 @@ DETAILS['toplevel:cosp_attributes'] = {
         ]
     }
 
-DETAILS['toplevel:inputs_radar'] = {
+DETAILS['radar_inputs'] = {
     'description': 'Characteristics of the cloud radar simulator',
     'properties': [
-        ('radar_frequency', 'float', '1.1',
-         'Cloud simulator radar frequency'),
-        ('radar_type', 'ENUM:inputs_radar_type', '1.1',
+        ('frequency', 'float', '1.1',
+         'Cloud simulator radar frequency (Hz)'),
+        ('type', 'ENUM:inputs_radar_type', '1.1',
          'Cloud simulator radar type'),
         ('gas_absorption', 'bool', '1.1',
          'Cloud simulator radar uses gas absorption'),
@@ -73,12 +73,12 @@ DETAILS['toplevel:inputs_radar'] = {
         ]
     }
 
-DETAILS['toplevel:inputs_lidar'] = {
+DETAILS['lidar_inputs'] = {
     'description': 'Characteristics of the cloud lidar simulator',
     'properties': [
-        ('ice_type', 'ENUM:inputs_lidar_ice_type', '1.1',
+        ('ice_types', 'ENUM:inputs_lidar_ice_type', '1.1',
          'Cloud simulator lidar ice type'),
-        ('lidar_overlap', 'ENUM:inputs_lidar_overlap', '1.N',
+        ('overlap', 'ENUM:inputs_lidar_overlap', '1.N',
          'Cloud simulator lidar overlap'),
         ]
     }
