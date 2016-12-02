@@ -33,7 +33,7 @@ QC_STATUS = 'draft'
 DESCRIPTION = 'Characteristics of the cloud simulator'
 
 # --------------------------------------------------------------------
-# PROCESS: top level properties
+# SUB-PROCESSES
 # --------------------------------------------------------------------
 DETAILS['isscp_attributes'] = {
     'description': 'ISSCP Characteristics',

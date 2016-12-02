@@ -96,7 +96,7 @@ ENUMERATIONS['top_insolation_orbital_parameters_type'] = {
 }
 
 ENUMERATIONS['top_insolation_orbital_parameters_computation_method'] = {
-    'description': 'Method used for computing orbital parameters.',
+    'description': 'Method used for computing orbital parameters',
     'is_open': True,
     'members': [
         ('Berger 1978', None),
