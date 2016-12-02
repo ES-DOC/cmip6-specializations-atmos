@@ -42,8 +42,8 @@ DETAILS['solar_constant'] = {
              'If the solar constant is fixed, enter the value of the solar constant (W m-2).'),
         ('transient_characteristics', 'str', '1.1',
              'solar constant transient characteristics (W m-2)'),
-    ],
-}
+        ]
+    }
 
 # --------------------------------------------------------------------
 # SUB-PROCESS: orbital_parameters
@@ -59,8 +59,8 @@ DETAILS['orbital_parameters'] = {
             'Characteristics of transient orbital parameters'),
         ('computation_method', 'ENUM:top_insolation_orbital_parameters_computation_method', '1.1',
             'Method used for computing orbital parameters.')
-    ],
-}
+        ]
+    }
 
 # --------------------------------------------------------------------
 # SUB-PROCESS: insolation_ozone
@@ -70,8 +70,8 @@ DETAILS['insolation_ozone'] = {
     'properties': [
         ('solar_ozone_impact', 'bool', '1.1',
             'Does top of atmosphere insolation impact on stratospheric ozone?'),
-    ],
-}
+        ]
+    }
 
 # --------------------------------------------------------------------
 # ENUMERATIONS
@@ -83,8 +83,8 @@ ENUMERATIONS['top_insolation_solar_constant_type'] = {
     'members': [
         ('fixed', None),
         ('transient', None),
-    ],
-}
+        ]
+    }
 
 ENUMERATIONS['top_insolation_orbital_parameters_type'] = {
     'description': 'Time adaptation of orbital parameters',
@@ -92,8 +92,8 @@ ENUMERATIONS['top_insolation_orbital_parameters_type'] = {
     'members': [
         ('fixed', None),
         ('transient', None),
-    ],
-}
+        ]
+    }
 
 ENUMERATIONS['top_insolation_orbital_parameters_computation_method'] = {
     'description': 'Method used for computing orbital parameters',
@@ -101,6 +101,6 @@ ENUMERATIONS['top_insolation_orbital_parameters_computation_method'] = {
     'members': [
         ('Berger 1978', None),
         ('Laskar 2004', None),
-    ],
-}
+        ]
+    }
 
