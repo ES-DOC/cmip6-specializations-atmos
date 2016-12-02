@@ -6,8 +6,6 @@ For further information goto http://wordpress.es-doc.org/cmip6-model-specializat
 
 from collections import OrderedDict
 DETAILS = OrderedDict()
-PROCESS = OrderedDict()
-SUB_PROCESSES = OrderedDict()
 ENUMERATIONS = OrderedDict()
 
 
@@ -34,11 +32,8 @@ QC_STATUS = 'draft'
 
 
 # --------------------------------------------------------------------
-# PROCESS: DETAILS
-#
-# URL of #details
+# SUB-PROCESS: top_insolation_solar_constant
 # --------------------------------------------------------------------
-
 DETAILS['top_insolation_solar_constant'] = {
     'description': 'Top of atmosphere insolation',
     'properties': [
@@ -51,33 +46,36 @@ DETAILS['top_insolation_solar_constant'] = {
     ],
 }
 
+# --------------------------------------------------------------------
+# SUB-PROCESS: top_insolation_orbital_parameters
+# --------------------------------------------------------------------
 DETAILS['top_insolation_orbital_parameters'] = {
     'description': 'Orbit and insolation characteristics',
     'properties': [
         ('type', 'ENUM:top_insolation_orbital_parameters_type', '1.1',
-         'Time adaptation of orbital parameters'),
+            'Time adaptation of orbital parameters'),
         ('fixed_reference_date', 'int', '1.1',
-         'fixed orbital parameters reference date (yyyy)'),
+            'Reference date for fixed orbital parameters (yyyy)'),
         ('solar_constant_transient_characteristics', 'str', '1.1',
-         'transient orbital parameters characteristics'),
+            'Characteristics of transient orbital parameters'),
         ('computation_method', 'ENUM:top_insolation_orbital_parameters_computation_method', '1.1',
-         'Method used for computing orbital parameters.')
-    ],
-}
-
-DETAILS['top_insolation_ozone'] = {
-    'description': 'Impact of solar insolation on stratospheric ozone',
-    'properties': [
-        ('solar_ozone_impact', 'bool', '1.1',
-    'Impact of top of atmosphere insolation on stratospheric ozone'),
+            'Method used for computing orbital parameters.')
     ],
 }
 
 # --------------------------------------------------------------------
-# PROCESS: ENUMERATIONS
-#
-# URL of process.html#enuemrations
-# Convention: Do not include the process name in the enumeration
+# SUB-PROCESS: top_insolation_ozone
+# --------------------------------------------------------------------
+DETAILS['top_insolation_ozone'] = {
+    'description': 'Impact of solar insolation on stratospheric ozone',
+    'properties': [
+        ('solar_ozone_impact', 'bool', '1.1',
+            'Does top of atmosphere insolation impact on stratospheric ozone?'),
+    ],
+}
+
+# --------------------------------------------------------------------
+# ENUMERATIONS
 # --------------------------------------------------------------------
 
 ENUMERATIONS['top_insolation_solar_constant_type'] = {
