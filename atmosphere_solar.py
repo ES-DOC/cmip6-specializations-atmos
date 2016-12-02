@@ -34,7 +34,7 @@ QC_STATUS = 'draft'
 # SUB-PROCESS: solar_constant
 # --------------------------------------------------------------------
 DETAILS['solar_constant'] = {
-    'description': 'Solar constant and top of atmosphere insolation characteristics',
+    'description': "Solar constant and top of atmosphere insolation characteristics",
     'properties': [
         ('type', 'ENUM:top_insolation_solar_constant_type', '1.1',
              'Time adaptation of the solar constant.'),
@@ -49,7 +49,7 @@ DETAILS['solar_constant'] = {
 # SUB-PROCESS: orbital_parameters
 # --------------------------------------------------------------------
 DETAILS['orbital_parameters'] = {
-    'description': 'Orbital parameters and top of atmosphere insolation characteristics',
+    'description': "Orbital parameters and top of atmosphere insolation characteristics",
     'properties': [
         ('type', 'ENUM:top_insolation_orbital_parameters_type', '1.1',
             'Time adaptation of orbital parameters'),
@@ -66,7 +66,7 @@ DETAILS['orbital_parameters'] = {
 # SUB-PROCESS: insolation_ozone
 # --------------------------------------------------------------------
 DETAILS['insolation_ozone'] = {
-    'description': 'Impact of solar insolation on stratospheric ozone',
+    'description': "Impact of solar insolation on stratospheric ozone",
     'properties': [
         ('solar_ozone_impact', 'bool', '1.1',
             'Does top of atmosphere insolation impact on stratospheric ozone?'),
@@ -78,7 +78,7 @@ DETAILS['insolation_ozone'] = {
 # --------------------------------------------------------------------
 
 ENUMERATIONS['top_insolation_solar_constant_type'] = {
-    'description': 'Time adaptation of the solar constant',
+    'description': "Time adaptation of the solar constant",
     'is_open': False,
     'members': [
         ('fixed', None),
@@ -87,7 +87,7 @@ ENUMERATIONS['top_insolation_solar_constant_type'] = {
     }
 
 ENUMERATIONS['top_insolation_orbital_parameters_type'] = {
-    'description': 'Time adaptation of orbital parameters',
+    'description': "Time adaptation of orbital parameters",
     'is_open': False,
     'members': [
         ('fixed', None),
@@ -96,7 +96,7 @@ ENUMERATIONS['top_insolation_orbital_parameters_type'] = {
     }
 
 ENUMERATIONS['top_insolation_orbital_parameters_computation_method'] = {
-    'description': 'Method used for computing orbital parameters',
+    'description': "Method used for computing orbital parameters",
     'is_open': True,
     'members': [
         ('Berger 1978', None),
