@@ -84,7 +84,7 @@ DETAILS['shortwave_radiation'] = {
 DETAILS['single_scattering_properties'] = {
     'description': 'Single scattering properties of ice clouds',
     'properties': [
-        ('single_scattering', 'ENUM:single_scattering_properties_methods', '0,N',
+        ('single_scattering', 'ENUM:single_scattering_properties_methods', '0.N',
             'Methods for calculating single scattering properties of ice crystals'),
         ]
     }
