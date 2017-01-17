@@ -15,10 +15,9 @@ import json
 import xml.etree.ElementTree as ET
 
 from cim_profile import CIM_PROFILE
-from utils_model import DetailSpecialization
+from utils_model import TopicPropertySpecialization
 from utils_model import TopicSpecialization
-
-from utils_parser import Parser
+from utils_parser import RealmSpecializationParser
 
 
 
@@ -40,12 +39,12 @@ _NOTE_HTML = "<dt><b>{}</b></dt><dd>{}</dd>"
 # Mind-map sections.
 _SECTIONS = collections.OrderedDict()
 _SECTIONS['realm'] = "science.realm"
-_SECTIONS['process'] = "science.process"
-_SECTIONS['sub-process'] = "science.sub_process"
-_SECTIONS['key-properties'] = "science.key_properties"
-_SECTIONS['grid'] = "science.grid"
-_SECTIONS['detail-set'] = "science.detail"
-_SECTIONS['detail'] = None
+_SECTIONS['process'] = "science.topic"
+_SECTIONS['sub-process'] = "science.topic"
+_SECTIONS['key-properties'] = "science.topic"
+_SECTIONS['grid'] = "science.topic"
+_SECTIONS['property-set'] = None
+_SECTIONS['property'] = None
 _SECTIONS['enum-choice'] = None
 
 
@@ -69,7 +68,7 @@ class _Configuration(object):
         return self._data.get(key, {})
 
 
-class Generator(Parser):
+class Generator(RealmSpecializationParser):
     """Specialization to mindmap generator.
 
     """
@@ -131,19 +130,19 @@ class Generator(Parser):
         self._emit_node(subprocess.parent, subprocess)
 
 
-    def on_detailset_parse(self, detailset):
-        """On process detail set parse event handler.
+    def on_topic_property_set_parse(self, prop_set):
+        """On topic property set parse event handler.
 
         """
-        self._emit_node(detailset.owner, detailset)
+        self._emit_node(prop_set.owner, prop_set)
 
 
-    def on_detail_parse(self, detail):
-        """On detail property parse event handler.
+    def on_topic_property_parse(self, prop):
+        """On property parse event handler.
 
         """
-        self._emit_node(detail.owner, detail)
-        self._emit_notes(detail)
+        self._emit_node(prop.owner, prop)
+        self._emit_notes(prop)
 
 
     def on_enumchoice_parse(self, choice):
@@ -158,7 +157,7 @@ class Generator(Parser):
 
         """
         # Get section style config.
-        cfg = self.cfg.get_section(owner.cfg_section)
+        cfg = self.cfg.get_section(owner.type_key)
 
         # Initialise mindmap node attributes.
         atts = {
@@ -309,7 +308,7 @@ def _get_notes(spec):
     result = [
         ("Description", lambda i: "N/A" if i.description is None else i.description.replace("&", "and"))
     ]
-    if isinstance(spec, DetailSpecialization):
+    if isinstance(spec, TopicPropertySpecialization):
         result += [
             ("Type", lambda i: i.typeof),
             ("Cardinality", lambda i: i.cardinality),
