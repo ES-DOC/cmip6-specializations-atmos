@@ -228,6 +228,7 @@ ENUMERATIONS['longwave_scheme_type'] = {
         ('wide-band model (Morcrette)', None),
         ('K-correlated', None),
         ('K-correlated (RRTM)', None),
+        ('two-stream', None),
         ]
     }
 
@@ -235,7 +236,6 @@ ENUMERATIONS['longwave_scheme_method'] = {
     'description': 'Method for the radiative transfer calculations used in the longwave scheme',
     'is_open': True,
     'members': [
-        ('two-stream', None),
         ('layer interaction', None),
         ('adaptive', 'exploits spatial and temporal correlations in optical characteristics')
         ]
