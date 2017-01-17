@@ -679,124 +679,6 @@
                         ]
                     }, 
                     "uiOrdinal": 2
-                }, 
-                {
-                    "label": "Cloud Ice", 
-                    "description": "Radiative properties of ice crystals in clouds", 
-                    "id": "cmip6.atmosphere.radiation.cloud_ice", 
-                    "cardinality": "1.N", 
-                    "type": "enum", 
-                    "enum": {
-                        "label": "Cloud Ice Properties", 
-                        "description": "Radiative properties of ice crystals in clouds", 
-                        "isOpen": true, 
-                        "choices": [
-                            {
-                                "label": "treated as spherical particles", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "effective crystal radius", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "treated as non-spherical particles", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "mean projected area", 
-                                "description": "randomly oriented irregular ice crystals present a greater mean projected area than spheres"
-                            }, 
-                            {
-                                "label": "bi-modal size distribution", 
-                                "description": "small mode diameters: a few tens of microns, large mode diameters: typically hundreds of microns"
-                            }, 
-                            {
-                                "label": "ensemble of ice crystals", 
-                                "description": "complex shapes represented with an ensemble of symmetric shapes"
-                            }, 
-                            {
-                                "label": "ice water path", 
-                                "description": "Integrated ice water path through the cloud kg m-2"
-                            }, 
-                            {
-                                "label": "crystal asymmetry", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "crystal aspect ratio", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "emissivity", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "absorption", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "backward scattering", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "side scattering", 
-                                "description": null
-                            }
-                        ]
-                    }, 
-                    "uiOrdinal": 3
-                }, 
-                {
-                    "label": "Cloud Liquid", 
-                    "description": "Radiative properties of liquid droplets in clouds", 
-                    "id": "cmip6.atmosphere.radiation.cloud_liquid", 
-                    "cardinality": "1.N", 
-                    "type": "enum", 
-                    "enum": {
-                        "label": "Cloud Liquid Properties", 
-                        "description": "Radiative properties of liquid droplets in clouds", 
-                        "isOpen": true, 
-                        "choices": [
-                            {
-                                "label": "droplet scattering", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "droplet absorption", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "cloud droplet number concentration", 
-                                "description": "CDNC"
-                            }, 
-                            {
-                                "label": "effective cloud droplet radii", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "droplet size distribution", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "liquid water path", 
-                                "description": "Integrated liquid water path through the cloud kg m-2"
-                            }, 
-                            {
-                                "label": "broadband reflectivity", 
-                                "description": "albedo"
-                            }, 
-                            {
-                                "label": "broadband transmissivity", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "broadband absorbtivity", 
-                                "description": null
-                            }
-                        ]
-                    }, 
-                    "uiOrdinal": 4
                 }
             ], 
             "subProcesses": [
@@ -841,7 +723,7 @@
                             "label": "Scheme Method", 
                             "description": "Longwave radiation scheme method", 
                             "id": "cmip6.atmosphere.radiation.longwave_radiation.scheme_method", 
-                            "cardinality": "1.1", 
+                            "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
                                 "label": "Longwave Scheme Method", 
@@ -901,7 +783,7 @@
                                     }, 
                                     {
                                         "label": "bulk-scheme", 
-                                        "description": "highly parameterized methods that use bulk expressions"
+                                        "description": "highly parameterised methods that use bulk expressions"
                                     }, 
                                     {
                                         "label": "two-stream", 
@@ -926,20 +808,184 @@
                     ]
                 }, 
                 {
+                    "label": "Cloud Ice", 
+                    "description": "Radiative properties of ice crystals in clouds", 
+                    "id": "cmip6.atmosphere.radiation.cloud_ice", 
+                    "contact": "Charlotte Pascoe", 
+                    "properties": [
+                        {
+                            "label": "Physical", 
+                            "description": "Physical representation of radiative properties of ice crystals in clouds", 
+                            "id": "cmip6.atmosphere.radiation.cloud_ice.physical", 
+                            "cardinality": "1.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Cloud Ice Physical Properties", 
+                                "description": "Physical radiative properties of ice crystals in clouds", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "treated as spherical particles", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "effective crystal radius", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "treated as non-spherical particles", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "mean projected area", 
+                                        "description": "randomly oriented irregular ice crystals present a greater mean projected area than spheres"
+                                    }, 
+                                    {
+                                        "label": "bi-modal size distribution", 
+                                        "description": "small mode diameters: a few tens of microns, large mode diameters: typically hundreds of microns"
+                                    }, 
+                                    {
+                                        "label": "ensemble of ice crystals", 
+                                        "description": "complex shapes represented with an ensemble of symmetric shapes"
+                                    }, 
+                                    {
+                                        "label": "ice water path", 
+                                        "description": "Integrated ice water path through the cloud kg m-2"
+                                    }, 
+                                    {
+                                        "label": "crystal asymmetry", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "crystal aspect ratio", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Optical", 
+                            "description": "Optical representation of radiative properties of ice crystals in clouds", 
+                            "id": "cmip6.atmosphere.radiation.cloud_ice.optical", 
+                            "cardinality": "1.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Cloud Ice Optical Properties", 
+                                "description": "Optical radiative properties of ice crystals in clouds", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "emissivity", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "absorption", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "backward scattering", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "side scattering", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 2
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Cloud Liquid", 
+                    "description": "Radiative properties of liquid droplets in clouds", 
+                    "id": "cmip6.atmosphere.radiation.cloud_liquid", 
+                    "contact": "Charlotte Pascoe", 
+                    "properties": [
+                        {
+                            "label": "Physical", 
+                            "description": "Physical representation of radiative properties of liquid droplets in clouds", 
+                            "id": "cmip6.atmosphere.radiation.cloud_liquid.physical", 
+                            "cardinality": "1.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Cloud Liquid Physical Properties", 
+                                "description": "Physical_radiative properties of liquid droplets in clouds", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "cloud droplet number concentration", 
+                                        "description": "CDNC"
+                                    }, 
+                                    {
+                                        "label": "effective cloud droplet radii", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "droplet size distribution", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "liquid water path", 
+                                        "description": "Integrated liquid water path through the cloud kg m-2"
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Optical", 
+                            "description": "Optical representation of radiative properties of liquid droplets in clouds", 
+                            "id": "cmip6.atmosphere.radiation.cloud_liquid.optical", 
+                            "cardinality": "1.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Cloud Liquid Optical Properties", 
+                                "description": "Optical_radiative properties of liquid droplets in clouds", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "droplet scattering", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "droplet absorption", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "broadband reflectivity", 
+                                        "description": "albedo"
+                                    }, 
+                                    {
+                                        "label": "broadband transmissivity", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "broadband absorbtivity", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 2
+                        }
+                    ]
+                }, 
+                {
                     "label": "Single Scattering Properties", 
-                    "description": "Single scattering properties of ice clouds", 
+                    "description": "Single scattering properties of atmospheric constituents", 
                     "id": "cmip6.atmosphere.radiation.single_scattering_properties", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Single Scattering", 
-                            "description": "Methods for calculating single scattering properties of ice crystals", 
-                            "id": "cmip6.atmosphere.radiation.single_scattering_properties.single_scattering", 
+                            "label": "Ice", 
+                            "description": "Methods for calculating single scattering properties of ice crystals in clouds", 
+                            "id": "cmip6.atmosphere.radiation.single_scattering_properties.ice", 
                             "cardinality": "0.N", 
                             "type": "enum", 
                             "enum": {
                                 "label": "Single Scattering Properties Methods", 
-                                "description": "Methods for calculating single scattering properties of ice crystals", 
+                                "description": "Methods for calculating single scattering properties of atmospheric constituents", 
                                 "isOpen": true, 
                                 "choices": [
                                     {
@@ -957,9 +1003,166 @@
                                     {
                                         "label": "anomalous diffraction approximation", 
                                         "description": "ADA"
+                                    }, 
+                                    {
+                                        "label": "k-distribution", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "band model", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "exponential sum fitting", 
+                                        "description": null
                                     }
                                 ]
                             }, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Droplets", 
+                            "description": "Methods for calculating single scattering properties of liquid droplets in clouds", 
+                            "id": "cmip6.atmosphere.radiation.single_scattering_properties.droplets", 
+                            "cardinality": "0.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Single Scattering Properties Methods", 
+                                "description": "Methods for calculating single scattering properties of atmospheric constituents", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "T-Matrix", 
+                                        "description": "an exact method"
+                                    }, 
+                                    {
+                                        "label": "geometrical optics", 
+                                        "description": "for particles that are much larger than the wavelength of light"
+                                    }, 
+                                    {
+                                        "label": "finite difference time domain", 
+                                        "description": "FDTD"
+                                    }, 
+                                    {
+                                        "label": "anomalous diffraction approximation", 
+                                        "description": "ADA"
+                                    }, 
+                                    {
+                                        "label": "k-distribution", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "band model", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "exponential sum fitting", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 2
+                        }, 
+                        {
+                            "label": "Aerosol", 
+                            "description": "Methods for calculating single scattering properties of aerosols", 
+                            "id": "cmip6.atmosphere.radiation.single_scattering_properties.aerosol", 
+                            "cardinality": "0.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Single Scattering Properties Methods", 
+                                "description": "Methods for calculating single scattering properties of atmospheric constituents", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "T-Matrix", 
+                                        "description": "an exact method"
+                                    }, 
+                                    {
+                                        "label": "geometrical optics", 
+                                        "description": "for particles that are much larger than the wavelength of light"
+                                    }, 
+                                    {
+                                        "label": "finite difference time domain", 
+                                        "description": "FDTD"
+                                    }, 
+                                    {
+                                        "label": "anomalous diffraction approximation", 
+                                        "description": "ADA"
+                                    }, 
+                                    {
+                                        "label": "k-distribution", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "band model", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "exponential sum fitting", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 3
+                        }, 
+                        {
+                            "label": "Gas", 
+                            "description": "Methods for calculating single scattering properties of gases", 
+                            "id": "cmip6.atmosphere.radiation.single_scattering_properties.gas", 
+                            "cardinality": "0.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Single Scattering Properties Methods", 
+                                "description": "Methods for calculating single scattering properties of atmospheric constituents", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "T-Matrix", 
+                                        "description": "an exact method"
+                                    }, 
+                                    {
+                                        "label": "geometrical optics", 
+                                        "description": "for particles that are much larger than the wavelength of light"
+                                    }, 
+                                    {
+                                        "label": "finite difference time domain", 
+                                        "description": "FDTD"
+                                    }, 
+                                    {
+                                        "label": "anomalous diffraction approximation", 
+                                        "description": "ADA"
+                                    }, 
+                                    {
+                                        "label": "k-distribution", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "band model", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "exponential sum fitting", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 4
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Radiation Transport", 
+                    "description": "Treatment of radiation transport", 
+                    "id": "cmip6.atmosphere.radiation.radiation_transport", 
+                    "contact": "Charlotte Pascoe", 
+                    "properties": [
+                        {
+                            "label": "Treatment", 
+                            "description": "Describe how radiation transport is treated", 
+                            "id": "cmip6.atmosphere.radiation.radiation_transport.treatment", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
                             "uiOrdinal": 1
                         }
                     ]
