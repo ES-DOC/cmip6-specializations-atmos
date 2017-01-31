@@ -95,6 +95,9 @@ class Generator(RealmSpecializationParser):
         """On process detail property enum choice parse event handler.
 
         """
+        if choice.is_other:
+            return
+
         obj = collections.OrderedDict()
         obj['label'] = choice.value
         obj['description'] = choice.description
@@ -107,10 +110,8 @@ class Generator(RealmSpecializationParser):
 
         """
         obj = self._maps[realm]
-        if realm.grid is not None:
-            obj['grid'] = self._maps[realm.grid]
-        if realm.key_properties is not None:
-            obj['keyProperties'] = self._maps[realm.key_properties]
+        obj['grid'] = self._maps[realm.grid]
+        obj['keyProperties'] = self._maps[realm.key_properties]
         obj['processes'] = [self._maps[i] for i in realm.processes]
         self._strip(obj)
 
@@ -187,6 +188,9 @@ class Generator(RealmSpecializationParser):
         """On process detail property enum choice parse event handler.
 
         """
+        if choice.is_other:
+            return
+
         enum = self._maps[choice.enum]
         enum['choices'].append(self._maps[choice])
 

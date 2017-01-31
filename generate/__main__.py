@@ -17,7 +17,6 @@ from generate_ids_level_1 import Generator as Level1IdentifierGenerator
 from generate_ids_level_2 import Generator as Level2IdentifierGenerator
 from generate_ids_level_3 import Generator as Level3IdentifierGenerator
 from utils_loader import get_realm_specializations
-from utils_loader import REALM_NAME_OVERRIDES
 from utils_factory import create_realm_specialization
 
 
@@ -69,7 +68,7 @@ _ARGS.add_argument(
     help="Name of realm being processed.",
     dest="realm",
     type=str,
-    default=os.path.dirname(os.path.dirname(__file__)).split("/")[-1][22:]
+    default=os.path.dirname(_DIR).split("-")[-1]
     )
 _ARGS.add_argument(
     "--input",
@@ -79,12 +78,6 @@ _ARGS.add_argument(
     default=os.path.dirname(_DIR)
     )
 _ARGS = _ARGS.parse_args()
-
-# Override realm name.
-try:
-    _ARGS.realm = REALM_NAME_OVERRIDES[_ARGS.realm]
-except KeyError:
-    pass
 
 # Validate inputs.
 if _ARGS.typeof != 'all' and _ARGS.typeof not in _GENERATORS.keys():
