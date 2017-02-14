@@ -29,20 +29,14 @@ cmip6.atmosphere.dynamical_core.advection_momentum.conservation_method, Atmosphe
 , , 
 cmip6.atmosphere.radiation.aerosols, Atmosphere > Radiation > Aerosols, property
 cmip6.atmosphere.radiation.greenhouse_gases, Atmosphere > Radiation > Greenhouse Gases, property
+cmip6.atmosphere.radiation.cloud_ice, Atmosphere > Radiation > Cloud Ice, property
+cmip6.atmosphere.radiation.cloud_liquid, Atmosphere > Radiation > Cloud Liquid, property
 cmip6.atmosphere.radiation.longwave_radiation.scheme_type, Atmosphere > Radiation > Longwave Radiation > Scheme Type, property
 cmip6.atmosphere.radiation.longwave_radiation.scheme_method, Atmosphere > Radiation > Longwave Radiation > Scheme Method, property
 cmip6.atmosphere.radiation.longwave_radiation.spectral_intervals, Atmosphere > Radiation > Longwave Radiation > Spectral Intervals, property
 cmip6.atmosphere.radiation.shortwave_radiation.scheme_type, Atmosphere > Radiation > Shortwave Radiation > Scheme Type, property
 cmip6.atmosphere.radiation.shortwave_radiation.spectral_intervals, Atmosphere > Radiation > Shortwave Radiation > Spectral Intervals, property
-cmip6.atmosphere.radiation.cloud_ice.physical, Atmosphere > Radiation > Cloud Ice > Physical, property
-cmip6.atmosphere.radiation.cloud_ice.optical, Atmosphere > Radiation > Cloud Ice > Optical, property
-cmip6.atmosphere.radiation.cloud_liquid.physical, Atmosphere > Radiation > Cloud Liquid > Physical, property
-cmip6.atmosphere.radiation.cloud_liquid.optical, Atmosphere > Radiation > Cloud Liquid > Optical, property
-cmip6.atmosphere.radiation.single_scattering_properties.ice, Atmosphere > Radiation > Single Scattering Properties > Ice, property
-cmip6.atmosphere.radiation.single_scattering_properties.droplets, Atmosphere > Radiation > Single Scattering Properties > Droplets, property
-cmip6.atmosphere.radiation.single_scattering_properties.aerosol, Atmosphere > Radiation > Single Scattering Properties > Aerosol, property
-cmip6.atmosphere.radiation.single_scattering_properties.gas, Atmosphere > Radiation > Single Scattering Properties > Gas, property
-cmip6.atmosphere.radiation.radiation_transport.treatment, Atmosphere > Radiation > Radiation Transport > Treatment, property
+cmip6.atmosphere.radiation.single_scattering_properties.single_scattering, Atmosphere > Radiation > Single Scattering Properties > Single Scattering, property
 , , 
 cmip6.atmosphere.turbulence_convection.boundary_layer_turbulence.scheme_name, Atmosphere > Turbulence Convection > Boundary Layer Turbulence > Scheme Name, property
 cmip6.atmosphere.turbulence_convection.boundary_layer_turbulence.scheme_type, Atmosphere > Turbulence Convection > Boundary Layer Turbulence > Scheme Type, property
