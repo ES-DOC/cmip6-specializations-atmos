@@ -832,6 +832,10 @@
                                     {
                                         "label": "K-correlated (RRTM)", 
                                         "description": null
+                                    }, 
+                                    {
+                                        "label": "two-stream", 
+                                        "description": null
                                     }
                                 ]
                             }, 
@@ -848,10 +852,6 @@
                                 "description": "Method for the radiative transfer calculations used in the longwave scheme", 
                                 "isOpen": true, 
                                 "choices": [
-                                    {
-                                        "label": "two-stream", 
-                                        "description": null
-                                    }, 
                                     {
                                         "label": "layer interaction", 
                                         "description": null

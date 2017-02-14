@@ -36,16 +36,12 @@ DESCRIPTION = 'Characteristics of the atmosphere radiation process'
 # PROCESS: top level properties
 # --------------------------------------------------------------------
 DETAILS['toplevel'] = {
-    'description': "Radiative agents in the atmosphere model",
+    'description': "Radiative agents in the atmosphere",
     'properties': [
         ('aerosols', 'ENUM:aerosol_types', '1.N',
             'Aerosols whose radiative effect is taken into account in the atmosphere model'),
         ('greenhouse_gases', 'ENUM:ghg_types', '1.N',
             'Greenhouse gases whose radiative effect is taken into account in the atmosphere model'),
-        ('cloud_ice', 'ENUM:cloud_ice_properties', '1.N',
-            'Radiative properties of ice crystals in clouds'),
-        ('cloud_liquid', 'ENUM:cloud_liquid_properties', '1.N',
-            'Radiative properties of liquid droplets in clouds'),
         ]
     }
 
@@ -55,12 +51,12 @@ DETAILS['toplevel'] = {
 DETAILS['longwave_radiation'] = {
     'description': 'Properties of the longwave radiation scheme',
     'properties': [
-        ('scheme_type', 'ENUM:longwave_scheme_type', '1.1',
-            'Longwave radiation scheme type'),
-        ('scheme_method', 'ENUM:longwave_scheme_method', '1.1',
-            'Longwave radiation scheme method'),
-        ('spectral_intervals', 'int', '1.1',
-            'Longwave radiation scheme spectral intervals'),
+        ('lw_spectral_integration', 'ENUM:spectral_integration', '1.1',
+            'Longwave radiation scheme spectral integration'),
+        ('lw_transport_method', 'ENUM:transport_methods', '1.N',
+            'Longwave radiation scheme transport method'),
+        ('lw_spectral_intervals', 'int', '1.1',
+            'Longwave radiation scheme number of spectral intervals'),
         ]
     }
 
@@ -70,24 +66,73 @@ DETAILS['longwave_radiation'] = {
 DETAILS['shortwave_radiation'] = {
     'description': 'Properties of the shortwave radiation scheme',
     'properties': [
-        ('scheme_type', 'ENUM:shortwave_scheme_type', '1.1',
-            'Shortwave radiation scheme type'),
-        ('spectral_intervals', 'int', '1.1',
-            'Shortwave radiation scheme spectral intervals'),
+        ('sw_spectral_integration', 'ENUM:spectral_integration', '1.1',
+            'Shortwave radiation scheme spectral integration'),
+        ('sw_transport_method', 'ENUM:transport_methods', '1.N',
+            'Shortwave radiation scheme transport method'),
+        ('sw_spectral_intervals', 'int', '1.1',
+            'Shortwave radiation scheme number of spectral intervals'),
         ]
     }
 
-
 # --------------------------------------------------------------------
-# SUB-PROCESS: single_scattering_properties
+# SUB-PROCESS: cloud_ice
 # --------------------------------------------------------------------
-DETAILS['single_scattering_properties'] = {
-    'description': 'Single scattering properties of ice clouds',
+DETAILS['cloud_ice'] = {
+    'description': 'Radiative properties of ice crystals in clouds',
     'properties': [
-        ('single_scattering', 'ENUM:single_scattering_properties_methods', '0.N',
-            'Methods for calculating single scattering properties of ice crystals'),
-        ]
-    }
+        ('ice_bulk', 'ENUM:bulk_radiative_properties', '1.N',
+            'Bulk radiative properties of cloud ice crystals'),
+        ('ice_physical', 'ENUM:cloud_ice_physical_properties', '1.N',
+            'Physical representation of cloud ice crystals in the radiation scheme'),
+        ('ice_optical', 'ENUM:optical_methods', '1.N',
+            'Optical methods applicable to cloud ice crystals in the radiation scheme'),
+    ]
+}
+
+# --------------------------------------------------------------------
+# SUB-PROCESS: cloud_liquid
+# --------------------------------------------------------------------
+DETAILS['cloud_liquid'] = {
+    'description': 'Radiative properties of liquid droplets in clouds',
+    'properties': [
+        ('liq_bulk', 'ENUM:bulk_radiative_properties', '1.N',
+            'Bulk radiative properties of cloud liquid droplets'),
+        ('liq_physical', 'ENUM:cloud_liquid_physical_properties', '1.N',
+            'Physical representation of cloud liquid droplets in the radiation scheme'),
+        ('liq_optical', 'ENUM:optical_methods', '1.N',
+            'Optical methods applicable to cloud liquid droplets in the radiation scheme'),
+    ]
+}
+
+# --------------------------------------------------------------------
+# SUB-PROCESS: aerosols
+# --------------------------------------------------------------------
+DETAILS['aerosols'] = {
+    'description': 'Radiative properties of aerosols',
+    'properties': [
+        ('aer_bulk', 'ENUM:bulk_radiative_properties', '1.N',
+            'Bulk radiative properties of aerosols'),
+        ('aer_physical', 'ENUM:aerosol_physical_properties', '1.N',
+            'Physical representation of aerosols in the radiation scheme'),
+        ('aer_optical', 'ENUM:optical_methods', '1.N',
+            'Optical methods applicable to aerosols in the radiation scheme'),
+    ]
+}
+
+# --------------------------------------------------------------------
+# SUB-PROCESS: gases
+# --------------------------------------------------------------------
+DETAILS['gases'] = {
+    'description': 'Radiative properties of gases',
+    'properties': [
+        ('gas_bulk', 'ENUM:bulk_radiative_properties', '1.N',
+            'Bulk radiative properties of gases'),
+        ('gas_optical', 'ENUM:optical_methods', '1.N',
+            'Optical methods applicable to gases in the radiation scheme'),
+    ]
+}
+
 
 # --------------------------------------------------------------------
 # PROCESS: ENUMERATIONS
@@ -129,22 +174,94 @@ ENUMERATIONS['ghg_types'] = {
         ]
     }
 
-
-ENUMERATIONS['cloud_ice_properties'] = {
-    'description': 'Radiative properties of ice crystals in clouds',
+ENUMERATIONS['spectral_integration'] = {
+    'description': 'Spectral integration of the radiation scheme',
     'is_open': True,
     'members': [
-        ('treated as spherical particles', None),
-        ('effective crystal radius', None),
-        ('treated as non-spherical particles', None),
-        ('mean projected area',
-            'randomly oriented irregular ice crystals present a greater mean projected area than spheres'),
+        ('wide-band model', None),
+        ('correlated-k', None),
+        ('exponential sum fitting', None),
+        ]
+    }
+
+ENUMERATIONS['transport_methods'] = {
+    'description': 'Radiation transport methods',
+    'is_open': True,
+    'members': [
+        ('two-stream', None),
+        ('layer interaction', None),
+        ('bulk', 'highly parameterised methods that use bulk expressions'),
+        ('adaptive', 'exploits spatial and temporal correlations in optical characteristics')
+        ]
+    }
+
+ENUMERATIONS['bulk_radiative_properties'] = {
+    'description': 'Bulk radiative properties',
+    'is_open': True,
+    'members': [
+        ('scattering', None),
+        ('reflectivity', None),
+        ('absorption', None),
+        ('emissivity', None),
+        ('transmissivity', None),
+    ]
+}
+
+ENUMERATIONS['cloud_ice_physical_properties'] = {
+    'description': 'Physical properties of ice crystals in clouds',
+    'is_open': True,
+    'members': [
         ('bi-modal size distribution',
             'small mode diameters: a few tens of microns, large mode diameters: typically hundreds of microns'),
         ('ensemble of ice crystals', 'complex shapes represented with an ensemble of symmetric shapes'),
+        ('mean projected area',
+            'randomly oriented irregular ice crystals present a greater mean projected area than spheres'),
         ('ice water path', 'Integrated ice water path through the cloud kg m-2',),
         ('crystal asymmetry', None),
         ('crystal aspect ratio', None),
+        ('effective crystal radius', None),
+        ]
+    }
+
+ENUMERATIONS['cloud_liquid_physical_properties'] = {
+    'description': 'Physical_radiative properties of liquid droplets in clouds',
+    'is_open': True,
+    'members': [
+        ('cloud droplet number concentration', 'CDNC'),
+        ('effective cloud droplet radii', None),
+        ('droplet size distribution', None),
+        ('liquid water path', 'Integrated liquid water path through the cloud kg m-2',),
+        ]
+    }
+
+ENUMERATIONS['aerosol_physical_properties'] = {
+    'description': 'Physical radiative properties of aerosols',
+    'is_open': True,
+    'members': [
+        ('number concentration', None),
+        ('effective radii', None),
+        ('size distribution', None),
+        ('asymmetry', None),
+        ('aspect ratio', None),
+        ]
+    }
+
+ENUMERATIONS['optical_methods'] = {
+    'description': 'Optical methods used by radiation scheme',
+    'is_open': True,
+    'members': [
+        ('T-matrix', 'For non-spherical particles'),
+        ('geometric optics', 'For non-spherical particles'),
+        ('finite difference time domain (FDTD)', 'For non-spherical particles'),
+        ('Mie theory', 'For spherical particles'),
+        ('anomalous diffraction approximation', None),
+        ]
+    }
+
+ENUMERATIONS['cloud_ice_radiation_processes'] = {
+    'description': 'Optical radiative processes for ice crystals in clouds',
+    'is_open': True,
+    'members': [
         ('emissivity', None),
         ('absorption', None),
         ('backward scattering', None),
@@ -152,51 +269,15 @@ ENUMERATIONS['cloud_ice_properties'] = {
         ]
     }
 
-ENUMERATIONS['single_scattering_properties_methods'] = {
-    'description': 'Methods for calculating single scattering properties of ice crystals',
-    'is_open': True,
-    'members': [
-        ('T-Matrix', 'an exact method'),
-        ('geometrical optics', 'for particles that are much larger than the wavelength of light'),
-        ('finite difference time domain', 'FDTD'),
-        ('anomalous diffraction approximation', 'ADA'),
-    ]
-}
-
-ENUMERATIONS['cloud_liquid_properties'] = {
-    'description': 'Radiative properties of liquid droplets in clouds',
+ENUMERATIONS['cloud_liquid_radiation_processes'] = {
+    'description': 'Optical radiative processes for liquid droplets in clouds',
     'is_open': True,
     'members': [
         ('droplet scattering', None),
         ('droplet absorption', None),
-        ('cloud droplet number concentration', 'CDNC'),
-        ('effective cloud droplet radii', None),
-        ('droplet size distribution', None),
-        ('liquid water path', 'Integrated liquid water path through the cloud kg m-2',),
         ('broadband reflectivity', 'albedo'),
         ('broadband transmissivity', None),
         ('broadband absorbtivity', None),
-        ]
-    }
-
-ENUMERATIONS['longwave_scheme_type'] = {
-    'description': 'Type of scheme used for longwave radiation parameterisation',
-    'is_open': True,
-    'members': [
-        ('wide-band model', None),
-        ('wide-band model (Morcrette)', None),
-        ('K-correlated', None),
-        ('K-correlated (RRTM)', None),
-        ('two-stream', None),
-        ]
-    }
-
-ENUMERATIONS['longwave_scheme_method'] = {
-    'description': 'Method for the radiative transfer calculations used in the longwave scheme',
-    'is_open': True,
-    'members': [
-        ('layer interaction', None),
-        ('adaptive', 'exploits spatial and temporal correlations in optical characteristics')
         ]
     }
 
@@ -205,9 +286,25 @@ ENUMERATIONS['shortwave_scheme_type'] = {
     'is_open': True,
     'members': [
         ('wide-band model', None),
-        ('wide-band model (Fouquart)', None),
-        ('bulk-scheme', 'highly parameterized methods that use bulk expressions'),
+        ('bulk-scheme', 'highly parameterised methods that use bulk expressions'),
         ('two-stream', None),
         ('two-stream (delta-Eddington)', 'approximation for solar radiation calculations'),
         ]
     }
+
+ENUMERATIONS['single_scattering_properties_methods'] = {
+    'description': 'Methods for calculating single scattering properties of atmospheric constituents',
+    'is_open': True,
+    'members': [
+        ('T-Matrix', 'an exact method'),
+        ('geometrical optics', 'for particles that are much larger than the wavelength of light'),
+        ('finite difference time domain', 'FDTD'),
+        ('anomalous diffraction approximation', 'ADA'),
+        ('k-distribution', None),
+        ('band model', None),
+        ('exponential sum fitting', None),
+    ]
+}
+
+
+
