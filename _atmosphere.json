@@ -683,80 +683,6 @@
             ], 
             "subProcesses": [
                 {
-                    "label": "Longwave Radiation", 
-                    "description": "Properties of the longwave radiation scheme", 
-                    "id": "cmip6.atmosphere.radiation.longwave_radiation", 
-                    "contact": "Charlotte Pascoe", 
-                    "properties": [
-                        {
-                            "label": "Lw Spectral Integration", 
-                            "description": "Longwave radiation scheme spectral integration", 
-                            "id": "cmip6.atmosphere.radiation.longwave_radiation.lw_spectral_integration", 
-                            "cardinality": "1.1", 
-                            "type": "enum", 
-                            "enum": {
-                                "label": "Spectral Integration", 
-                                "description": "Spectral integration of the radiation scheme", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "wide-band model", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "correlated-k", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "exponential sum fitting", 
-                                        "description": null
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 1
-                        }, 
-                        {
-                            "label": "Lw Transport Method", 
-                            "description": "Longwave radiation scheme transport method", 
-                            "id": "cmip6.atmosphere.radiation.longwave_radiation.lw_transport_method", 
-                            "cardinality": "1.N", 
-                            "type": "enum", 
-                            "enum": {
-                                "label": "Transport Methods", 
-                                "description": "Radiation transport methods", 
-                                "isOpen": true, 
-                                "choices": [
-                                    {
-                                        "label": "two-stream", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "layer interaction", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "bulk", 
-                                        "description": "highly parameterised methods that use bulk expressions"
-                                    }, 
-                                    {
-                                        "label": "adaptive", 
-                                        "description": "exploits spatial and temporal correlations in optical characteristics"
-                                    }
-                                ]
-                            }, 
-                            "uiOrdinal": 2
-                        }, 
-                        {
-                            "label": "Lw Spectral Intervals", 
-                            "description": "Longwave radiation scheme number of spectral intervals", 
-                            "id": "cmip6.atmosphere.radiation.longwave_radiation.lw_spectral_intervals", 
-                            "cardinality": "1.1", 
-                            "type": "int", 
-                            "uiOrdinal": 3
-                        }
-                    ]
-                }, 
-                {
                     "label": "Shortwave Radiation", 
                     "description": "Properties of the shortwave radiation scheme", 
                     "id": "cmip6.atmosphere.radiation.shortwave_radiation", 
@@ -838,7 +764,7 @@
                     "properties": [
                         {
                             "label": "Ice Bulk", 
-                            "description": "Bulk radiative properties of cloud ice crystals", 
+                            "description": "Bulk short wave radiative properties of cloud ice crystals", 
                             "id": "cmip6.atmosphere.radiation.cloud_ice.ice_bulk", 
                             "cardinality": "1.N", 
                             "type": "enum", 
@@ -873,7 +799,7 @@
                         }, 
                         {
                             "label": "Ice Physical", 
-                            "description": "Physical representation of cloud ice crystals in the radiation scheme", 
+                            "description": "Physical representation of cloud ice crystals in the short wave radiation scheme", 
                             "id": "cmip6.atmosphere.radiation.cloud_ice.ice_physical", 
                             "cardinality": "1.N", 
                             "type": "enum", 
@@ -916,7 +842,7 @@
                         }, 
                         {
                             "label": "Ice Optical", 
-                            "description": "Optical methods applicable to cloud ice crystals in the radiation scheme", 
+                            "description": "Optical methods applicable to cloud ice crystals in the short wave radiation scheme", 
                             "id": "cmip6.atmosphere.radiation.cloud_ice.ice_optical", 
                             "cardinality": "1.N", 
                             "type": "enum", 
@@ -959,7 +885,7 @@
                     "properties": [
                         {
                             "label": "Liq Bulk", 
-                            "description": "Bulk radiative properties of cloud liquid droplets", 
+                            "description": "Bulk short wave radiative properties of cloud liquid droplets", 
                             "id": "cmip6.atmosphere.radiation.cloud_liquid.liq_bulk", 
                             "cardinality": "1.N", 
                             "type": "enum", 
@@ -994,7 +920,7 @@
                         }, 
                         {
                             "label": "Liq Physical", 
-                            "description": "Physical representation of cloud liquid droplets in the radiation scheme", 
+                            "description": "Physical representation of cloud liquid droplets in the short wave radiation scheme", 
                             "id": "cmip6.atmosphere.radiation.cloud_liquid.liq_physical", 
                             "cardinality": "1.N", 
                             "type": "enum", 
@@ -1025,7 +951,7 @@
                         }, 
                         {
                             "label": "Liq Optical", 
-                            "description": "Optical methods applicable to cloud liquid droplets in the radiation scheme", 
+                            "description": "Optical methods applicable to cloud liquid droplets in the short wave radiation scheme", 
                             "id": "cmip6.atmosphere.radiation.cloud_liquid.liq_optical", 
                             "cardinality": "1.N", 
                             "type": "enum", 
@@ -1068,7 +994,7 @@
                     "properties": [
                         {
                             "label": "Aer Bulk", 
-                            "description": "Bulk radiative properties of aerosols", 
+                            "description": "Bulk short wave radiative properties of aerosols", 
                             "id": "cmip6.atmosphere.radiation.aerosols.aer_bulk", 
                             "cardinality": "1.N", 
                             "type": "enum", 
@@ -1103,7 +1029,7 @@
                         }, 
                         {
                             "label": "Aer Physical", 
-                            "description": "Physical representation of aerosols in the radiation scheme", 
+                            "description": "Physical representation of aerosols in the short wave radiation scheme", 
                             "id": "cmip6.atmosphere.radiation.aerosols.aer_physical", 
                             "cardinality": "1.N", 
                             "type": "enum", 
@@ -1138,7 +1064,7 @@
                         }, 
                         {
                             "label": "Aer Optical", 
-                            "description": "Optical methods applicable to aerosols in the radiation scheme", 
+                            "description": "Optical methods applicable to aerosols in the short wave radiation scheme", 
                             "id": "cmip6.atmosphere.radiation.aerosols.aer_optical", 
                             "cardinality": "1.N", 
                             "type": "enum", 
@@ -1175,13 +1101,13 @@
                 }, 
                 {
                     "label": "Gases", 
-                    "description": "Radiative properties of gases", 
+                    "description": "Long wave radiative properties of gases", 
                     "id": "cmip6.atmosphere.radiation.gases", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "Gas Bulk", 
-                            "description": "Bulk radiative properties of gases", 
+                            "description": "Bulk long wave radiative properties of gases", 
                             "id": "cmip6.atmosphere.radiation.gases.gas_bulk", 
                             "cardinality": "1.N", 
                             "type": "enum", 
@@ -1216,7 +1142,7 @@
                         }, 
                         {
                             "label": "Gas Optical", 
-                            "description": "Optical methods applicable to gases in the radiation scheme", 
+                            "description": "Optical methods applicable to gases in the long wave radiation scheme", 
                             "id": "cmip6.atmosphere.radiation.gases.gas_optical", 
                             "cardinality": "1.N", 
                             "type": "enum", 
@@ -1248,6 +1174,423 @@
                                 ]
                             }, 
                             "uiOrdinal": 2
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Longwave Radiation", 
+                    "description": "Properties of the longwave radiation scheme", 
+                    "id": "cmip6.atmosphere.radiation.longwave_radiation", 
+                    "contact": "Charlotte Pascoe", 
+                    "properties": [
+                        {
+                            "label": "Lw Spectral Integration", 
+                            "description": "Longwave radiation scheme spectral integration", 
+                            "id": "cmip6.atmosphere.radiation.longwave_radiation.lw_spectral_integration", 
+                            "cardinality": "1.1", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Spectral Integration", 
+                                "description": "Spectral integration of the radiation scheme", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "wide-band model", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "correlated-k", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "exponential sum fitting", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Lw Transport Method", 
+                            "description": "Longwave radiation scheme transport method", 
+                            "id": "cmip6.atmosphere.radiation.longwave_radiation.lw_transport_method", 
+                            "cardinality": "1.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Transport Methods", 
+                                "description": "Radiation transport methods", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "two-stream", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "layer interaction", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "bulk", 
+                                        "description": "highly parameterised methods that use bulk expressions"
+                                    }, 
+                                    {
+                                        "label": "adaptive", 
+                                        "description": "exploits spatial and temporal correlations in optical characteristics"
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 2
+                        }, 
+                        {
+                            "label": "Lw Spectral Intervals", 
+                            "description": "Longwave radiation scheme number of spectral intervals", 
+                            "id": "cmip6.atmosphere.radiation.longwave_radiation.lw_spectral_intervals", 
+                            "cardinality": "1.1", 
+                            "type": "int", 
+                            "uiOrdinal": 3
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Lw Cloud Ice", 
+                    "description": "Long wave radiative properties of ice crystals in clouds", 
+                    "id": "cmip6.atmosphere.radiation.lw_cloud_ice", 
+                    "contact": "Charlotte Pascoe", 
+                    "properties": [
+                        {
+                            "label": "Ice Bulk", 
+                            "description": "Bulk long wave radiative properties of cloud ice crystals", 
+                            "id": "cmip6.atmosphere.radiation.lw_cloud_ice.ice_bulk", 
+                            "cardinality": "1.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Bulk Radiative Properties", 
+                                "description": "Bulk radiative properties", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "scattering", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "reflectivity", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "absorption", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "emissivity", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "transmissivity", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Ice Physical", 
+                            "description": "Physical representation of cloud ice crystals in the long wave radiation scheme", 
+                            "id": "cmip6.atmosphere.radiation.lw_cloud_ice.ice_physical", 
+                            "cardinality": "1.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Cloud Ice Physical Properties", 
+                                "description": "Physical properties of ice crystals in clouds", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "bi-modal size distribution", 
+                                        "description": "small mode diameters: a few tens of microns, large mode diameters: typically hundreds of microns"
+                                    }, 
+                                    {
+                                        "label": "ensemble of ice crystals", 
+                                        "description": "complex shapes represented with an ensemble of symmetric shapes"
+                                    }, 
+                                    {
+                                        "label": "mean projected area", 
+                                        "description": "randomly oriented irregular ice crystals present a greater mean projected area than spheres"
+                                    }, 
+                                    {
+                                        "label": "ice water path", 
+                                        "description": "Integrated ice water path through the cloud kg m-2"
+                                    }, 
+                                    {
+                                        "label": "crystal asymmetry", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "crystal aspect ratio", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "effective crystal radius", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 2
+                        }, 
+                        {
+                            "label": "Ice Optical", 
+                            "description": "Optical methods applicable to cloud ice crystals in the long wave radiation scheme", 
+                            "id": "cmip6.atmosphere.radiation.lw_cloud_ice.ice_optical", 
+                            "cardinality": "1.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Optical Methods", 
+                                "description": "Optical methods used by radiation scheme", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "T-matrix", 
+                                        "description": "For non-spherical particles"
+                                    }, 
+                                    {
+                                        "label": "geometric optics", 
+                                        "description": "For non-spherical particles"
+                                    }, 
+                                    {
+                                        "label": "finite difference time domain (FDTD)", 
+                                        "description": "For non-spherical particles"
+                                    }, 
+                                    {
+                                        "label": "Mie theory", 
+                                        "description": "For spherical particles"
+                                    }, 
+                                    {
+                                        "label": "anomalous diffraction approximation", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 3
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Lw Cloud Liquid", 
+                    "description": "Long wave radiative properties of liquid droplets in clouds", 
+                    "id": "cmip6.atmosphere.radiation.lw_cloud_liquid", 
+                    "contact": "Charlotte Pascoe", 
+                    "properties": [
+                        {
+                            "label": "Liq Bulk", 
+                            "description": "Bulk long wave radiative properties of cloud liquid droplets", 
+                            "id": "cmip6.atmosphere.radiation.lw_cloud_liquid.liq_bulk", 
+                            "cardinality": "1.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Bulk Radiative Properties", 
+                                "description": "Bulk radiative properties", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "scattering", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "reflectivity", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "absorption", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "emissivity", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "transmissivity", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Liq Physical", 
+                            "description": "Physical representation of cloud liquid droplets in the long wave radiation scheme", 
+                            "id": "cmip6.atmosphere.radiation.lw_cloud_liquid.liq_physical", 
+                            "cardinality": "1.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Cloud Liquid Physical Properties", 
+                                "description": "Physical_radiative properties of liquid droplets in clouds", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "cloud droplet number concentration", 
+                                        "description": "CDNC"
+                                    }, 
+                                    {
+                                        "label": "effective cloud droplet radii", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "droplet size distribution", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "liquid water path", 
+                                        "description": "Integrated liquid water path through the cloud kg m-2"
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 2
+                        }, 
+                        {
+                            "label": "Liq Optical", 
+                            "description": "Optical methods applicable to cloud liquid droplets in the long wave radiation scheme", 
+                            "id": "cmip6.atmosphere.radiation.lw_cloud_liquid.liq_optical", 
+                            "cardinality": "1.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Optical Methods", 
+                                "description": "Optical methods used by radiation scheme", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "T-matrix", 
+                                        "description": "For non-spherical particles"
+                                    }, 
+                                    {
+                                        "label": "geometric optics", 
+                                        "description": "For non-spherical particles"
+                                    }, 
+                                    {
+                                        "label": "finite difference time domain (FDTD)", 
+                                        "description": "For non-spherical particles"
+                                    }, 
+                                    {
+                                        "label": "Mie theory", 
+                                        "description": "For spherical particles"
+                                    }, 
+                                    {
+                                        "label": "anomalous diffraction approximation", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 3
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Lw Aerosols", 
+                    "description": "Long wave radiative properties of aerosols", 
+                    "id": "cmip6.atmosphere.radiation.lw_aerosols", 
+                    "contact": "Charlotte Pascoe", 
+                    "properties": [
+                        {
+                            "label": "Aer Bulk", 
+                            "description": "Bulk long wave radiative properties of aerosols", 
+                            "id": "cmip6.atmosphere.radiation.lw_aerosols.aer_bulk", 
+                            "cardinality": "1.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Bulk Radiative Properties", 
+                                "description": "Bulk radiative properties", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "scattering", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "reflectivity", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "absorption", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "emissivity", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "transmissivity", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Aer Physical", 
+                            "description": "Physical representation of aerosols in the long wave radiation scheme", 
+                            "id": "cmip6.atmosphere.radiation.lw_aerosols.aer_physical", 
+                            "cardinality": "1.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Aerosol Physical Properties", 
+                                "description": "Physical radiative properties of aerosols", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "number concentration", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "effective radii", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "size distribution", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "asymmetry", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "aspect ratio", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 2
+                        }, 
+                        {
+                            "label": "Aer Optical", 
+                            "description": "Optical methods applicable to aerosols in the long wave radiation scheme", 
+                            "id": "cmip6.atmosphere.radiation.lw_aerosols.aer_optical", 
+                            "cardinality": "1.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Optical Methods", 
+                                "description": "Optical methods used by radiation scheme", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "T-matrix", 
+                                        "description": "For non-spherical particles"
+                                    }, 
+                                    {
+                                        "label": "geometric optics", 
+                                        "description": "For non-spherical particles"
+                                    }, 
+                                    {
+                                        "label": "finite difference time domain (FDTD)", 
+                                        "description": "For non-spherical particles"
+                                    }, 
+                                    {
+                                        "label": "Mie theory", 
+                                        "description": "For spherical particles"
+                                    }, 
+                                    {
+                                        "label": "anomalous diffraction approximation", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 3
                         }
                     ]
                 }

@@ -29,9 +29,6 @@ cmip6.atmosphere.dynamical_core.advection_momentum.conservation_method, Atmosphe
 , , 
 cmip6.atmosphere.radiation.aerosols, Atmosphere > Radiation > Aerosols, property
 cmip6.atmosphere.radiation.greenhouse_gases, Atmosphere > Radiation > Greenhouse Gases, property
-cmip6.atmosphere.radiation.longwave_radiation.lw_spectral_integration, Atmosphere > Radiation > Longwave Radiation > Lw Spectral Integration, property
-cmip6.atmosphere.radiation.longwave_radiation.lw_transport_method, Atmosphere > Radiation > Longwave Radiation > Lw Transport Method, property
-cmip6.atmosphere.radiation.longwave_radiation.lw_spectral_intervals, Atmosphere > Radiation > Longwave Radiation > Lw Spectral Intervals, property
 cmip6.atmosphere.radiation.shortwave_radiation.sw_spectral_integration, Atmosphere > Radiation > Shortwave Radiation > Sw Spectral Integration, property
 cmip6.atmosphere.radiation.shortwave_radiation.sw_transport_method, Atmosphere > Radiation > Shortwave Radiation > Sw Transport Method, property
 cmip6.atmosphere.radiation.shortwave_radiation.sw_spectral_intervals, Atmosphere > Radiation > Shortwave Radiation > Sw Spectral Intervals, property
@@ -46,6 +43,18 @@ cmip6.atmosphere.radiation.aerosols.aer_physical, Atmosphere > Radiation > Aeros
 cmip6.atmosphere.radiation.aerosols.aer_optical, Atmosphere > Radiation > Aerosols > Aer Optical, property
 cmip6.atmosphere.radiation.gases.gas_bulk, Atmosphere > Radiation > Gases > Gas Bulk, property
 cmip6.atmosphere.radiation.gases.gas_optical, Atmosphere > Radiation > Gases > Gas Optical, property
+cmip6.atmosphere.radiation.longwave_radiation.lw_spectral_integration, Atmosphere > Radiation > Longwave Radiation > Lw Spectral Integration, property
+cmip6.atmosphere.radiation.longwave_radiation.lw_transport_method, Atmosphere > Radiation > Longwave Radiation > Lw Transport Method, property
+cmip6.atmosphere.radiation.longwave_radiation.lw_spectral_intervals, Atmosphere > Radiation > Longwave Radiation > Lw Spectral Intervals, property
+cmip6.atmosphere.radiation.lw_cloud_ice.ice_bulk, Atmosphere > Radiation > Lw Cloud Ice > Ice Bulk, property
+cmip6.atmosphere.radiation.lw_cloud_ice.ice_physical, Atmosphere > Radiation > Lw Cloud Ice > Ice Physical, property
+cmip6.atmosphere.radiation.lw_cloud_ice.ice_optical, Atmosphere > Radiation > Lw Cloud Ice > Ice Optical, property
+cmip6.atmosphere.radiation.lw_cloud_liquid.liq_bulk, Atmosphere > Radiation > Lw Cloud Liquid > Liq Bulk, property
+cmip6.atmosphere.radiation.lw_cloud_liquid.liq_physical, Atmosphere > Radiation > Lw Cloud Liquid > Liq Physical, property
+cmip6.atmosphere.radiation.lw_cloud_liquid.liq_optical, Atmosphere > Radiation > Lw Cloud Liquid > Liq Optical, property
+cmip6.atmosphere.radiation.lw_aerosols.aer_bulk, Atmosphere > Radiation > Lw Aerosols > Aer Bulk, property
+cmip6.atmosphere.radiation.lw_aerosols.aer_physical, Atmosphere > Radiation > Lw Aerosols > Aer Physical, property
+cmip6.atmosphere.radiation.lw_aerosols.aer_optical, Atmosphere > Radiation > Lw Aerosols > Aer Optical, property
 , , 
 cmip6.atmosphere.turbulence_convection.boundary_layer_turbulence.scheme_name, Atmosphere > Turbulence Convection > Boundary Layer Turbulence > Scheme Name, property
 cmip6.atmosphere.turbulence_convection.boundary_layer_turbulence.scheme_type, Atmosphere > Turbulence Convection > Boundary Layer Turbulence > Scheme Type, property

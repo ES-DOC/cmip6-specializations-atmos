@@ -63,7 +63,7 @@ DETAILS['shortwave_radiation'] = {
 # --------------------------------------------------------------------
 # SUB-PROCESS: sw_cloud_ice
 # --------------------------------------------------------------------
-DETAILS['cloud_ice'] = {
+DETAILS['sw_cloud_ice'] = {
     'description': 'Radiative properties of ice crystals in clouds',
     'properties': [
         ('ice_bulk', 'ENUM:bulk_radiative_properties', '1.N',
@@ -78,7 +78,7 @@ DETAILS['cloud_ice'] = {
 # --------------------------------------------------------------------
 # SUB-PROCESS: sw_cloud_liquid
 # --------------------------------------------------------------------
-DETAILS['cloud_liquid'] = {
+DETAILS['sw_cloud_liquid'] = {
     'description': 'Radiative properties of liquid droplets in clouds',
     'properties': [
         ('liq_bulk', 'ENUM:bulk_radiative_properties', '1.N',
@@ -93,7 +93,7 @@ DETAILS['cloud_liquid'] = {
 # --------------------------------------------------------------------
 # SUB-PROCESS: sw_aerosols
 # --------------------------------------------------------------------
-DETAILS['aerosols'] = {
+DETAILS['sw_aerosols'] = {
     'description': 'Radiative properties of aerosols',
     'properties': [
         ('aer_bulk', 'ENUM:bulk_radiative_properties', '1.N',
@@ -108,7 +108,7 @@ DETAILS['aerosols'] = {
 # --------------------------------------------------------------------
 # SUB-PROCESS: sw_gases
 # --------------------------------------------------------------------
-DETAILS['gases'] = {
+DETAILS['sw_gases'] = {
     'description': 'Radiative properties of gases',
     'properties': [
         ('gas_bulk', 'ENUM:bulk_radiative_properties', '1.N',
@@ -181,7 +181,7 @@ DETAILS['lw_aerosols'] = {
 # --------------------------------------------------------------------
 # SUB-PROCESS: lw_gases
 # --------------------------------------------------------------------
-DETAILS['gases'] = {
+DETAILS['lw_gases'] = {
     'description': 'Long wave radiative properties of gases',
     'properties': [
         ('gas_bulk', 'ENUM:bulk_radiative_properties', '1.N',
