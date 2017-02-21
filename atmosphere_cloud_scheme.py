@@ -39,11 +39,11 @@ DETAILS['toplevel'] = {
     'description': "Top level cloud scheme process properties",
     'properties': [
         ('uses_separate_treatment', 'bool', '1.1',
-            'Different cloud schemes for the different types of clouds (convective, stratiform and boundary layer clouds'),
+            'Different cloud schemes for the different types of clouds (convective, stratiform and boundary layer)'),
         ('cloud_overlap_method', 'ENUM:cloud_overlap_method', '1.1',
             'Method for taking into account overlapping of cloud layers'),
         ('inhomogeneity_treatment', 'ENUM:inhomogeneity', '1.1',
-            'Method for taking into account cloud inhomogeneity'),
+            'Method for taking into account horizontal cloud inhomogeneity'),
         ('processes', 'ENUM:processes_attributes', '1.N',
             'Processes included in the cloud scheme'),
         ]
@@ -103,6 +103,7 @@ ENUMERATIONS['inhomogeneity'] = {
     'is_open': True,
     'members': [
         ('Monte Carlo Independent Column Approximation', 'McICA'),
+        ('Triplecloud', 'Regions of clear sky, optically thin cloud and optically thick cloud, Shonk et al 2010'),
         ('analytic', None),
         ]
     }
@@ -115,5 +116,3 @@ ENUMERATIONS['processes_attributes'] = {
         ('bulk cloud', None),
         ]
     }
-
-#TODO include horizontal cloud inhomogeneity? Tripple cloud scheme Shank et al 2010

@@ -2154,12 +2154,35 @@
                                 "description": null
                             }, 
                             {
-                                "label": "arbitrary", 
+                                "label": "maximum-random", 
                                 "description": "combination of maximum and random overlap between clouds"
                             }
                         ]
                     }, 
                     "uiOrdinal": 2
+                }, 
+                {
+                    "label": "Inhomogeneity Treatment", 
+                    "description": "Method for taking into account cloud inhomogeneity", 
+                    "id": "cmip6.atmosphere.cloud_scheme.inhomogeneity_treatment", 
+                    "cardinality": "1.1", 
+                    "type": "enum", 
+                    "enum": {
+                        "label": "Inhomogeneity", 
+                        "description": "Cloud scheme inhomogeneity treatment", 
+                        "isOpen": true, 
+                        "choices": [
+                            {
+                                "label": "Monte Carlo Independent Column Approximation", 
+                                "description": "McICA"
+                            }, 
+                            {
+                                "label": "analytic", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 3
                 }, 
                 {
                     "label": "Processes", 
@@ -2186,7 +2209,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 3
+                    "uiOrdinal": 4
                 }
             ], 
             "subProcesses": [
