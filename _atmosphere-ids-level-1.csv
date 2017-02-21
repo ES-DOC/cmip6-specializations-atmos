@@ -17,7 +17,10 @@ cmip6.atmosphere.dynamical_core.advection_momentum, Atmosphere > Dynamical Core 
 cmip6.atmosphere.radiation, Atmosphere > Radiation, process
 cmip6.atmosphere.radiation.longwave_radiation, Atmosphere > Radiation > Longwave Radiation, sub-process
 cmip6.atmosphere.radiation.shortwave_radiation, Atmosphere > Radiation > Shortwave Radiation, sub-process
-cmip6.atmosphere.radiation.single_scattering_properties, Atmosphere > Radiation > Single Scattering Properties, sub-process
+cmip6.atmosphere.radiation.cloud_ice, Atmosphere > Radiation > Cloud Ice, sub-process
+cmip6.atmosphere.radiation.cloud_liquid, Atmosphere > Radiation > Cloud Liquid, sub-process
+cmip6.atmosphere.radiation.aerosols, Atmosphere > Radiation > Aerosols, sub-process
+cmip6.atmosphere.radiation.gases, Atmosphere > Radiation > Gases, sub-process
 , , 
 cmip6.atmosphere.turbulence_convection, Atmosphere > Turbulence Convection, process
 cmip6.atmosphere.turbulence_convection.boundary_layer_turbulence, Atmosphere > Turbulence Convection > Boundary Layer Turbulence, sub-process

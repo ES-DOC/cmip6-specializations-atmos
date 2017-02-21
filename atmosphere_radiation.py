@@ -46,21 +46,6 @@ DETAILS['toplevel'] = {
     }
 
 # --------------------------------------------------------------------
-# SUB-PROCESS: longwave_radiation
-# --------------------------------------------------------------------
-DETAILS['longwave_radiation'] = {
-    'description': 'Properties of the longwave radiation scheme',
-    'properties': [
-        ('lw_spectral_integration', 'ENUM:spectral_integration', '1.1',
-            'Longwave radiation scheme spectral integration'),
-        ('lw_transport_method', 'ENUM:transport_methods', '1.N',
-            'Longwave radiation scheme transport method'),
-        ('lw_spectral_intervals', 'int', '1.1',
-            'Longwave radiation scheme number of spectral intervals'),
-        ]
-    }
-
-# --------------------------------------------------------------------
 # SUB-PROCESS: shortwave_radiation
 # --------------------------------------------------------------------
 DETAILS['shortwave_radiation'] = {
@@ -76,63 +61,135 @@ DETAILS['shortwave_radiation'] = {
     }
 
 # --------------------------------------------------------------------
-# SUB-PROCESS: cloud_ice
+# SUB-PROCESS: sw_cloud_ice
 # --------------------------------------------------------------------
 DETAILS['cloud_ice'] = {
     'description': 'Radiative properties of ice crystals in clouds',
     'properties': [
         ('ice_bulk', 'ENUM:bulk_radiative_properties', '1.N',
-            'Bulk radiative properties of cloud ice crystals'),
+            'Bulk short wave radiative properties of cloud ice crystals'),
         ('ice_physical', 'ENUM:cloud_ice_physical_properties', '1.N',
-            'Physical representation of cloud ice crystals in the radiation scheme'),
+            'Physical representation of cloud ice crystals in the short wave radiation scheme'),
         ('ice_optical', 'ENUM:optical_methods', '1.N',
-            'Optical methods applicable to cloud ice crystals in the radiation scheme'),
+            'Optical methods applicable to cloud ice crystals in the short wave radiation scheme'),
     ]
 }
 
 # --------------------------------------------------------------------
-# SUB-PROCESS: cloud_liquid
+# SUB-PROCESS: sw_cloud_liquid
 # --------------------------------------------------------------------
 DETAILS['cloud_liquid'] = {
     'description': 'Radiative properties of liquid droplets in clouds',
     'properties': [
         ('liq_bulk', 'ENUM:bulk_radiative_properties', '1.N',
-            'Bulk radiative properties of cloud liquid droplets'),
+            'Bulk short wave radiative properties of cloud liquid droplets'),
         ('liq_physical', 'ENUM:cloud_liquid_physical_properties', '1.N',
-            'Physical representation of cloud liquid droplets in the radiation scheme'),
+            'Physical representation of cloud liquid droplets in the short wave radiation scheme'),
         ('liq_optical', 'ENUM:optical_methods', '1.N',
-            'Optical methods applicable to cloud liquid droplets in the radiation scheme'),
+            'Optical methods applicable to cloud liquid droplets in the short wave radiation scheme'),
     ]
 }
 
 # --------------------------------------------------------------------
-# SUB-PROCESS: aerosols
+# SUB-PROCESS: sw_aerosols
 # --------------------------------------------------------------------
 DETAILS['aerosols'] = {
     'description': 'Radiative properties of aerosols',
     'properties': [
         ('aer_bulk', 'ENUM:bulk_radiative_properties', '1.N',
-            'Bulk radiative properties of aerosols'),
+            'Bulk short wave radiative properties of aerosols'),
         ('aer_physical', 'ENUM:aerosol_physical_properties', '1.N',
-            'Physical representation of aerosols in the radiation scheme'),
+            'Physical representation of aerosols in the short wave radiation scheme'),
         ('aer_optical', 'ENUM:optical_methods', '1.N',
-            'Optical methods applicable to aerosols in the radiation scheme'),
+            'Optical methods applicable to aerosols in the short wave radiation scheme'),
     ]
 }
 
 # --------------------------------------------------------------------
-# SUB-PROCESS: gases
+# SUB-PROCESS: sw_gases
 # --------------------------------------------------------------------
 DETAILS['gases'] = {
     'description': 'Radiative properties of gases',
     'properties': [
         ('gas_bulk', 'ENUM:bulk_radiative_properties', '1.N',
-            'Bulk radiative properties of gases'),
+            'Bulk short wave radiative properties of gases'),
         ('gas_optical', 'ENUM:optical_methods', '1.N',
-            'Optical methods applicable to gases in the radiation scheme'),
+            'Optical methods applicable to gases in the short wave radiation scheme'),
     ]
 }
 
+# --------------------------------------------------------------------
+# SUB-PROCESS: longwave_radiation
+# --------------------------------------------------------------------
+DETAILS['longwave_radiation'] = {
+    'description': 'Properties of the longwave radiation scheme',
+    'properties': [
+        ('lw_spectral_integration', 'ENUM:spectral_integration', '1.1',
+            'Longwave radiation scheme spectral integration'),
+        ('lw_transport_method', 'ENUM:transport_methods', '1.N',
+            'Longwave radiation scheme transport method'),
+        ('lw_spectral_intervals', 'int', '1.1',
+            'Longwave radiation scheme number of spectral intervals'),
+        ]
+    }
+
+# --------------------------------------------------------------------
+# SUB-PROCESS: lw_cloud_ice
+# --------------------------------------------------------------------
+DETAILS['lw_cloud_ice'] = {
+    'description': 'Long wave radiative properties of ice crystals in clouds',
+    'properties': [
+        ('ice_bulk', 'ENUM:bulk_radiative_properties', '1.N',
+            'Bulk long wave radiative properties of cloud ice crystals'),
+        ('ice_physical', 'ENUM:cloud_ice_physical_properties', '1.N',
+            'Physical representation of cloud ice crystals in the long wave radiation scheme'),
+        ('ice_optical', 'ENUM:optical_methods', '1.N',
+            'Optical methods applicable to cloud ice crystals in the long wave radiation scheme'),
+    ]
+}
+
+# --------------------------------------------------------------------
+# SUB-PROCESS: lw_cloud_liquid
+# --------------------------------------------------------------------
+DETAILS['lw_cloud_liquid'] = {
+    'description': 'Long wave radiative properties of liquid droplets in clouds',
+    'properties': [
+        ('liq_bulk', 'ENUM:bulk_radiative_properties', '1.N',
+            'Bulk long wave radiative properties of cloud liquid droplets'),
+        ('liq_physical', 'ENUM:cloud_liquid_physical_properties', '1.N',
+            'Physical representation of cloud liquid droplets in the long wave radiation scheme'),
+        ('liq_optical', 'ENUM:optical_methods', '1.N',
+            'Optical methods applicable to cloud liquid droplets in the long wave radiation scheme'),
+    ]
+}
+
+# --------------------------------------------------------------------
+# SUB-PROCESS: lw_aerosols
+# --------------------------------------------------------------------
+DETAILS['lw_aerosols'] = {
+    'description': 'Long wave radiative properties of aerosols',
+    'properties': [
+        ('aer_bulk', 'ENUM:bulk_radiative_properties', '1.N',
+            'Bulk long wave radiative properties of aerosols'),
+        ('aer_physical', 'ENUM:aerosol_physical_properties', '1.N',
+            'Physical representation of aerosols in the long wave radiation scheme'),
+        ('aer_optical', 'ENUM:optical_methods', '1.N',
+            'Optical methods applicable to aerosols in the long wave radiation scheme'),
+    ]
+}
+
+# --------------------------------------------------------------------
+# SUB-PROCESS: lw_gases
+# --------------------------------------------------------------------
+DETAILS['gases'] = {
+    'description': 'Long wave radiative properties of gases',
+    'properties': [
+        ('gas_bulk', 'ENUM:bulk_radiative_properties', '1.N',
+            'Bulk long wave radiative properties of gases'),
+        ('gas_optical', 'ENUM:optical_methods', '1.N',
+            'Optical methods applicable to gases in the long wave radiation scheme'),
+    ]
+}
 
 # --------------------------------------------------------------------
 # PROCESS: ENUMERATIONS
