@@ -2128,7 +2128,7 @@
             "properties": [
                 {
                     "label": "Uses Separate Treatment", 
-                    "description": "Different cloud schemes for the different types of clouds (convective, stratiform and boundary layer clouds", 
+                    "description": "Different cloud schemes for the different types of clouds (convective, stratiform and boundary layer)", 
                     "id": "cmip6.atmosphere.cloud_scheme.uses_separate_treatment", 
                     "cardinality": "1.1", 
                     "type": "bool", 
@@ -2163,7 +2163,7 @@
                 }, 
                 {
                     "label": "Inhomogeneity Treatment", 
-                    "description": "Method for taking into account cloud inhomogeneity", 
+                    "description": "Method for taking into account horizontal cloud inhomogeneity", 
                     "id": "cmip6.atmosphere.cloud_scheme.inhomogeneity_treatment", 
                     "cardinality": "1.1", 
                     "type": "enum", 
@@ -2175,6 +2175,10 @@
                             {
                                 "label": "Monte Carlo Independent Column Approximation", 
                                 "description": "McICA"
+                            }, 
+                            {
+                                "label": "Triplecloud", 
+                                "description": "Regions of clear sky, optically thin cloud and optically thick cloud, Shonk et al 2010"
                             }, 
                             {
                                 "label": "analytic", 

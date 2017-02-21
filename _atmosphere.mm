@@ -3320,14 +3320,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Different cloud schemes for the different types of clouds (convective, stratiform and boundary layer clouds</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.cloud_scheme.uses_separate_treatment</dd>
+        <dt><b>Description</b></dt><dd>Different cloud schemes for the different types of clouds (convective, stratiform and boundary layer)</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.cloud_scheme.uses_separate_treatment</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Different cloud schemes for the different types of clouds (convective, stratiform and boundary layer clouds</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.cloud_scheme.uses_separate_treatment</dd>
+        <dt><b>Description</b></dt><dd>Different cloud schemes for the different types of clouds (convective, stratiform and boundary layer)</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.cloud_scheme.uses_separate_treatment</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="cloud_overlap_method"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3369,14 +3369,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Method for taking into account cloud inhomogeneity</dd><dt><b>Type</b></dt><dd>ENUM:inhomogeneity</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.cloud_scheme.inhomogeneity_treatment</dd>
+        <dt><b>Description</b></dt><dd>Method for taking into account horizontal cloud inhomogeneity</dd><dt><b>Type</b></dt><dd>ENUM:inhomogeneity</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.cloud_scheme.inhomogeneity_treatment</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Method for taking into account cloud inhomogeneity</dd><dt><b>Type</b></dt><dd>ENUM:inhomogeneity</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.cloud_scheme.inhomogeneity_treatment</dd>
+        <dt><b>Description</b></dt><dd>Method for taking into account horizontal cloud inhomogeneity</dd><dt><b>Type</b></dt><dd>ENUM:inhomogeneity</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.cloud_scheme.inhomogeneity_treatment</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Monte Carlo Independent Column Approximation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3384,6 +3384,13 @@
   <body>
     <dl>
         <dt><b>Description</b></dt><dd>McICA</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Triplecloud"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Regions of clear sky, optically thin cloud and optically thick cloud, Shonk et al 2010</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="analytic"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
