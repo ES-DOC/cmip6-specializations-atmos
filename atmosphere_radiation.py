@@ -257,10 +257,10 @@ ENUMERATIONS['radiative_interactions'] = {
     'is_open': True,
     'members': [
         ('scattering', None),
-        ('reflectivity', None),
         ('absorption', None),
-        ('emissivity', None),
-        ('transmissivity', None),
+        ('emission', None),
+        ('reflection', None),
+        ('transmission', None),
     ]
 }
 

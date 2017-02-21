@@ -1440,18 +1440,18 @@
         <dt><b>Description</b></dt><dd>Radiative properties of ice crystals in clouds</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Charlotte Pascoe</dd><dt><b>Authors</b></dt><dd>Charlotte Pascoe</dd><dt><b>Contributors</b></dt><dd />
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ice_bulk"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ice_interactions"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Bulk short wave radiative properties of cloud ice crystals</dd><dt><b>Type</b></dt><dd>ENUM:bulk_radiative_properties</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.radiation.sw_cloud_ice.ice_bulk</dd>
+        <dt><b>Description</b></dt><dd>General short wave radiative interactions with cloud ice crystals</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.radiation.sw_cloud_ice.ice_interactions</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Bulk short wave radiative properties of cloud ice crystals</dd><dt><b>Type</b></dt><dd>ENUM:bulk_radiative_properties</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.radiation.sw_cloud_ice.ice_bulk</dd>
+        <dt><b>Description</b></dt><dd>General short wave radiative interactions with cloud ice crystals</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.radiation.sw_cloud_ice.ice_interactions</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scattering"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1608,18 +1608,18 @@
         <dt><b>Description</b></dt><dd>Radiative properties of liquid droplets in clouds</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Charlotte Pascoe</dd><dt><b>Authors</b></dt><dd>Charlotte Pascoe</dd><dt><b>Contributors</b></dt><dd />
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="liq_bulk"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="liq_interactions"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Bulk short wave radiative properties of cloud liquid droplets</dd><dt><b>Type</b></dt><dd>ENUM:bulk_radiative_properties</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.radiation.sw_cloud_liquid.liq_bulk</dd>
+        <dt><b>Description</b></dt><dd>General short wave radiative interactions with cloud liquid droplets</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.radiation.sw_cloud_liquid.liq_interactions</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Bulk short wave radiative properties of cloud liquid droplets</dd><dt><b>Type</b></dt><dd>ENUM:bulk_radiative_properties</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.radiation.sw_cloud_liquid.liq_bulk</dd>
+        <dt><b>Description</b></dt><dd>General short wave radiative interactions with cloud liquid droplets</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.radiation.sw_cloud_liquid.liq_interactions</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scattering"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1755,18 +1755,18 @@
         <dt><b>Description</b></dt><dd>Radiative properties of aerosols</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Charlotte Pascoe</dd><dt><b>Authors</b></dt><dd>Charlotte Pascoe</dd><dt><b>Contributors</b></dt><dd />
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="aer_bulk"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="aer_interactions"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Bulk short wave radiative properties of aerosols</dd><dt><b>Type</b></dt><dd>ENUM:bulk_radiative_properties</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.radiation.sw_aerosols.aer_bulk</dd>
+        <dt><b>Description</b></dt><dd>General short wave radiative interactions with aerosols</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.radiation.sw_aerosols.aer_interactions</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Bulk short wave radiative properties of aerosols</dd><dt><b>Type</b></dt><dd>ENUM:bulk_radiative_properties</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.radiation.sw_aerosols.aer_bulk</dd>
+        <dt><b>Description</b></dt><dd>General short wave radiative interactions with aerosols</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.radiation.sw_aerosols.aer_interactions</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scattering"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1909,18 +1909,18 @@
         <dt><b>Description</b></dt><dd>Radiative properties of gases</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Charlotte Pascoe</dd><dt><b>Authors</b></dt><dd>Charlotte Pascoe</dd><dt><b>Contributors</b></dt><dd />
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="gas_bulk"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="gas_interactions"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Bulk short wave radiative properties of gases</dd><dt><b>Type</b></dt><dd>ENUM:bulk_radiative_properties</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.radiation.sw_gases.gas_bulk</dd>
+        <dt><b>Description</b></dt><dd>General short wave radiative interactions with gases</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.radiation.sw_gases.gas_interactions</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Bulk short wave radiative properties of gases</dd><dt><b>Type</b></dt><dd>ENUM:bulk_radiative_properties</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.radiation.sw_gases.gas_bulk</dd>
+        <dt><b>Description</b></dt><dd>General short wave radiative interactions with gases</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.radiation.sw_gases.gas_interactions</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scattering"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2112,18 +2112,18 @@
         <dt><b>Description</b></dt><dd>Long wave radiative properties of ice crystals in clouds</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Charlotte Pascoe</dd><dt><b>Authors</b></dt><dd>Charlotte Pascoe</dd><dt><b>Contributors</b></dt><dd />
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ice_bulk"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ice_interactions"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Bulk long wave radiative properties of cloud ice crystals</dd><dt><b>Type</b></dt><dd>ENUM:bulk_radiative_properties</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.radiation.lw_cloud_ice.ice_bulk</dd>
+        <dt><b>Description</b></dt><dd>General long wave radiative interactions with cloud ice crystals</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.radiation.lw_cloud_ice.ice_interactions</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Bulk long wave radiative properties of cloud ice crystals</dd><dt><b>Type</b></dt><dd>ENUM:bulk_radiative_properties</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.radiation.lw_cloud_ice.ice_bulk</dd>
+        <dt><b>Description</b></dt><dd>General long wave radiative interactions with cloud ice crystals</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.radiation.lw_cloud_ice.ice_interactions</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scattering"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2280,18 +2280,18 @@
         <dt><b>Description</b></dt><dd>Long wave radiative properties of liquid droplets in clouds</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Charlotte Pascoe</dd><dt><b>Authors</b></dt><dd>Charlotte Pascoe</dd><dt><b>Contributors</b></dt><dd />
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="liq_bulk"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="liq_interactions"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Bulk long wave radiative properties of cloud liquid droplets</dd><dt><b>Type</b></dt><dd>ENUM:bulk_radiative_properties</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.radiation.lw_cloud_liquid.liq_bulk</dd>
+        <dt><b>Description</b></dt><dd>General long wave radiative interactions with cloud liquid droplets</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.radiation.lw_cloud_liquid.liq_interactions</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Bulk long wave radiative properties of cloud liquid droplets</dd><dt><b>Type</b></dt><dd>ENUM:bulk_radiative_properties</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.radiation.lw_cloud_liquid.liq_bulk</dd>
+        <dt><b>Description</b></dt><dd>General long wave radiative interactions with cloud liquid droplets</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.radiation.lw_cloud_liquid.liq_interactions</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scattering"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2427,18 +2427,18 @@
         <dt><b>Description</b></dt><dd>Long wave radiative properties of aerosols</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Charlotte Pascoe</dd><dt><b>Authors</b></dt><dd>Charlotte Pascoe</dd><dt><b>Contributors</b></dt><dd />
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="aer_bulk"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="aer_interactions"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Bulk long wave radiative properties of aerosols</dd><dt><b>Type</b></dt><dd>ENUM:bulk_radiative_properties</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.radiation.lw_aerosols.aer_bulk</dd>
+        <dt><b>Description</b></dt><dd>General long wave radiative interactions with aerosols</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.radiation.lw_aerosols.aer_interactions</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Bulk long wave radiative properties of aerosols</dd><dt><b>Type</b></dt><dd>ENUM:bulk_radiative_properties</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.radiation.lw_aerosols.aer_bulk</dd>
+        <dt><b>Description</b></dt><dd>General long wave radiative interactions with aerosols</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.radiation.lw_aerosols.aer_interactions</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scattering"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2581,18 +2581,18 @@
         <dt><b>Description</b></dt><dd>Long wave radiative properties of gases</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Charlotte Pascoe</dd><dt><b>Authors</b></dt><dd>Charlotte Pascoe</dd><dt><b>Contributors</b></dt><dd />
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="gas_bulk"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="gas_interactions"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Bulk long wave radiative properties of gases</dd><dt><b>Type</b></dt><dd>ENUM:bulk_radiative_properties</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.radiation.lw_gases.gas_bulk</dd>
+        <dt><b>Description</b></dt><dd>General long wave radiative interactions with gases</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.radiation.lw_gases.gas_interactions</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Bulk long wave radiative properties of gases</dd><dt><b>Type</b></dt><dd>ENUM:bulk_radiative_properties</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.radiation.lw_gases.gas_bulk</dd>
+        <dt><b>Description</b></dt><dd>General long wave radiative interactions with gases</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.radiation.lw_gases.gas_interactions</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scattering"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>

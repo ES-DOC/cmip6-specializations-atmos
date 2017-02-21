@@ -763,14 +763,14 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Ice Bulk", 
-                            "description": "Bulk short wave radiative properties of cloud ice crystals", 
-                            "id": "cmip6.atmosphere.radiation.sw_cloud_ice.ice_bulk", 
+                            "label": "Ice Interactions", 
+                            "description": "General short wave radiative interactions with cloud ice crystals", 
+                            "id": "cmip6.atmosphere.radiation.sw_cloud_ice.ice_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
-                                "label": "Bulk Radiative Properties", 
-                                "description": "Bulk radiative properties", 
+                                "label": "Radiative Interactions", 
+                                "description": "General radiative interactions", 
                                 "isOpen": true, 
                                 "choices": [
                                     {
@@ -884,14 +884,14 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Liq Bulk", 
-                            "description": "Bulk short wave radiative properties of cloud liquid droplets", 
-                            "id": "cmip6.atmosphere.radiation.sw_cloud_liquid.liq_bulk", 
+                            "label": "Liq Interactions", 
+                            "description": "General short wave radiative interactions with cloud liquid droplets", 
+                            "id": "cmip6.atmosphere.radiation.sw_cloud_liquid.liq_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
-                                "label": "Bulk Radiative Properties", 
-                                "description": "Bulk radiative properties", 
+                                "label": "Radiative Interactions", 
+                                "description": "General radiative interactions", 
                                 "isOpen": true, 
                                 "choices": [
                                     {
@@ -993,14 +993,14 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Aer Bulk", 
-                            "description": "Bulk short wave radiative properties of aerosols", 
-                            "id": "cmip6.atmosphere.radiation.sw_aerosols.aer_bulk", 
+                            "label": "Aer Interactions", 
+                            "description": "General short wave radiative interactions with aerosols", 
+                            "id": "cmip6.atmosphere.radiation.sw_aerosols.aer_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
-                                "label": "Bulk Radiative Properties", 
-                                "description": "Bulk radiative properties", 
+                                "label": "Radiative Interactions", 
+                                "description": "General radiative interactions", 
                                 "isOpen": true, 
                                 "choices": [
                                     {
@@ -1106,14 +1106,14 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Gas Bulk", 
-                            "description": "Bulk short wave radiative properties of gases", 
-                            "id": "cmip6.atmosphere.radiation.sw_gases.gas_bulk", 
+                            "label": "Gas Interactions", 
+                            "description": "General short wave radiative interactions with gases", 
+                            "id": "cmip6.atmosphere.radiation.sw_gases.gas_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
-                                "label": "Bulk Radiative Properties", 
-                                "description": "Bulk radiative properties", 
+                                "label": "Radiative Interactions", 
+                                "description": "General radiative interactions", 
                                 "isOpen": true, 
                                 "choices": [
                                     {
@@ -1258,14 +1258,14 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Ice Bulk", 
-                            "description": "Bulk long wave radiative properties of cloud ice crystals", 
-                            "id": "cmip6.atmosphere.radiation.lw_cloud_ice.ice_bulk", 
+                            "label": "Ice Interactions", 
+                            "description": "General long wave radiative interactions with cloud ice crystals", 
+                            "id": "cmip6.atmosphere.radiation.lw_cloud_ice.ice_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
-                                "label": "Bulk Radiative Properties", 
-                                "description": "Bulk radiative properties", 
+                                "label": "Radiative Interactions", 
+                                "description": "General radiative interactions", 
                                 "isOpen": true, 
                                 "choices": [
                                     {
@@ -1379,14 +1379,14 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Liq Bulk", 
-                            "description": "Bulk long wave radiative properties of cloud liquid droplets", 
-                            "id": "cmip6.atmosphere.radiation.lw_cloud_liquid.liq_bulk", 
+                            "label": "Liq Interactions", 
+                            "description": "General long wave radiative interactions with cloud liquid droplets", 
+                            "id": "cmip6.atmosphere.radiation.lw_cloud_liquid.liq_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
-                                "label": "Bulk Radiative Properties", 
-                                "description": "Bulk radiative properties", 
+                                "label": "Radiative Interactions", 
+                                "description": "General radiative interactions", 
                                 "isOpen": true, 
                                 "choices": [
                                     {
@@ -1488,14 +1488,14 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Aer Bulk", 
-                            "description": "Bulk long wave radiative properties of aerosols", 
-                            "id": "cmip6.atmosphere.radiation.lw_aerosols.aer_bulk", 
+                            "label": "Aer Interactions", 
+                            "description": "General long wave radiative interactions with aerosols", 
+                            "id": "cmip6.atmosphere.radiation.lw_aerosols.aer_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
-                                "label": "Bulk Radiative Properties", 
-                                "description": "Bulk radiative properties", 
+                                "label": "Radiative Interactions", 
+                                "description": "General radiative interactions", 
                                 "isOpen": true, 
                                 "choices": [
                                     {
@@ -1601,14 +1601,14 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Gas Bulk", 
-                            "description": "Bulk long wave radiative properties of gases", 
-                            "id": "cmip6.atmosphere.radiation.lw_gases.gas_bulk", 
+                            "label": "Gas Interactions", 
+                            "description": "General long wave radiative interactions with gases", 
+                            "id": "cmip6.atmosphere.radiation.lw_gases.gas_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
-                                "label": "Bulk Radiative Properties", 
-                                "description": "Bulk radiative properties", 
+                                "label": "Radiative Interactions", 
+                                "description": "General radiative interactions", 
                                 "isOpen": true, 
                                 "choices": [
                                     {
