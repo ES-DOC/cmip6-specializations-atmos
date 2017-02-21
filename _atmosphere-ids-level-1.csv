@@ -16,14 +16,15 @@ cmip6.atmosphere.dynamical_core.advection_momentum, Atmosphere > Dynamical Core 
 , , 
 cmip6.atmosphere.radiation, Atmosphere > Radiation, process
 cmip6.atmosphere.radiation.shortwave_radiation, Atmosphere > Radiation > Shortwave Radiation, sub-process
-cmip6.atmosphere.radiation.cloud_ice, Atmosphere > Radiation > Cloud Ice, sub-process
-cmip6.atmosphere.radiation.cloud_liquid, Atmosphere > Radiation > Cloud Liquid, sub-process
-cmip6.atmosphere.radiation.aerosols, Atmosphere > Radiation > Aerosols, sub-process
-cmip6.atmosphere.radiation.gases, Atmosphere > Radiation > Gases, sub-process
+cmip6.atmosphere.radiation.sw_cloud_ice, Atmosphere > Radiation > Sw Cloud Ice, sub-process
+cmip6.atmosphere.radiation.sw_cloud_liquid, Atmosphere > Radiation > Sw Cloud Liquid, sub-process
+cmip6.atmosphere.radiation.sw_aerosols, Atmosphere > Radiation > Sw Aerosols, sub-process
+cmip6.atmosphere.radiation.sw_gases, Atmosphere > Radiation > Sw Gases, sub-process
 cmip6.atmosphere.radiation.longwave_radiation, Atmosphere > Radiation > Longwave Radiation, sub-process
 cmip6.atmosphere.radiation.lw_cloud_ice, Atmosphere > Radiation > Lw Cloud Ice, sub-process
 cmip6.atmosphere.radiation.lw_cloud_liquid, Atmosphere > Radiation > Lw Cloud Liquid, sub-process
 cmip6.atmosphere.radiation.lw_aerosols, Atmosphere > Radiation > Lw Aerosols, sub-process
+cmip6.atmosphere.radiation.lw_gases, Atmosphere > Radiation > Lw Gases, sub-process
 , , 
 cmip6.atmosphere.turbulence_convection, Atmosphere > Turbulence Convection, process
 cmip6.atmosphere.turbulence_convection.boundary_layer_turbulence, Atmosphere > Turbulence Convection > Boundary Layer Turbulence, sub-process

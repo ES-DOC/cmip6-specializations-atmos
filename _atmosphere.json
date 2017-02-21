@@ -757,15 +757,15 @@
                     ]
                 }, 
                 {
-                    "label": "Cloud Ice", 
+                    "label": "Sw Cloud Ice", 
                     "description": "Radiative properties of ice crystals in clouds", 
-                    "id": "cmip6.atmosphere.radiation.cloud_ice", 
+                    "id": "cmip6.atmosphere.radiation.sw_cloud_ice", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "Ice Bulk", 
                             "description": "Bulk short wave radiative properties of cloud ice crystals", 
-                            "id": "cmip6.atmosphere.radiation.cloud_ice.ice_bulk", 
+                            "id": "cmip6.atmosphere.radiation.sw_cloud_ice.ice_bulk", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -800,7 +800,7 @@
                         {
                             "label": "Ice Physical", 
                             "description": "Physical representation of cloud ice crystals in the short wave radiation scheme", 
-                            "id": "cmip6.atmosphere.radiation.cloud_ice.ice_physical", 
+                            "id": "cmip6.atmosphere.radiation.sw_cloud_ice.ice_physical", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -843,7 +843,7 @@
                         {
                             "label": "Ice Optical", 
                             "description": "Optical methods applicable to cloud ice crystals in the short wave radiation scheme", 
-                            "id": "cmip6.atmosphere.radiation.cloud_ice.ice_optical", 
+                            "id": "cmip6.atmosphere.radiation.sw_cloud_ice.ice_optical", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -878,15 +878,15 @@
                     ]
                 }, 
                 {
-                    "label": "Cloud Liquid", 
+                    "label": "Sw Cloud Liquid", 
                     "description": "Radiative properties of liquid droplets in clouds", 
-                    "id": "cmip6.atmosphere.radiation.cloud_liquid", 
+                    "id": "cmip6.atmosphere.radiation.sw_cloud_liquid", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "Liq Bulk", 
                             "description": "Bulk short wave radiative properties of cloud liquid droplets", 
-                            "id": "cmip6.atmosphere.radiation.cloud_liquid.liq_bulk", 
+                            "id": "cmip6.atmosphere.radiation.sw_cloud_liquid.liq_bulk", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -921,7 +921,7 @@
                         {
                             "label": "Liq Physical", 
                             "description": "Physical representation of cloud liquid droplets in the short wave radiation scheme", 
-                            "id": "cmip6.atmosphere.radiation.cloud_liquid.liq_physical", 
+                            "id": "cmip6.atmosphere.radiation.sw_cloud_liquid.liq_physical", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -952,7 +952,7 @@
                         {
                             "label": "Liq Optical", 
                             "description": "Optical methods applicable to cloud liquid droplets in the short wave radiation scheme", 
-                            "id": "cmip6.atmosphere.radiation.cloud_liquid.liq_optical", 
+                            "id": "cmip6.atmosphere.radiation.sw_cloud_liquid.liq_optical", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -987,15 +987,15 @@
                     ]
                 }, 
                 {
-                    "label": "Aerosols", 
+                    "label": "Sw Aerosols", 
                     "description": "Radiative properties of aerosols", 
-                    "id": "cmip6.atmosphere.radiation.aerosols", 
+                    "id": "cmip6.atmosphere.radiation.sw_aerosols", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "Aer Bulk", 
                             "description": "Bulk short wave radiative properties of aerosols", 
-                            "id": "cmip6.atmosphere.radiation.aerosols.aer_bulk", 
+                            "id": "cmip6.atmosphere.radiation.sw_aerosols.aer_bulk", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1030,7 +1030,7 @@
                         {
                             "label": "Aer Physical", 
                             "description": "Physical representation of aerosols in the short wave radiation scheme", 
-                            "id": "cmip6.atmosphere.radiation.aerosols.aer_physical", 
+                            "id": "cmip6.atmosphere.radiation.sw_aerosols.aer_physical", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1065,7 +1065,7 @@
                         {
                             "label": "Aer Optical", 
                             "description": "Optical methods applicable to aerosols in the short wave radiation scheme", 
-                            "id": "cmip6.atmosphere.radiation.aerosols.aer_optical", 
+                            "id": "cmip6.atmosphere.radiation.sw_aerosols.aer_optical", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1100,15 +1100,15 @@
                     ]
                 }, 
                 {
-                    "label": "Gases", 
-                    "description": "Long wave radiative properties of gases", 
-                    "id": "cmip6.atmosphere.radiation.gases", 
+                    "label": "Sw Gases", 
+                    "description": "Radiative properties of gases", 
+                    "id": "cmip6.atmosphere.radiation.sw_gases", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "Gas Bulk", 
-                            "description": "Bulk long wave radiative properties of gases", 
-                            "id": "cmip6.atmosphere.radiation.gases.gas_bulk", 
+                            "description": "Bulk short wave radiative properties of gases", 
+                            "id": "cmip6.atmosphere.radiation.sw_gases.gas_bulk", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1142,8 +1142,8 @@
                         }, 
                         {
                             "label": "Gas Optical", 
-                            "description": "Optical methods applicable to gases in the long wave radiation scheme", 
-                            "id": "cmip6.atmosphere.radiation.gases.gas_optical", 
+                            "description": "Optical methods applicable to gases in the short wave radiation scheme", 
+                            "id": "cmip6.atmosphere.radiation.sw_gases.gas_optical", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1591,6 +1591,84 @@
                                 ]
                             }, 
                             "uiOrdinal": 3
+                        }
+                    ]
+                }, 
+                {
+                    "label": "Lw Gases", 
+                    "description": "Long wave radiative properties of gases", 
+                    "id": "cmip6.atmosphere.radiation.lw_gases", 
+                    "contact": "Charlotte Pascoe", 
+                    "properties": [
+                        {
+                            "label": "Gas Bulk", 
+                            "description": "Bulk long wave radiative properties of gases", 
+                            "id": "cmip6.atmosphere.radiation.lw_gases.gas_bulk", 
+                            "cardinality": "1.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Bulk Radiative Properties", 
+                                "description": "Bulk radiative properties", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "scattering", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "reflectivity", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "absorption", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "emissivity", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "transmissivity", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 1
+                        }, 
+                        {
+                            "label": "Gas Optical", 
+                            "description": "Optical methods applicable to gases in the long wave radiation scheme", 
+                            "id": "cmip6.atmosphere.radiation.lw_gases.gas_optical", 
+                            "cardinality": "1.N", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Optical Methods", 
+                                "description": "Optical methods used by radiation scheme", 
+                                "isOpen": true, 
+                                "choices": [
+                                    {
+                                        "label": "T-matrix", 
+                                        "description": "For non-spherical particles"
+                                    }, 
+                                    {
+                                        "label": "geometric optics", 
+                                        "description": "For non-spherical particles"
+                                    }, 
+                                    {
+                                        "label": "finite difference time domain (FDTD)", 
+                                        "description": "For non-spherical particles"
+                                    }, 
+                                    {
+                                        "label": "Mie theory", 
+                                        "description": "For spherical particles"
+                                    }, 
+                                    {
+                                        "label": "anomalous diffraction approximation", 
+                                        "description": null
+                                    }
+                                ]
+                            }, 
+                            "uiOrdinal": 2
                         }
                     ]
                 }
