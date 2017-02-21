@@ -778,19 +778,19 @@
                                         "description": null
                                     }, 
                                     {
-                                        "label": "reflectivity", 
-                                        "description": null
-                                    }, 
-                                    {
                                         "label": "absorption", 
                                         "description": null
                                     }, 
                                     {
-                                        "label": "emissivity", 
+                                        "label": "emission", 
                                         "description": null
                                     }, 
                                     {
-                                        "label": "transmissivity", 
+                                        "label": "reflection", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "transmission", 
                                         "description": null
                                     }
                                 ]
@@ -899,19 +899,19 @@
                                         "description": null
                                     }, 
                                     {
-                                        "label": "reflectivity", 
-                                        "description": null
-                                    }, 
-                                    {
                                         "label": "absorption", 
                                         "description": null
                                     }, 
                                     {
-                                        "label": "emissivity", 
+                                        "label": "emission", 
                                         "description": null
                                     }, 
                                     {
-                                        "label": "transmissivity", 
+                                        "label": "reflection", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "transmission", 
                                         "description": null
                                     }
                                 ]
@@ -1008,19 +1008,19 @@
                                         "description": null
                                     }, 
                                     {
-                                        "label": "reflectivity", 
-                                        "description": null
-                                    }, 
-                                    {
                                         "label": "absorption", 
                                         "description": null
                                     }, 
                                     {
-                                        "label": "emissivity", 
+                                        "label": "emission", 
                                         "description": null
                                     }, 
                                     {
-                                        "label": "transmissivity", 
+                                        "label": "reflection", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "transmission", 
                                         "description": null
                                     }
                                 ]
@@ -1121,19 +1121,19 @@
                                         "description": null
                                     }, 
                                     {
-                                        "label": "reflectivity", 
-                                        "description": null
-                                    }, 
-                                    {
                                         "label": "absorption", 
                                         "description": null
                                     }, 
                                     {
-                                        "label": "emissivity", 
+                                        "label": "emission", 
                                         "description": null
                                     }, 
                                     {
-                                        "label": "transmissivity", 
+                                        "label": "reflection", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "transmission", 
                                         "description": null
                                     }
                                 ]
@@ -1273,19 +1273,19 @@
                                         "description": null
                                     }, 
                                     {
-                                        "label": "reflectivity", 
-                                        "description": null
-                                    }, 
-                                    {
                                         "label": "absorption", 
                                         "description": null
                                     }, 
                                     {
-                                        "label": "emissivity", 
+                                        "label": "emission", 
                                         "description": null
                                     }, 
                                     {
-                                        "label": "transmissivity", 
+                                        "label": "reflection", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "transmission", 
                                         "description": null
                                     }
                                 ]
@@ -1394,19 +1394,19 @@
                                         "description": null
                                     }, 
                                     {
-                                        "label": "reflectivity", 
-                                        "description": null
-                                    }, 
-                                    {
                                         "label": "absorption", 
                                         "description": null
                                     }, 
                                     {
-                                        "label": "emissivity", 
+                                        "label": "emission", 
                                         "description": null
                                     }, 
                                     {
-                                        "label": "transmissivity", 
+                                        "label": "reflection", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "transmission", 
                                         "description": null
                                     }
                                 ]
@@ -1503,19 +1503,19 @@
                                         "description": null
                                     }, 
                                     {
-                                        "label": "reflectivity", 
-                                        "description": null
-                                    }, 
-                                    {
                                         "label": "absorption", 
                                         "description": null
                                     }, 
                                     {
-                                        "label": "emissivity", 
+                                        "label": "emission", 
                                         "description": null
                                     }, 
                                     {
-                                        "label": "transmissivity", 
+                                        "label": "reflection", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "transmission", 
                                         "description": null
                                     }
                                 ]
@@ -1616,19 +1616,19 @@
                                         "description": null
                                     }, 
                                     {
-                                        "label": "reflectivity", 
-                                        "description": null
-                                    }, 
-                                    {
                                         "label": "absorption", 
                                         "description": null
                                     }, 
                                     {
-                                        "label": "emissivity", 
+                                        "label": "emission", 
                                         "description": null
                                     }, 
                                     {
-                                        "label": "transmissivity", 
+                                        "label": "reflection", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "transmission", 
                                         "description": null
                                     }
                                 ]

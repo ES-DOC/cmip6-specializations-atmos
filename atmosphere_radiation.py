@@ -66,11 +66,11 @@ DETAILS['shortwave_radiation'] = {
 DETAILS['sw_cloud_ice'] = {
     'description': 'Radiative properties of ice crystals in clouds',
     'properties': [
-        ('ice_interactions', 'ENUM:radiative_interactions', '1.N',
+        ('general_interactions', 'ENUM:radiative_interactions', '1.N',
             'General short wave radiative interactions with cloud ice crystals'),
-        ('ice_physical', 'ENUM:cloud_ice_physical_properties', '1.N',
+        ('physical_representation', 'ENUM:cloud_ice_physical_representation', '1.N',
             'Physical representation of cloud ice crystals in the short wave radiation scheme'),
-        ('ice_optical', 'ENUM:optical_methods', '1.N',
+        ('optical_methods', 'ENUM:optical_methods', '1.N',
             'Optical methods applicable to cloud ice crystals in the short wave radiation scheme'),
     ]
 }
@@ -81,11 +81,11 @@ DETAILS['sw_cloud_ice'] = {
 DETAILS['sw_cloud_liquid'] = {
     'description': 'Radiative properties of liquid droplets in clouds',
     'properties': [
-        ('liq_interactions', 'ENUM:radiative_interactions', '1.N',
+        ('general_interactions', 'ENUM:radiative_interactions', '1.N',
             'General short wave radiative interactions with cloud liquid droplets'),
-        ('liq_physical', 'ENUM:cloud_liquid_physical_properties', '1.N',
+        ('physical_representation', 'ENUM:cloud_liquid_physical_representation', '1.N',
             'Physical representation of cloud liquid droplets in the short wave radiation scheme'),
-        ('liq_optical', 'ENUM:optical_methods', '1.N',
+        ('optical_methods', 'ENUM:optical_methods', '1.N',
             'Optical methods applicable to cloud liquid droplets in the short wave radiation scheme'),
     ]
 }
@@ -96,11 +96,11 @@ DETAILS['sw_cloud_liquid'] = {
 DETAILS['sw_aerosols'] = {
     'description': 'Radiative properties of aerosols',
     'properties': [
-        ('aer_interactions', 'ENUM:radiative_interactions', '1.N',
+        ('general_interactions', 'ENUM:radiative_interactions', '1.N',
             'General short wave radiative interactions with aerosols'),
-        ('aer_physical', 'ENUM:aerosol_physical_properties', '1.N',
+        ('physical_representation', 'ENUM:aerosol_physical_representation', '1.N',
             'Physical representation of aerosols in the short wave radiation scheme'),
-        ('aer_optical', 'ENUM:optical_methods', '1.N',
+        ('optical_methods', 'ENUM:optical_methods', '1.N',
             'Optical methods applicable to aerosols in the short wave radiation scheme'),
     ]
 }
@@ -111,9 +111,9 @@ DETAILS['sw_aerosols'] = {
 DETAILS['sw_gases'] = {
     'description': 'Radiative properties of gases',
     'properties': [
-        ('gas_interactions', 'ENUM:radiative_interactions', '1.N',
+        ('general_interactions', 'ENUM:radiative_interactions', '1.N',
             'General short wave radiative interactions with gases'),
-        ('gas_optical', 'ENUM:optical_methods', '1.N',
+        ('optical_methods', 'ENUM:optical_methods', '1.N',
             'Optical methods applicable to gases in the short wave radiation scheme'),
     ]
 }
@@ -139,11 +139,11 @@ DETAILS['longwave_radiation'] = {
 DETAILS['lw_cloud_ice'] = {
     'description': 'Long wave radiative properties of ice crystals in clouds',
     'properties': [
-        ('ice_interactions', 'ENUM:radiative_interactions', '1.N',
+        ('general_interactions', 'ENUM:radiative_interactions', '1.N',
             'General long wave radiative interactions with cloud ice crystals'),
-        ('ice_physical', 'ENUM:cloud_ice_physical_properties', '1.N',
+        ('physical_reprenstation', 'ENUM:cloud_ice_physical_representation', '1.N',
             'Physical representation of cloud ice crystals in the long wave radiation scheme'),
-        ('ice_optical', 'ENUM:optical_methods', '1.N',
+        ('optical_methods', 'ENUM:optical_methods', '1.N',
             'Optical methods applicable to cloud ice crystals in the long wave radiation scheme'),
     ]
 }
@@ -154,11 +154,11 @@ DETAILS['lw_cloud_ice'] = {
 DETAILS['lw_cloud_liquid'] = {
     'description': 'Long wave radiative properties of liquid droplets in clouds',
     'properties': [
-        ('liq_interactions', 'ENUM:radiative_interactions', '1.N',
+        ('general_interactions', 'ENUM:radiative_interactions', '1.N',
             'General long wave radiative interactions with cloud liquid droplets'),
-        ('liq_physical', 'ENUM:cloud_liquid_physical_properties', '1.N',
+        ('physical_representation', 'ENUM:cloud_liquid_physical_representation', '1.N',
             'Physical representation of cloud liquid droplets in the long wave radiation scheme'),
-        ('liq_optical', 'ENUM:optical_methods', '1.N',
+        ('optical_methods', 'ENUM:optical_methods', '1.N',
             'Optical methods applicable to cloud liquid droplets in the long wave radiation scheme'),
     ]
 }
@@ -169,11 +169,11 @@ DETAILS['lw_cloud_liquid'] = {
 DETAILS['lw_aerosols'] = {
     'description': 'Long wave radiative properties of aerosols',
     'properties': [
-        ('aer_interactions', 'ENUM:radiative_interactions', '1.N',
+        ('general_interactions', 'ENUM:radiative_interactions', '1.N',
             'General long wave radiative interactions with aerosols'),
-        ('aer_physical', 'ENUM:aerosol_physical_properties', '1.N',
+        ('physical_representation', 'ENUM:aerosol_physical_representation', '1.N',
             'Physical representation of aerosols in the long wave radiation scheme'),
-        ('aer_optical', 'ENUM:optical_methods', '1.N',
+        ('optical_methods', 'ENUM:optical_methods', '1.N',
             'Optical methods applicable to aerosols in the long wave radiation scheme'),
     ]
 }
@@ -184,9 +184,9 @@ DETAILS['lw_aerosols'] = {
 DETAILS['lw_gases'] = {
     'description': 'Long wave radiative properties of gases',
     'properties': [
-        ('gas_interactions', 'ENUM:radiative_interactions', '1.N',
+        ('general_interactions', 'ENUM:radiative_interactions', '1.N',
             'General long wave radiative interactions with gases'),
-        ('gas_optical', 'ENUM:optical_methods', '1.N',
+        ('optical_methods', 'ENUM:optical_methods', '1.N',
             'Optical methods applicable to gases in the long wave radiation scheme'),
     ]
 }
@@ -264,8 +264,8 @@ ENUMERATIONS['radiative_interactions'] = {
     ]
 }
 
-ENUMERATIONS['cloud_ice_physical_properties'] = {
-    'description': 'Physical properties of ice crystals in clouds',
+ENUMERATIONS['cloud_ice_physical_representation'] = {
+    'description': 'Physical representation of ice crystals in clouds',
     'is_open': True,
     'members': [
         ('bi-modal size distribution',
@@ -280,8 +280,8 @@ ENUMERATIONS['cloud_ice_physical_properties'] = {
         ]
     }
 
-ENUMERATIONS['cloud_liquid_physical_properties'] = {
-    'description': 'Physical_radiative properties of liquid droplets in clouds',
+ENUMERATIONS['cloud_liquid_physical_representation'] = {
+    'description': 'Physical_radiative representation of liquid droplets in clouds',
     'is_open': True,
     'members': [
         ('cloud droplet number concentration', 'CDNC'),
@@ -291,8 +291,8 @@ ENUMERATIONS['cloud_liquid_physical_properties'] = {
         ]
     }
 
-ENUMERATIONS['aerosol_physical_properties'] = {
-    'description': 'Physical radiative properties of aerosols',
+ENUMERATIONS['aerosol_physical_representation'] = {
+    'description': 'Physical radiative representation of aerosols',
     'is_open': True,
     'members': [
         ('number concentration', None),
