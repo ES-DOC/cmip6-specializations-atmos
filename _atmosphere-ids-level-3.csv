@@ -32,31 +32,31 @@ cmip6.atmosphere.radiation.greenhouse_gases, Atmosphere > Radiation > Greenhouse
 cmip6.atmosphere.radiation.shortwave_radiation.sw_spectral_integration, Atmosphere > Radiation > Shortwave Radiation > Sw Spectral Integration, property
 cmip6.atmosphere.radiation.shortwave_radiation.sw_transport_method, Atmosphere > Radiation > Shortwave Radiation > Sw Transport Method, property
 cmip6.atmosphere.radiation.shortwave_radiation.sw_spectral_intervals, Atmosphere > Radiation > Shortwave Radiation > Sw Spectral Intervals, property
-cmip6.atmosphere.radiation.sw_cloud_ice.ice_interactions, Atmosphere > Radiation > Sw Cloud Ice > Ice Interactions, property
-cmip6.atmosphere.radiation.sw_cloud_ice.ice_physical, Atmosphere > Radiation > Sw Cloud Ice > Ice Physical, property
-cmip6.atmosphere.radiation.sw_cloud_ice.ice_optical, Atmosphere > Radiation > Sw Cloud Ice > Ice Optical, property
-cmip6.atmosphere.radiation.sw_cloud_liquid.liq_interactions, Atmosphere > Radiation > Sw Cloud Liquid > Liq Interactions, property
-cmip6.atmosphere.radiation.sw_cloud_liquid.liq_physical, Atmosphere > Radiation > Sw Cloud Liquid > Liq Physical, property
-cmip6.atmosphere.radiation.sw_cloud_liquid.liq_optical, Atmosphere > Radiation > Sw Cloud Liquid > Liq Optical, property
-cmip6.atmosphere.radiation.sw_aerosols.aer_interactions, Atmosphere > Radiation > Sw Aerosols > Aer Interactions, property
-cmip6.atmosphere.radiation.sw_aerosols.aer_physical, Atmosphere > Radiation > Sw Aerosols > Aer Physical, property
-cmip6.atmosphere.radiation.sw_aerosols.aer_optical, Atmosphere > Radiation > Sw Aerosols > Aer Optical, property
-cmip6.atmosphere.radiation.sw_gases.gas_interactions, Atmosphere > Radiation > Sw Gases > Gas Interactions, property
-cmip6.atmosphere.radiation.sw_gases.gas_optical, Atmosphere > Radiation > Sw Gases > Gas Optical, property
+cmip6.atmosphere.radiation.sw_cloud_ice.general_interactions, Atmosphere > Radiation > Sw Cloud Ice > General Interactions, property
+cmip6.atmosphere.radiation.sw_cloud_ice.physical_representation, Atmosphere > Radiation > Sw Cloud Ice > Physical Representation, property
+cmip6.atmosphere.radiation.sw_cloud_ice.optical_methods, Atmosphere > Radiation > Sw Cloud Ice > Optical Methods, property
+cmip6.atmosphere.radiation.sw_cloud_liquid.general_interactions, Atmosphere > Radiation > Sw Cloud Liquid > General Interactions, property
+cmip6.atmosphere.radiation.sw_cloud_liquid.physical_representation, Atmosphere > Radiation > Sw Cloud Liquid > Physical Representation, property
+cmip6.atmosphere.radiation.sw_cloud_liquid.optical_methods, Atmosphere > Radiation > Sw Cloud Liquid > Optical Methods, property
+cmip6.atmosphere.radiation.sw_aerosols.general_interactions, Atmosphere > Radiation > Sw Aerosols > General Interactions, property
+cmip6.atmosphere.radiation.sw_aerosols.physical_representation, Atmosphere > Radiation > Sw Aerosols > Physical Representation, property
+cmip6.atmosphere.radiation.sw_aerosols.optical_methods, Atmosphere > Radiation > Sw Aerosols > Optical Methods, property
+cmip6.atmosphere.radiation.sw_gases.general_interactions, Atmosphere > Radiation > Sw Gases > General Interactions, property
+cmip6.atmosphere.radiation.sw_gases.optical_methods, Atmosphere > Radiation > Sw Gases > Optical Methods, property
 cmip6.atmosphere.radiation.longwave_radiation.lw_spectral_integration, Atmosphere > Radiation > Longwave Radiation > Lw Spectral Integration, property
 cmip6.atmosphere.radiation.longwave_radiation.lw_transport_method, Atmosphere > Radiation > Longwave Radiation > Lw Transport Method, property
 cmip6.atmosphere.radiation.longwave_radiation.lw_spectral_intervals, Atmosphere > Radiation > Longwave Radiation > Lw Spectral Intervals, property
-cmip6.atmosphere.radiation.lw_cloud_ice.ice_interactions, Atmosphere > Radiation > Lw Cloud Ice > Ice Interactions, property
-cmip6.atmosphere.radiation.lw_cloud_ice.ice_physical, Atmosphere > Radiation > Lw Cloud Ice > Ice Physical, property
-cmip6.atmosphere.radiation.lw_cloud_ice.ice_optical, Atmosphere > Radiation > Lw Cloud Ice > Ice Optical, property
-cmip6.atmosphere.radiation.lw_cloud_liquid.liq_interactions, Atmosphere > Radiation > Lw Cloud Liquid > Liq Interactions, property
-cmip6.atmosphere.radiation.lw_cloud_liquid.liq_physical, Atmosphere > Radiation > Lw Cloud Liquid > Liq Physical, property
-cmip6.atmosphere.radiation.lw_cloud_liquid.liq_optical, Atmosphere > Radiation > Lw Cloud Liquid > Liq Optical, property
-cmip6.atmosphere.radiation.lw_aerosols.aer_interactions, Atmosphere > Radiation > Lw Aerosols > Aer Interactions, property
-cmip6.atmosphere.radiation.lw_aerosols.aer_physical, Atmosphere > Radiation > Lw Aerosols > Aer Physical, property
-cmip6.atmosphere.radiation.lw_aerosols.aer_optical, Atmosphere > Radiation > Lw Aerosols > Aer Optical, property
-cmip6.atmosphere.radiation.lw_gases.gas_interactions, Atmosphere > Radiation > Lw Gases > Gas Interactions, property
-cmip6.atmosphere.radiation.lw_gases.gas_optical, Atmosphere > Radiation > Lw Gases > Gas Optical, property
+cmip6.atmosphere.radiation.lw_cloud_ice.general_interactions, Atmosphere > Radiation > Lw Cloud Ice > General Interactions, property
+cmip6.atmosphere.radiation.lw_cloud_ice.physical_reprenstation, Atmosphere > Radiation > Lw Cloud Ice > Physical Reprenstation, property
+cmip6.atmosphere.radiation.lw_cloud_ice.optical_methods, Atmosphere > Radiation > Lw Cloud Ice > Optical Methods, property
+cmip6.atmosphere.radiation.lw_cloud_liquid.general_interactions, Atmosphere > Radiation > Lw Cloud Liquid > General Interactions, property
+cmip6.atmosphere.radiation.lw_cloud_liquid.physical_representation, Atmosphere > Radiation > Lw Cloud Liquid > Physical Representation, property
+cmip6.atmosphere.radiation.lw_cloud_liquid.optical_methods, Atmosphere > Radiation > Lw Cloud Liquid > Optical Methods, property
+cmip6.atmosphere.radiation.lw_aerosols.general_interactions, Atmosphere > Radiation > Lw Aerosols > General Interactions, property
+cmip6.atmosphere.radiation.lw_aerosols.physical_representation, Atmosphere > Radiation > Lw Aerosols > Physical Representation, property
+cmip6.atmosphere.radiation.lw_aerosols.optical_methods, Atmosphere > Radiation > Lw Aerosols > Optical Methods, property
+cmip6.atmosphere.radiation.lw_gases.general_interactions, Atmosphere > Radiation > Lw Gases > General Interactions, property
+cmip6.atmosphere.radiation.lw_gases.optical_methods, Atmosphere > Radiation > Lw Gases > Optical Methods, property
 , , 
 cmip6.atmosphere.turbulence_convection.boundary_layer_turbulence.scheme_name, Atmosphere > Turbulence Convection > Boundary Layer Turbulence > Scheme Name, property
 cmip6.atmosphere.turbulence_convection.boundary_layer_turbulence.scheme_type, Atmosphere > Turbulence Convection > Boundary Layer Turbulence > Scheme Type, property

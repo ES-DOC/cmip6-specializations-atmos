@@ -763,9 +763,9 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Ice Interactions", 
+                            "label": "General Interactions", 
                             "description": "General short wave radiative interactions with cloud ice crystals", 
-                            "id": "cmip6.atmosphere.radiation.sw_cloud_ice.ice_interactions", 
+                            "id": "cmip6.atmosphere.radiation.sw_cloud_ice.general_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -798,14 +798,14 @@
                             "uiOrdinal": 1
                         }, 
                         {
-                            "label": "Ice Physical", 
+                            "label": "Physical Representation", 
                             "description": "Physical representation of cloud ice crystals in the short wave radiation scheme", 
-                            "id": "cmip6.atmosphere.radiation.sw_cloud_ice.ice_physical", 
+                            "id": "cmip6.atmosphere.radiation.sw_cloud_ice.physical_representation", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
-                                "label": "Cloud Ice Physical Properties", 
-                                "description": "Physical properties of ice crystals in clouds", 
+                                "label": "Cloud Ice Physical Representation", 
+                                "description": "Physical representation of ice crystals in clouds", 
                                 "isOpen": true, 
                                 "choices": [
                                     {
@@ -841,9 +841,9 @@
                             "uiOrdinal": 2
                         }, 
                         {
-                            "label": "Ice Optical", 
+                            "label": "Optical Methods", 
                             "description": "Optical methods applicable to cloud ice crystals in the short wave radiation scheme", 
-                            "id": "cmip6.atmosphere.radiation.sw_cloud_ice.ice_optical", 
+                            "id": "cmip6.atmosphere.radiation.sw_cloud_ice.optical_methods", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -884,9 +884,9 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Liq Interactions", 
+                            "label": "General Interactions", 
                             "description": "General short wave radiative interactions with cloud liquid droplets", 
-                            "id": "cmip6.atmosphere.radiation.sw_cloud_liquid.liq_interactions", 
+                            "id": "cmip6.atmosphere.radiation.sw_cloud_liquid.general_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -919,14 +919,14 @@
                             "uiOrdinal": 1
                         }, 
                         {
-                            "label": "Liq Physical", 
+                            "label": "Physical Representation", 
                             "description": "Physical representation of cloud liquid droplets in the short wave radiation scheme", 
-                            "id": "cmip6.atmosphere.radiation.sw_cloud_liquid.liq_physical", 
+                            "id": "cmip6.atmosphere.radiation.sw_cloud_liquid.physical_representation", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
-                                "label": "Cloud Liquid Physical Properties", 
-                                "description": "Physical_radiative properties of liquid droplets in clouds", 
+                                "label": "Cloud Liquid Physical Representation", 
+                                "description": "Physical_radiative representation of liquid droplets in clouds", 
                                 "isOpen": true, 
                                 "choices": [
                                     {
@@ -950,9 +950,9 @@
                             "uiOrdinal": 2
                         }, 
                         {
-                            "label": "Liq Optical", 
+                            "label": "Optical Methods", 
                             "description": "Optical methods applicable to cloud liquid droplets in the short wave radiation scheme", 
-                            "id": "cmip6.atmosphere.radiation.sw_cloud_liquid.liq_optical", 
+                            "id": "cmip6.atmosphere.radiation.sw_cloud_liquid.optical_methods", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -993,9 +993,9 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Aer Interactions", 
+                            "label": "General Interactions", 
                             "description": "General short wave radiative interactions with aerosols", 
-                            "id": "cmip6.atmosphere.radiation.sw_aerosols.aer_interactions", 
+                            "id": "cmip6.atmosphere.radiation.sw_aerosols.general_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1028,14 +1028,14 @@
                             "uiOrdinal": 1
                         }, 
                         {
-                            "label": "Aer Physical", 
+                            "label": "Physical Representation", 
                             "description": "Physical representation of aerosols in the short wave radiation scheme", 
-                            "id": "cmip6.atmosphere.radiation.sw_aerosols.aer_physical", 
+                            "id": "cmip6.atmosphere.radiation.sw_aerosols.physical_representation", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
-                                "label": "Aerosol Physical Properties", 
-                                "description": "Physical radiative properties of aerosols", 
+                                "label": "Aerosol Physical Representation", 
+                                "description": "Physical radiative representation of aerosols", 
                                 "isOpen": true, 
                                 "choices": [
                                     {
@@ -1063,9 +1063,9 @@
                             "uiOrdinal": 2
                         }, 
                         {
-                            "label": "Aer Optical", 
+                            "label": "Optical Methods", 
                             "description": "Optical methods applicable to aerosols in the short wave radiation scheme", 
-                            "id": "cmip6.atmosphere.radiation.sw_aerosols.aer_optical", 
+                            "id": "cmip6.atmosphere.radiation.sw_aerosols.optical_methods", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1106,9 +1106,9 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Gas Interactions", 
+                            "label": "General Interactions", 
                             "description": "General short wave radiative interactions with gases", 
-                            "id": "cmip6.atmosphere.radiation.sw_gases.gas_interactions", 
+                            "id": "cmip6.atmosphere.radiation.sw_gases.general_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1141,9 +1141,9 @@
                             "uiOrdinal": 1
                         }, 
                         {
-                            "label": "Gas Optical", 
+                            "label": "Optical Methods", 
                             "description": "Optical methods applicable to gases in the short wave radiation scheme", 
-                            "id": "cmip6.atmosphere.radiation.sw_gases.gas_optical", 
+                            "id": "cmip6.atmosphere.radiation.sw_gases.optical_methods", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1258,9 +1258,9 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Ice Interactions", 
+                            "label": "General Interactions", 
                             "description": "General long wave radiative interactions with cloud ice crystals", 
-                            "id": "cmip6.atmosphere.radiation.lw_cloud_ice.ice_interactions", 
+                            "id": "cmip6.atmosphere.radiation.lw_cloud_ice.general_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1293,14 +1293,14 @@
                             "uiOrdinal": 1
                         }, 
                         {
-                            "label": "Ice Physical", 
+                            "label": "Physical Reprenstation", 
                             "description": "Physical representation of cloud ice crystals in the long wave radiation scheme", 
-                            "id": "cmip6.atmosphere.radiation.lw_cloud_ice.ice_physical", 
+                            "id": "cmip6.atmosphere.radiation.lw_cloud_ice.physical_reprenstation", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
-                                "label": "Cloud Ice Physical Properties", 
-                                "description": "Physical properties of ice crystals in clouds", 
+                                "label": "Cloud Ice Physical Representation", 
+                                "description": "Physical representation of ice crystals in clouds", 
                                 "isOpen": true, 
                                 "choices": [
                                     {
@@ -1336,9 +1336,9 @@
                             "uiOrdinal": 2
                         }, 
                         {
-                            "label": "Ice Optical", 
+                            "label": "Optical Methods", 
                             "description": "Optical methods applicable to cloud ice crystals in the long wave radiation scheme", 
-                            "id": "cmip6.atmosphere.radiation.lw_cloud_ice.ice_optical", 
+                            "id": "cmip6.atmosphere.radiation.lw_cloud_ice.optical_methods", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1379,9 +1379,9 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Liq Interactions", 
+                            "label": "General Interactions", 
                             "description": "General long wave radiative interactions with cloud liquid droplets", 
-                            "id": "cmip6.atmosphere.radiation.lw_cloud_liquid.liq_interactions", 
+                            "id": "cmip6.atmosphere.radiation.lw_cloud_liquid.general_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1414,14 +1414,14 @@
                             "uiOrdinal": 1
                         }, 
                         {
-                            "label": "Liq Physical", 
+                            "label": "Physical Representation", 
                             "description": "Physical representation of cloud liquid droplets in the long wave radiation scheme", 
-                            "id": "cmip6.atmosphere.radiation.lw_cloud_liquid.liq_physical", 
+                            "id": "cmip6.atmosphere.radiation.lw_cloud_liquid.physical_representation", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
-                                "label": "Cloud Liquid Physical Properties", 
-                                "description": "Physical_radiative properties of liquid droplets in clouds", 
+                                "label": "Cloud Liquid Physical Representation", 
+                                "description": "Physical_radiative representation of liquid droplets in clouds", 
                                 "isOpen": true, 
                                 "choices": [
                                     {
@@ -1445,9 +1445,9 @@
                             "uiOrdinal": 2
                         }, 
                         {
-                            "label": "Liq Optical", 
+                            "label": "Optical Methods", 
                             "description": "Optical methods applicable to cloud liquid droplets in the long wave radiation scheme", 
-                            "id": "cmip6.atmosphere.radiation.lw_cloud_liquid.liq_optical", 
+                            "id": "cmip6.atmosphere.radiation.lw_cloud_liquid.optical_methods", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1488,9 +1488,9 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Aer Interactions", 
+                            "label": "General Interactions", 
                             "description": "General long wave radiative interactions with aerosols", 
-                            "id": "cmip6.atmosphere.radiation.lw_aerosols.aer_interactions", 
+                            "id": "cmip6.atmosphere.radiation.lw_aerosols.general_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1523,14 +1523,14 @@
                             "uiOrdinal": 1
                         }, 
                         {
-                            "label": "Aer Physical", 
+                            "label": "Physical Representation", 
                             "description": "Physical representation of aerosols in the long wave radiation scheme", 
-                            "id": "cmip6.atmosphere.radiation.lw_aerosols.aer_physical", 
+                            "id": "cmip6.atmosphere.radiation.lw_aerosols.physical_representation", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
-                                "label": "Aerosol Physical Properties", 
-                                "description": "Physical radiative properties of aerosols", 
+                                "label": "Aerosol Physical Representation", 
+                                "description": "Physical radiative representation of aerosols", 
                                 "isOpen": true, 
                                 "choices": [
                                     {
@@ -1558,9 +1558,9 @@
                             "uiOrdinal": 2
                         }, 
                         {
-                            "label": "Aer Optical", 
+                            "label": "Optical Methods", 
                             "description": "Optical methods applicable to aerosols in the long wave radiation scheme", 
-                            "id": "cmip6.atmosphere.radiation.lw_aerosols.aer_optical", 
+                            "id": "cmip6.atmosphere.radiation.lw_aerosols.optical_methods", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1601,9 +1601,9 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Gas Interactions", 
+                            "label": "General Interactions", 
                             "description": "General long wave radiative interactions with gases", 
-                            "id": "cmip6.atmosphere.radiation.lw_gases.gas_interactions", 
+                            "id": "cmip6.atmosphere.radiation.lw_gases.general_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1636,9 +1636,9 @@
                             "uiOrdinal": 1
                         }, 
                         {
-                            "label": "Gas Optical", 
+                            "label": "Optical Methods", 
                             "description": "Optical methods applicable to gases in the long wave radiation scheme", 
-                            "id": "cmip6.atmosphere.radiation.lw_gases.gas_optical", 
+                            "id": "cmip6.atmosphere.radiation.lw_gases.optical_methods", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
