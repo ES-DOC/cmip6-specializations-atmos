@@ -51,11 +51,11 @@ DETAILS['toplevel'] = {
 DETAILS['shortwave_radiation'] = {
     'description': 'Properties of the shortwave radiation scheme',
     'properties': [
-        ('sw_spectral_integration', 'ENUM:spectral_integration', '1.1',
+        ('spectral_integration', 'ENUM:spectral_integration', '1.1',
             'Shortwave radiation scheme spectral integration'),
-        ('sw_transport_method', 'ENUM:transport_methods', '1.N',
-            'Shortwave radiation scheme transport method'),
-        ('sw_spectral_intervals', 'int', '1.1',
+        ('transport_calculation', 'ENUM:transport_calculation', '1.N',
+            'Shortwave radiation transport calculation methods'),
+        ('spectral_intervals', 'int', '1.1',
             'Shortwave radiation scheme number of spectral intervals'),
         ]
     }
@@ -64,14 +64,14 @@ DETAILS['shortwave_radiation'] = {
 # SUB-PROCESS: sw_cloud_ice
 # --------------------------------------------------------------------
 DETAILS['sw_cloud_ice'] = {
-    'description': 'Radiative properties of ice crystals in clouds',
+    'description': 'Shortwave radiative properties of ice crystals in clouds',
     'properties': [
         ('general_interactions', 'ENUM:radiative_interactions', '1.N',
-            'General short wave radiative interactions with cloud ice crystals'),
+            'General shortwave radiative interactions with cloud ice crystals'),
         ('physical_representation', 'ENUM:cloud_ice_physical_representation', '1.N',
-            'Physical representation of cloud ice crystals in the short wave radiation scheme'),
+            'Physical representation of cloud ice crystals in the shortwave radiation scheme'),
         ('optical_methods', 'ENUM:optical_methods', '1.N',
-            'Optical methods applicable to cloud ice crystals in the short wave radiation scheme'),
+            'Optical methods applicable to cloud ice crystals in the shortwave radiation scheme'),
     ]
 }
 
@@ -79,14 +79,14 @@ DETAILS['sw_cloud_ice'] = {
 # SUB-PROCESS: sw_cloud_liquid
 # --------------------------------------------------------------------
 DETAILS['sw_cloud_liquid'] = {
-    'description': 'Radiative properties of liquid droplets in clouds',
+    'description': 'Shortwave radiative properties of liquid droplets in clouds',
     'properties': [
         ('general_interactions', 'ENUM:radiative_interactions', '1.N',
-            'General short wave radiative interactions with cloud liquid droplets'),
+            'General shortwave radiative interactions with cloud liquid droplets'),
         ('physical_representation', 'ENUM:cloud_liquid_physical_representation', '1.N',
-            'Physical representation of cloud liquid droplets in the short wave radiation scheme'),
+            'Physical representation of cloud liquid droplets in the shortwave radiation scheme'),
         ('optical_methods', 'ENUM:optical_methods', '1.N',
-            'Optical methods applicable to cloud liquid droplets in the short wave radiation scheme'),
+            'Optical methods applicable to cloud liquid droplets in the shortwave radiation scheme'),
     ]
 }
 
@@ -94,14 +94,14 @@ DETAILS['sw_cloud_liquid'] = {
 # SUB-PROCESS: sw_aerosols
 # --------------------------------------------------------------------
 DETAILS['sw_aerosols'] = {
-    'description': 'Radiative properties of aerosols',
+    'description': 'Shortwave radiative properties of aerosols',
     'properties': [
         ('general_interactions', 'ENUM:radiative_interactions', '1.N',
-            'General short wave radiative interactions with aerosols'),
+            'General shortwave radiative interactions with aerosols'),
         ('physical_representation', 'ENUM:aerosol_physical_representation', '1.N',
-            'Physical representation of aerosols in the short wave radiation scheme'),
+            'Physical representation of aerosols in the shortwave radiation scheme'),
         ('optical_methods', 'ENUM:optical_methods', '1.N',
-            'Optical methods applicable to aerosols in the short wave radiation scheme'),
+            'Optical methods applicable to aerosols in the shortwave radiation scheme'),
     ]
 }
 
@@ -109,12 +109,12 @@ DETAILS['sw_aerosols'] = {
 # SUB-PROCESS: sw_gases
 # --------------------------------------------------------------------
 DETAILS['sw_gases'] = {
-    'description': 'Radiative properties of gases',
+    'description': 'Shortwave radiative properties of gases',
     'properties': [
         ('general_interactions', 'ENUM:radiative_interactions', '1.N',
-            'General short wave radiative interactions with gases'),
+            'General shortwave radiative interactions with gases'),
         ('optical_methods', 'ENUM:optical_methods', '1.N',
-            'Optical methods applicable to gases in the short wave radiation scheme'),
+            'Optical methods applicable to gases in the shortwave radiation scheme'),
     ]
 }
 
@@ -124,11 +124,11 @@ DETAILS['sw_gases'] = {
 DETAILS['longwave_radiation'] = {
     'description': 'Properties of the longwave radiation scheme',
     'properties': [
-        ('lw_spectral_integration', 'ENUM:spectral_integration', '1.1',
+        ('spectral_integration', 'ENUM:spectral_integration', '1.1',
             'Longwave radiation scheme spectral integration'),
-        ('lw_transport_method', 'ENUM:transport_methods', '1.N',
-            'Longwave radiation scheme transport method'),
-        ('lw_spectral_intervals', 'int', '1.1',
+        ('transport_calculation', 'ENUM:transport_calculation', '1.N',
+            'Longwave radiation transport calculation methods'),
+        ('spectral_intervals', 'int', '1.1',
             'Longwave radiation scheme number of spectral intervals'),
         ]
     }
@@ -137,14 +137,14 @@ DETAILS['longwave_radiation'] = {
 # SUB-PROCESS: lw_cloud_ice
 # --------------------------------------------------------------------
 DETAILS['lw_cloud_ice'] = {
-    'description': 'Long wave radiative properties of ice crystals in clouds',
+    'description': 'Longwave radiative properties of ice crystals in clouds',
     'properties': [
         ('general_interactions', 'ENUM:radiative_interactions', '1.N',
-            'General long wave radiative interactions with cloud ice crystals'),
+            'General longwave radiative interactions with cloud ice crystals'),
         ('physical_reprenstation', 'ENUM:cloud_ice_physical_representation', '1.N',
-            'Physical representation of cloud ice crystals in the long wave radiation scheme'),
+            'Physical representation of cloud ice crystals in the longwave radiation scheme'),
         ('optical_methods', 'ENUM:optical_methods', '1.N',
-            'Optical methods applicable to cloud ice crystals in the long wave radiation scheme'),
+            'Optical methods applicable to cloud ice crystals in the longwave radiation scheme'),
     ]
 }
 
@@ -152,14 +152,14 @@ DETAILS['lw_cloud_ice'] = {
 # SUB-PROCESS: lw_cloud_liquid
 # --------------------------------------------------------------------
 DETAILS['lw_cloud_liquid'] = {
-    'description': 'Long wave radiative properties of liquid droplets in clouds',
+    'description': 'Longwave radiative properties of liquid droplets in clouds',
     'properties': [
         ('general_interactions', 'ENUM:radiative_interactions', '1.N',
-            'General long wave radiative interactions with cloud liquid droplets'),
+            'General longwave radiative interactions with cloud liquid droplets'),
         ('physical_representation', 'ENUM:cloud_liquid_physical_representation', '1.N',
-            'Physical representation of cloud liquid droplets in the long wave radiation scheme'),
+            'Physical representation of cloud liquid droplets in the longwave radiation scheme'),
         ('optical_methods', 'ENUM:optical_methods', '1.N',
-            'Optical methods applicable to cloud liquid droplets in the long wave radiation scheme'),
+            'Optical methods applicable to cloud liquid droplets in the longwave radiation scheme'),
     ]
 }
 
@@ -167,14 +167,14 @@ DETAILS['lw_cloud_liquid'] = {
 # SUB-PROCESS: lw_aerosols
 # --------------------------------------------------------------------
 DETAILS['lw_aerosols'] = {
-    'description': 'Long wave radiative properties of aerosols',
+    'description': 'Longwave radiative properties of aerosols',
     'properties': [
         ('general_interactions', 'ENUM:radiative_interactions', '1.N',
-            'General long wave radiative interactions with aerosols'),
+            'General longwave radiative interactions with aerosols'),
         ('physical_representation', 'ENUM:aerosol_physical_representation', '1.N',
-            'Physical representation of aerosols in the long wave radiation scheme'),
+            'Physical representation of aerosols in the longwave radiation scheme'),
         ('optical_methods', 'ENUM:optical_methods', '1.N',
-            'Optical methods applicable to aerosols in the long wave radiation scheme'),
+            'Optical methods applicable to aerosols in the longwave radiation scheme'),
     ]
 }
 
@@ -182,12 +182,12 @@ DETAILS['lw_aerosols'] = {
 # SUB-PROCESS: lw_gases
 # --------------------------------------------------------------------
 DETAILS['lw_gases'] = {
-    'description': 'Long wave radiative properties of gases',
+    'description': 'Longwave radiative properties of gases',
     'properties': [
         ('general_interactions', 'ENUM:radiative_interactions', '1.N',
-            'General long wave radiative interactions with gases'),
+            'General longwave radiative interactions with gases'),
         ('optical_methods', 'ENUM:optical_methods', '1.N',
-            'Optical methods applicable to gases in the long wave radiation scheme'),
+            'Optical methods applicable to gases in the longwave radiation scheme'),
     ]
 }
 
@@ -241,8 +241,8 @@ ENUMERATIONS['spectral_integration'] = {
         ]
     }
 
-ENUMERATIONS['transport_methods'] = {
-    'description': 'Radiation transport methods',
+ENUMERATIONS['transport_calculation'] = {
+    'description': 'Radiation transport calculation methods',
     'is_open': True,
     'members': [
         ('two-stream', None),
