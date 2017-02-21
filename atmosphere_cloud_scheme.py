@@ -98,7 +98,7 @@ ENUMERATIONS['cloud_overlap_method'] = {
         ]
     }
 
-ENUMERATIONS['inhomogeniety'] = {
+ENUMERATIONS['inhomogeneity'] = {
     'description': 'Cloud scheme inhomogeneity treatment',
     'is_open': True,
     'members': [
