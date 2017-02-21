@@ -42,6 +42,8 @@ DETAILS['toplevel'] = {
             'Different cloud schemes for the different types of clouds (convective, stratiform and boundary layer clouds'),
         ('cloud_overlap_method', 'ENUM:cloud_overlap_method', '1.1',
             'Method for taking into account overlapping of cloud layers'),
+        ('inhomogeneity_treatment', 'ENUM:inhomogeneity', '1.1',
+            'Method for taking into account cloud inhomogeneity'),
         ('processes', 'ENUM:processes_attributes', '1.N',
             'Processes included in the cloud scheme'),
         ]
@@ -92,10 +94,18 @@ ENUMERATIONS['cloud_overlap_method'] = {
     'members': [
         ('random', None),
         ('maximum', None),
-        ('arbitrary', 'combination of maximum and random overlap between clouds'),
+        ('maximum-random', 'combination of maximum and random overlap between clouds'),
         ]
     }
 
+ENUMERATIONS['inhomogeniety'] = {
+    'description': 'Cloud scheme inhomogeneity treatment',
+    'is_open': True,
+    'members': [
+        ('Monte Carlo Independent Column Approximation', 'McICA'),
+        ('analytic', None),
+        ]
+    }
 ENUMERATIONS['processes_attributes'] = {
     'description': 'Processes included in the cloud scheme.',
     'is_open': True,

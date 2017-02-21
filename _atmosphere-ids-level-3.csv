@@ -29,9 +29,9 @@ cmip6.atmosphere.dynamical_core.advection_momentum.conservation_method, Atmosphe
 , , 
 cmip6.atmosphere.radiation.aerosols, Atmosphere > Radiation > Aerosols, property
 cmip6.atmosphere.radiation.greenhouse_gases, Atmosphere > Radiation > Greenhouse Gases, property
-cmip6.atmosphere.radiation.shortwave_radiation.sw_spectral_integration, Atmosphere > Radiation > Shortwave Radiation > Sw Spectral Integration, property
-cmip6.atmosphere.radiation.shortwave_radiation.sw_transport_method, Atmosphere > Radiation > Shortwave Radiation > Sw Transport Method, property
-cmip6.atmosphere.radiation.shortwave_radiation.sw_spectral_intervals, Atmosphere > Radiation > Shortwave Radiation > Sw Spectral Intervals, property
+cmip6.atmosphere.radiation.shortwave_radiation.spectral_integration, Atmosphere > Radiation > Shortwave Radiation > Spectral Integration, property
+cmip6.atmosphere.radiation.shortwave_radiation.transport_calculation, Atmosphere > Radiation > Shortwave Radiation > Transport Calculation, property
+cmip6.atmosphere.radiation.shortwave_radiation.spectral_intervals, Atmosphere > Radiation > Shortwave Radiation > Spectral Intervals, property
 cmip6.atmosphere.radiation.sw_cloud_ice.general_interactions, Atmosphere > Radiation > Sw Cloud Ice > General Interactions, property
 cmip6.atmosphere.radiation.sw_cloud_ice.physical_representation, Atmosphere > Radiation > Sw Cloud Ice > Physical Representation, property
 cmip6.atmosphere.radiation.sw_cloud_ice.optical_methods, Atmosphere > Radiation > Sw Cloud Ice > Optical Methods, property
@@ -43,9 +43,9 @@ cmip6.atmosphere.radiation.sw_aerosols.physical_representation, Atmosphere > Rad
 cmip6.atmosphere.radiation.sw_aerosols.optical_methods, Atmosphere > Radiation > Sw Aerosols > Optical Methods, property
 cmip6.atmosphere.radiation.sw_gases.general_interactions, Atmosphere > Radiation > Sw Gases > General Interactions, property
 cmip6.atmosphere.radiation.sw_gases.optical_methods, Atmosphere > Radiation > Sw Gases > Optical Methods, property
-cmip6.atmosphere.radiation.longwave_radiation.lw_spectral_integration, Atmosphere > Radiation > Longwave Radiation > Lw Spectral Integration, property
-cmip6.atmosphere.radiation.longwave_radiation.lw_transport_method, Atmosphere > Radiation > Longwave Radiation > Lw Transport Method, property
-cmip6.atmosphere.radiation.longwave_radiation.lw_spectral_intervals, Atmosphere > Radiation > Longwave Radiation > Lw Spectral Intervals, property
+cmip6.atmosphere.radiation.longwave_radiation.spectral_integration, Atmosphere > Radiation > Longwave Radiation > Spectral Integration, property
+cmip6.atmosphere.radiation.longwave_radiation.transport_calculation, Atmosphere > Radiation > Longwave Radiation > Transport Calculation, property
+cmip6.atmosphere.radiation.longwave_radiation.spectral_intervals, Atmosphere > Radiation > Longwave Radiation > Spectral Intervals, property
 cmip6.atmosphere.radiation.lw_cloud_ice.general_interactions, Atmosphere > Radiation > Lw Cloud Ice > General Interactions, property
 cmip6.atmosphere.radiation.lw_cloud_ice.physical_reprenstation, Atmosphere > Radiation > Lw Cloud Ice > Physical Reprenstation, property
 cmip6.atmosphere.radiation.lw_cloud_ice.optical_methods, Atmosphere > Radiation > Lw Cloud Ice > Optical Methods, property
