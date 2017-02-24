@@ -2162,13 +2162,13 @@
                     "uiOrdinal": 2
                 }, 
                 {
-                    "label": "Inhomogeneity Treatment", 
+                    "label": "Cloud Inhomogeneity", 
                     "description": "Method for taking into account horizontal cloud inhomogeneity", 
-                    "id": "cmip6.atmosphere.cloud_scheme.inhomogeneity_treatment", 
+                    "id": "cmip6.atmosphere.cloud_scheme.cloud_inhomogeneity", 
                     "cardinality": "1.1", 
                     "type": "enum", 
                     "enum": {
-                        "label": "Inhomogeneity", 
+                        "label": "Inhomogeneity Treatment", 
                         "description": "Cloud scheme inhomogeneity treatment", 
                         "isOpen": true, 
                         "choices": [

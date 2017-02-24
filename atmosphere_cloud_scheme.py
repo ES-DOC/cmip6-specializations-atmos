@@ -20,7 +20,7 @@ CONTACT = 'Charlotte Pascoe'
 # --------------------------------------------------------------------
 # AUTHORS: Set to realm specialization authors (comma delimited).
 # --------------------------------------------------------------------
-AUTHORS = 'Charlotte Pascoe'
+AUTHORS = 'Charlotte Pascoe, Robert Pincus'
 
 # --------------------------------------------------------------------
 # QUALITY CONTROL STATUS: Set to 'draft' or 'complete'
@@ -95,6 +95,7 @@ ENUMERATIONS['cloud_overlap_method'] = {
         ('random', None),
         ('maximum', None),
         ('maximum-random', 'combination of maximum and random overlap between clouds'),
+        ('exponential', None),
         ]
     }
 

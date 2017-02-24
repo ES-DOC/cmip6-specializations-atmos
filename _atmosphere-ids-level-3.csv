@@ -78,7 +78,7 @@ cmip6.atmosphere.microphysics_precipitation.cloud_microphysics.processes, Atmosp
 , , 
 cmip6.atmosphere.cloud_scheme.uses_separate_treatment, Atmosphere > Cloud Scheme > Uses Separate Treatment, property
 cmip6.atmosphere.cloud_scheme.cloud_overlap_method, Atmosphere > Cloud Scheme > Cloud Overlap Method, property
-cmip6.atmosphere.cloud_scheme.inhomogeneity_treatment, Atmosphere > Cloud Scheme > Inhomogeneity Treatment, property
+cmip6.atmosphere.cloud_scheme.cloud_inhomogeneity, Atmosphere > Cloud Scheme > Cloud Inhomogeneity, property
 cmip6.atmosphere.cloud_scheme.processes, Atmosphere > Cloud Scheme > Processes, property
 cmip6.atmosphere.cloud_scheme.sub_grid_scale_water_distribution.type, Atmosphere > Cloud Scheme > Sub Grid Scale Water Distribution > Type, property
 cmip6.atmosphere.cloud_scheme.sub_grid_scale_water_distribution.function_name, Atmosphere > Cloud Scheme > Sub Grid Scale Water Distribution > Function Name, property

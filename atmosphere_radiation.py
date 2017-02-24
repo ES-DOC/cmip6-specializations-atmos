@@ -20,7 +20,7 @@ CONTACT = 'Charlotte Pascoe'
 # --------------------------------------------------------------------
 # AUTHORS: Set to realm specialization authors (comma delimited).
 # --------------------------------------------------------------------
-AUTHORS = 'Charlotte Pascoe'
+AUTHORS = 'Charlotte Pascoe, Robert Pincus'
 
 # --------------------------------------------------------------------
 # QUALITY CONTROL STATUS: Set to 'draft' or 'complete'
@@ -248,7 +248,8 @@ ENUMERATIONS['transport_calculation'] = {
         ('two-stream', None),
         ('layer interaction', None),
         ('bulk', 'highly parameterised methods that use bulk expressions'),
-        ('adaptive', 'exploits spatial and temporal correlations in optical characteristics')
+        ('adaptive', 'exploits spatial and temporal correlations in optical characteristics'),
+        ('multi-stream', None)
         ]
     }
 
@@ -257,10 +258,7 @@ ENUMERATIONS['radiative_interactions'] = {
     'is_open': True,
     'members': [
         ('scattering', None),
-        ('absorption', None),
-        ('emission', None),
-        ('reflection', None),
-        ('transmission', None),
+        ('emission/absorption', None),
     ]
 }
 
@@ -300,6 +298,7 @@ ENUMERATIONS['aerosol_physical_representation'] = {
         ('size distribution', None),
         ('asymmetry', None),
         ('aspect ratio', None),
+        ('mixing state', 'For shortwave radiative interaction'),
         ]
     }
 
