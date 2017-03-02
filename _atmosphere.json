@@ -741,6 +741,10 @@
                                     {
                                         "label": "adaptive", 
                                         "description": "exploits spatial and temporal correlations in optical characteristics"
+                                    }, 
+                                    {
+                                        "label": "multi-stream", 
+                                        "description": null
                                     }
                                 ]
                             }, 
@@ -778,19 +782,7 @@
                                         "description": null
                                     }, 
                                     {
-                                        "label": "absorption", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "emission", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "reflection", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "transmission", 
+                                        "label": "emission/absorption", 
                                         "description": null
                                     }
                                 ]
@@ -899,19 +891,7 @@
                                         "description": null
                                     }, 
                                     {
-                                        "label": "absorption", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "emission", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "reflection", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "transmission", 
+                                        "label": "emission/absorption", 
                                         "description": null
                                     }
                                 ]
@@ -1008,19 +988,7 @@
                                         "description": null
                                     }, 
                                     {
-                                        "label": "absorption", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "emission", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "reflection", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "transmission", 
+                                        "label": "emission/absorption", 
                                         "description": null
                                     }
                                 ]
@@ -1057,6 +1025,10 @@
                                     {
                                         "label": "aspect ratio", 
                                         "description": null
+                                    }, 
+                                    {
+                                        "label": "mixing state", 
+                                        "description": "For shortwave radiative interaction"
                                     }
                                 ]
                             }, 
@@ -1121,19 +1093,7 @@
                                         "description": null
                                     }, 
                                     {
-                                        "label": "absorption", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "emission", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "reflection", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "transmission", 
+                                        "label": "emission/absorption", 
                                         "description": null
                                     }
                                 ]
@@ -1236,6 +1196,10 @@
                                     {
                                         "label": "adaptive", 
                                         "description": "exploits spatial and temporal correlations in optical characteristics"
+                                    }, 
+                                    {
+                                        "label": "multi-stream", 
+                                        "description": null
                                     }
                                 ]
                             }, 
@@ -1273,19 +1237,7 @@
                                         "description": null
                                     }, 
                                     {
-                                        "label": "absorption", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "emission", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "reflection", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "transmission", 
+                                        "label": "emission/absorption", 
                                         "description": null
                                     }
                                 ]
@@ -1394,19 +1346,7 @@
                                         "description": null
                                     }, 
                                     {
-                                        "label": "absorption", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "emission", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "reflection", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "transmission", 
+                                        "label": "emission/absorption", 
                                         "description": null
                                     }
                                 ]
@@ -1503,19 +1443,7 @@
                                         "description": null
                                     }, 
                                     {
-                                        "label": "absorption", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "emission", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "reflection", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "transmission", 
+                                        "label": "emission/absorption", 
                                         "description": null
                                     }
                                 ]
@@ -1552,6 +1480,10 @@
                                     {
                                         "label": "aspect ratio", 
                                         "description": null
+                                    }, 
+                                    {
+                                        "label": "mixing state", 
+                                        "description": "For shortwave radiative interaction"
                                     }
                                 ]
                             }, 
@@ -1616,19 +1548,7 @@
                                         "description": null
                                     }, 
                                     {
-                                        "label": "absorption", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "emission", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "reflection", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "transmission", 
+                                        "label": "emission/absorption", 
                                         "description": null
                                     }
                                 ]
@@ -2156,6 +2076,10 @@
                             {
                                 "label": "maximum-random", 
                                 "description": "combination of maximum and random overlap between clouds"
+                            }, 
+                            {
+                                "label": "exponential", 
+                                "description": null
                             }
                         ]
                     }, 
