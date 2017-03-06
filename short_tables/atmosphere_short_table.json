@@ -1,0 +1,32 @@
+{
+    "AUTHORS": [
+        "Charlotte Pascoe"
+    ],
+    "CHANGE_HISTORY": [
+        ["0.1.0", "2017-03-06", "Charlotte Pascoe", "Initialised"]
+    ],
+    "CONTACT": "Charlotte Pascoe",
+    "CONTRIBUTORS": [
+        "Eric Guilliardi (IPSL)"
+    ],
+    "PROPERTIES": {
+        "priority1": [
+            "cmip6.atmosphere.grid.discretisation.horizontal.scheme_type",
+            "cmip6.atmosphere.key_properties.basic_approximations",
+            "cmip6.atmosphere.dynamical_core.prognostic_variables",
+            "cmip6.atmosphere.turbulence_convection.boundary_layer_turbulence.scheme_name",
+            "cmip6.atmosphere.turbulence_convection.deep_convection.scheme_name",
+            "cmip6.atmosphere.solar.solar_constant "
+        ],
+        "priority2": [
+            "cmip6.atmosphere.radiation.shortwave_radiation.spectral_integration",
+            "cmip6.atmosphere.radiation.shortwave_radiation.transport_calculation",
+            "cmip6.atmosphere.radiation.longwave_radiation.spectral_integration",
+            "cmip6.atmosphere.radiation.longwave_radiation.transport_calculation",
+            "cmip6.atmosphere.turbulence_convection.boundary_layer_turbulence.scheme_type",
+            "cmip6.atmosphere.turbulence_convection.deep_convection.scheme_type",
+            "cmip6.atmosphere.volcanos.volcanoes_treatment.volcanoes_implementation"
+        ]
+    },
+    "QC_STATUS": "draft"
+}
