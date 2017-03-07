@@ -5,6 +5,7 @@ cmip6.atmosphere.grid, Atmosphere > Grid, grid
 cmip6.atmosphere.grid.discretisation, Atmosphere > Grid > Discretisation, subprocess
 , , 
 cmip6.atmosphere.key_properties, Atmosphere > Key Properties, keyprops
+cmip6.atmosphere.key_properties.resolution, Atmosphere > Key Properties > Resolution, subprocess
 cmip6.atmosphere.key_properties.orography, Atmosphere > Key Properties > Orography, subprocess
 , , 
 cmip6.atmosphere.dynamical_core, Atmosphere > Dynamical Core, process

@@ -3195,6 +3195,62 @@
         ], 
         "subProcesses": [
             {
+                "label": "Resolution", 
+                "description": "Characteristics of the model resolution", 
+                "id": "cmip6.atmosphere.key_properties.resolution", 
+                "contact": "Charlotte Pascoe", 
+                "properties": [
+                    {
+                        "label": "Name", 
+                        "description": "This is a string usually used by the modelling group to describe the resolution of the model grid, e.g. T42, N48.", 
+                        "id": "cmip6.atmosphere.key_properties.resolution.name", 
+                        "cardinality": "1.1", 
+                        "type": "str", 
+                        "uiOrdinal": 1
+                    }, 
+                    {
+                        "label": "Canonical Horizontal Resolution", 
+                        "description": "Expression quoted for gross comparisons of resolution, e.g. 2.5 x 3.75 degrees lat-lon.", 
+                        "id": "cmip6.atmosphere.key_properties.resolution.canonical_horizontal_resolution", 
+                        "cardinality": "1.1", 
+                        "type": "str", 
+                        "uiOrdinal": 2
+                    }, 
+                    {
+                        "label": "Number Of Vertical Levels", 
+                        "description": "Number of vertical levels resolved on the computational grid.", 
+                        "id": "cmip6.atmosphere.key_properties.resolution.number_of_vertical_levels", 
+                        "cardinality": "1.1", 
+                        "type": "int", 
+                        "uiOrdinal": 3
+                    }, 
+                    {
+                        "label": "High Top", 
+                        "description": "Does the atmosphere have a high-top? High-Top atmospheres have a fully resolved stratosphere with a model top above the stratopause.", 
+                        "id": "cmip6.atmosphere.key_properties.resolution.high_top", 
+                        "cardinality": "1.1", 
+                        "type": "bool", 
+                        "uiOrdinal": 4
+                    }, 
+                    {
+                        "label": "Timestep Dynamics", 
+                        "description": "Timestep for the dynamics, e.g. 30 min.", 
+                        "id": "cmip6.atmosphere.key_properties.resolution.timestep_dynamics", 
+                        "cardinality": "1.1", 
+                        "type": "str", 
+                        "uiOrdinal": 5
+                    }, 
+                    {
+                        "label": "Timestep Radiative Transfer", 
+                        "description": "Timestep for the radiative transfer, e.g. 3 hours.", 
+                        "id": "cmip6.atmosphere.key_properties.resolution.timestep_radiative_transfer", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "uiOrdinal": 6
+                    }
+                ]
+            }, 
+            {
                 "label": "Orography", 
                 "description": "Characteristics of the model orography", 
                 "id": "cmip6.atmosphere.key_properties.orography", 

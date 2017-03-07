@@ -38,6 +38,8 @@ DESCRIPTION = 'Characteristics of the dynamical core'
 DETAILS['toplevel'] = {
     'description': "General dynamical core properties",
     'properties': [
+        ('name', 'str', '0.1',
+            'Commonly used name for the dynamical core of the model.'),
         ('timestepping_type', 'ENUM:timestepping_type', '1.1',
             'Timestepping framework type'),
         ('prognostic_variables', 'ENUM:prognostic_variables', '1.N',
