@@ -81,7 +81,7 @@ cmip6.atmosphere.turbulence_convection.shallow_convection.scheme_type, Atmospher
 cmip6.atmosphere.turbulence_convection.shallow_convection.scheme_method, Atmosphere > Turbulence Convection > Shallow Convection > Scheme Method, property
 cmip6.atmosphere.turbulence_convection.shallow_convection.processes, Atmosphere > Turbulence Convection > Shallow Convection > Processes, property
 , , 
-cmip6.atmosphere.microphysics_precipitation.large_scale_precipitation.scheme, Atmosphere > Microphysics Precipitation > Large Scale Precipitation > Scheme, property
+cmip6.atmosphere.microphysics_precipitation.large_scale_precipitation.scheme_name, Atmosphere > Microphysics Precipitation > Large Scale Precipitation > Scheme Name, property
 cmip6.atmosphere.microphysics_precipitation.large_scale_precipitation.hydrometeors, Atmosphere > Microphysics Precipitation > Large Scale Precipitation > Hydrometeors, property
 cmip6.atmosphere.microphysics_precipitation.cloud_microphysics.scheme_name, Atmosphere > Microphysics Precipitation > Cloud Microphysics > Scheme Name, property
 cmip6.atmosphere.microphysics_precipitation.cloud_microphysics.processes, Atmosphere > Microphysics Precipitation > Cloud Microphysics > Processes, property
@@ -113,10 +113,12 @@ cmip6.atmosphere.cloud_simulator.lidar_inputs.overlap, Atmosphere > Cloud Simula
 cmip6.atmosphere.gravity_waves.sponge_layer, Atmosphere > Gravity Waves > Sponge Layer, property
 cmip6.atmosphere.gravity_waves.background, Atmosphere > Gravity Waves > Background, property
 cmip6.atmosphere.gravity_waves.subgrid_scale_orography, Atmosphere > Gravity Waves > Subgrid Scale Orography, property
+cmip6.atmosphere.gravity_waves.orographic_gravity_waves.name, Atmosphere > Gravity Waves > Orographic Gravity Waves > Name, property
 cmip6.atmosphere.gravity_waves.orographic_gravity_waves.source_mechanisms, Atmosphere > Gravity Waves > Orographic Gravity Waves > Source Mechanisms, property
 cmip6.atmosphere.gravity_waves.orographic_gravity_waves.calculation_method, Atmosphere > Gravity Waves > Orographic Gravity Waves > Calculation Method, property
 cmip6.atmosphere.gravity_waves.orographic_gravity_waves.propagation_scheme, Atmosphere > Gravity Waves > Orographic Gravity Waves > Propagation Scheme, property
 cmip6.atmosphere.gravity_waves.orographic_gravity_waves.dissipation_scheme, Atmosphere > Gravity Waves > Orographic Gravity Waves > Dissipation Scheme, property
+cmip6.atmosphere.gravity_waves.non_orographic_gravity_waves.name, Atmosphere > Gravity Waves > Non Orographic Gravity Waves > Name, property
 cmip6.atmosphere.gravity_waves.non_orographic_gravity_waves.source_mechanisms, Atmosphere > Gravity Waves > Non Orographic Gravity Waves > Source Mechanisms, property
 cmip6.atmosphere.gravity_waves.non_orographic_gravity_waves.calculation_method, Atmosphere > Gravity Waves > Non Orographic Gravity Waves > Calculation Method, property
 cmip6.atmosphere.gravity_waves.non_orographic_gravity_waves.propagation_scheme, Atmosphere > Gravity Waves > Non Orographic Gravity Waves > Propagation Scheme, property

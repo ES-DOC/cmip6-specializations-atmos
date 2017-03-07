@@ -1634,7 +1634,7 @@
                             "label": "Scheme Name", 
                             "description": "Boundary layer turbulence scheme name", 
                             "id": "cmip6.atmosphere.turbulence_convection.boundary_layer_turbulence.scheme_name", 
-                            "cardinality": "1.1", 
+                            "cardinality": "0.1", 
                             "type": "enum", 
                             "enum": {
                                 "label": "Boundary Layer Turbulence Scheme Name", 
@@ -1740,7 +1740,7 @@
                             "label": "Scheme Name", 
                             "description": "Deep convection scheme name", 
                             "id": "cmip6.atmosphere.turbulence_convection.deep_convection.scheme_name", 
-                            "cardinality": "1.1", 
+                            "cardinality": "0.1", 
                             "type": "str", 
                             "uiOrdinal": 1
                         }, 
@@ -1857,7 +1857,7 @@
                             "label": "Scheme Name", 
                             "description": "Shallow convection scheme name", 
                             "id": "cmip6.atmosphere.turbulence_convection.shallow_convection.scheme_name", 
-                            "cardinality": "1.1", 
+                            "cardinality": "0.1", 
                             "type": "str", 
                             "uiOrdinal": 1
                         }, 
@@ -1959,10 +1959,10 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Scheme", 
+                            "label": "Scheme Name", 
                             "description": "Commonly used name of the large scale precipitation parameterisation scheme", 
-                            "id": "cmip6.atmosphere.microphysics_precipitation.large_scale_precipitation.scheme", 
-                            "cardinality": "1.1", 
+                            "id": "cmip6.atmosphere.microphysics_precipitation.large_scale_precipitation.scheme_name", 
+                            "cardinality": "0.1", 
                             "type": "str", 
                             "uiOrdinal": 1
                         }, 
@@ -2009,7 +2009,7 @@
                             "label": "Scheme Name", 
                             "description": "Commonly used name of the microphysics parameterisation scheme.", 
                             "id": "cmip6.atmosphere.microphysics_precipitation.cloud_microphysics.scheme_name", 
-                            "cardinality": "1.1", 
+                            "cardinality": "0.1", 
                             "type": "str", 
                             "uiOrdinal": 1
                         }, 
@@ -2610,6 +2610,14 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Name", 
+                            "description": "Commonly used name for the orographic gravity wave scheme", 
+                            "id": "cmip6.atmosphere.gravity_waves.orographic_gravity_waves.name", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Source Mechanisms", 
                             "description": "Orographic gravity wave source mechanisms", 
                             "id": "cmip6.atmosphere.gravity_waves.orographic_gravity_waves.source_mechanisms", 
@@ -2642,7 +2650,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Calculation Method", 
@@ -2665,7 +2673,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Propagation Scheme", 
@@ -2688,7 +2696,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Dissipation Scheme", 
@@ -2719,7 +2727,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 5
                         }
                     ]
                 }, 
@@ -2729,6 +2737,14 @@
                     "id": "cmip6.atmosphere.gravity_waves.non_orographic_gravity_waves", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
+                        {
+                            "label": "Name", 
+                            "description": "Commonly used name for the non-orographic gravity wave scheme", 
+                            "id": "cmip6.atmosphere.gravity_waves.non_orographic_gravity_waves.name", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "uiOrdinal": 1
+                        }, 
                         {
                             "label": "Source Mechanisms", 
                             "description": "Non-orographic gravity wave source mechanisms", 
@@ -2754,7 +2770,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Calculation Method", 
@@ -2777,7 +2793,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Propagation Scheme", 
@@ -2800,7 +2816,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 4
                         }, 
                         {
                             "label": "Dissipation Scheme", 
@@ -2831,7 +2847,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 4
+                            "uiOrdinal": 5
                         }
                     ]
                 }

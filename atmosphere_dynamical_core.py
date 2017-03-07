@@ -73,7 +73,7 @@ DETAILS['lateral_boundary'] = {
 DETAILS['diffusion_horizontal'] = {
     'description': 'Horizontal diffusion scheme',
     'properties': [
-        ('scheme_name', 'str', '1.1',
+        ('scheme_name', 'str', '0.1',
              'Horizontal diffusion scheme name'),
         ('scheme_method', 'ENUM:diffusion_horizontal_scheme_method', '1.1',
              'Horizontal diffusion scheme method'),
@@ -83,7 +83,7 @@ DETAILS['diffusion_horizontal'] = {
 DETAILS['advection_tracers'] = {
     'description': 'Tracer advection scheme',
     'properties': [
-        ('scheme_name', 'ENUM:advection_tracers_scheme_name', '1.1',
+        ('scheme_name', 'ENUM:advection_tracers_scheme_name', '0.1',
             'Tracer advection scheme name'),
         ('scheme_characteristics', 'ENUM:advection_tracers_scheme_characteristics', '1.N',
             'Tracer advection scheme characteristics'),
@@ -97,7 +97,7 @@ DETAILS['advection_tracers'] = {
 DETAILS['advection_momentum'] = {
     'description': 'Momentum advection scheme',
     'properties': [
-        ('scheme_name', 'ENUM:advection_momentum_scheme_name', '1.1',
+        ('scheme_name', 'ENUM:advection_momentum_scheme_name', '0.1',
             'Momentum advection schemes name'),
         ('scheme_characteristics', 'ENUM:advection_momentum_scheme_characteristics', '1.N',
          'Momentum advection scheme characteristics'),

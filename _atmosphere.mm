@@ -2746,14 +2746,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Boundary layer turbulence scheme name</dd><dt><b>Type</b></dt><dd>ENUM:boundary_layer_turbulence_scheme_name</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.turbulence_convection.boundary_layer_turbulence.scheme_name</dd>
+        <dt><b>Description</b></dt><dd>Boundary layer turbulence scheme name</dd><dt><b>Type</b></dt><dd>ENUM:boundary_layer_turbulence_scheme_name</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.turbulence_convection.boundary_layer_turbulence.scheme_name</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Boundary layer turbulence scheme name</dd><dt><b>Type</b></dt><dd>ENUM:boundary_layer_turbulence_scheme_name</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.turbulence_convection.boundary_layer_turbulence.scheme_name</dd>
+        <dt><b>Description</b></dt><dd>Boundary layer turbulence scheme name</dd><dt><b>Type</b></dt><dd>ENUM:boundary_layer_turbulence_scheme_name</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.turbulence_convection.boundary_layer_turbulence.scheme_name</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Mellor-Yamada"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2900,14 +2900,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Deep convection scheme name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.turbulence_convection.deep_convection.scheme_name</dd>
+        <dt><b>Description</b></dt><dd>Deep convection scheme name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.turbulence_convection.deep_convection.scheme_name</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Deep convection scheme name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.turbulence_convection.deep_convection.scheme_name</dd>
+        <dt><b>Description</b></dt><dd>Deep convection scheme name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.turbulence_convection.deep_convection.scheme_name</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scheme_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3061,14 +3061,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Shallow convection scheme name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.turbulence_convection.shallow_convection.scheme_name</dd>
+        <dt><b>Description</b></dt><dd>Shallow convection scheme name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.turbulence_convection.shallow_convection.scheme_name</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Shallow convection scheme name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.turbulence_convection.shallow_convection.scheme_name</dd>
+        <dt><b>Description</b></dt><dd>Shallow convection scheme name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.turbulence_convection.shallow_convection.scheme_name</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scheme_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3197,18 +3197,18 @@
         <dt><b>Description</b></dt><dd>Properties of the large scale precipitation scheme</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Charlotte Pascoe</dd><dt><b>Authors</b></dt><dd>Charlotte Pascoe</dd><dt><b>Contributors</b></dt><dd />
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scheme"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scheme_name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Commonly used name of the large scale precipitation parameterisation scheme</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.microphysics_precipitation.large_scale_precipitation.scheme</dd>
+        <dt><b>Description</b></dt><dd>Commonly used name of the large scale precipitation parameterisation scheme</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.microphysics_precipitation.large_scale_precipitation.scheme_name</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Commonly used name of the large scale precipitation parameterisation scheme</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.microphysics_precipitation.large_scale_precipitation.scheme</dd>
+        <dt><b>Description</b></dt><dd>Commonly used name of the large scale precipitation parameterisation scheme</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.microphysics_precipitation.large_scale_precipitation.scheme_name</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="hydrometeors"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3264,14 +3264,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Commonly used name of the microphysics parameterisation scheme.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.microphysics_precipitation.cloud_microphysics.scheme_name</dd>
+        <dt><b>Description</b></dt><dd>Commonly used name of the microphysics parameterisation scheme.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.microphysics_precipitation.cloud_microphysics.scheme_name</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Commonly used name of the microphysics parameterisation scheme.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.microphysics_precipitation.cloud_microphysics.scheme_name</dd>
+        <dt><b>Description</b></dt><dd>Commonly used name of the microphysics parameterisation scheme.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.microphysics_precipitation.cloud_microphysics.scheme_name</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="processes"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -4072,7 +4072,21 @@
         <dt><b>Description</b></dt><dd>Gravity waves generated due to the presence of orography</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Charlotte Pascoe</dd><dt><b>Authors</b></dt><dd>Charlotte Pascoe</dd><dt><b>Contributors</b></dt><dd />
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="source_mechanisms"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Commonly used name for the orographic gravity wave scheme</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.gravity_waves.orographic_gravity_waves.name</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Commonly used name for the orographic gravity wave scheme</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.gravity_waves.orographic_gravity_waves.name</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="source_mechanisms"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -4226,7 +4240,21 @@
         <dt><b>Description</b></dt><dd>Gravity waves generated by non-orographic processes.</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Charlotte Pascoe</dd><dt><b>Authors</b></dt><dd>Charlotte Pascoe</dd><dt><b>Contributors</b></dt><dd />
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="source_mechanisms"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Commonly used name for the non-orographic gravity wave scheme</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.gravity_waves.non_orographic_gravity_waves.name</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Commonly used name for the non-orographic gravity wave scheme</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.gravity_waves.non_orographic_gravity_waves.name</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="source_mechanisms"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
