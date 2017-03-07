@@ -60,7 +60,7 @@ DETAILS['discretisation:horizontal'] = {
 DETAILS['discretisation:vertical'] = {
     'description': 'Atmosphere discretisation in the vertical',
     'properties': [
-        ('vertical_coordinate_type', 'ENUM:dynamical_core_discretisation_vertical_type', '1.N',
+        ('coordinate_type', 'ENUM:dynamical_core_discretisation_vertical_type', '1.N',
             'Type of vertical coordinate system'),
         ]
     }
