@@ -2878,7 +2878,7 @@
                                 "choices": [
                                     {
                                         "label": "SW radiation", 
-                                        "description": null
+                                        "description": "Shortwave solar spectral irradiance."
                                     }, 
                                     {
                                         "label": "precipitating energetic particles", 
@@ -3183,9 +3183,9 @@
                         "id": "cmip6.atmosphere.grid.discretisation.vertical", 
                         "properties": [
                             {
-                                "label": "Vertical Coordinate Type", 
+                                "label": "Coordinate Type", 
                                 "description": "Type of vertical coordinate system", 
-                                "id": "cmip6.atmosphere.grid.discretisation.vertical.vertical_coordinate_type", 
+                                "id": "cmip6.atmosphere.grid.discretisation.vertical.coordinate_type", 
                                 "cardinality": "1.N", 
                                 "type": "enum", 
                                 "enum": {
@@ -3292,9 +3292,9 @@
                 "contact": "Charlotte Pascoe", 
                 "properties": [
                     {
-                        "label": "Name", 
+                        "label": "Horizontal Resolution Name", 
                         "description": "This is a string usually used by the modelling group to describe the resolution of the model grid, e.g. T42, N48.", 
-                        "id": "cmip6.atmosphere.key_properties.resolution.name", 
+                        "id": "cmip6.atmosphere.key_properties.resolution.horizontal_resolution_name", 
                         "cardinality": "1.1", 
                         "type": "str", 
                         "uiOrdinal": 1

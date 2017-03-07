@@ -3,11 +3,11 @@ cmip6.atmosphere.grid.discretisation.horizontal.scheme_type, Atmosphere > Grid >
 cmip6.atmosphere.grid.discretisation.horizontal.scheme_method, Atmosphere > Grid > Discretisation > Horizontal > Scheme Method, property
 cmip6.atmosphere.grid.discretisation.horizontal.scheme_order, Atmosphere > Grid > Discretisation > Horizontal > Scheme Order, property
 cmip6.atmosphere.grid.discretisation.horizontal.horizontal_pole, Atmosphere > Grid > Discretisation > Horizontal > Horizontal Pole, property
-cmip6.atmosphere.grid.discretisation.vertical.vertical_coordinate_type, Atmosphere > Grid > Discretisation > Vertical > Vertical Coordinate Type, property
+cmip6.atmosphere.grid.discretisation.vertical.coordinate_type, Atmosphere > Grid > Discretisation > Vertical > Coordinate Type, property
 , , 
 cmip6.atmosphere.key_properties.model_family, Atmosphere > Key Properties > Model Family, property
 cmip6.atmosphere.key_properties.basic_approximations, Atmosphere > Key Properties > Basic Approximations, property
-cmip6.atmosphere.key_properties.resolution.name, Atmosphere > Key Properties > Resolution > Name, property
+cmip6.atmosphere.key_properties.resolution.horizontal_resolution_name, Atmosphere > Key Properties > Resolution > Horizontal Resolution Name, property
 cmip6.atmosphere.key_properties.resolution.canonical_horizontal_resolution, Atmosphere > Key Properties > Resolution > Canonical Horizontal Resolution, property
 cmip6.atmosphere.key_properties.resolution.number_of_vertical_levels, Atmosphere > Key Properties > Resolution > Number Of Vertical Levels, property
 cmip6.atmosphere.key_properties.resolution.high_top, Atmosphere > Key Properties > Resolution > High Top, property

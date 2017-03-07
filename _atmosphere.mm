@@ -229,18 +229,18 @@
         <dt><b>Description</b></dt><dd>Atmosphere discretisation in the vertical</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="vertical_coordinate_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="coordinate_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Type of vertical coordinate system</dd><dt><b>Type</b></dt><dd>ENUM:dynamical_core_discretisation_vertical_type</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.grid.discretisation.vertical.vertical_coordinate_type</dd>
+        <dt><b>Description</b></dt><dd>Type of vertical coordinate system</dd><dt><b>Type</b></dt><dd>ENUM:dynamical_core_discretisation_vertical_type</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.grid.discretisation.vertical.coordinate_type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Type of vertical coordinate system</dd><dt><b>Type</b></dt><dd>ENUM:dynamical_core_discretisation_vertical_type</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.grid.discretisation.vertical.vertical_coordinate_type</dd>
+        <dt><b>Description</b></dt><dd>Type of vertical coordinate system</dd><dt><b>Type</b></dt><dd>ENUM:dynamical_core_discretisation_vertical_type</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.grid.discretisation.vertical.coordinate_type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="isobaric"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -362,18 +362,18 @@
         <dt><b>Description</b></dt><dd>Characteristics of the model resolution</dd><dt><b>QC status</b></dt><dd>draft</dd><dt><b>Contact</b></dt><dd>Charlotte Pascoe</dd><dt><b>Authors</b></dt><dd>Charlotte Pascoe</dd><dt><b>Contributors</b></dt><dd />
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="horizontal_resolution_name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>This is a string usually used by the modelling group to describe the resolution of the model grid, e.g. T42, N48.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.key_properties.resolution.name</dd>
+        <dt><b>Description</b></dt><dd>This is a string usually used by the modelling group to describe the resolution of the model grid, e.g. T42, N48.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.key_properties.resolution.horizontal_resolution_name</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>This is a string usually used by the modelling group to describe the resolution of the model grid, e.g. T42, N48.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.key_properties.resolution.name</dd>
+        <dt><b>Description</b></dt><dd>This is a string usually used by the modelling group to describe the resolution of the model grid, e.g. T42, N48.</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.key_properties.resolution.horizontal_resolution_name</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="canonical_horizontal_resolution"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -4426,7 +4426,7 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd>
+        <dt><b>Description</b></dt><dd>Shortwave solar spectral irradiance.</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="precipitating energetic particles"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -4667,4 +4667,4 @@
         <dt><b>Description</b></dt><dd>N/A</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node></node><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="SHORT TABLES"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="atmosphere"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="priority1"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="grid.discretisation.horizontal.scheme_type" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="key_properties.basic_approximations" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="dynamical_core.prognostic_variables" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="turbulence_convection.boundary_layer_turbulence.scheme_name" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="turbulence_convection.deep_convection.scheme_name" /><node BACKGROUND_COLOR="#FF0000" COLOR="#FFFFFF" STYLE="bubble" TEXT="solar.solar_constant " /></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="priority2"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="radiation.shortwave_radiation.spectral_integration" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="radiation.shortwave_radiation.transport_calculation" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="radiation.longwave_radiation.spectral_integration" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="radiation.longwave_radiation.transport_calculation" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="turbulence_convection.boundary_layer_turbulence.scheme_type" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="turbulence_convection.deep_convection.scheme_type" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="volcanos.volcanoes_treatment.volcanoes_implementation" /></node></node></node></node></map>
+</html></richcontent></node></node></node></node><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="SHORT TABLES"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="atmosphere"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="priority1"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="grid.discretisation.horizontal.scheme_type" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="grid.discretisation.vertical.coordinate_type" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="key_properties.basic_approximations" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="key_properties.resolution.horizontal_resolution_name" /><node BACKGROUND_COLOR="#FF0000" COLOR="#FFFFFF" STYLE="bubble" TEXT="key_properties.resolution.canonical_number_of_vertical_levels" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="key_properties.resolution.high_top" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="key_properties.resolution.timestep_dynamics" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="key_properties.resolution.timestep_radiative_transfer" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="dynamical_core.name" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="dynamical_core.prognostic_variables" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="radiation.shortwave_radiation.name" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="radiation.longwave_radiation.name" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="turbulence_convection.boundary_layer_turbulence.scheme_name" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="turbulence_convection.deep_convection.scheme_name" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="cloud_scheme.name" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="solar.solar_pathways.pathways" /></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="priority2"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="radiation.shortwave_radiation.spectral_integration" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="radiation.shortwave_radiation.transport_calculation" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="radiation.longwave_radiation.spectral_integration" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="radiation.longwave_radiation.transport_calculation" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="turbulence_convection.boundary_layer_turbulence.scheme_type" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="turbulence_convection.deep_convection.scheme_type" /><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="volcanos.volcanoes_treatment.volcanoes_implementation" /></node></node></node></node></map>

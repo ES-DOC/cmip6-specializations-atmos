@@ -17,7 +17,7 @@
             "cmip6.atmosphere.grid.discretisation.vertical.coordinate_type",
             "cmip6.atmosphere.key_properties.basic_approximations",
             "cmip6.atmosphere.key_properties.resolution.horizontal_resolution_name",
-            "cmip6.atmosphere.key_properties.resolution.canonical_number_of_vertical_levels",
+            "cmip6.atmosphere.key_properties.resolution.number_of_vertical_levels",
             "cmip6.atmosphere.key_properties.resolution.high_top",
             "cmip6.atmosphere.key_properties.resolution.timestep_dynamics",
             "cmip6.atmosphere.key_properties.resolution.timestep_radiative_transfer",
