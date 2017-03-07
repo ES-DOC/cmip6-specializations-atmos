@@ -3085,6 +3085,40 @@
                                 "uiOrdinal": 4
                             }
                         ]
+                    }, 
+                    {
+                        "label": "Vertical", 
+                        "description": "Atmosphere discretisation in the vertical", 
+                        "id": "cmip6.atmosphere.grid.discretisation.vertical", 
+                        "properties": [
+                            {
+                                "label": "Vertical Coordinate Type", 
+                                "description": "Type of vertical coordinate system", 
+                                "id": "cmip6.atmosphere.grid.discretisation.vertical.vertical_coordinate_type", 
+                                "cardinality": "1.N", 
+                                "type": "enum", 
+                                "enum": {
+                                    "label": "Dynamical Core Discretisation Vertical Type", 
+                                    "description": "Type of vertical coordinate system", 
+                                    "isOpen": true, 
+                                    "choices": [
+                                        {
+                                            "label": "isobaric", 
+                                            "description": "vertical coordinate on pressure levels"
+                                        }, 
+                                        {
+                                            "label": "sigma", 
+                                            "description": "allows vertical coordinate to follow model terrain"
+                                        }, 
+                                        {
+                                            "label": "hybrid sigma-pressure", 
+                                            "description": "sigma system near terrain and isobaric above"
+                                        }
+                                    ]
+                                }, 
+                                "uiOrdinal": 1
+                            }
+                        ]
                     }
                 ]
             }

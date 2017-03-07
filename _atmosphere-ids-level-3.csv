@@ -3,6 +3,7 @@ cmip6.atmosphere.grid.discretisation.horizontal.scheme_type, Atmosphere > Grid >
 cmip6.atmosphere.grid.discretisation.horizontal.scheme_method, Atmosphere > Grid > Discretisation > Horizontal > Scheme Method, property
 cmip6.atmosphere.grid.discretisation.horizontal.scheme_order, Atmosphere > Grid > Discretisation > Horizontal > Scheme Order, property
 cmip6.atmosphere.grid.discretisation.horizontal.horizontal_pole, Atmosphere > Grid > Discretisation > Horizontal > Horizontal Pole, property
+cmip6.atmosphere.grid.discretisation.vertical.vertical_coordinate_type, Atmosphere > Grid > Discretisation > Vertical > Vertical Coordinate Type, property
 , , 
 cmip6.atmosphere.key_properties.model_family, Atmosphere > Key Properties > Model Family, property
 cmip6.atmosphere.key_properties.basic_approximations, Atmosphere > Key Properties > Basic Approximations, property
