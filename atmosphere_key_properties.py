@@ -47,7 +47,7 @@ DETAILS['toplevel'] = {
 DETAILS['resolution'] = {
     'description': "Characteristics of the model resolution",
     'properties': [
-        ('name', 'str', '1.1',
+        ('horizontal_resolution_name', 'str', '1.1',
             'This is a string usually used by the modelling group to describe the resolution of the model grid, '
             'e.g. T42, N48.',),
         ('canonical_horizontal_resolution', 'str', '1.1',
