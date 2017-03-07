@@ -68,7 +68,7 @@ DETAILS['deep_convection'] = {
         ('scheme_method', 'ENUM:deep_convection_scheme_method', '1.N',
              'Deep convection scheme method'),
         ('processes', 'ENUM:deep_convection_scheme_processes', '1.N',
-            'Deep convection scheme processes'),
+            'Physical processes taken into account in the parameterisatioin of deep convection'),
         ]
     }
 
@@ -78,12 +78,12 @@ DETAILS['deep_convection'] = {
 DETAILS['shallow_convection'] = {
     'description': 'Properties of the shallow convection scheme',
     'properties': [
-        ('scheme_method', 'ENUM:shallow_convection_scheme_method', '1.1',
-             'shallow convection scheme method'),
-        ('scheme_type', 'ENUM:shallow_convection_scheme_type', '1.N',
-             'shallow convection scheme type'),
         ('scheme_name', 'str', '1.1',
              'Shallow convection scheme name'),
+        ('scheme_type', 'ENUM:shallow_convection_scheme_type', '1.N',
+             'shallow convection scheme type'),
+        ('scheme_method', 'ENUM:shallow_convection_scheme_method', '1.1',
+             'shallow convection scheme method'),
         ('processes', 'ENUM:shallow_convection_scheme_processes', '1.N',
             'Physical processes taken into account in the parameterisation of shallow convection'),
         ]
