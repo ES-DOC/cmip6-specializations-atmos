@@ -11,6 +11,14 @@
             "contact": "Charlotte Pascoe", 
             "properties": [
                 {
+                    "label": "Name", 
+                    "description": "Commonly used name for the dynamical core of the model.", 
+                    "id": "cmip6.atmosphere.dynamical_core.name", 
+                    "cardinality": "0.1", 
+                    "type": "str", 
+                    "uiOrdinal": 1
+                }, 
+                {
                     "label": "Timestepping Type", 
                     "description": "Timestepping framework type", 
                     "id": "cmip6.atmosphere.dynamical_core.timestepping_type", 
@@ -59,7 +67,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 1
+                    "uiOrdinal": 2
                 }, 
                 {
                     "label": "Prognostic Variables", 
@@ -122,7 +130,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 2
+                    "uiOrdinal": 3
                 }
             ], 
             "subProcesses": [
@@ -689,6 +697,14 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Name", 
+                            "description": "Commonly used name for the shortwave radiation scheme", 
+                            "id": "cmip6.atmosphere.radiation.shortwave_radiation.name", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Spectral Integration", 
                             "description": "Shortwave radiation scheme spectral integration", 
                             "id": "cmip6.atmosphere.radiation.shortwave_radiation.spectral_integration", 
@@ -713,7 +729,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Transport Calculation", 
@@ -748,7 +764,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Spectral Intervals", 
@@ -756,7 +772,7 @@
                             "id": "cmip6.atmosphere.radiation.shortwave_radiation.spectral_intervals", 
                             "cardinality": "1.1", 
                             "type": "int", 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 4
                         }
                     ]
                 }, 
@@ -1144,6 +1160,14 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
+                            "label": "Name", 
+                            "description": "Commonly used name for the longwave radiation scheme.", 
+                            "id": "cmip6.atmosphere.radiation.longwave_radiation.name", 
+                            "cardinality": "0.1", 
+                            "type": "str", 
+                            "uiOrdinal": 1
+                        }, 
+                        {
                             "label": "Spectral Integration", 
                             "description": "Longwave radiation scheme spectral integration", 
                             "id": "cmip6.atmosphere.radiation.longwave_radiation.spectral_integration", 
@@ -1168,7 +1192,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 1
+                            "uiOrdinal": 2
                         }, 
                         {
                             "label": "Transport Calculation", 
@@ -1203,7 +1227,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }, 
                         {
                             "label": "Spectral Intervals", 
@@ -1211,7 +1235,7 @@
                             "id": "cmip6.atmosphere.radiation.longwave_radiation.spectral_intervals", 
                             "cardinality": "1.1", 
                             "type": "int", 
-                            "uiOrdinal": 3
+                            "uiOrdinal": 4
                         }
                     ]
                 }, 
@@ -1776,7 +1800,7 @@
                         }, 
                         {
                             "label": "Processes", 
-                            "description": "Deep convection scheme processes", 
+                            "description": "Physical processes taken into account in the parameterisatioin of deep convection", 
                             "id": "cmip6.atmosphere.turbulence_convection.deep_convection.processes", 
                             "cardinality": "1.N", 
                             "type": "enum", 
@@ -1830,30 +1854,11 @@
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
-                            "label": "Scheme Method", 
-                            "description": "shallow convection scheme method", 
-                            "id": "cmip6.atmosphere.turbulence_convection.shallow_convection.scheme_method", 
+                            "label": "Scheme Name", 
+                            "description": "Shallow convection scheme name", 
+                            "id": "cmip6.atmosphere.turbulence_convection.shallow_convection.scheme_name", 
                             "cardinality": "1.1", 
-                            "type": "enum", 
-                            "enum": {
-                                "label": "Shallow Convection Scheme Method", 
-                                "description": "Method used for shallow convection.", 
-                                "isOpen": false, 
-                                "choices": [
-                                    {
-                                        "label": "same as deep (unified)", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "included in boundary layer turbulence", 
-                                        "description": null
-                                    }, 
-                                    {
-                                        "label": "separate diagnosis", 
-                                        "description": "Deep and Shallow convection schemes use different thermodynamic closure criteria"
-                                    }
-                                ]
-                            }, 
+                            "type": "str", 
                             "uiOrdinal": 1
                         }, 
                         {
@@ -1880,11 +1885,30 @@
                             "uiOrdinal": 2
                         }, 
                         {
-                            "label": "Scheme Name", 
-                            "description": "Shallow convection scheme name", 
-                            "id": "cmip6.atmosphere.turbulence_convection.shallow_convection.scheme_name", 
+                            "label": "Scheme Method", 
+                            "description": "shallow convection scheme method", 
+                            "id": "cmip6.atmosphere.turbulence_convection.shallow_convection.scheme_method", 
                             "cardinality": "1.1", 
-                            "type": "str", 
+                            "type": "enum", 
+                            "enum": {
+                                "label": "Shallow Convection Scheme Method", 
+                                "description": "Method used for shallow convection.", 
+                                "isOpen": false, 
+                                "choices": [
+                                    {
+                                        "label": "same as deep (unified)", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "included in boundary layer turbulence", 
+                                        "description": null
+                                    }, 
+                                    {
+                                        "label": "separate diagnosis", 
+                                        "description": "Deep and Shallow convection schemes use different thermodynamic closure criteria"
+                                    }
+                                ]
+                            }, 
                             "uiOrdinal": 3
                         }, 
                         {
@@ -2047,12 +2071,63 @@
             "contact": "Charlotte Pascoe", 
             "properties": [
                 {
+                    "label": "Name", 
+                    "description": "Commonly used name for the cloud scheme", 
+                    "id": "cmip6.atmosphere.cloud_scheme.name", 
+                    "cardinality": "0.1", 
+                    "type": "str", 
+                    "uiOrdinal": 1
+                }, 
+                {
+                    "label": "Atmos Coupling", 
+                    "description": "Atmosphere components that are linked to the cloud scheme", 
+                    "id": "cmip6.atmosphere.cloud_scheme.atmos_coupling", 
+                    "cardinality": "0.N", 
+                    "type": "enum", 
+                    "enum": {
+                        "label": "Atmos Cloud Coupling", 
+                        "description": "Atmosphere components that are linked to the cloud scheme", 
+                        "isOpen": false, 
+                        "choices": [
+                            {
+                                "label": "atmosphere_radiation", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "atmosphere_microphysics_precipitation", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "atmosphere_turbulence_convection", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "atmosphere_gravity_waves", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "atmosphere_solar", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "atmosphere_volcano", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "atmosphere_cloud_simulator", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 2
+                }, 
+                {
                     "label": "Uses Separate Treatment", 
                     "description": "Different cloud schemes for the different types of clouds (convective, stratiform and boundary layer)", 
                     "id": "cmip6.atmosphere.cloud_scheme.uses_separate_treatment", 
                     "cardinality": "1.1", 
                     "type": "bool", 
-                    "uiOrdinal": 1
+                    "uiOrdinal": 3
                 }, 
                 {
                     "label": "Cloud Overlap Method", 
@@ -2083,7 +2158,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 2
+                    "uiOrdinal": 4
                 }, 
                 {
                     "label": "Cloud Inhomogeneity", 
@@ -2110,7 +2185,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 3
+                    "uiOrdinal": 5
                 }, 
                 {
                     "label": "Processes", 
@@ -2137,7 +2212,7 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 4
+                    "uiOrdinal": 6
                 }
             ], 
             "subProcesses": [

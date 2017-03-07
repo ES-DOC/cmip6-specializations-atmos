@@ -16,6 +16,7 @@ cmip6.atmosphere.key_properties.resolution.timestep_radiative_transfer, Atmosphe
 cmip6.atmosphere.key_properties.orography.type, Atmosphere > Key Properties > Orography > Type, property
 cmip6.atmosphere.key_properties.orography.changes, Atmosphere > Key Properties > Orography > Changes, property
 , , 
+cmip6.atmosphere.dynamical_core.name, Atmosphere > Dynamical Core > Name, property
 cmip6.atmosphere.dynamical_core.timestepping_type, Atmosphere > Dynamical Core > Timestepping Type, property
 cmip6.atmosphere.dynamical_core.prognostic_variables, Atmosphere > Dynamical Core > Prognostic Variables, property
 cmip6.atmosphere.dynamical_core.top_boundary.top_boundary_condition, Atmosphere > Dynamical Core > Top Boundary > Top Boundary Condition, property
@@ -36,6 +37,7 @@ cmip6.atmosphere.dynamical_core.advection_momentum.conservation_method, Atmosphe
 , , 
 cmip6.atmosphere.radiation.aerosols, Atmosphere > Radiation > Aerosols, property
 cmip6.atmosphere.radiation.greenhouse_gases, Atmosphere > Radiation > Greenhouse Gases, property
+cmip6.atmosphere.radiation.shortwave_radiation.name, Atmosphere > Radiation > Shortwave Radiation > Name, property
 cmip6.atmosphere.radiation.shortwave_radiation.spectral_integration, Atmosphere > Radiation > Shortwave Radiation > Spectral Integration, property
 cmip6.atmosphere.radiation.shortwave_radiation.transport_calculation, Atmosphere > Radiation > Shortwave Radiation > Transport Calculation, property
 cmip6.atmosphere.radiation.shortwave_radiation.spectral_intervals, Atmosphere > Radiation > Shortwave Radiation > Spectral Intervals, property
@@ -50,6 +52,7 @@ cmip6.atmosphere.radiation.sw_aerosols.physical_representation, Atmosphere > Rad
 cmip6.atmosphere.radiation.sw_aerosols.optical_methods, Atmosphere > Radiation > Sw Aerosols > Optical Methods, property
 cmip6.atmosphere.radiation.sw_gases.general_interactions, Atmosphere > Radiation > Sw Gases > General Interactions, property
 cmip6.atmosphere.radiation.sw_gases.optical_methods, Atmosphere > Radiation > Sw Gases > Optical Methods, property
+cmip6.atmosphere.radiation.longwave_radiation.name, Atmosphere > Radiation > Longwave Radiation > Name, property
 cmip6.atmosphere.radiation.longwave_radiation.spectral_integration, Atmosphere > Radiation > Longwave Radiation > Spectral Integration, property
 cmip6.atmosphere.radiation.longwave_radiation.transport_calculation, Atmosphere > Radiation > Longwave Radiation > Transport Calculation, property
 cmip6.atmosphere.radiation.longwave_radiation.spectral_intervals, Atmosphere > Radiation > Longwave Radiation > Spectral Intervals, property
@@ -73,9 +76,9 @@ cmip6.atmosphere.turbulence_convection.deep_convection.scheme_name, Atmosphere >
 cmip6.atmosphere.turbulence_convection.deep_convection.scheme_type, Atmosphere > Turbulence Convection > Deep Convection > Scheme Type, property
 cmip6.atmosphere.turbulence_convection.deep_convection.scheme_method, Atmosphere > Turbulence Convection > Deep Convection > Scheme Method, property
 cmip6.atmosphere.turbulence_convection.deep_convection.processes, Atmosphere > Turbulence Convection > Deep Convection > Processes, property
-cmip6.atmosphere.turbulence_convection.shallow_convection.scheme_method, Atmosphere > Turbulence Convection > Shallow Convection > Scheme Method, property
-cmip6.atmosphere.turbulence_convection.shallow_convection.scheme_type, Atmosphere > Turbulence Convection > Shallow Convection > Scheme Type, property
 cmip6.atmosphere.turbulence_convection.shallow_convection.scheme_name, Atmosphere > Turbulence Convection > Shallow Convection > Scheme Name, property
+cmip6.atmosphere.turbulence_convection.shallow_convection.scheme_type, Atmosphere > Turbulence Convection > Shallow Convection > Scheme Type, property
+cmip6.atmosphere.turbulence_convection.shallow_convection.scheme_method, Atmosphere > Turbulence Convection > Shallow Convection > Scheme Method, property
 cmip6.atmosphere.turbulence_convection.shallow_convection.processes, Atmosphere > Turbulence Convection > Shallow Convection > Processes, property
 , , 
 cmip6.atmosphere.microphysics_precipitation.large_scale_precipitation.scheme, Atmosphere > Microphysics Precipitation > Large Scale Precipitation > Scheme, property
@@ -83,6 +86,8 @@ cmip6.atmosphere.microphysics_precipitation.large_scale_precipitation.hydrometeo
 cmip6.atmosphere.microphysics_precipitation.cloud_microphysics.scheme_name, Atmosphere > Microphysics Precipitation > Cloud Microphysics > Scheme Name, property
 cmip6.atmosphere.microphysics_precipitation.cloud_microphysics.processes, Atmosphere > Microphysics Precipitation > Cloud Microphysics > Processes, property
 , , 
+cmip6.atmosphere.cloud_scheme.name, Atmosphere > Cloud Scheme > Name, property
+cmip6.atmosphere.cloud_scheme.atmos_coupling, Atmosphere > Cloud Scheme > Atmos Coupling, property
 cmip6.atmosphere.cloud_scheme.uses_separate_treatment, Atmosphere > Cloud Scheme > Uses Separate Treatment, property
 cmip6.atmosphere.cloud_scheme.cloud_overlap_method, Atmosphere > Cloud Scheme > Cloud Overlap Method, property
 cmip6.atmosphere.cloud_scheme.cloud_inhomogeneity, Atmosphere > Cloud Scheme > Cloud Inhomogeneity, property
