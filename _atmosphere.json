@@ -222,7 +222,7 @@
                             "label": "Scheme Name", 
                             "description": "Horizontal diffusion scheme name", 
                             "id": "cmip6.atmosphere.dynamical_core.diffusion_horizontal.scheme_name", 
-                            "cardinality": "1.1", 
+                            "cardinality": "0.1", 
                             "type": "str", 
                             "uiOrdinal": 1
                         }, 
@@ -261,7 +261,7 @@
                             "label": "Scheme Name", 
                             "description": "Tracer advection scheme name", 
                             "id": "cmip6.atmosphere.dynamical_core.advection_tracers.scheme_name", 
-                            "cardinality": "1.1", 
+                            "cardinality": "0.1", 
                             "type": "enum", 
                             "enum": {
                                 "label": "Advection Tracers Scheme Name", 
@@ -409,7 +409,7 @@
                             "label": "Scheme Name", 
                             "description": "Momentum advection schemes name", 
                             "id": "cmip6.atmosphere.dynamical_core.advection_momentum.scheme_name", 
-                            "cardinality": "1.1", 
+                            "cardinality": "0.1", 
                             "type": "enum", 
                             "enum": {
                                 "label": "Advection Momentum Scheme Name", 

@@ -835,14 +835,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Horizontal diffusion scheme name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.dynamical_core.diffusion_horizontal.scheme_name</dd>
+        <dt><b>Description</b></dt><dd>Horizontal diffusion scheme name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.dynamical_core.diffusion_horizontal.scheme_name</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Horizontal diffusion scheme name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.dynamical_core.diffusion_horizontal.scheme_name</dd>
+        <dt><b>Description</b></dt><dd>Horizontal diffusion scheme name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.dynamical_core.diffusion_horizontal.scheme_name</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scheme_method"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -884,14 +884,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Tracer advection scheme name</dd><dt><b>Type</b></dt><dd>ENUM:advection_tracers_scheme_name</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.dynamical_core.advection_tracers.scheme_name</dd>
+        <dt><b>Description</b></dt><dd>Tracer advection scheme name</dd><dt><b>Type</b></dt><dd>ENUM:advection_tracers_scheme_name</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.dynamical_core.advection_tracers.scheme_name</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Tracer advection scheme name</dd><dt><b>Type</b></dt><dd>ENUM:advection_tracers_scheme_name</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.dynamical_core.advection_tracers.scheme_name</dd>
+        <dt><b>Description</b></dt><dd>Tracer advection scheme name</dd><dt><b>Type</b></dt><dd>ENUM:advection_tracers_scheme_name</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.dynamical_core.advection_tracers.scheme_name</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Heun"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1087,14 +1087,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Momentum advection schemes name</dd><dt><b>Type</b></dt><dd>ENUM:advection_momentum_scheme_name</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.dynamical_core.advection_momentum.scheme_name</dd>
+        <dt><b>Description</b></dt><dd>Momentum advection schemes name</dd><dt><b>Type</b></dt><dd>ENUM:advection_momentum_scheme_name</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.dynamical_core.advection_momentum.scheme_name</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Momentum advection schemes name</dd><dt><b>Type</b></dt><dd>ENUM:advection_momentum_scheme_name</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.dynamical_core.advection_momentum.scheme_name</dd>
+        <dt><b>Description</b></dt><dd>Momentum advection schemes name</dd><dt><b>Type</b></dt><dd>ENUM:advection_momentum_scheme_name</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmosphere.dynamical_core.advection_momentum.scheme_name</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="VanLeer"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
