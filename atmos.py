@@ -47,29 +47,29 @@ DESCRIPTION = 'Atmosphere realm specialization'
 # --------------------------------------------------------------------
 # REALM: Canonical name for the domain of this scientific realm
 # --------------------------------------------------------------------
-REALM = 'atmosphere'
+REALM = 'atmos'
 
 # --------------------------------------------------------------------
 # GRID: The grid used to layout the variables
 # --------------------------------------------------------------------
-GRID = 'atmosphere_grid'
+GRID = 'atmos_grid'
 
 # --------------------------------------------------------------------
 # KEY PROPERTIES: Key properties for the realm which differ from model defaults (grid, timestep etc)
 # --------------------------------------------------------------------
-KEY_PROPERTIES = 'atmosphere_key_properties'
+KEY_PROPERTIES = 'atmos_key_properties'
 
 # --------------------------------------------------------------------
 # PROCESSES: Processes simulated within the realm
 # --------------------------------------------------------------------
 PROCESSES = [
-    'atmosphere_dynamical_core',
-    'atmosphere_radiation',
-    'atmosphere_turbulence_convection',
-    'atmosphere_microphysics_precipitation',
-	'atmosphere_cloud_scheme',
-    'atmosphere_cloud_simulator',
-    'atmosphere_gravity_waves',
-    'atmosphere_solar',
-    'atmosphere_volcanos',
+    'atmos_dynamical_core',
+    'atmos_radiation',
+    'atmos_turbulence_convection',
+    'atmos_microphysics_precipitation',
+	'atmos_cloud_scheme',
+    'atmos_cloud_simulator',
+    'atmos_gravity_waves',
+    'atmos_solar',
+    'atmos_volcanos',
     ]
