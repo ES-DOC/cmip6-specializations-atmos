@@ -13,6 +13,7 @@
     ],
     "PROPERTIES": {
         "priority1": [
+            "cmip6.atmos.key_properties.model_name",
             "cmip6.atmos.grid.discretisation.horizontal.scheme_type",
             "cmip6.atmos.grid.discretisation.vertical.coordinate_type",
             "cmip6.atmos.key_properties.basic_approximations",
