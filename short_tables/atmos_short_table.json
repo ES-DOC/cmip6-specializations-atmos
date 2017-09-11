@@ -11,6 +11,7 @@
     "CONTRIBUTORS": [
         "Eric Guilyardi (IPSL)"
     ],
+    "LABEL": "Main",
     "PROPERTIES": {
         "priority1": [
             "cmip6.atmos.key_properties.model_name",
