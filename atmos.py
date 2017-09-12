@@ -47,14 +47,14 @@ DESCRIPTION = 'Atmosphere realm specialization'
 REALM = 'atmos'
 
 # --------------------------------------------------------------------
-# GRID: The grid used to layout the variables
-# --------------------------------------------------------------------
-GRID = 'atmos_grid'
-
-# --------------------------------------------------------------------
 # KEY PROPERTIES: Key properties for the realm which differ from model defaults (grid, timestep etc)
 # --------------------------------------------------------------------
 KEY_PROPERTIES = 'atmos_key_properties'
+
+# --------------------------------------------------------------------
+# GRID: The grid used to layout the variables
+# --------------------------------------------------------------------
+GRID = 'atmos_grid'
 
 # --------------------------------------------------------------------
 # PROCESSES: Processes simulated within the realm
