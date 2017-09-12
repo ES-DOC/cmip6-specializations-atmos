@@ -12,36 +12,31 @@
         "Eric Guilyardi (IPSL)"
     ],
     "LABEL": "Main",
-    "PROPERTIES": {
-        "priority1": [
-            "cmip6.atmos.key_properties.model_name",
-            "cmip6.atmos.grid.discretisation.horizontal.scheme_type",
-            "cmip6.atmos.grid.discretisation.vertical.coordinate_type",
-            "cmip6.atmos.key_properties.basic_approximations",
-            "cmip6.atmos.key_properties.resolution.horizontal_resolution_name",
-            "cmip6.atmos.key_properties.resolution.number_of_vertical_levels",
-            "cmip6.atmos.key_properties.resolution.high_top",
-            "cmip6.atmos.key_properties.resolution.timestep_dynamics",
-            "cmip6.atmos.key_properties.resolution.timestep_radiative_transfer",
-            "cmip6.atmos.dynamical_core.name",
-            "cmip6.atmos.dynamical_core.prognostic_variables",
-            "cmip6.atmos.radiation.shortwave_radiation.name",
-            "cmip6.atmos.radiation.longwave_radiation.name",
-            "cmip6.atmos.turbulence_convection.boundary_layer_turbulence.scheme_name",
-            "cmip6.atmos.turbulence_convection.deep_convection.scheme_name",
-            "cmip6.atmos.cloud_scheme.name",
-            "cmip6.atmos.solar.solar_pathways.pathways"
-
-        ],
-        "priority2": [
-            "cmip6.atmos.radiation.shortwave_radiation.spectral_integration",
-            "cmip6.atmos.radiation.shortwave_radiation.transport_calculation",
-            "cmip6.atmos.radiation.longwave_radiation.spectral_integration",
-            "cmip6.atmos.radiation.longwave_radiation.transport_calculation",
-            "cmip6.atmos.turbulence_convection.boundary_layer_turbulence.scheme_type",
-            "cmip6.atmos.turbulence_convection.deep_convection.scheme_type",
-            "cmip6.atmos.volcanos.volcanoes_treatment.volcanoes_implementation"
-        ]
-    },
+    "PROPERTIES": [
+        ["cmip6.atmos.key_properties.model_name", 1],
+        ["cmip6.atmos.grid.discretisation.horizontal.scheme_type", 1],
+        ["cmip6.atmos.grid.discretisation.vertical.coordinate_type", 1],
+        ["cmip6.atmos.key_properties.basic_approximations", 1],
+        ["cmip6.atmos.key_properties.resolution.horizontal_resolution_name", 1],
+        ["cmip6.atmos.key_properties.resolution.number_of_vertical_levels", 1],
+        ["cmip6.atmos.key_properties.resolution.high_top", 1],
+        ["cmip6.atmos.key_properties.resolution.timestep_dynamics", 1],
+        ["cmip6.atmos.key_properties.resolution.timestep_radiative_transfer", 1],
+        ["cmip6.atmos.dynamical_core.name", 1],
+        ["cmip6.atmos.dynamical_core.prognostic_variables", 1],
+        ["cmip6.atmos.radiation.shortwave_radiation.name", 1],
+        ["cmip6.atmos.radiation.longwave_radiation.name", 1],
+        ["cmip6.atmos.radiation.shortwave_radiation.spectral_integration", 2],
+        ["cmip6.atmos.radiation.shortwave_radiation.transport_calculation", 2],
+        ["cmip6.atmos.radiation.longwave_radiation.spectral_integration", 2],
+        ["cmip6.atmos.radiation.longwave_radiation.transport_calculation", 2],
+        ["cmip6.atmos.turbulence_convection.boundary_layer_turbulence.scheme_name", 1],
+        ["cmip6.atmos.turbulence_convection.boundary_layer_turbulence.scheme_type", 2],
+        ["cmip6.atmos.turbulence_convection.deep_convection.scheme_name", 1],
+        ["cmip6.atmos.turbulence_convection.deep_convection.scheme_type", 2],
+        ["cmip6.atmos.cloud_scheme.name", 1],
+        ["cmip6.atmos.solar.solar_pathways.pathways", 1],
+        ["cmip6.atmos.volcanos.volcanoes_treatment.volcanoes_implementation", 2]
+    ],
     "QC_STATUS": "draft"
 }
