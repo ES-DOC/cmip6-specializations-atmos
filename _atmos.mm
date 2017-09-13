@@ -9,14 +9,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Version</b></dt><dd>0.1.0</dd><dt><b>Date</b></dt><dd>2016-11-29</dd><dt><b>Person</b></dt><dd>Initialised</dd><dt><b>Comment</b></dt><dd>Mark Greenslade</dd>
+        <dt><b>Version</b></dt><dd>0.1.0</dd><dt><b>Date</b></dt><dd>2016-11-29</dd><dt><b>Person</b></dt><dd>Mark Greenslade</dd><dt><b>Comment</b></dt><dd>Initialised</dd>
     </dl>
   </body>
 </html></richcontent></node><node STYLE="bubble" TEXT="0.2.0"><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Version</b></dt><dd>0.2.0</dd><dt><b>Date</b></dt><dd>2016-12-02</dd><dt><b>Person</b></dt><dd>Updated process names and descriptions, added enumeration TODOs</dd><dt><b>Comment</b></dt><dd>Charlotte Pascoe</dd>
+        <dt><b>Version</b></dt><dd>0.2.0</dd><dt><b>Date</b></dt><dd>2016-12-02</dd><dt><b>Person</b></dt><dd>Charlotte Pascoe</dd><dt><b>Comment</b></dt><dd>Updated process names and descriptions, added enumeration TODOs</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="LEGEND"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="enum-choice"><richcontent TYPE="NOTE"><html>

@@ -24,12 +24,14 @@ CONTRIBUTORS = ''
 QC_STATUS = 'draft'
 
 # --------------------------------------------------------------------
-# CHANGE HISTORY: Set to list: (version, date, comment, who).
+# CHANGE HISTORY: Set to list: (version, date, who, comment).
 # --------------------------------------------------------------------
 CHANGE_HISTORY = [
-	("0.1.0", "2016-11-29", "Initialised", "Mark Greenslade"),
-    ("0.2.0", "2016-12-02", "Updated process names and descriptions, added enumeration TODOs", "Charlotte Pascoe")
-]
+	("0.1.0", "2016-11-29", "Mark Greenslade",
+        "Initialised"),
+    ("0.2.0", "2016-12-02", "Charlotte Pascoe",
+        "Updated process names and descriptions, added enumeration TODOs")
+    ]
 
 # --------------------------------------------------------------------
 # CMIP5_MAPPINGS_SYNCED_AT: Latest version that has been synced with CMIP5 mappings.
