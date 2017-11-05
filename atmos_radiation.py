@@ -129,8 +129,6 @@ DETAILS['sw_gases'] = {
     'properties': [
         ('general_interactions', 'ENUM:radiative_interactions', '1.N',
             'General shortwave radiative interactions with gases'),
-        ('sw_greenhouse_gases', 'ENUM:ghg_types', '1.N',
-            'Greenhouse gases whose shortwave radiative effect is taken into account in the atmosphere model'),
     ]
 }
 
