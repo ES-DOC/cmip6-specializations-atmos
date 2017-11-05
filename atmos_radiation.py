@@ -40,8 +40,6 @@ DETAILS['toplevel'] = {
     'properties': [
         ('aerosols', 'ENUM:aerosol_types', '1.N',
             'Aerosols whose radiative effect is taken into account in the atmosphere model'),
-        ('greenhouse_gases', 'ENUM:ghg_types', '1.N',
-            'Greenhouse gases whose radiative effect is taken into account in the atmosphere model'),
         ]
     }
 
@@ -61,6 +59,22 @@ DETAILS['shortwave_radiation'] = {
             'Shortwave radiation scheme number of spectral intervals'),
         ]
     }
+
+# --------------------------------------------------------------------
+# SUB-PROCESS: shortwave_ghg
+# --------------------------------------------------------------------
+DETAILS['shortwave_ghg'] = {
+    'description': 'Representation of greenhouse gases in the shortwave radiation scheme',
+    'properties': [
+        ('sw_greenhouse_gases', 'ENUM:ghg_types', '1.N',
+            'Greenhouse gases whose shortwave radiative effects are taken into account in the atmosphere model'),
+        ('sw_ODS', 'ENUM:ODS', '0.N',
+            'Ozone depleting substances whose shortwave radiative effects are taken into account '
+            'in the atmosphere model'),
+        ('sw_other_flourinated_gases', 'ENUM:other_fluorinated_gases', '0.N',
+            'Other flourinated gases whose shortwave radiative effects are taken into account in the atmosphere model'),
+        ]
+}
 
 # --------------------------------------------------------------------
 # SUB-PROCESS: sw_cloud_ice
@@ -115,8 +129,8 @@ DETAILS['sw_gases'] = {
     'properties': [
         ('general_interactions', 'ENUM:radiative_interactions', '1.N',
             'General shortwave radiative interactions with gases'),
-        ('optical_methods', 'ENUM:optical_methods', '1.N',
-            'Optical methods applicable to gases in the shortwave radiation scheme'),
+        ('sw_greenhouse_gases', 'ENUM:ghg_types', '1.N',
+            'Greenhouse gases whose shortwave radiative effect is taken into account in the atmosphere model'),
     ]
 }
 
@@ -136,6 +150,22 @@ DETAILS['longwave_radiation'] = {
             'Longwave radiation scheme number of spectral intervals'),
         ]
     }
+
+# --------------------------------------------------------------------
+# SUB-PROCESS: longwave_ghg
+# --------------------------------------------------------------------
+DETAILS['longwave_ghg'] = {
+    'description': 'Representation of greenhouse gases in the longwave radiation scheme',
+    'properties': [
+        ('lw_greenhouse_gases', 'ENUM:ghg_types', '1.N',
+            'Greenhouse gases whose longwave radiative effects are taken into account in the atmosphere model'),
+        ('lw_ODS', 'ENUM:ODS', '0.N',
+            'Ozone depleting substances whose longwave radiative effects are taken into account '
+            'in the atmosphere model'),
+        ('lw_other_flourinated_gases', 'ENUM:other_fluorinated_gases', '0.N',
+            'Other flourinated gases whose longwave radiative effects are taken into account in the atmosphere model'),
+        ]
+}
 
 # --------------------------------------------------------------------
 # SUB-PROCESS: lw_cloud_ice
@@ -190,8 +220,6 @@ DETAILS['lw_gases'] = {
     'properties': [
         ('general_interactions', 'ENUM:radiative_interactions', '1.N',
             'General longwave radiative interactions with gases'),
-        ('optical_methods', 'ENUM:optical_methods', '1.N',
-            'Optical methods applicable to gases in the longwave radiation scheme'),
     ]
 }
 
@@ -219,21 +247,83 @@ ENUMERATIONS['aerosol_types'] = {
     }
 
 ENUMERATIONS['ghg_types'] = {
-    'description': 'Greenhouse gases whose radiative effect is taken into account in the atmospheric model',
+    'description': 'Greenhouse gases whose radiative effect is taken into account in the atmosphere model',
     'is_open': True,
     'members': [
-        ('H2O', None),
-        ('CO2', None),
-        ('CH4', None),
-        ('N2O', None),
+        ('CO2', 'Carbon Dioxide'),
+        ('CH4', 'Methane'),
+        ('N2O', 'Nitrous Oxide'),
+        ('CFC-11 eq', 'Summarize the effect of non CO2, CH4, N2O and CFC-12 gases '
+                      'with an equivalence concentration of CFC-11'),
+        ('CFC-12 eq', 'Summarize the radiative effect of the Ozone Depleating Substances, ODSs, '
+                      'with a CFC-12 equivalence concentration'),
+        ('HFC-134a eq', 'Summarize the radiative effect of other fluorinated gases '
+                         'with a HFC-134a equivalence concentration'),
+        ('Explicit ODSs', 'Any explicit representation of Ozone Depleting Substances '
+                          'e.g. CFCs, HCFCs and Halons'),
+        ('Explicit other fluorinated gases', 'Any explicit representation of other fluorinated gases '
+                                             'e.g. HFCs and PFCs'),
         ('O3', None),
-        ('CFCs', None),
-        ('HFCs', None),
-        ('PFCs', None),
-        ('SF6', None),
-        ('NF3', None),
+        ('H2O', None),
         ]
     }
+
+ENUMERATIONS['ODS'] = {
+    'description': 'Ozone depleting substances, ODS, whose radiative effect is explicitly taken into account '
+                   'in the atmosphere model',
+    'is_open': True,
+    'members': [
+        ('CFC-12', 'CFC'),
+        ('CFC-11', 'CFC'),
+        ('CFC-113', 'CFC'),
+        ('CFC-114', 'CFC'),
+        ('CFC-115', 'CFC'),
+        ('HCFC-22', 'HCFC'),
+        ('HCFC-141b', 'HCFC'),
+        ('HCFC-142b', 'HCFC'),
+        ('Halon-1211', 'halon'),
+        ('Halon-1301', 'halon'),
+        ('Halon-2402', 'halon'),
+        ('methyl chloroform', 'CH3CCl3'),
+        ('carbon tetrachloride', 'CCl4'),
+        ('methyl chloride', 'CH3Cl'),
+        ('methylene chloride', 'CH2Cl2'),
+        ('chloroform', 'CHCl3'),
+        ('methyl bromide', 'Ch3Br'),
+        ]
+    }
+
+ENUMERATIONS['other_fluorinated_gases'] = {
+    'description': 'Other Fluorinated gases whose radiative effect is explicitly taken into account '
+                   'in the atmosphere model',
+    'is_open': True,
+    'members': [
+        ('HFC-134a', 'HFC'),
+        ('HFC-23', 'HFC'),
+        ('HFC-32', 'HFC'),
+        ('HFC-125', 'HFC'),
+        ('HFC-143a', 'HFC'),
+        ('HFC-152a', 'HFC'),
+        ('HFC-227ea', 'HFC'),
+        ('HFC-236fa', 'HFC'),
+        ('HFC-245fa', 'HFC'),
+        ('HFC-365mfc', 'HFC'),
+        ('HFC-43-10mee', 'HFC'),
+        ('CF4', 'PFC'),
+        ('C2F6', 'PFC'),
+        ('C3F8', 'PFC'),
+        ('C4F10', 'PFC'),
+        ('C5F12', 'PFC'),
+        ('C6F14', 'PFC'),
+        ('C7F16', 'PFC'),
+        ('C8F18', 'PFC'),
+        ('c-C4F8', 'PFC'),
+        ('NF3', None),
+        ('SF6', None),
+        ('SO2F2', None),
+        ]
+    }
+
 
 ENUMERATIONS['spectral_integration'] = {
     'description': 'Spectral integration of the radiation scheme',
