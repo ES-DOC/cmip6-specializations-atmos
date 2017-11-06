@@ -107,6 +107,17 @@ DETAILS['sw_cloud_liquid'] = {
 }
 
 # --------------------------------------------------------------------
+# SUB-PROCESS: sw_cloud_inhomogeneity
+# --------------------------------------------------------------------
+DETAILS['sw_cloud_inhomogeneity'] = {
+    'description': 'Cloud inhomogeneity in the shortwave radiation scheme',
+    'properties': [
+        ('cloud_inhomogeneity', 'ENUM:inhomogeneity_treatment', '1.1',
+            'Method for taking into account horizontal cloud inhomogeneity'),
+        ]
+}
+
+# --------------------------------------------------------------------
 # SUB-PROCESS: sw_aerosols
 # --------------------------------------------------------------------
 DETAILS['sw_aerosols'] = {
@@ -193,6 +204,17 @@ DETAILS['lw_cloud_liquid'] = {
         ('optical_methods', 'ENUM:optical_methods_droplets', '1.N',
             'Optical methods applicable to cloud liquid droplets in the longwave radiation scheme'),
     ]
+}
+
+# --------------------------------------------------------------------
+# SUB-PROCESS: lw_cloud_inhomogeneity
+# --------------------------------------------------------------------
+DETAILS['lw_cloud_inhomogeneity'] = {
+    'description': 'Cloud inhomogeneity in the longwave radiation scheme',
+    'properties': [
+        ('cloud_inhomogeneity', 'ENUM:inhomogeneity_treatment', '1.1',
+            'Method for taking into account horizontal cloud inhomogeneity'),
+        ]
 }
 
 # --------------------------------------------------------------------
@@ -464,4 +486,13 @@ ENUMERATIONS['single_scattering_properties_methods'] = {
 }
 
 
+ENUMERATIONS['inhomogeneity_treatment'] = {
+    'description': 'Cloud scheme inhomogeneity treatment',
+    'is_open': True,
+    'members': [
+        ('Monte Carlo Independent Column Approximation', 'McICA'),
+        ('Triplecloud', 'Regions of clear sky, optically thin cloud and optically thick cloud, Shonk et al 2010'),
+        ('analytic', None),
+        ]
+    }
 
