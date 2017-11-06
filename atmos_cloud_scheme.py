@@ -57,23 +57,39 @@ DETAILS['toplevel'] = {
 DETAILS['sub_grid_scale_water_distribution'] = {
     'description': 'Sub-grid scale water distribution',
     'properties': [
-        ('type', 'ENUM:sub_grid_scale_water_distribution_type', '1.1',
+        ('type', 'ENUM:sub_grid_scale_h2o_distribution_type', '1.1',
             'Sub-grid scale water distribution type'),
         ('function_name', 'str', '1.1',
             'Sub-grid scale water distribution function name'),
         ('function_order', 'int', '1.1',
             'Sub-grid scale water distribution function type'),
-        ('convection_coupling', 'ENUM:sub_grid_scale_water_distribution_convection', '1.N',
+        ('convection_coupling', 'ENUM:sub_grid_scale_h2o_distribution_convection', '1.N',
             'Sub-grid scale water distribution coupling with convection'),
         ]
     }
 
 # --------------------------------------------------------------------
+# SUB-PROCESS: sub_grid_scale_ice_distribution
+# --------------------------------------------------------------------
+DETAILS['sub_grid_scale_ice_distribution'] = {
+    'description': 'Sub-grid scale ice distribution',
+    'properties': [
+        ('type', 'ENUM:sub_grid_scale_h2o_distribution_type', '1.1',
+            'Sub-grid scale ice distribution type'),
+        ('function_name', 'str', '1.1',
+            'Sub-grid scale ice distribution function name'),
+        ('function_order', 'int', '1.1',
+            'Sub-grid scale ice distribution function type'),
+        ('convection_coupling', 'ENUM:sub_grid_scale_h2o_distribution_convection', '1.N',
+            'Sub-grid scale ice distribution coupling with convection'),
+        ]
+    }
+# --------------------------------------------------------------------
 # PROCESS: ENUMERATIONS
 # --------------------------------------------------------------------
 
-ENUMERATIONS['sub_grid_scale_water_distribution_type'] = {
-    'description': 'Approach used for cloud water content and fractional cloud cover',
+ENUMERATIONS['sub_grid_scale_h2o_distribution_type'] = {
+    'description': 'Approach used for cloud H2O content and fractional cloud cover',
     'is_open': False,
     'members': [
         ('prognostic', None),
@@ -81,7 +97,7 @@ ENUMERATIONS['sub_grid_scale_water_distribution_type'] = {
         ]
     }
 
-ENUMERATIONS['sub_grid_scale_water_distribution_convection'] = {
+ENUMERATIONS['sub_grid_scale_h2o_distribution_convection'] = {
     'description': 'Type(s) of convection that the formation of clouds is coupled with',
     'is_open': False,
     'members': [
