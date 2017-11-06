@@ -101,7 +101,7 @@ DETAILS['sw_cloud_liquid'] = {
             'General shortwave radiative interactions with cloud liquid droplets'),
         ('physical_representation', 'ENUM:cloud_liquid_physical_representation', '1.N',
             'Physical representation of cloud liquid droplets in the shortwave radiation scheme'),
-        ('optical_methods', 'ENUM:optical_methods', '1.N',
+        ('optical_methods', 'ENUM:optical_methods_droplets', '1.N',
             'Optical methods applicable to cloud liquid droplets in the shortwave radiation scheme'),
     ]
 }
@@ -190,7 +190,7 @@ DETAILS['lw_cloud_liquid'] = {
             'General longwave radiative interactions with cloud liquid droplets'),
         ('physical_representation', 'ENUM:cloud_liquid_physical_representation', '1.N',
             'Physical representation of cloud liquid droplets in the longwave radiation scheme'),
-        ('optical_methods', 'ENUM:optical_methods', '1.N',
+        ('optical_methods', 'ENUM:optical_methods_droplets', '1.N',
             'Optical methods applicable to cloud liquid droplets in the longwave radiation scheme'),
     ]
 }
@@ -405,6 +405,15 @@ ENUMERATIONS['optical_methods'] = {
         ('anomalous diffraction approximation', None),
         ]
     }
+
+ENUMERATIONS['optical_methods_droplets'] = {
+    'description': 'Optical methods used by radiation scheme',
+    'is_open': True,
+    'members': [
+        ('geometric optics', 'For non-spherical particles'),
+        ('Mie theory', 'For spherical particles'),
+        ]
+}
 
 ENUMERATIONS['cloud_ice_radiation_processes'] = {
     'description': 'Optical radiative processes for ice crystals in clouds',
