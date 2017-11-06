@@ -72,6 +72,10 @@ DETAILS['deep_convection'] = {
         ]
     }
 
+#It is not clear what this exactly mean. Does this mean closure method for determining cloud-base mass flux.
+# If yes, one may want to ask CAPE/WFN based or TKE/CIN based
+# (i.e., quasi-equilbrium of free troposphere or quasi-equilibrium of boundary layer)?
+
 # --------------------------------------------------------------------
 # SUB-PROCESS: shallow_convection_scheme
 # --------------------------------------------------------------------
@@ -145,12 +149,14 @@ ENUMERATIONS['deep_convection_scheme_type'] = {
     }
 
 ENUMERATIONS['deep_convection_scheme_method'] = {
-    'description': 'Method used for deep convection.',
+    'description': 'Method used for deep convection closure for determining cloud-base mass flux.',
     'is_open': True,
     'members': [
-        ('CAPE', 'Mass flux determined by CAPE'),
+        ('CAPE', 'Mass flux determined by CAPE, convectively available potential energy.'),
         ('bulk', 'A bulk mass flux scheme is used'),
-        ('ensemble', 'Summation over an ensemble of convective clouds with differing characteristics')
+        ('ensemble', 'Summation over an ensemble of convective clouds with differing characteristics'),
+        ('CAPE/WFN based', 'CAPE-Cloud Work Function: Based on the quasi-equilibrium of the free troposphere'),
+        ('TKE/CIN based', 'TKE-Convective Inhibition: Based on the quasi-equilibrium of the boundary layer'),
         ]
     }
 
