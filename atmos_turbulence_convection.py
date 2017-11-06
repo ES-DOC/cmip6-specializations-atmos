@@ -69,6 +69,9 @@ DETAILS['deep_convection'] = {
              'Deep convection scheme method'),
         ('processes', 'ENUM:deep_convection_scheme_processes', '1.N',
             'Physical processes taken into account in the parameterisatioin of deep convection'),
+        ('microphysics', 'ENUM:convective_microphysics_scheme_type', '0.N',
+            'Microphysics scheme for deep convection. Microphysical processes directly control '
+            'the amount of detrainment of cloud hydrometeor and water vapor from updrafts'),
         ]
     }
 
@@ -90,6 +93,8 @@ DETAILS['shallow_convection'] = {
              'shallow convection scheme method'),
         ('processes', 'ENUM:shallow_convection_scheme_processes', '1.N',
             'Physical processes taken into account in the parameterisation of shallow convection'),
+        ('microphysics', 'ENUM:convective_microphysics_scheme_type', '0.N',
+            'Microphysics scheme for shallow convection'),
         ]
     }
 
@@ -161,7 +166,7 @@ ENUMERATIONS['deep_convection_scheme_method'] = {
     }
 
 ENUMERATIONS['shallow_convection_scheme_method'] = {
-    'description': 'Method used for shallow convection.',
+    'description': 'Method used for shallow convection closure for determining cloud-base mass flux..',
     'is_open': False,
     'members': [
         ('same as deep (unified)', None),
@@ -204,6 +209,17 @@ ENUMERATIONS['shallow_convection_scheme_processes'] = {
         ('penetrative convection', None),
     ]
     }
+
+ENUMERATIONS['convective_microphysics_scheme_type'] = {
+    'description': 'Convective microphysics parameterization scheme',
+    'is_open': True,
+    'members': [
+        ('tuning parameter based', None),
+        ('single moment', None),
+        ('two moment', None),
+    ]
+}
+
 
 #ENUMERATIONS['other_convection_scheme_type'] = {
 #    'description': 'other_convection_scheme_type',
