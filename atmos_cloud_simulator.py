@@ -30,7 +30,7 @@ QC_STATUS = 'draft'
 # --------------------------------------------------------------------
 # DESCRIPTION: Short description of the specialization.
 # --------------------------------------------------------------------
-DESCRIPTION = 'Characteristics of the cloud simulator'
+DESCRIPTION = 'Characteristics of the cloud observation simulator'
 
 # --------------------------------------------------------------------
 # SUB-PROCESSES
