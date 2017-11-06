@@ -61,18 +61,20 @@ DETAILS['shortwave_radiation'] = {
     }
 
 # --------------------------------------------------------------------
-# SUB-PROCESS: shortwave_ghg
+# SUB-PROCESS: sw_ghg
 # --------------------------------------------------------------------
-DETAILS['shortwave_ghg'] = {
+DETAILS['sw_ghg'] = {
     'description': 'Representation of greenhouse gases in the shortwave radiation scheme',
     'properties': [
-        ('sw_greenhouse_gases', 'ENUM:ghg_types', '1.N',
-            'Greenhouse gases whose shortwave radiative effects are taken into account in the atmosphere model'),
-        ('sw_ODS', 'ENUM:ODS', '0.N',
-            'Ozone depleting substances whose shortwave radiative effects are taken into account '
+        ('greenhouse_gas_complexity', 'ENUM:ghg_types', '1.N',
+            'Complexity of greenhouse gases whose shortwave radiative effects are taken into account '
             'in the atmosphere model'),
-        ('sw_other_flourinated_gases', 'ENUM:other_fluorinated_gases', '0.N',
-            'Other flourinated gases whose shortwave radiative effects are taken into account in the atmosphere model'),
+        ('ODS', 'ENUM:ODS', '0.N',
+            'Ozone depleting substances whose shortwave radiative effects are explicitly taken into account '
+            'in the atmosphere model'),
+        ('other_flourinated_gases', 'ENUM:other_fluorinated_gases', '0.N',
+            'Other flourinated gases whose shortwave radiative effects are explicitly taken into account '
+            'in the atmosphere model'),
         ]
 }
 
@@ -161,18 +163,20 @@ DETAILS['longwave_radiation'] = {
     }
 
 # --------------------------------------------------------------------
-# SUB-PROCESS: longwave_ghg
+# SUB-PROCESS: lw_ghg
 # --------------------------------------------------------------------
-DETAILS['longwave_ghg'] = {
+DETAILS['lw_ghg'] = {
     'description': 'Representation of greenhouse gases in the longwave radiation scheme',
     'properties': [
-        ('lw_greenhouse_gases', 'ENUM:ghg_types', '1.N',
-            'Greenhouse gases whose longwave radiative effects are taken into account in the atmosphere model'),
-        ('lw_ODS', 'ENUM:ODS', '0.N',
-            'Ozone depleting substances whose longwave radiative effects are taken into account '
+        ('greenhouse_gas_complexity', 'ENUM:ghg_types', '1.N',
+            'Complexity of greenhouse gases whose longwave radiative effects are taken into account '
             'in the atmosphere model'),
-        ('lw_other_flourinated_gases', 'ENUM:other_fluorinated_gases', '0.N',
-            'Other flourinated gases whose longwave radiative effects are taken into account in the atmosphere model'),
+        ('ODS', 'ENUM:ODS', '0.N',
+            'Ozone depleting substances whose longwave radiative effects are explicitly taken into account '
+            'in the atmosphere model'),
+        ('other_flourinated_gases', 'ENUM:other_fluorinated_gases', '0.N',
+            'Other flourinated gases whose longwave radiative effects are explicitly taken into account '
+            'in the atmosphere model'),
         ]
 }
 
@@ -279,9 +283,9 @@ ENUMERATIONS['ghg_types'] = {
                       'with a CFC-12 equivalence concentration'),
         ('HFC-134a eq', 'Summarize the radiative effect of other fluorinated gases '
                          'with a HFC-134a equivalence concentration'),
-        ('Explicit ODSs', 'Any explicit representation of Ozone Depleting Substances '
+        ('Explicit ODSs', 'Explicit representation of Ozone Depleting Substances '
                           'e.g. CFCs, HCFCs and Halons'),
-        ('Explicit other fluorinated gases', 'Any explicit representation of other fluorinated gases '
+        ('Explicit other fluorinated gases', 'Explicit representation of other fluorinated gases '
                                              'e.g. HFCs and PFCs'),
         ('O3', None),
         ('H2O', None),
