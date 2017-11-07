@@ -44,12 +44,25 @@ DETAILS['toplevel'] = {
             'Atmosphere components that are linked to the cloud scheme'),
         ('uses_separate_treatment', 'bool', '1.1',
             'Different cloud schemes for the different types of clouds (convective, stratiform and boundary layer)'),
-        ('cloud_overlap_method', 'ENUM:cloud_overlap_method', '1.1',
-            'Method for taking into account overlapping of cloud layers'),
         ('processes', 'ENUM:processes_attributes', '1.N',
             'Processes included in the cloud scheme'),
         ]
     }
+
+
+# --------------------------------------------------------------------
+# SUB-PROCESS: optical_cloud_properties
+# --------------------------------------------------------------------
+DETAILS['optical_cloud_properties'] = {
+    'description': "Optical cloud properties",
+    'properties': [
+        ('cloud_overlap_method', 'ENUM:cloud_overlap_method', '0.1',
+            'Method for taking into account overlapping of cloud layers'),
+        ('cloud_inhomogeneity', 'str', '0.1',
+            'Method for taking into account cloud inhomogeneity')
+    ]
+}
+
 
 # --------------------------------------------------------------------
 # SUB-PROCESS: sub_grid_scale_water_distribution
