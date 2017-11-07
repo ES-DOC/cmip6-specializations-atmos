@@ -46,6 +46,12 @@ DETAILS['toplevel'] = {
             'Different cloud schemes for the different types of clouds (convective, stratiform and boundary layer)'),
         ('processes', 'ENUM:processes_attributes', '1.N',
             'Processes included in the cloud scheme'),
+        ('prognostic_scheme', 'bool', '1.1',
+            'Is the cloud scheme a prognostic scheme?'),
+        ('diagnostic_scheme', 'bool', '1.1',
+            'Is the cloud scheme a diagnostic scheme?'),
+        ('prognostic_variables', 'ENUM:prognostic_vars', '0.N',
+            'List the prognostic variables used by the cloud scheme, if applicable.'),
         ]
     }
 
@@ -152,5 +158,17 @@ ENUMERATIONS['processes_attributes'] = {
         ('entrainment', None),
         ('detrainment', None),
         ('bulk cloud', None),
+        ]
+    }
+
+ENUMERATIONS['prognostic_vars'] = {
+    'description': 'Prognostic variables included in the cloud scheme.',
+    'is_open': True,
+    'members': [
+        ('cloud amount', None),
+        ('liquid', None),
+        ('ice', None),
+        ('rain', None),
+        ('snow', None),
         ]
     }
