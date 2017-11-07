@@ -196,6 +196,7 @@ ENUMERATIONS['deep_convection_scheme_processes'] = {
         ('updrafts', None),
         ('downdrafts', None),
         ('radiative effect of anvils', None),
+        ('re-evaporation of convective precipitation', None),
         ]
     }
 
@@ -207,6 +208,7 @@ ENUMERATIONS['shallow_convection_scheme_processes'] = {
         ('entrainment', None),
         ('detrainment', None),
         ('penetrative convection', None),
+        ('re-evaporation of convective precipitation', None),
     ]
     }
 
