@@ -50,7 +50,7 @@ DETAILS['discretisation:horizontal'] = {
             'Horizontal discretisation type'),
         ('scheme_method', 'ENUM:dynamical_core_discretisation_horizontal_method', '1.1',
             'Horizontal discretisation method'),
-        ('scheme_order', 'int', '1.1',
+        ('scheme_order', 'ENUM:function_order', '1.1',
             'Horizontal discretisation function order'),
         ('horizontal_pole', 'ENUM:dynamical_core_discretisation_horizontal_pole', '1.1',
             'Horizontal discretisation pole singularity treatment'),
@@ -107,3 +107,14 @@ ENUMERATIONS['dynamical_core_discretisation_vertical_type'] = {
         ('hybrid sigma-pressure', 'sigma system near terrain and isobaric above'),
     ]
 }
+
+
+ENUMERATIONS['function_order'] = {
+    'description': 'Discretisation function order',
+    'is_open': True,
+    'members': [
+        ('second', None),
+        ('third', None),
+        ('fourth', None),
+        ]
+    }
