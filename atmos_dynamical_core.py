@@ -213,16 +213,16 @@ ENUMERATIONS['advection_tracers_scheme_characteristics'] = {
         ]
     }
 
-# TODO: is this information nescessary?
+
 ENUMERATIONS['advection_tracers_conserved_quantities'] = {
     'description': 'Quantities conserved through the tracers advection scheme',
     'is_open': True,
     'members': [
-        ('dry mass', None)
+        ('dry mass', None),
+        ('tracer mass', None),
         ]
     }
 
-# TODO: is this information nescessary?
 ENUMERATIONS['advection_tracers_conservation_method'] = {
     'description': 'Method used to ensure conservation in the tracers advection scheme',
     'is_open': True,
