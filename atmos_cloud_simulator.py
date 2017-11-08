@@ -38,8 +38,8 @@ DESCRIPTION = 'Characteristics of the observation simulator'
 DETAILS['isscp_attributes'] = {
     'description': 'ISSCP Characteristics',
     'properties': [
-        ('top_height', 'ENUM:isscp_top_height', '1.N',
-            'Cloud simulator ISSCP top height'),
+        ('top_height_estimation_method', 'ENUM:isscp_top_height', '1.N',
+            'Cloud simulator ISSCP top height estimation methodUo'),
         ('top_height_direction', 'ENUM:isscp_top_height_direction', '1.1',
             'Cloud simulator ISSCP top height direction'),
         ]
