@@ -108,8 +108,12 @@ ENUMERATIONS['dynamical_core_discretisation_vertical_type'] = {
         ('isobaric', 'vertical coordinate on pressure levels'),
         ('sigma', 'allows vertical coordinate to follow model terrain'),
         ('hybrid sigma-pressure', 'sigma system near terrain and isobaric above'),
+        ('hybrid pressure', None),
+        ('vertically lagrangian', None),
+
     ]
 }
+# "Vertically-lagrangian hybrid-pressure"
 
 ENUMERATIONS['function_order'] = {
     'description': 'Discretisation function order',
