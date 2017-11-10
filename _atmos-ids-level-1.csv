@@ -17,13 +17,17 @@ cmip6.atmos.dynamical_core.advection_momentum, Atmos > Dynamical Core > Advectio
 , , 
 cmip6.atmos.radiation, Atmos > Radiation, process
 cmip6.atmos.radiation.shortwave_radiation, Atmos > Radiation > Shortwave Radiation, subprocess
+cmip6.atmos.radiation.sw_ghg, Atmos > Radiation > Sw Ghg, subprocess
 cmip6.atmos.radiation.sw_cloud_ice, Atmos > Radiation > Sw Cloud Ice, subprocess
 cmip6.atmos.radiation.sw_cloud_liquid, Atmos > Radiation > Sw Cloud Liquid, subprocess
+cmip6.atmos.radiation.sw_cloud_inhomogeneity, Atmos > Radiation > Sw Cloud Inhomogeneity, subprocess
 cmip6.atmos.radiation.sw_aerosols, Atmos > Radiation > Sw Aerosols, subprocess
 cmip6.atmos.radiation.sw_gases, Atmos > Radiation > Sw Gases, subprocess
 cmip6.atmos.radiation.longwave_radiation, Atmos > Radiation > Longwave Radiation, subprocess
+cmip6.atmos.radiation.lw_ghg, Atmos > Radiation > Lw Ghg, subprocess
 cmip6.atmos.radiation.lw_cloud_ice, Atmos > Radiation > Lw Cloud Ice, subprocess
 cmip6.atmos.radiation.lw_cloud_liquid, Atmos > Radiation > Lw Cloud Liquid, subprocess
+cmip6.atmos.radiation.lw_cloud_inhomogeneity, Atmos > Radiation > Lw Cloud Inhomogeneity, subprocess
 cmip6.atmos.radiation.lw_aerosols, Atmos > Radiation > Lw Aerosols, subprocess
 cmip6.atmos.radiation.lw_gases, Atmos > Radiation > Lw Gases, subprocess
 , , 
@@ -34,16 +38,18 @@ cmip6.atmos.turbulence_convection.shallow_convection, Atmos > Turbulence Convect
 , , 
 cmip6.atmos.microphysics_precipitation, Atmos > Microphysics Precipitation, process
 cmip6.atmos.microphysics_precipitation.large_scale_precipitation, Atmos > Microphysics Precipitation > Large Scale Precipitation, subprocess
-cmip6.atmos.microphysics_precipitation.cloud_microphysics, Atmos > Microphysics Precipitation > Cloud Microphysics, subprocess
+cmip6.atmos.microphysics_precipitation.large_scale_cloud_microphysics, Atmos > Microphysics Precipitation > Large Scale Cloud Microphysics, subprocess
 , , 
 cmip6.atmos.cloud_scheme, Atmos > Cloud Scheme, process
+cmip6.atmos.cloud_scheme.optical_cloud_properties, Atmos > Cloud Scheme > Optical Cloud Properties, subprocess
 cmip6.atmos.cloud_scheme.sub_grid_scale_water_distribution, Atmos > Cloud Scheme > Sub Grid Scale Water Distribution, subprocess
+cmip6.atmos.cloud_scheme.sub_grid_scale_ice_distribution, Atmos > Cloud Scheme > Sub Grid Scale Ice Distribution, subprocess
 , , 
-cmip6.atmos.cloud_simulator, Atmos > Cloud Simulator, process
-cmip6.atmos.cloud_simulator.isscp_attributes, Atmos > Cloud Simulator > Isscp Attributes, subprocess
-cmip6.atmos.cloud_simulator.cosp_attributes, Atmos > Cloud Simulator > Cosp Attributes, subprocess
-cmip6.atmos.cloud_simulator.radar_inputs, Atmos > Cloud Simulator > Radar Inputs, subprocess
-cmip6.atmos.cloud_simulator.lidar_inputs, Atmos > Cloud Simulator > Lidar Inputs, subprocess
+cmip6.atmos.observation_simulation, Atmos > Observation Simulation, process
+cmip6.atmos.observation_simulation.isscp_attributes, Atmos > Observation Simulation > Isscp Attributes, subprocess
+cmip6.atmos.observation_simulation.cosp_attributes, Atmos > Observation Simulation > Cosp Attributes, subprocess
+cmip6.atmos.observation_simulation.radar_inputs, Atmos > Observation Simulation > Radar Inputs, subprocess
+cmip6.atmos.observation_simulation.lidar_inputs, Atmos > Observation Simulation > Lidar Inputs, subprocess
 , , 
 cmip6.atmos.gravity_waves, Atmos > Gravity Waves, process
 cmip6.atmos.gravity_waves.orographic_gravity_waves, Atmos > Gravity Waves > Orographic Gravity Waves, subprocess
