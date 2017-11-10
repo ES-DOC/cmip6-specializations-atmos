@@ -61,9 +61,9 @@ DETAILS['shortwave_radiation'] = {
     }
 
 # --------------------------------------------------------------------
-# SUB-PROCESS: shortwave_ghg
+# SUB-PROCESS: shortwave_GHG
 # --------------------------------------------------------------------
-DETAILS['shortwave_ghg'] = {
+DETAILS['shortwave_GHG'] = {
     'description': 'Representation of greenhouse gases in the shortwave radiation scheme',
     'properties': [
         ('greenhouse_gas_complexity', 'ENUM:ghg_types', '1.N',
@@ -163,9 +163,9 @@ DETAILS['longwave_radiation'] = {
     }
 
 # --------------------------------------------------------------------
-# SUB-PROCESS: longwave_ghg
+# SUB-PROCESS: longwave_GHG
 # --------------------------------------------------------------------
-DETAILS['longwave_ghg'] = {
+DETAILS['longwave_GHG'] = {
     'description': 'Representation of greenhouse gases in the longwave radiation scheme',
     'properties': [
         ('greenhouse_gas_complexity', 'ENUM:ghg_types', '1.N',

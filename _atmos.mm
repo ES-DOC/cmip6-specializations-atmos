@@ -1643,7 +1643,7 @@
         <dt><b>Description</b></dt><dd>Shortwave radiation scheme number of spectral intervals</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_radiation.spectral_intervals</dd>
     </dl>
   </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="shortwave_ghg"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="shortwave_GHG"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -1654,14 +1654,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Complexity of greenhouse gases whose shortwave radiative effects are taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:ghg_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_ghg.greenhouse_gas_complexity</dd>
+        <dt><b>Description</b></dt><dd>Complexity of greenhouse gases whose shortwave radiative effects are taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:ghg_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_GHG.greenhouse_gas_complexity</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Complexity of greenhouse gases whose shortwave radiative effects are taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:ghg_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_ghg.greenhouse_gas_complexity</dd>
+        <dt><b>Description</b></dt><dd>Complexity of greenhouse gases whose shortwave radiative effects are taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:ghg_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_GHG.greenhouse_gas_complexity</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="CO2"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1738,14 +1738,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Ozone depleting substances whose shortwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:ODS</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_ghg.ODS</dd>
+        <dt><b>Description</b></dt><dd>Ozone depleting substances whose shortwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:ODS</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_GHG.ODS</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Ozone depleting substances whose shortwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:ODS</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_ghg.ODS</dd>
+        <dt><b>Description</b></dt><dd>Ozone depleting substances whose shortwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:ODS</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_GHG.ODS</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="CFC-12"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1871,14 +1871,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Other flourinated gases whose shortwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:other_fluorinated_gases</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_ghg.other_flourinated_gases</dd>
+        <dt><b>Description</b></dt><dd>Other flourinated gases whose shortwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:other_fluorinated_gases</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_GHG.other_flourinated_gases</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Other flourinated gases whose shortwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:other_fluorinated_gases</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_ghg.other_flourinated_gases</dd>
+        <dt><b>Description</b></dt><dd>Other flourinated gases whose shortwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:other_fluorinated_gases</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_GHG.other_flourinated_gases</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="HFC-134a"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2630,7 +2630,7 @@
         <dt><b>Description</b></dt><dd>Longwave radiation scheme number of spectral intervals</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_radiation.spectral_intervals</dd>
     </dl>
   </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="longwave_ghg"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="longwave_GHG"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -2641,14 +2641,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Complexity of greenhouse gases whose longwave radiative effects are taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:ghg_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_ghg.greenhouse_gas_complexity</dd>
+        <dt><b>Description</b></dt><dd>Complexity of greenhouse gases whose longwave radiative effects are taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:ghg_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_GHG.greenhouse_gas_complexity</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Complexity of greenhouse gases whose longwave radiative effects are taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:ghg_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_ghg.greenhouse_gas_complexity</dd>
+        <dt><b>Description</b></dt><dd>Complexity of greenhouse gases whose longwave radiative effects are taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:ghg_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_GHG.greenhouse_gas_complexity</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="CO2"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2725,14 +2725,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Ozone depleting substances whose longwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:ODS</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_ghg.ODS</dd>
+        <dt><b>Description</b></dt><dd>Ozone depleting substances whose longwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:ODS</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_GHG.ODS</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Ozone depleting substances whose longwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:ODS</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_ghg.ODS</dd>
+        <dt><b>Description</b></dt><dd>Ozone depleting substances whose longwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:ODS</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_GHG.ODS</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="CFC-12"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2858,14 +2858,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Other flourinated gases whose longwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:other_fluorinated_gases</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_ghg.other_flourinated_gases</dd>
+        <dt><b>Description</b></dt><dd>Other flourinated gases whose longwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:other_fluorinated_gases</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_GHG.other_flourinated_gases</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Other flourinated gases whose longwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:other_fluorinated_gases</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_ghg.other_flourinated_gases</dd>
+        <dt><b>Description</b></dt><dd>Other flourinated gases whose longwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:other_fluorinated_gases</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_GHG.other_flourinated_gases</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="HFC-134a"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>

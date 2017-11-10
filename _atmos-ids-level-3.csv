@@ -43,9 +43,9 @@ cmip6.atmos.radiation.shortwave_radiation.name, Atmos > Radiation > Shortwave Ra
 cmip6.atmos.radiation.shortwave_radiation.spectral_integration, Atmos > Radiation > Shortwave Radiation > Spectral Integration, property
 cmip6.atmos.radiation.shortwave_radiation.transport_calculation, Atmos > Radiation > Shortwave Radiation > Transport Calculation, property
 cmip6.atmos.radiation.shortwave_radiation.spectral_intervals, Atmos > Radiation > Shortwave Radiation > Spectral Intervals, property
-cmip6.atmos.radiation.shortwave_ghg.greenhouse_gas_complexity, Atmos > Radiation > Shortwave Ghg > Greenhouse Gas Complexity, property
-cmip6.atmos.radiation.shortwave_ghg.ODS, Atmos > Radiation > Shortwave Ghg > ODS, property
-cmip6.atmos.radiation.shortwave_ghg.other_flourinated_gases, Atmos > Radiation > Shortwave Ghg > Other Flourinated Gases, property
+cmip6.atmos.radiation.shortwave_GHG.greenhouse_gas_complexity, Atmos > Radiation > Shortwave GHG > Greenhouse Gas Complexity, property
+cmip6.atmos.radiation.shortwave_GHG.ODS, Atmos > Radiation > Shortwave GHG > ODS, property
+cmip6.atmos.radiation.shortwave_GHG.other_flourinated_gases, Atmos > Radiation > Shortwave GHG > Other Flourinated Gases, property
 cmip6.atmos.radiation.shortwave_cloud_ice.general_interactions, Atmos > Radiation > Shortwave Cloud Ice > General Interactions, property
 cmip6.atmos.radiation.shortwave_cloud_ice.physical_representation, Atmos > Radiation > Shortwave Cloud Ice > Physical Representation, property
 cmip6.atmos.radiation.shortwave_cloud_ice.optical_methods, Atmos > Radiation > Shortwave Cloud Ice > Optical Methods, property
@@ -61,9 +61,9 @@ cmip6.atmos.radiation.longwave_radiation.name, Atmos > Radiation > Longwave Radi
 cmip6.atmos.radiation.longwave_radiation.spectral_integration, Atmos > Radiation > Longwave Radiation > Spectral Integration, property
 cmip6.atmos.radiation.longwave_radiation.transport_calculation, Atmos > Radiation > Longwave Radiation > Transport Calculation, property
 cmip6.atmos.radiation.longwave_radiation.spectral_intervals, Atmos > Radiation > Longwave Radiation > Spectral Intervals, property
-cmip6.atmos.radiation.longwave_ghg.greenhouse_gas_complexity, Atmos > Radiation > Longwave Ghg > Greenhouse Gas Complexity, property
-cmip6.atmos.radiation.longwave_ghg.ODS, Atmos > Radiation > Longwave Ghg > ODS, property
-cmip6.atmos.radiation.longwave_ghg.other_flourinated_gases, Atmos > Radiation > Longwave Ghg > Other Flourinated Gases, property
+cmip6.atmos.radiation.longwave_GHG.greenhouse_gas_complexity, Atmos > Radiation > Longwave GHG > Greenhouse Gas Complexity, property
+cmip6.atmos.radiation.longwave_GHG.ODS, Atmos > Radiation > Longwave GHG > ODS, property
+cmip6.atmos.radiation.longwave_GHG.other_flourinated_gases, Atmos > Radiation > Longwave GHG > Other Flourinated Gases, property
 cmip6.atmos.radiation.longwave_cloud_ice.general_interactions, Atmos > Radiation > Longwave Cloud Ice > General Interactions, property
 cmip6.atmos.radiation.longwave_cloud_ice.physical_reprenstation, Atmos > Radiation > Longwave Cloud Ice > Physical Reprenstation, property
 cmip6.atmos.radiation.longwave_cloud_ice.optical_methods, Atmos > Radiation > Longwave Cloud Ice > Optical Methods, property

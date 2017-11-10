@@ -726,15 +726,15 @@
                     ]
                 }, 
                 {
-                    "label": "Shortwave Ghg", 
+                    "label": "Shortwave GHG", 
                     "description": "Representation of greenhouse gases in the shortwave radiation scheme", 
-                    "id": "cmip6.atmos.radiation.shortwave_ghg", 
+                    "id": "cmip6.atmos.radiation.shortwave_GHG", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "Greenhouse Gas Complexity", 
                             "description": "Complexity of greenhouse gases whose shortwave radiative effects are taken into account in the atmosphere model", 
-                            "id": "cmip6.atmos.radiation.shortwave_ghg.greenhouse_gas_complexity", 
+                            "id": "cmip6.atmos.radiation.shortwave_GHG.greenhouse_gas_complexity", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -789,7 +789,7 @@
                         {
                             "label": "ODS", 
                             "description": "Ozone depleting substances whose shortwave radiative effects are explicitly taken into account in the atmosphere model", 
-                            "id": "cmip6.atmos.radiation.shortwave_ghg.ODS", 
+                            "id": "cmip6.atmos.radiation.shortwave_GHG.ODS", 
                             "cardinality": "0.N", 
                             "type": "enum", 
                             "enum": {
@@ -872,7 +872,7 @@
                         {
                             "label": "Other Flourinated Gases", 
                             "description": "Other flourinated gases whose shortwave radiative effects are explicitly taken into account in the atmosphere model", 
-                            "id": "cmip6.atmos.radiation.shortwave_ghg.other_flourinated_gases", 
+                            "id": "cmip6.atmos.radiation.shortwave_GHG.other_flourinated_gases", 
                             "cardinality": "0.N", 
                             "type": "enum", 
                             "enum": {
@@ -1430,15 +1430,15 @@
                     ]
                 }, 
                 {
-                    "label": "Longwave Ghg", 
+                    "label": "Longwave GHG", 
                     "description": "Representation of greenhouse gases in the longwave radiation scheme", 
-                    "id": "cmip6.atmos.radiation.longwave_ghg", 
+                    "id": "cmip6.atmos.radiation.longwave_GHG", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "Greenhouse Gas Complexity", 
                             "description": "Complexity of greenhouse gases whose longwave radiative effects are taken into account in the atmosphere model", 
-                            "id": "cmip6.atmos.radiation.longwave_ghg.greenhouse_gas_complexity", 
+                            "id": "cmip6.atmos.radiation.longwave_GHG.greenhouse_gas_complexity", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1493,7 +1493,7 @@
                         {
                             "label": "ODS", 
                             "description": "Ozone depleting substances whose longwave radiative effects are explicitly taken into account in the atmosphere model", 
-                            "id": "cmip6.atmos.radiation.longwave_ghg.ODS", 
+                            "id": "cmip6.atmos.radiation.longwave_GHG.ODS", 
                             "cardinality": "0.N", 
                             "type": "enum", 
                             "enum": {
@@ -1576,7 +1576,7 @@
                         {
                             "label": "Other Flourinated Gases", 
                             "description": "Other flourinated gases whose longwave radiative effects are explicitly taken into account in the atmosphere model", 
-                            "id": "cmip6.atmos.radiation.longwave_ghg.other_flourinated_gases", 
+                            "id": "cmip6.atmos.radiation.longwave_GHG.other_flourinated_gases", 
                             "cardinality": "0.N", 
                             "type": "enum", 
                             "enum": {

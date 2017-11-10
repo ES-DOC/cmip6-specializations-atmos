@@ -17,14 +17,14 @@ cmip6.atmos.dynamical_core.advection_momentum, Atmos > Dynamical Core > Advectio
 , , 
 cmip6.atmos.radiation, Atmos > Radiation, process
 cmip6.atmos.radiation.shortwave_radiation, Atmos > Radiation > Shortwave Radiation, subprocess
-cmip6.atmos.radiation.shortwave_ghg, Atmos > Radiation > Shortwave Ghg, subprocess
+cmip6.atmos.radiation.shortwave_GHG, Atmos > Radiation > Shortwave GHG, subprocess
 cmip6.atmos.radiation.shortwave_cloud_ice, Atmos > Radiation > Shortwave Cloud Ice, subprocess
 cmip6.atmos.radiation.shortwave_cloud_liquid, Atmos > Radiation > Shortwave Cloud Liquid, subprocess
 cmip6.atmos.radiation.shortwave_cloud_inhomogeneity, Atmos > Radiation > Shortwave Cloud Inhomogeneity, subprocess
 cmip6.atmos.radiation.shortwave_aerosols, Atmos > Radiation > Shortwave Aerosols, subprocess
 cmip6.atmos.radiation.shortwave_gases, Atmos > Radiation > Shortwave Gases, subprocess
 cmip6.atmos.radiation.longwave_radiation, Atmos > Radiation > Longwave Radiation, subprocess
-cmip6.atmos.radiation.longwave_ghg, Atmos > Radiation > Longwave Ghg, subprocess
+cmip6.atmos.radiation.longwave_GHG, Atmos > Radiation > Longwave GHG, subprocess
 cmip6.atmos.radiation.longwave_cloud_ice, Atmos > Radiation > Longwave Cloud Ice, subprocess
 cmip6.atmos.radiation.longwave_cloud_liquid, Atmos > Radiation > Longwave Cloud Liquid, subprocess
 cmip6.atmos.radiation.longwave_cloud_inhomogeneity, Atmos > Radiation > Longwave Cloud Inhomogeneity, subprocess
