@@ -1643,7 +1643,7 @@
         <dt><b>Description</b></dt><dd>Shortwave radiation scheme number of spectral intervals</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_radiation.spectral_intervals</dd>
     </dl>
   </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="sw_ghg"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="shortwave_ghg"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -1654,14 +1654,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Complexity of greenhouse gases whose shortwave radiative effects are taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:ghg_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.sw_ghg.greenhouse_gas_complexity</dd>
+        <dt><b>Description</b></dt><dd>Complexity of greenhouse gases whose shortwave radiative effects are taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:ghg_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_ghg.greenhouse_gas_complexity</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Complexity of greenhouse gases whose shortwave radiative effects are taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:ghg_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.sw_ghg.greenhouse_gas_complexity</dd>
+        <dt><b>Description</b></dt><dd>Complexity of greenhouse gases whose shortwave radiative effects are taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:ghg_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_ghg.greenhouse_gas_complexity</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="CO2"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1738,14 +1738,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Ozone depleting substances whose shortwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:ODS</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.sw_ghg.ODS</dd>
+        <dt><b>Description</b></dt><dd>Ozone depleting substances whose shortwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:ODS</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_ghg.ODS</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Ozone depleting substances whose shortwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:ODS</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.sw_ghg.ODS</dd>
+        <dt><b>Description</b></dt><dd>Ozone depleting substances whose shortwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:ODS</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_ghg.ODS</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="CFC-12"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1871,14 +1871,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Other flourinated gases whose shortwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:other_fluorinated_gases</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.sw_ghg.other_flourinated_gases</dd>
+        <dt><b>Description</b></dt><dd>Other flourinated gases whose shortwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:other_fluorinated_gases</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_ghg.other_flourinated_gases</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Other flourinated gases whose shortwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:other_fluorinated_gases</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.sw_ghg.other_flourinated_gases</dd>
+        <dt><b>Description</b></dt><dd>Other flourinated gases whose shortwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:other_fluorinated_gases</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_ghg.other_flourinated_gases</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="HFC-134a"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2042,7 +2042,7 @@
         <dt><b>Description</b></dt><dd>N/A</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="sw_cloud_ice"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="shortwave_cloud_ice"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -2053,14 +2053,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General shortwave radiative interactions with cloud ice crystals</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.sw_cloud_ice.general_interactions</dd>
+        <dt><b>Description</b></dt><dd>General shortwave radiative interactions with cloud ice crystals</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_cloud_ice.general_interactions</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General shortwave radiative interactions with cloud ice crystals</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.sw_cloud_ice.general_interactions</dd>
+        <dt><b>Description</b></dt><dd>General shortwave radiative interactions with cloud ice crystals</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_cloud_ice.general_interactions</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scattering"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2081,14 +2081,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Physical representation of cloud ice crystals in the shortwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:cloud_ice_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.sw_cloud_ice.physical_representation</dd>
+        <dt><b>Description</b></dt><dd>Physical representation of cloud ice crystals in the shortwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:cloud_ice_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_cloud_ice.physical_representation</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Physical representation of cloud ice crystals in the shortwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:cloud_ice_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.sw_cloud_ice.physical_representation</dd>
+        <dt><b>Description</b></dt><dd>Physical representation of cloud ice crystals in the shortwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:cloud_ice_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_cloud_ice.physical_representation</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="bi-modal size distribution"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2144,14 +2144,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Optical methods applicable to cloud ice crystals in the shortwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.sw_cloud_ice.optical_methods</dd>
+        <dt><b>Description</b></dt><dd>Optical methods applicable to cloud ice crystals in the shortwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_cloud_ice.optical_methods</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Optical methods applicable to cloud ice crystals in the shortwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.sw_cloud_ice.optical_methods</dd>
+        <dt><b>Description</b></dt><dd>Optical methods applicable to cloud ice crystals in the shortwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_cloud_ice.optical_methods</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="T-matrix"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2189,7 +2189,7 @@
         <dt><b>Description</b></dt><dd>N/A</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="sw_cloud_liquid"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="shortwave_cloud_liquid"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -2200,14 +2200,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General shortwave radiative interactions with cloud liquid droplets</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.sw_cloud_liquid.general_interactions</dd>
+        <dt><b>Description</b></dt><dd>General shortwave radiative interactions with cloud liquid droplets</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_cloud_liquid.general_interactions</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General shortwave radiative interactions with cloud liquid droplets</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.sw_cloud_liquid.general_interactions</dd>
+        <dt><b>Description</b></dt><dd>General shortwave radiative interactions with cloud liquid droplets</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_cloud_liquid.general_interactions</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scattering"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2228,14 +2228,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Physical representation of cloud liquid droplets in the shortwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:cloud_liquid_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.sw_cloud_liquid.physical_representation</dd>
+        <dt><b>Description</b></dt><dd>Physical representation of cloud liquid droplets in the shortwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:cloud_liquid_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_cloud_liquid.physical_representation</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Physical representation of cloud liquid droplets in the shortwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:cloud_liquid_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.sw_cloud_liquid.physical_representation</dd>
+        <dt><b>Description</b></dt><dd>Physical representation of cloud liquid droplets in the shortwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:cloud_liquid_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_cloud_liquid.physical_representation</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="cloud droplet number concentration"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2270,14 +2270,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Optical methods applicable to cloud liquid droplets in the shortwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods_droplets</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.sw_cloud_liquid.optical_methods</dd>
+        <dt><b>Description</b></dt><dd>Optical methods applicable to cloud liquid droplets in the shortwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods_droplets</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_cloud_liquid.optical_methods</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Optical methods applicable to cloud liquid droplets in the shortwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods_droplets</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.sw_cloud_liquid.optical_methods</dd>
+        <dt><b>Description</b></dt><dd>Optical methods applicable to cloud liquid droplets in the shortwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods_droplets</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_cloud_liquid.optical_methods</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="geometric optics"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2294,7 +2294,7 @@
         <dt><b>Description</b></dt><dd>For spherical particles</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="sw_cloud_inhomogeneity"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="shortwave_cloud_inhomogeneity"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -2305,14 +2305,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Method for taking into account horizontal cloud inhomogeneity</dd><dt><b>Type</b></dt><dd>ENUM:inhomogeneity_treatment</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.sw_cloud_inhomogeneity.cloud_inhomogeneity</dd>
+        <dt><b>Description</b></dt><dd>Method for taking into account horizontal cloud inhomogeneity</dd><dt><b>Type</b></dt><dd>ENUM:inhomogeneity_treatment</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_cloud_inhomogeneity.cloud_inhomogeneity</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Method for taking into account horizontal cloud inhomogeneity</dd><dt><b>Type</b></dt><dd>ENUM:inhomogeneity_treatment</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.sw_cloud_inhomogeneity.cloud_inhomogeneity</dd>
+        <dt><b>Description</b></dt><dd>Method for taking into account horizontal cloud inhomogeneity</dd><dt><b>Type</b></dt><dd>ENUM:inhomogeneity_treatment</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_cloud_inhomogeneity.cloud_inhomogeneity</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Monte Carlo Independent Column Approximation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2336,7 +2336,7 @@
         <dt><b>Description</b></dt><dd>N/A</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="sw_aerosols"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="shortwave_aerosols"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -2347,14 +2347,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General shortwave radiative interactions with aerosols</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.sw_aerosols.general_interactions</dd>
+        <dt><b>Description</b></dt><dd>General shortwave radiative interactions with aerosols</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_aerosols.general_interactions</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General shortwave radiative interactions with aerosols</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.sw_aerosols.general_interactions</dd>
+        <dt><b>Description</b></dt><dd>General shortwave radiative interactions with aerosols</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_aerosols.general_interactions</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scattering"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2375,14 +2375,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Physical representation of aerosols in the shortwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:aerosol_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.sw_aerosols.physical_representation</dd>
+        <dt><b>Description</b></dt><dd>Physical representation of aerosols in the shortwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:aerosol_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_aerosols.physical_representation</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Physical representation of aerosols in the shortwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:aerosol_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.sw_aerosols.physical_representation</dd>
+        <dt><b>Description</b></dt><dd>Physical representation of aerosols in the shortwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:aerosol_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_aerosols.physical_representation</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="number concentration"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2431,14 +2431,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Optical methods applicable to aerosols in the shortwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.sw_aerosols.optical_methods</dd>
+        <dt><b>Description</b></dt><dd>Optical methods applicable to aerosols in the shortwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_aerosols.optical_methods</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Optical methods applicable to aerosols in the shortwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.sw_aerosols.optical_methods</dd>
+        <dt><b>Description</b></dt><dd>Optical methods applicable to aerosols in the shortwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_aerosols.optical_methods</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="T-matrix"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2476,7 +2476,7 @@
         <dt><b>Description</b></dt><dd>N/A</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="sw_gases"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="shortwave_gases"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -2487,14 +2487,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General shortwave radiative interactions with gases</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.sw_gases.general_interactions</dd>
+        <dt><b>Description</b></dt><dd>General shortwave radiative interactions with gases</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_gases.general_interactions</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General shortwave radiative interactions with gases</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.sw_gases.general_interactions</dd>
+        <dt><b>Description</b></dt><dd>General shortwave radiative interactions with gases</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_gases.general_interactions</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scattering"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2630,7 +2630,7 @@
         <dt><b>Description</b></dt><dd>Longwave radiation scheme number of spectral intervals</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_radiation.spectral_intervals</dd>
     </dl>
   </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="lw_ghg"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="longwave_ghg"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -2641,14 +2641,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Complexity of greenhouse gases whose longwave radiative effects are taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:ghg_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.lw_ghg.greenhouse_gas_complexity</dd>
+        <dt><b>Description</b></dt><dd>Complexity of greenhouse gases whose longwave radiative effects are taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:ghg_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_ghg.greenhouse_gas_complexity</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Complexity of greenhouse gases whose longwave radiative effects are taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:ghg_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.lw_ghg.greenhouse_gas_complexity</dd>
+        <dt><b>Description</b></dt><dd>Complexity of greenhouse gases whose longwave radiative effects are taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:ghg_types</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_ghg.greenhouse_gas_complexity</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="CO2"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2725,14 +2725,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Ozone depleting substances whose longwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:ODS</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.lw_ghg.ODS</dd>
+        <dt><b>Description</b></dt><dd>Ozone depleting substances whose longwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:ODS</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_ghg.ODS</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Ozone depleting substances whose longwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:ODS</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.lw_ghg.ODS</dd>
+        <dt><b>Description</b></dt><dd>Ozone depleting substances whose longwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:ODS</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_ghg.ODS</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="CFC-12"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2858,14 +2858,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Other flourinated gases whose longwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:other_fluorinated_gases</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.lw_ghg.other_flourinated_gases</dd>
+        <dt><b>Description</b></dt><dd>Other flourinated gases whose longwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:other_fluorinated_gases</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_ghg.other_flourinated_gases</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Other flourinated gases whose longwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:other_fluorinated_gases</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.lw_ghg.other_flourinated_gases</dd>
+        <dt><b>Description</b></dt><dd>Other flourinated gases whose longwave radiative effects are explicitly taken into account in the atmosphere model</dd><dt><b>Type</b></dt><dd>ENUM:other_fluorinated_gases</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_ghg.other_flourinated_gases</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="HFC-134a"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3029,7 +3029,7 @@
         <dt><b>Description</b></dt><dd>N/A</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="lw_cloud_ice"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="longwave_cloud_ice"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -3040,14 +3040,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General longwave radiative interactions with cloud ice crystals</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.lw_cloud_ice.general_interactions</dd>
+        <dt><b>Description</b></dt><dd>General longwave radiative interactions with cloud ice crystals</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_cloud_ice.general_interactions</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General longwave radiative interactions with cloud ice crystals</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.lw_cloud_ice.general_interactions</dd>
+        <dt><b>Description</b></dt><dd>General longwave radiative interactions with cloud ice crystals</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_cloud_ice.general_interactions</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scattering"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3068,14 +3068,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Physical representation of cloud ice crystals in the longwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:cloud_ice_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.lw_cloud_ice.physical_reprenstation</dd>
+        <dt><b>Description</b></dt><dd>Physical representation of cloud ice crystals in the longwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:cloud_ice_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_cloud_ice.physical_reprenstation</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Physical representation of cloud ice crystals in the longwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:cloud_ice_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.lw_cloud_ice.physical_reprenstation</dd>
+        <dt><b>Description</b></dt><dd>Physical representation of cloud ice crystals in the longwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:cloud_ice_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_cloud_ice.physical_reprenstation</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="bi-modal size distribution"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3131,14 +3131,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Optical methods applicable to cloud ice crystals in the longwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.lw_cloud_ice.optical_methods</dd>
+        <dt><b>Description</b></dt><dd>Optical methods applicable to cloud ice crystals in the longwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_cloud_ice.optical_methods</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Optical methods applicable to cloud ice crystals in the longwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.lw_cloud_ice.optical_methods</dd>
+        <dt><b>Description</b></dt><dd>Optical methods applicable to cloud ice crystals in the longwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_cloud_ice.optical_methods</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="T-matrix"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3176,7 +3176,7 @@
         <dt><b>Description</b></dt><dd>N/A</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="lw_cloud_liquid"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="longwave_cloud_liquid"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -3187,14 +3187,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General longwave radiative interactions with cloud liquid droplets</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.lw_cloud_liquid.general_interactions</dd>
+        <dt><b>Description</b></dt><dd>General longwave radiative interactions with cloud liquid droplets</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_cloud_liquid.general_interactions</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General longwave radiative interactions with cloud liquid droplets</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.lw_cloud_liquid.general_interactions</dd>
+        <dt><b>Description</b></dt><dd>General longwave radiative interactions with cloud liquid droplets</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_cloud_liquid.general_interactions</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scattering"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3215,14 +3215,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Physical representation of cloud liquid droplets in the longwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:cloud_liquid_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.lw_cloud_liquid.physical_representation</dd>
+        <dt><b>Description</b></dt><dd>Physical representation of cloud liquid droplets in the longwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:cloud_liquid_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_cloud_liquid.physical_representation</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Physical representation of cloud liquid droplets in the longwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:cloud_liquid_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.lw_cloud_liquid.physical_representation</dd>
+        <dt><b>Description</b></dt><dd>Physical representation of cloud liquid droplets in the longwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:cloud_liquid_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_cloud_liquid.physical_representation</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="cloud droplet number concentration"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3257,14 +3257,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Optical methods applicable to cloud liquid droplets in the longwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods_droplets</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.lw_cloud_liquid.optical_methods</dd>
+        <dt><b>Description</b></dt><dd>Optical methods applicable to cloud liquid droplets in the longwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods_droplets</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_cloud_liquid.optical_methods</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Optical methods applicable to cloud liquid droplets in the longwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods_droplets</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.lw_cloud_liquid.optical_methods</dd>
+        <dt><b>Description</b></dt><dd>Optical methods applicable to cloud liquid droplets in the longwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods_droplets</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_cloud_liquid.optical_methods</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="geometric optics"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3281,7 +3281,7 @@
         <dt><b>Description</b></dt><dd>For spherical particles</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="lw_cloud_inhomogeneity"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="longwave_cloud_inhomogeneity"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -3292,14 +3292,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Method for taking into account horizontal cloud inhomogeneity</dd><dt><b>Type</b></dt><dd>ENUM:inhomogeneity_treatment</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.lw_cloud_inhomogeneity.cloud_inhomogeneity</dd>
+        <dt><b>Description</b></dt><dd>Method for taking into account horizontal cloud inhomogeneity</dd><dt><b>Type</b></dt><dd>ENUM:inhomogeneity_treatment</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_cloud_inhomogeneity.cloud_inhomogeneity</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Method for taking into account horizontal cloud inhomogeneity</dd><dt><b>Type</b></dt><dd>ENUM:inhomogeneity_treatment</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.lw_cloud_inhomogeneity.cloud_inhomogeneity</dd>
+        <dt><b>Description</b></dt><dd>Method for taking into account horizontal cloud inhomogeneity</dd><dt><b>Type</b></dt><dd>ENUM:inhomogeneity_treatment</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_cloud_inhomogeneity.cloud_inhomogeneity</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Monte Carlo Independent Column Approximation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3323,7 +3323,7 @@
         <dt><b>Description</b></dt><dd>N/A</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="lw_aerosols"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="longwave_aerosols"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -3334,14 +3334,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General longwave radiative interactions with aerosols</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.lw_aerosols.general_interactions</dd>
+        <dt><b>Description</b></dt><dd>General longwave radiative interactions with aerosols</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_aerosols.general_interactions</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General longwave radiative interactions with aerosols</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.lw_aerosols.general_interactions</dd>
+        <dt><b>Description</b></dt><dd>General longwave radiative interactions with aerosols</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_aerosols.general_interactions</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scattering"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3362,14 +3362,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Physical representation of aerosols in the longwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:aerosol_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.lw_aerosols.physical_representation</dd>
+        <dt><b>Description</b></dt><dd>Physical representation of aerosols in the longwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:aerosol_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_aerosols.physical_representation</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Physical representation of aerosols in the longwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:aerosol_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.lw_aerosols.physical_representation</dd>
+        <dt><b>Description</b></dt><dd>Physical representation of aerosols in the longwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:aerosol_physical_representation</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_aerosols.physical_representation</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="number concentration"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3418,14 +3418,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Optical methods applicable to aerosols in the longwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.lw_aerosols.optical_methods</dd>
+        <dt><b>Description</b></dt><dd>Optical methods applicable to aerosols in the longwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_aerosols.optical_methods</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Optical methods applicable to aerosols in the longwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.lw_aerosols.optical_methods</dd>
+        <dt><b>Description</b></dt><dd>Optical methods applicable to aerosols in the longwave radiation scheme</dd><dt><b>Type</b></dt><dd>ENUM:optical_methods</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_aerosols.optical_methods</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="T-matrix"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3463,7 +3463,7 @@
         <dt><b>Description</b></dt><dd>N/A</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="lw_gases"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="longwave_gases"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -3474,14 +3474,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General longwave radiative interactions with gases</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.lw_gases.general_interactions</dd>
+        <dt><b>Description</b></dt><dd>General longwave radiative interactions with gases</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_gases.general_interactions</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>General longwave radiative interactions with gases</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.lw_gases.general_interactions</dd>
+        <dt><b>Description</b></dt><dd>General longwave radiative interactions with gases</dd><dt><b>Type</b></dt><dd>ENUM:radiative_interactions</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_gases.general_interactions</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scattering"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>

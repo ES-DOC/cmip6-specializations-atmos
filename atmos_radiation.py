@@ -61,9 +61,9 @@ DETAILS['shortwave_radiation'] = {
     }
 
 # --------------------------------------------------------------------
-# SUB-PROCESS: sw_ghg
+# SUB-PROCESS: shortwave_ghg
 # --------------------------------------------------------------------
-DETAILS['sw_ghg'] = {
+DETAILS['shortwave_ghg'] = {
     'description': 'Representation of greenhouse gases in the shortwave radiation scheme',
     'properties': [
         ('greenhouse_gas_complexity', 'ENUM:ghg_types', '1.N',
@@ -79,9 +79,9 @@ DETAILS['sw_ghg'] = {
 }
 
 # --------------------------------------------------------------------
-# SUB-PROCESS: sw_cloud_ice
+# SUB-PROCESS: shortwave_cloud_ice
 # --------------------------------------------------------------------
-DETAILS['sw_cloud_ice'] = {
+DETAILS['shortwave_cloud_ice'] = {
     'description': 'Shortwave radiative properties of ice crystals in clouds',
     'properties': [
         ('general_interactions', 'ENUM:radiative_interactions', '1.N',
@@ -94,9 +94,9 @@ DETAILS['sw_cloud_ice'] = {
 }
 
 # --------------------------------------------------------------------
-# SUB-PROCESS: sw_cloud_liquid
+# SUB-PROCESS: shortwave_cloud_liquid
 # --------------------------------------------------------------------
-DETAILS['sw_cloud_liquid'] = {
+DETAILS['shortwave_cloud_liquid'] = {
     'description': 'Shortwave radiative properties of liquid droplets in clouds',
     'properties': [
         ('general_interactions', 'ENUM:radiative_interactions', '1.N',
@@ -109,9 +109,9 @@ DETAILS['sw_cloud_liquid'] = {
 }
 
 # --------------------------------------------------------------------
-# SUB-PROCESS: sw_cloud_inhomogeneity
+# SUB-PROCESS: shortwave_cloud_inhomogeneity
 # --------------------------------------------------------------------
-DETAILS['sw_cloud_inhomogeneity'] = {
+DETAILS['shortwave_cloud_inhomogeneity'] = {
     'description': 'Cloud inhomogeneity in the shortwave radiation scheme',
     'properties': [
         ('cloud_inhomogeneity', 'ENUM:inhomogeneity_treatment', '1.1',
@@ -120,9 +120,9 @@ DETAILS['sw_cloud_inhomogeneity'] = {
 }
 
 # --------------------------------------------------------------------
-# SUB-PROCESS: sw_aerosols
+# SUB-PROCESS: shortwave_aerosols
 # --------------------------------------------------------------------
-DETAILS['sw_aerosols'] = {
+DETAILS['shortwave_aerosols'] = {
     'description': 'Shortwave radiative properties of aerosols',
     'properties': [
         ('general_interactions', 'ENUM:radiative_interactions', '1.N',
@@ -135,9 +135,9 @@ DETAILS['sw_aerosols'] = {
 }
 
 # --------------------------------------------------------------------
-# SUB-PROCESS: sw_gases
+# SUB-PROCESS: shortwave_gases
 # --------------------------------------------------------------------
-DETAILS['sw_gases'] = {
+DETAILS['shortwave_gases'] = {
     'description': 'Shortwave radiative properties of gases',
     'properties': [
         ('general_interactions', 'ENUM:radiative_interactions', '1.N',
@@ -163,9 +163,9 @@ DETAILS['longwave_radiation'] = {
     }
 
 # --------------------------------------------------------------------
-# SUB-PROCESS: lw_ghg
+# SUB-PROCESS: longwave_ghg
 # --------------------------------------------------------------------
-DETAILS['lw_ghg'] = {
+DETAILS['longwave_ghg'] = {
     'description': 'Representation of greenhouse gases in the longwave radiation scheme',
     'properties': [
         ('greenhouse_gas_complexity', 'ENUM:ghg_types', '1.N',
@@ -181,9 +181,9 @@ DETAILS['lw_ghg'] = {
 }
 
 # --------------------------------------------------------------------
-# SUB-PROCESS: lw_cloud_ice
+# SUB-PROCESS: longwave_cloud_ice
 # --------------------------------------------------------------------
-DETAILS['lw_cloud_ice'] = {
+DETAILS['longwave_cloud_ice'] = {
     'description': 'Longwave radiative properties of ice crystals in clouds',
     'properties': [
         ('general_interactions', 'ENUM:radiative_interactions', '1.N',
@@ -196,9 +196,9 @@ DETAILS['lw_cloud_ice'] = {
 }
 
 # --------------------------------------------------------------------
-# SUB-PROCESS: lw_cloud_liquid
+# SUB-PROCESS: longwave_cloud_liquid
 # --------------------------------------------------------------------
-DETAILS['lw_cloud_liquid'] = {
+DETAILS['longwave_cloud_liquid'] = {
     'description': 'Longwave radiative properties of liquid droplets in clouds',
     'properties': [
         ('general_interactions', 'ENUM:radiative_interactions', '1.N',
@@ -211,9 +211,9 @@ DETAILS['lw_cloud_liquid'] = {
 }
 
 # --------------------------------------------------------------------
-# SUB-PROCESS: lw_cloud_inhomogeneity
+# SUB-PROCESS: longwave_cloud_inhomogeneity
 # --------------------------------------------------------------------
-DETAILS['lw_cloud_inhomogeneity'] = {
+DETAILS['longwave_cloud_inhomogeneity'] = {
     'description': 'Cloud inhomogeneity in the longwave radiation scheme',
     'properties': [
         ('cloud_inhomogeneity', 'ENUM:inhomogeneity_treatment', '1.1',
@@ -222,9 +222,9 @@ DETAILS['lw_cloud_inhomogeneity'] = {
 }
 
 # --------------------------------------------------------------------
-# SUB-PROCESS: lw_aerosols
+# SUB-PROCESS: longwave_aerosols
 # --------------------------------------------------------------------
-DETAILS['lw_aerosols'] = {
+DETAILS['longwave_aerosols'] = {
     'description': 'Longwave radiative properties of aerosols',
     'properties': [
         ('general_interactions', 'ENUM:radiative_interactions', '1.N',
@@ -237,9 +237,9 @@ DETAILS['lw_aerosols'] = {
 }
 
 # --------------------------------------------------------------------
-# SUB-PROCESS: lw_gases
+# SUB-PROCESS: longwave_gases
 # --------------------------------------------------------------------
-DETAILS['lw_gases'] = {
+DETAILS['longwave_gases'] = {
     'description': 'Longwave radiative properties of gases',
     'properties': [
         ('general_interactions', 'ENUM:radiative_interactions', '1.N',

@@ -726,15 +726,15 @@
                     ]
                 }, 
                 {
-                    "label": "Sw Ghg", 
+                    "label": "Shortwave Ghg", 
                     "description": "Representation of greenhouse gases in the shortwave radiation scheme", 
-                    "id": "cmip6.atmos.radiation.sw_ghg", 
+                    "id": "cmip6.atmos.radiation.shortwave_ghg", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "Greenhouse Gas Complexity", 
                             "description": "Complexity of greenhouse gases whose shortwave radiative effects are taken into account in the atmosphere model", 
-                            "id": "cmip6.atmos.radiation.sw_ghg.greenhouse_gas_complexity", 
+                            "id": "cmip6.atmos.radiation.shortwave_ghg.greenhouse_gas_complexity", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -789,7 +789,7 @@
                         {
                             "label": "ODS", 
                             "description": "Ozone depleting substances whose shortwave radiative effects are explicitly taken into account in the atmosphere model", 
-                            "id": "cmip6.atmos.radiation.sw_ghg.ODS", 
+                            "id": "cmip6.atmos.radiation.shortwave_ghg.ODS", 
                             "cardinality": "0.N", 
                             "type": "enum", 
                             "enum": {
@@ -872,7 +872,7 @@
                         {
                             "label": "Other Flourinated Gases", 
                             "description": "Other flourinated gases whose shortwave radiative effects are explicitly taken into account in the atmosphere model", 
-                            "id": "cmip6.atmos.radiation.sw_ghg.other_flourinated_gases", 
+                            "id": "cmip6.atmos.radiation.shortwave_ghg.other_flourinated_gases", 
                             "cardinality": "0.N", 
                             "type": "enum", 
                             "enum": {
@@ -979,15 +979,15 @@
                     ]
                 }, 
                 {
-                    "label": "Sw Cloud Ice", 
+                    "label": "Shortwave Cloud Ice", 
                     "description": "Shortwave radiative properties of ice crystals in clouds", 
-                    "id": "cmip6.atmos.radiation.sw_cloud_ice", 
+                    "id": "cmip6.atmos.radiation.shortwave_cloud_ice", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "General Interactions", 
                             "description": "General shortwave radiative interactions with cloud ice crystals", 
-                            "id": "cmip6.atmos.radiation.sw_cloud_ice.general_interactions", 
+                            "id": "cmip6.atmos.radiation.shortwave_cloud_ice.general_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1010,7 +1010,7 @@
                         {
                             "label": "Physical Representation", 
                             "description": "Physical representation of cloud ice crystals in the shortwave radiation scheme", 
-                            "id": "cmip6.atmos.radiation.sw_cloud_ice.physical_representation", 
+                            "id": "cmip6.atmos.radiation.shortwave_cloud_ice.physical_representation", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1053,7 +1053,7 @@
                         {
                             "label": "Optical Methods", 
                             "description": "Optical methods applicable to cloud ice crystals in the shortwave radiation scheme", 
-                            "id": "cmip6.atmos.radiation.sw_cloud_ice.optical_methods", 
+                            "id": "cmip6.atmos.radiation.shortwave_cloud_ice.optical_methods", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1088,15 +1088,15 @@
                     ]
                 }, 
                 {
-                    "label": "Sw Cloud Liquid", 
+                    "label": "Shortwave Cloud Liquid", 
                     "description": "Shortwave radiative properties of liquid droplets in clouds", 
-                    "id": "cmip6.atmos.radiation.sw_cloud_liquid", 
+                    "id": "cmip6.atmos.radiation.shortwave_cloud_liquid", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "General Interactions", 
                             "description": "General shortwave radiative interactions with cloud liquid droplets", 
-                            "id": "cmip6.atmos.radiation.sw_cloud_liquid.general_interactions", 
+                            "id": "cmip6.atmos.radiation.shortwave_cloud_liquid.general_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1119,7 +1119,7 @@
                         {
                             "label": "Physical Representation", 
                             "description": "Physical representation of cloud liquid droplets in the shortwave radiation scheme", 
-                            "id": "cmip6.atmos.radiation.sw_cloud_liquid.physical_representation", 
+                            "id": "cmip6.atmos.radiation.shortwave_cloud_liquid.physical_representation", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1150,7 +1150,7 @@
                         {
                             "label": "Optical Methods", 
                             "description": "Optical methods applicable to cloud liquid droplets in the shortwave radiation scheme", 
-                            "id": "cmip6.atmos.radiation.sw_cloud_liquid.optical_methods", 
+                            "id": "cmip6.atmos.radiation.shortwave_cloud_liquid.optical_methods", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1173,15 +1173,15 @@
                     ]
                 }, 
                 {
-                    "label": "Sw Cloud Inhomogeneity", 
+                    "label": "Shortwave Cloud Inhomogeneity", 
                     "description": "Cloud inhomogeneity in the shortwave radiation scheme", 
-                    "id": "cmip6.atmos.radiation.sw_cloud_inhomogeneity", 
+                    "id": "cmip6.atmos.radiation.shortwave_cloud_inhomogeneity", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "Cloud Inhomogeneity", 
                             "description": "Method for taking into account horizontal cloud inhomogeneity", 
-                            "id": "cmip6.atmos.radiation.sw_cloud_inhomogeneity.cloud_inhomogeneity", 
+                            "id": "cmip6.atmos.radiation.shortwave_cloud_inhomogeneity.cloud_inhomogeneity", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "enum": {
@@ -1208,15 +1208,15 @@
                     ]
                 }, 
                 {
-                    "label": "Sw Aerosols", 
+                    "label": "Shortwave Aerosols", 
                     "description": "Shortwave radiative properties of aerosols", 
-                    "id": "cmip6.atmos.radiation.sw_aerosols", 
+                    "id": "cmip6.atmos.radiation.shortwave_aerosols", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "General Interactions", 
                             "description": "General shortwave radiative interactions with aerosols", 
-                            "id": "cmip6.atmos.radiation.sw_aerosols.general_interactions", 
+                            "id": "cmip6.atmos.radiation.shortwave_aerosols.general_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1239,7 +1239,7 @@
                         {
                             "label": "Physical Representation", 
                             "description": "Physical representation of aerosols in the shortwave radiation scheme", 
-                            "id": "cmip6.atmos.radiation.sw_aerosols.physical_representation", 
+                            "id": "cmip6.atmos.radiation.shortwave_aerosols.physical_representation", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1278,7 +1278,7 @@
                         {
                             "label": "Optical Methods", 
                             "description": "Optical methods applicable to aerosols in the shortwave radiation scheme", 
-                            "id": "cmip6.atmos.radiation.sw_aerosols.optical_methods", 
+                            "id": "cmip6.atmos.radiation.shortwave_aerosols.optical_methods", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1313,15 +1313,15 @@
                     ]
                 }, 
                 {
-                    "label": "Sw Gases", 
+                    "label": "Shortwave Gases", 
                     "description": "Shortwave radiative properties of gases", 
-                    "id": "cmip6.atmos.radiation.sw_gases", 
+                    "id": "cmip6.atmos.radiation.shortwave_gases", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "General Interactions", 
                             "description": "General shortwave radiative interactions with gases", 
-                            "id": "cmip6.atmos.radiation.sw_gases.general_interactions", 
+                            "id": "cmip6.atmos.radiation.shortwave_gases.general_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1430,15 +1430,15 @@
                     ]
                 }, 
                 {
-                    "label": "Lw Ghg", 
+                    "label": "Longwave Ghg", 
                     "description": "Representation of greenhouse gases in the longwave radiation scheme", 
-                    "id": "cmip6.atmos.radiation.lw_ghg", 
+                    "id": "cmip6.atmos.radiation.longwave_ghg", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "Greenhouse Gas Complexity", 
                             "description": "Complexity of greenhouse gases whose longwave radiative effects are taken into account in the atmosphere model", 
-                            "id": "cmip6.atmos.radiation.lw_ghg.greenhouse_gas_complexity", 
+                            "id": "cmip6.atmos.radiation.longwave_ghg.greenhouse_gas_complexity", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1493,7 +1493,7 @@
                         {
                             "label": "ODS", 
                             "description": "Ozone depleting substances whose longwave radiative effects are explicitly taken into account in the atmosphere model", 
-                            "id": "cmip6.atmos.radiation.lw_ghg.ODS", 
+                            "id": "cmip6.atmos.radiation.longwave_ghg.ODS", 
                             "cardinality": "0.N", 
                             "type": "enum", 
                             "enum": {
@@ -1576,7 +1576,7 @@
                         {
                             "label": "Other Flourinated Gases", 
                             "description": "Other flourinated gases whose longwave radiative effects are explicitly taken into account in the atmosphere model", 
-                            "id": "cmip6.atmos.radiation.lw_ghg.other_flourinated_gases", 
+                            "id": "cmip6.atmos.radiation.longwave_ghg.other_flourinated_gases", 
                             "cardinality": "0.N", 
                             "type": "enum", 
                             "enum": {
@@ -1683,15 +1683,15 @@
                     ]
                 }, 
                 {
-                    "label": "Lw Cloud Ice", 
+                    "label": "Longwave Cloud Ice", 
                     "description": "Longwave radiative properties of ice crystals in clouds", 
-                    "id": "cmip6.atmos.radiation.lw_cloud_ice", 
+                    "id": "cmip6.atmos.radiation.longwave_cloud_ice", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "General Interactions", 
                             "description": "General longwave radiative interactions with cloud ice crystals", 
-                            "id": "cmip6.atmos.radiation.lw_cloud_ice.general_interactions", 
+                            "id": "cmip6.atmos.radiation.longwave_cloud_ice.general_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1714,7 +1714,7 @@
                         {
                             "label": "Physical Reprenstation", 
                             "description": "Physical representation of cloud ice crystals in the longwave radiation scheme", 
-                            "id": "cmip6.atmos.radiation.lw_cloud_ice.physical_reprenstation", 
+                            "id": "cmip6.atmos.radiation.longwave_cloud_ice.physical_reprenstation", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1757,7 +1757,7 @@
                         {
                             "label": "Optical Methods", 
                             "description": "Optical methods applicable to cloud ice crystals in the longwave radiation scheme", 
-                            "id": "cmip6.atmos.radiation.lw_cloud_ice.optical_methods", 
+                            "id": "cmip6.atmos.radiation.longwave_cloud_ice.optical_methods", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1792,15 +1792,15 @@
                     ]
                 }, 
                 {
-                    "label": "Lw Cloud Liquid", 
+                    "label": "Longwave Cloud Liquid", 
                     "description": "Longwave radiative properties of liquid droplets in clouds", 
-                    "id": "cmip6.atmos.radiation.lw_cloud_liquid", 
+                    "id": "cmip6.atmos.radiation.longwave_cloud_liquid", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "General Interactions", 
                             "description": "General longwave radiative interactions with cloud liquid droplets", 
-                            "id": "cmip6.atmos.radiation.lw_cloud_liquid.general_interactions", 
+                            "id": "cmip6.atmos.radiation.longwave_cloud_liquid.general_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1823,7 +1823,7 @@
                         {
                             "label": "Physical Representation", 
                             "description": "Physical representation of cloud liquid droplets in the longwave radiation scheme", 
-                            "id": "cmip6.atmos.radiation.lw_cloud_liquid.physical_representation", 
+                            "id": "cmip6.atmos.radiation.longwave_cloud_liquid.physical_representation", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1854,7 +1854,7 @@
                         {
                             "label": "Optical Methods", 
                             "description": "Optical methods applicable to cloud liquid droplets in the longwave radiation scheme", 
-                            "id": "cmip6.atmos.radiation.lw_cloud_liquid.optical_methods", 
+                            "id": "cmip6.atmos.radiation.longwave_cloud_liquid.optical_methods", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1877,15 +1877,15 @@
                     ]
                 }, 
                 {
-                    "label": "Lw Cloud Inhomogeneity", 
+                    "label": "Longwave Cloud Inhomogeneity", 
                     "description": "Cloud inhomogeneity in the longwave radiation scheme", 
-                    "id": "cmip6.atmos.radiation.lw_cloud_inhomogeneity", 
+                    "id": "cmip6.atmos.radiation.longwave_cloud_inhomogeneity", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "Cloud Inhomogeneity", 
                             "description": "Method for taking into account horizontal cloud inhomogeneity", 
-                            "id": "cmip6.atmos.radiation.lw_cloud_inhomogeneity.cloud_inhomogeneity", 
+                            "id": "cmip6.atmos.radiation.longwave_cloud_inhomogeneity.cloud_inhomogeneity", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "enum": {
@@ -1912,15 +1912,15 @@
                     ]
                 }, 
                 {
-                    "label": "Lw Aerosols", 
+                    "label": "Longwave Aerosols", 
                     "description": "Longwave radiative properties of aerosols", 
-                    "id": "cmip6.atmos.radiation.lw_aerosols", 
+                    "id": "cmip6.atmos.radiation.longwave_aerosols", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "General Interactions", 
                             "description": "General longwave radiative interactions with aerosols", 
-                            "id": "cmip6.atmos.radiation.lw_aerosols.general_interactions", 
+                            "id": "cmip6.atmos.radiation.longwave_aerosols.general_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1943,7 +1943,7 @@
                         {
                             "label": "Physical Representation", 
                             "description": "Physical representation of aerosols in the longwave radiation scheme", 
-                            "id": "cmip6.atmos.radiation.lw_aerosols.physical_representation", 
+                            "id": "cmip6.atmos.radiation.longwave_aerosols.physical_representation", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -1982,7 +1982,7 @@
                         {
                             "label": "Optical Methods", 
                             "description": "Optical methods applicable to aerosols in the longwave radiation scheme", 
-                            "id": "cmip6.atmos.radiation.lw_aerosols.optical_methods", 
+                            "id": "cmip6.atmos.radiation.longwave_aerosols.optical_methods", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -2017,15 +2017,15 @@
                     ]
                 }, 
                 {
-                    "label": "Lw Gases", 
+                    "label": "Longwave Gases", 
                     "description": "Longwave radiative properties of gases", 
-                    "id": "cmip6.atmos.radiation.lw_gases", 
+                    "id": "cmip6.atmos.radiation.longwave_gases", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "General Interactions", 
                             "description": "General longwave radiative interactions with gases", 
-                            "id": "cmip6.atmos.radiation.lw_gases.general_interactions", 
+                            "id": "cmip6.atmos.radiation.longwave_gases.general_interactions", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
