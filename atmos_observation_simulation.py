@@ -52,7 +52,7 @@ DETAILS['cosp_attributes'] = {
             'Cloud simulator COSP run configuration'),
         ('number_of_grid_points', 'int', '1.1',
             'Cloud simulator COSP number of grid points'),
-        ('number_of_sub-columns', 'int', '1.1',
+        ('number_of_sub_columns', 'int', '1.1',
             'Cloud simulator COSP number of sub-cloumns used to simulate sub-grid variability'),
         ('number_of_levels', 'int', '1.1',
              'Cloud simulator COSP number of levels'),

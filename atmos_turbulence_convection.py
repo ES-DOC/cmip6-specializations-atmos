@@ -68,16 +68,12 @@ DETAILS['deep_convection'] = {
         ('scheme_method', 'ENUM:deep_convection_scheme_method', '1.N',
              'Deep convection scheme method'),
         ('processes', 'ENUM:deep_convection_scheme_processes', '1.N',
-            'Physical processes taken into account in the parameterisatioin of deep convection'),
+            'Physical processes taken into account in the parameterisation of deep convection'),
         ('microphysics', 'ENUM:convective_microphysics_scheme_type', '0.N',
             'Microphysics scheme for deep convection. Microphysical processes directly control '
             'the amount of detrainment of cloud hydrometeor and water vapor from updrafts'),
         ]
     }
-
-#It is not clear what this exactly mean. Does this mean closure method for determining cloud-base mass flux.
-# If yes, one may want to ask CAPE/WFN based or TKE/CIN based
-# (i.e., quasi-equilbrium of free troposphere or quasi-equilibrium of boundary layer)?
 
 # --------------------------------------------------------------------
 # SUB-PROCESS: shallow_convection_scheme

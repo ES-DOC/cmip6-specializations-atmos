@@ -100,7 +100,7 @@ DETAILS['advection_momentum'] = {
         ('scheme_name', 'ENUM:advection_momentum_scheme_name', '0.1',
             'Momentum advection schemes name'),
         ('scheme_characteristics', 'ENUM:advection_momentum_scheme_characteristics', '1.N',
-         'Momentum advection scheme characteristics'),
+            'Momentum advection scheme characteristics'),
         ('scheme_staggering_type', 'ENUM:advection_momentum_scheme_staggering_type', '1.1',
             'Momentum advection scheme staggering type'),
         ('conserved_quantities', 'ENUM:advection_momentum_conserved_quantities', '1.N',
