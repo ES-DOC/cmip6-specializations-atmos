@@ -54,6 +54,8 @@ DETAILS['resolution'] = {
             'e.g. T42, N48.',),
         ('canonical_horizontal_resolution', 'str', '1.1',
             'Expression quoted for gross comparisons of resolution, e.g. 2.5 x 3.75 degrees lat-lon.'),
+        ('range_horizontal_resolution', 'str', '1.1',
+             "Range of horizontal resolution with spatial details, eg. 1 deg (Equator) - 0.5 deg"),
         ('number_of_vertical_levels', 'int', '1.1',
              "Number of vertical levels resolved on the computational grid."),
         ('high_top', 'bool', '1.1',

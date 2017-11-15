@@ -4,6 +4,7 @@ cmip6.atmos.key_properties.model_family, Atmos > Key Properties > Model Family, 
 cmip6.atmos.key_properties.basic_approximations, Atmos > Key Properties > Basic Approximations, property
 cmip6.atmos.key_properties.resolution.horizontal_resolution_name, Atmos > Key Properties > Resolution > Horizontal Resolution Name, property
 cmip6.atmos.key_properties.resolution.canonical_horizontal_resolution, Atmos > Key Properties > Resolution > Canonical Horizontal Resolution, property
+cmip6.atmos.key_properties.resolution.range_horizontal_resolution, Atmos > Key Properties > Resolution > Range Horizontal Resolution, property
 cmip6.atmos.key_properties.resolution.number_of_vertical_levels, Atmos > Key Properties > Resolution > Number Of Vertical Levels, property
 cmip6.atmos.key_properties.resolution.high_top, Atmos > Key Properties > Resolution > High Top, property
 cmip6.atmos.key_properties.resolution.timestep_dynamics, Atmos > Key Properties > Resolution > Timestep Dynamics, property
@@ -118,7 +119,7 @@ cmip6.atmos.observation_simulation.isscp_attributes.top_height_estimation_method
 cmip6.atmos.observation_simulation.isscp_attributes.top_height_direction, Atmos > Observation Simulation > Isscp Attributes > Top Height Direction, property
 cmip6.atmos.observation_simulation.cosp_attributes.run_configuration, Atmos > Observation Simulation > Cosp Attributes > Run Configuration, property
 cmip6.atmos.observation_simulation.cosp_attributes.number_of_grid_points, Atmos > Observation Simulation > Cosp Attributes > Number Of Grid Points, property
-cmip6.atmos.observation_simulation.cosp_attributes.number_of_sub-columns, Atmos > Observation Simulation > Cosp Attributes > Number Of Sub-columns, property
+cmip6.atmos.observation_simulation.cosp_attributes.number_of_sub_columns, Atmos > Observation Simulation > Cosp Attributes > Number Of Sub Columns, property
 cmip6.atmos.observation_simulation.cosp_attributes.number_of_levels, Atmos > Observation Simulation > Cosp Attributes > Number Of Levels, property
 cmip6.atmos.observation_simulation.radar_inputs.frequency, Atmos > Observation Simulation > Radar Inputs > Frequency, property
 cmip6.atmos.observation_simulation.radar_inputs.type, Atmos > Observation Simulation > Radar Inputs > Type, property

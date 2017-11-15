@@ -2239,7 +2239,7 @@
                         }, 
                         {
                             "label": "Processes", 
-                            "description": "Physical processes taken into account in the parameterisatioin of deep convection", 
+                            "description": "Physical processes taken into account in the parameterisation of deep convection", 
                             "id": "cmip6.atmos.turbulence_convection.deep_convection.processes", 
                             "cardinality": "1.N", 
                             "type": "enum", 
@@ -3009,9 +3009,9 @@
                             "uiOrdinal": 2
                         }, 
                         {
-                            "label": "Number Of Sub-columns", 
+                            "label": "Number Of Sub Columns", 
                             "description": "Cloud simulator COSP number of sub-cloumns used to simulate sub-grid variability", 
-                            "id": "cmip6.atmos.observation_simulation.cosp_attributes.number_of_sub-columns", 
+                            "id": "cmip6.atmos.observation_simulation.cosp_attributes.number_of_sub_columns", 
                             "cardinality": "1.1", 
                             "type": "int", 
                             "uiOrdinal": 3
@@ -4001,12 +4001,20 @@
                         "uiOrdinal": 2
                     }, 
                     {
+                        "label": "Range Horizontal Resolution", 
+                        "description": "Range of horizontal resolution with spatial details, eg. 1 deg (Equator) - 0.5 deg", 
+                        "id": "cmip6.atmos.key_properties.resolution.range_horizontal_resolution", 
+                        "cardinality": "1.1", 
+                        "type": "str", 
+                        "uiOrdinal": 3
+                    }, 
+                    {
                         "label": "Number Of Vertical Levels", 
                         "description": "Number of vertical levels resolved on the computational grid.", 
                         "id": "cmip6.atmos.key_properties.resolution.number_of_vertical_levels", 
                         "cardinality": "1.1", 
                         "type": "int", 
-                        "uiOrdinal": 3
+                        "uiOrdinal": 4
                     }, 
                     {
                         "label": "High Top", 
@@ -4014,7 +4022,7 @@
                         "id": "cmip6.atmos.key_properties.resolution.high_top", 
                         "cardinality": "1.1", 
                         "type": "bool", 
-                        "uiOrdinal": 4
+                        "uiOrdinal": 5
                     }, 
                     {
                         "label": "Timestep Dynamics", 
@@ -4022,7 +4030,7 @@
                         "id": "cmip6.atmos.key_properties.resolution.timestep_dynamics", 
                         "cardinality": "1.1", 
                         "type": "str", 
-                        "uiOrdinal": 5
+                        "uiOrdinal": 6
                     }, 
                     {
                         "label": "Timestep Shortwave Radiative Transfer", 
@@ -4030,7 +4038,7 @@
                         "id": "cmip6.atmos.key_properties.resolution.timestep_shortwave_radiative_transfer", 
                         "cardinality": "0.1", 
                         "type": "str", 
-                        "uiOrdinal": 6
+                        "uiOrdinal": 7
                     }, 
                     {
                         "label": "Timestep Longwave Radiative Transfer", 
@@ -4038,7 +4046,7 @@
                         "id": "cmip6.atmos.key_properties.resolution.timestep_longwave_radiative_transfer", 
                         "cardinality": "0.1", 
                         "type": "str", 
-                        "uiOrdinal": 7
+                        "uiOrdinal": 8
                     }
                 ]
             }, 
