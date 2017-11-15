@@ -4023,30 +4023,38 @@
                         "cardinality": "1.1", 
                         "type": "bool", 
                         "uiOrdinal": 5
-                    }, 
+                    }
+                ]
+            }, 
+            {
+                "label": "Timestepping", 
+                "description": "Characteristics of the atmosphere model time stepping", 
+                "id": "cmip6.atmos.key_properties.timestepping", 
+                "contact": "Charlotte Pascoe", 
+                "properties": [
                     {
                         "label": "Timestep Dynamics", 
                         "description": "Timestep for the dynamics, e.g. 30 min.", 
-                        "id": "cmip6.atmos.key_properties.resolution.timestep_dynamics", 
+                        "id": "cmip6.atmos.key_properties.timestepping.timestep_dynamics", 
                         "cardinality": "1.1", 
                         "type": "str", 
-                        "uiOrdinal": 6
+                        "uiOrdinal": 1
                     }, 
                     {
                         "label": "Timestep Shortwave Radiative Transfer", 
                         "description": "Timestep for the shortwave radiative transfer, e.g. 1.5 hours.", 
-                        "id": "cmip6.atmos.key_properties.resolution.timestep_shortwave_radiative_transfer", 
+                        "id": "cmip6.atmos.key_properties.timestepping.timestep_shortwave_radiative_transfer", 
                         "cardinality": "0.1", 
                         "type": "str", 
-                        "uiOrdinal": 7
+                        "uiOrdinal": 2
                     }, 
                     {
                         "label": "Timestep Longwave Radiative Transfer", 
                         "description": "Timestep for the longwave radiative transfer, e.g. 3 hours.", 
-                        "id": "cmip6.atmos.key_properties.resolution.timestep_longwave_radiative_transfer", 
+                        "id": "cmip6.atmos.key_properties.timestepping.timestep_longwave_radiative_transfer", 
                         "cardinality": "0.1", 
                         "type": "str", 
-                        "uiOrdinal": 8
+                        "uiOrdinal": 3
                     }
                 ]
             }, 

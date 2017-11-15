@@ -7,9 +7,9 @@ cmip6.atmos.key_properties.resolution.canonical_horizontal_resolution, Atmos > K
 cmip6.atmos.key_properties.resolution.range_horizontal_resolution, Atmos > Key Properties > Resolution > Range Horizontal Resolution, property
 cmip6.atmos.key_properties.resolution.number_of_vertical_levels, Atmos > Key Properties > Resolution > Number Of Vertical Levels, property
 cmip6.atmos.key_properties.resolution.high_top, Atmos > Key Properties > Resolution > High Top, property
-cmip6.atmos.key_properties.resolution.timestep_dynamics, Atmos > Key Properties > Resolution > Timestep Dynamics, property
-cmip6.atmos.key_properties.resolution.timestep_shortwave_radiative_transfer, Atmos > Key Properties > Resolution > Timestep Shortwave Radiative Transfer, property
-cmip6.atmos.key_properties.resolution.timestep_longwave_radiative_transfer, Atmos > Key Properties > Resolution > Timestep Longwave Radiative Transfer, property
+cmip6.atmos.key_properties.timestepping.timestep_dynamics, Atmos > Key Properties > Timestepping > Timestep Dynamics, property
+cmip6.atmos.key_properties.timestepping.timestep_shortwave_radiative_transfer, Atmos > Key Properties > Timestepping > Timestep Shortwave Radiative Transfer, property
+cmip6.atmos.key_properties.timestepping.timestep_longwave_radiative_transfer, Atmos > Key Properties > Timestepping > Timestep Longwave Radiative Transfer, property
 cmip6.atmos.key_properties.orography.type, Atmos > Key Properties > Orography > Type, property
 cmip6.atmos.key_properties.orography.changes, Atmos > Key Properties > Orography > Changes, property
 , , 

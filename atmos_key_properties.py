@@ -61,6 +61,12 @@ DETAILS['resolution'] = {
         ('high_top', 'bool', '1.1',
             "Does the atmosphere have a high-top? "
             "High-Top atmospheres have a fully resolved stratosphere with a model top above the stratopause."),
+        ]
+    }
+
+DETAILS['timestepping'] = {
+    'description': "Characteristics of the atmosphere model time stepping",
+    'properties': [
         ('timestep_dynamics', 'str', '1.1',
              "Timestep for the dynamics, e.g. 30 min."),
         ('timestep_shortwave_radiative_transfer', 'str', '0.1',
