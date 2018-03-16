@@ -129,7 +129,7 @@ ENUMERATIONS['sub_grid_scale_h2o_distribution_convection'] = {
     }
 
 ENUMERATIONS['atmos_cloud_coupling'] = {
-    'description': 'Atmosphere components that are linked to the cloud scheme',
+    'description': 'Atmosphere and aerosol components that are linked to the cloud scheme',
     'is_open': False,
     'members': [
         ('atmosphere_radiation', None),
@@ -172,5 +172,7 @@ ENUMERATIONS['prognostic_vars'] = {
         ('ice', None),
         ('rain', None),
         ('snow', None),
+        ('cloud droplet number concentration', 'To document the use of two-moment cloud microphysics schemes'),
+        ('ice crystal number concentration', 'To document the use of two-moment cloud microphysics schemes'),
         ]
     }
