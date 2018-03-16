@@ -129,7 +129,7 @@ ENUMERATIONS['sub_grid_scale_h2o_distribution_convection'] = {
     }
 
 ENUMERATIONS['atmos_cloud_coupling'] = {
-    'description': 'Atmosphere and aerosol components that are linked to the cloud scheme',
+    'description': 'Atmosphere components that are linked to the cloud scheme',
     'is_open': False,
     'members': [
         ('atmosphere_radiation', None),
