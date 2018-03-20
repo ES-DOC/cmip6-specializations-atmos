@@ -13,21 +13,6 @@ DETAILS = OrderedDict()
 ENUMERATIONS = OrderedDict()
 
 # --------------------------------------------------------------------
-# CONTACT: Set to realm specialization co-ordinator.
-# --------------------------------------------------------------------
-CONTACT = 'Charlotte Pascoe'
-
-# --------------------------------------------------------------------
-# AUTHORS: Set to realm specialization authors (comma delimited).
-# --------------------------------------------------------------------
-AUTHORS = 'Charlotte Pascoe, Robert Pincus (NOAA)'
-
-# --------------------------------------------------------------------
-# QUALITY CONTROL STATUS: Set to 'draft' or 'complete'
-# --------------------------------------------------------------------
-QC_STATUS = 'draft'
-
-# --------------------------------------------------------------------
 # DESCRIPTION: Short description of the specialization.
 # --------------------------------------------------------------------
 DESCRIPTION = 'Characteristics of the cloud scheme'
@@ -38,10 +23,6 @@ DESCRIPTION = 'Characteristics of the cloud scheme'
 DETAILS['toplevel'] = {
     'description': "Top level cloud scheme process properties",
     'properties': [
-        ('overview', 'str', '1.1',
-            'Overview description of the atmosphere cloud scheme'),
-        ('name', 'str', '0.1',
-            'Commonly used name for the cloud scheme'),
         ('atmos_coupling', 'ENUM:atmos_cloud_coupling', '0.N',
             'Atmosphere components that are linked to the cloud scheme'),
         ('uses_separate_treatment', 'bool', '1.1',
@@ -57,7 +38,6 @@ DETAILS['toplevel'] = {
         ]
     }
 
-
 # --------------------------------------------------------------------
 # SUB-PROCESS: optical_cloud_properties
 # --------------------------------------------------------------------
@@ -70,7 +50,6 @@ DETAILS['optical_cloud_properties'] = {
             'Method for taking into account cloud inhomogeneity')
     ]
 }
-
 
 # --------------------------------------------------------------------
 # SUB-PROCESS: sub_grid_scale_water_distribution
@@ -108,7 +87,6 @@ DETAILS['sub_grid_scale_ice_distribution'] = {
 # --------------------------------------------------------------------
 # PROCESS: ENUMERATIONS
 # --------------------------------------------------------------------
-
 ENUMERATIONS['sub_grid_scale_h2o_distribution_type'] = {
     'description': 'Approach used for cloud H2O content and fractional cloud cover',
     'is_open': False,

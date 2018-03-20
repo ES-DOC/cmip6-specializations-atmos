@@ -12,21 +12,6 @@ DETAILS = OrderedDict()
 ENUMERATIONS = OrderedDict()
 
 # --------------------------------------------------------------------
-# CONTACT: Set to realm specialization co-ordinator.
-# --------------------------------------------------------------------
-CONTACT = 'Charlotte Pascoe'
-
-# --------------------------------------------------------------------
-# AUTHORS: Set to realm specialization authors (comma delimited).
-# --------------------------------------------------------------------
-AUTHORS = 'Charlotte Pascoe'
-
-# --------------------------------------------------------------------
-# QUALITY CONTROL STATUS: Set to 'draft' or 'complete'
-# --------------------------------------------------------------------
-QC_STATUS = 'draft'
-
-# --------------------------------------------------------------------
 # DESCRIPTION: Short description of the specialization.
 # --------------------------------------------------------------------
 DESCRIPTION = 'Atmosphere key properties'
@@ -37,10 +22,6 @@ DESCRIPTION = 'Atmosphere key properties'
 DETAILS['overview'] = {
     'description': "Top level key properties",
     'properties': [
-        ('model_overview', 'str', '1.1',
-            'Overview of atmosphere model'),
-        ('model_name', 'str', '1.1',
-            'Name of atmosphere model code (CAM 4.0, ARPEGE 3.2,...)'),
         ('model_family', 'ENUM:model_family_type', '1.1',
             'Type of atmospheric model.'),
         ('basic_approximations', 'ENUM:basic_approximations_attributes', '1.N',

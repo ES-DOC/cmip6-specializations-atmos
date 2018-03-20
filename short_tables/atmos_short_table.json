@@ -36,6 +36,5 @@
         ["cmip6.atmos.cloud_scheme.name", 1],
         ["cmip6.atmos.solar.solar_pathways.pathways", 1],
         ["cmip6.atmos.volcanos.volcanoes_treatment.volcanoes_implementation", 2]
-    ],
-    "QC_STATUS": "draft"
+    ]
 }

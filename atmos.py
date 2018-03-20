@@ -11,17 +11,12 @@ CONTACT = 'Charlotte Pascoe'
 # --------------------------------------------------------------------
 # AUTHORS: Set to realm specialization authors (comma delimited).
 # --------------------------------------------------------------------
-AUTHORS = 'Charlotte Pascoe'
+AUTHORS = 'Charlotte Pascoe, Robert Pincus (NOAA)'
 
 # --------------------------------------------------------------------
 # CONTRIBUTORS: Set to realm specialization contributors (comma delimited).
 # --------------------------------------------------------------------
 CONTRIBUTORS = ''
-
-# --------------------------------------------------------------------
-# QUALITY CONTROL STATUS: Set to 'draft' or 'complete'
-# --------------------------------------------------------------------
-QC_STATUS = 'draft'
 
 # --------------------------------------------------------------------
 # CHANGE HISTORY: Set to list: (version, date, who, comment).
@@ -43,12 +38,7 @@ CMIP5_MAPPINGS_SYNCED_AT = "0.3.0"
 # --------------------------------------------------------------------
 # DESCRIPTION: Scientific context of this scientific realm
 # --------------------------------------------------------------------
-DESCRIPTION = 'Atmosphere realm specialization'
-
-# --------------------------------------------------------------------
-# REALM: Canonical name for the domain of this scientific realm
-# --------------------------------------------------------------------
-REALM = 'atmos'
+DESCRIPTION = 'Atmosphere'
 
 # --------------------------------------------------------------------
 # KEY PROPERTIES: Key properties for the realm which differ from model defaults (grid, timestep etc)

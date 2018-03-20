@@ -8,43 +8,10 @@ from collections import OrderedDict
 DETAILS = OrderedDict()
 ENUMERATIONS = OrderedDict()
 
-
-# --------------------------------------------------------------------
-# CONTACT
-#
-# Set to realm specialization co-ordinator.
-# --------------------------------------------------------------------
-CONTACT = 'Charlotte Pascoe'
-
-# --------------------------------------------------------------------
-# AUTHORS
-#
-# Set to realm specialization authors (comma delimited).
-# --------------------------------------------------------------------
-AUTHORS = ''
-
-# --------------------------------------------------------------------
-# QUALITY CONTROL STATUS
-#
-# Set to 'draft' or 'complete'
-# --------------------------------------------------------------------
-QC_STATUS = 'draft'
-
 # --------------------------------------------------------------------
 # DESCRIPTION: Short description of the specialization.
 # --------------------------------------------------------------------
 DESCRIPTION = 'Top of atmosphere solar insolation characteristics'
-
-# --------------------------------------------------------------------
-# PROCESS: top level properties
-# --------------------------------------------------------------------
-DETAILS['toplevel'] = {
-    'description': "Overview of solar insolation",
-    'properties': [
-        ('overview', 'str', '1.1',
-            'Overview description of solar insolation of the atmosphere'),
-        ]
-    }
 
 # --------------------------------------------------------------------
 # SUB-PROCESS: solar_forcing_pathways

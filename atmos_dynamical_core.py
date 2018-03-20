@@ -13,21 +13,6 @@ DETAILS = OrderedDict()
 ENUMERATIONS = OrderedDict()
 
 # --------------------------------------------------------------------
-# CONTACT: Set to realm specialization co-ordinator.
-# --------------------------------------------------------------------
-CONTACT = 'Charlotte Pascoe'
-
-# --------------------------------------------------------------------
-# AUTHORS: Set to realm specialization authors (comma delimited).
-# --------------------------------------------------------------------
-AUTHORS = 'Charlotte Pascoe'
-
-# --------------------------------------------------------------------
-# QUALITY CONTROL STATUS: Set to 'draft' or 'complete'
-# --------------------------------------------------------------------
-QC_STATUS = 'draft'
-
-# --------------------------------------------------------------------
 # DESCRIPTION: Short description of the specialization.
 # --------------------------------------------------------------------
 DESCRIPTION = 'Characteristics of the dynamical core'
@@ -38,10 +23,6 @@ DESCRIPTION = 'Characteristics of the dynamical core'
 DETAILS['toplevel'] = {
     'description': "General dynamical core properties",
     'properties': [
-        ('overview', 'str', '1.1',
-            'Overview description of atmosphere dynamical core'),
-        ('name', 'str', '0.1',
-            'Commonly used name for the dynamical core of the model.'),
         ('timestepping_type', 'ENUM:timestepping_type', '1.1',
             'Timestepping framework type'),
         ('prognostic_variables', 'ENUM:prognostic_variables', '1.N',

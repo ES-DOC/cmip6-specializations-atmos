@@ -10,35 +10,9 @@ DETAILS = OrderedDict()
 ENUMERATIONS = OrderedDict()
 
 # --------------------------------------------------------------------
-# CONTACT: Set to realm specialization co-ordinator.
-# --------------------------------------------------------------------
-CONTACT = 'Charlotte Pascoe'
-
-# --------------------------------------------------------------------
-# AUTHORS: Set to realm specialization authors (comma delimited).
-# --------------------------------------------------------------------
-AUTHORS = ''
-
-# --------------------------------------------------------------------
-# QUALITY CONTROL STATUS: Set to 'draft' or 'complete'
-# --------------------------------------------------------------------
-QC_STATUS = 'draft'
-
-# --------------------------------------------------------------------
 # DESCRIPTION: Short description of the specialization.
 # --------------------------------------------------------------------
 DESCRIPTION = 'Characteristics of the implementation of volcanoes'
-
-# --------------------------------------------------------------------
-# PROCESS: top level properties
-# --------------------------------------------------------------------
-DETAILS['toplevel'] = {
-    'description': "Overview of volcanic effects",
-    'properties': [
-        ('overview', 'str', '1.1',
-            'Overview description of the implementation of volcanic effects in the atmosphere'),
-        ]
-    }
 
 # --------------------------------------------------------------------
 # SUB-PROCESS: volcanoes_treatment
