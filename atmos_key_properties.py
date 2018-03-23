@@ -19,7 +19,7 @@ DESCRIPTION = 'Atmosphere key properties'
 # --------------------------------------------------------------------
 # Top level details.
 # --------------------------------------------------------------------
-DETAILS['overview'] = {
+DETAILS['toplevel'] = {
     'description': "Top level key properties",
     'properties': [
         ('model_family', 'ENUM:model_family_type', '1.1',
