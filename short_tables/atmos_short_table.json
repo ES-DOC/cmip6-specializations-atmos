@@ -12,7 +12,7 @@
     ],
     "LABEL": "Main",
     "PROPERTIES": [
-        ["cmip6.atmos.key_properties.model_name", 1],
+        ["cmip6.atmos.key_properties.name", 1],
         ["cmip6.atmos.grid.discretisation.horizontal.scheme_type", 1],
         ["cmip6.atmos.grid.discretisation.vertical.coordinate_type", 1],
         ["cmip6.atmos.key_properties.basic_approximations", 1],
