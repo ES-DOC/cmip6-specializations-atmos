@@ -1,15 +1,4 @@
 cmip6-id, cmip6-label, cmip6-type
-cmip6.atmos.grid.name, Atmos > Grid > Name, property
-cmip6.atmos.grid.overview, Atmos > Grid > Overview, property
-cmip6.atmos.grid.discretisation.overview, Atmos > Grid > Discretisation > Overview, property
-cmip6.atmos.grid.discretisation.overview, Atmos > Grid > Discretisation > Overview, property
-cmip6.atmos.grid.discretisation.horizontal.scheme_type, Atmos > Grid > Discretisation > Horizontal > Scheme Type, property
-cmip6.atmos.grid.discretisation.horizontal.scheme_method, Atmos > Grid > Discretisation > Horizontal > Scheme Method, property
-cmip6.atmos.grid.discretisation.horizontal.scheme_order, Atmos > Grid > Discretisation > Horizontal > Scheme Order, property
-cmip6.atmos.grid.discretisation.horizontal.horizontal_pole, Atmos > Grid > Discretisation > Horizontal > Horizontal Pole, property
-cmip6.atmos.grid.discretisation.horizontal.grid_type, Atmos > Grid > Discretisation > Horizontal > Grid Type, property
-cmip6.atmos.grid.discretisation.vertical.coordinate_type, Atmos > Grid > Discretisation > Vertical > Coordinate Type, property
-, , 
 cmip6.atmos.key_properties.name, Atmos > Key Properties > Name, property
 cmip6.atmos.key_properties.overview, Atmos > Key Properties > Overview, property
 cmip6.atmos.key_properties.model_family, Atmos > Key Properties > Model Family, property
@@ -27,6 +16,17 @@ cmip6.atmos.key_properties.timestepping.timestep_longwave_radiative_transfer, At
 cmip6.atmos.key_properties.orography.overview, Atmos > Key Properties > Orography > Overview, property
 cmip6.atmos.key_properties.orography.type, Atmos > Key Properties > Orography > Type, property
 cmip6.atmos.key_properties.orography.changes, Atmos > Key Properties > Orography > Changes, property
+, , 
+cmip6.atmos.grid.name, Atmos > Grid > Name, property
+cmip6.atmos.grid.overview, Atmos > Grid > Overview, property
+cmip6.atmos.grid.discretisation.overview, Atmos > Grid > Discretisation > Overview, property
+cmip6.atmos.grid.discretisation.overview, Atmos > Grid > Discretisation > Overview, property
+cmip6.atmos.grid.discretisation.horizontal.scheme_type, Atmos > Grid > Discretisation > Horizontal > Scheme Type, property
+cmip6.atmos.grid.discretisation.horizontal.scheme_method, Atmos > Grid > Discretisation > Horizontal > Scheme Method, property
+cmip6.atmos.grid.discretisation.horizontal.scheme_order, Atmos > Grid > Discretisation > Horizontal > Scheme Order, property
+cmip6.atmos.grid.discretisation.horizontal.horizontal_pole, Atmos > Grid > Discretisation > Horizontal > Horizontal Pole, property
+cmip6.atmos.grid.discretisation.horizontal.grid_type, Atmos > Grid > Discretisation > Horizontal > Grid Type, property
+cmip6.atmos.grid.discretisation.vertical.coordinate_type, Atmos > Grid > Discretisation > Vertical > Coordinate Type, property
 , , 
 cmip6.atmos.dynamical_core.name, Atmos > Dynamical Core > Name, property
 cmip6.atmos.dynamical_core.overview, Atmos > Dynamical Core > Overview, property
