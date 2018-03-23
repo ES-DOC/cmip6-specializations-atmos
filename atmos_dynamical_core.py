@@ -31,7 +31,7 @@ DETAILS['toplevel'] = {
     }
 
 # --------------------------------------------------------------------
-# PROCESS: SUB-PROCESSES
+# Top boundary layer
 # --------------------------------------------------------------------
 DETAILS['top_boundary'] = {
     'description': 'Type of boundary layer at the top of the model',
@@ -45,6 +45,9 @@ DETAILS['top_boundary'] = {
         ]
     }
 
+# --------------------------------------------------------------------
+# Lateral boundary conditions
+# --------------------------------------------------------------------
 DETAILS['lateral_boundary'] = {
     'description': 'Type of lateral boundary condition (if the model is a regional model)',
     'properties': [
@@ -53,6 +56,9 @@ DETAILS['lateral_boundary'] = {
         ]
     }
 
+# --------------------------------------------------------------------
+# Horizontal diffusion
+# --------------------------------------------------------------------
 DETAILS['diffusion_horizontal'] = {
     'description': 'Horizontal diffusion scheme',
     'properties': [
@@ -63,7 +69,14 @@ DETAILS['diffusion_horizontal'] = {
         ]
     }
 
-DETAILS['advection_tracers'] = {
+# --------------------------------------------------------------------
+# Advection
+# --------------------------------------------------------------------
+DETAILS['advection'] = {
+    'description': 'Dynamical core advection'
+    }
+
+DETAILS['advection:tracers'] = {
     'description': 'Tracer advection scheme',
     'properties': [
         ('scheme_name', 'ENUM:advection_tracers_scheme_name', '0.1',
@@ -77,7 +90,7 @@ DETAILS['advection_tracers'] = {
         ]
     }
 
-DETAILS['advection_momentum'] = {
+DETAILS['advection:momentum'] = {
     'description': 'Momentum advection scheme',
     'properties': [
         ('scheme_name', 'ENUM:advection_momentum_scheme_name', '0.1',
