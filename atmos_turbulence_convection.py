@@ -1,6 +1,6 @@
 """
 
-A realm process sepecialization.
+A realm process specialization.
 
 For further information goto http://wordpress.es-doc.org/cmip6-model-specializations.
 """
@@ -73,18 +73,6 @@ DETAILS['shallow_convection'] = {
         ]
     }
 
-# --------------------------------------------------------------------
-# SUB-PROCESS: other_convection_scheme_details
-# --------------------------------------------------------------------
-#DETAILS['other_convection_scheme_details'] = {
-#    'description': 'Other convection scheme.',
-#    'properties': [
-#        ('scheme_name', 'str', '1.1',
-#             'Other convection scheme name'),
-#        ('scheme_type', 'ENUM:other_convection_scheme_type', '1.1',
-#             'Other convection scheme type'),
-#        ]
-#    }
 
 # --------------------------------------------------------------------
 # PROCESS: ENUMERATIONS
@@ -142,7 +130,7 @@ ENUMERATIONS['deep_convection_scheme_method'] = {
 
 ENUMERATIONS['shallow_convection_scheme_method'] = {
     'description': 'Method used for shallow convection closure for determining cloud-base mass flux..',
-    'is_open': False,
+    'is_open': True,
     'members': [
         ('same as deep (unified)', None),
         ('included in boundary layer turbulence', None),
@@ -198,8 +186,3 @@ ENUMERATIONS['convective_microphysics_scheme_type'] = {
 }
 
 
-#ENUMERATIONS['other_convection_scheme_type'] = {
-#    'description': 'other_convection_scheme_type',
-#    'is_open': True,
-#    'members': []
-#    }

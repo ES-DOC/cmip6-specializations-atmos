@@ -1,4 +1,4 @@
-"""A realm process sepecialization.
+"""A realm process specialization.
 
 For further information goto http://wordpress.es-doc.org/cmip6-model-specializations.
 
@@ -11,7 +11,7 @@ ENUMERATIONS = OrderedDict()
 # --------------------------------------------------------------------
 # DESCRIPTION: Short description of the specialization.
 # --------------------------------------------------------------------
-DESCRIPTION = 'Top of atmosphere solar insolation characteristics'
+DESCRIPTION = 'Natural forcing: solar and volcanic.'
 
 # --------------------------------------------------------------------
 # SUB-PROCESS: solar_forcing_pathways
@@ -34,8 +34,8 @@ DETAILS['solar_constant'] = {
              'Time adaptation of the solar constant.'),
         ('fixed_value', 'float', '0.1',
              'If the solar constant is fixed, enter the value of the solar constant (W m-2).'),
-        ('transient_characteristics', 'str', '1.1',
-             'solar constant transient characteristics (W m-2)'),
+        ('transient_characteristics', 'str', '0.1',
+             'Solar constant transient characteristics (W m-2)'),
         ]
     }
 
@@ -46,12 +46,12 @@ DETAILS['orbital_parameters'] = {
     'description': "Orbital parameters and top of atmosphere insolation characteristics",
     'properties': [
         ('type', 'ENUM:top_insolation_orbital_parameters_type', '1.1',
-            'Time adaptation of orbital parameters'),
-        ('fixed_reference_date', 'int', '1.1',
+            'Type of orbital parameter'),
+        ('fixed_reference_date', 'int', '0.1',
             'Reference date for fixed orbital parameters (yyyy)'),
-        ('transient_method', 'str', '1.1',
+        ('transient_method', 'str', '0.1',
             'Description of transient orbital parameters'),
-        ('computation_method', 'ENUM:top_insolation_orbital_parameters_computation_method', '1.1',
+        ('computation_method', 'ENUM:top_insolation_orbital_parameters_computation_method', '0.1',
             'Method used for computing orbital parameters.')
         ]
     }
@@ -66,6 +66,20 @@ DETAILS['insolation_ozone'] = {
             'Does top of atmosphere insolation impact on stratospheric ozone?'),
         ]
     }
+
+# --------------------------------------------------------------------
+# SUB-PROCESS: volcanoes_treatment
+# --------------------------------------------------------------------
+DETAILS['volcanoes_treatment'] = {
+    'description': 'Characteristics and treatment of volcanic forcing in the atmosphere',
+    'properties': [
+        ('volcanoes_characteristics', 'str', '0.N',
+            'Description of the general characteristics of volcanic forcing in the atmosphere.'),
+        ('volcanoes_implementation', 'ENUM:volcanoes_implementation_method', '1.1',
+            'How volcanic effects are modeled in the atmosphere.'),
+    ],
+}
+
 
 # --------------------------------------------------------------------
 # ENUMERATIONS
@@ -110,3 +124,11 @@ ENUMERATIONS['top_insolation_orbital_parameters_computation_method'] = {
         ]
     }
 
+ENUMERATIONS['volcanoes_implementation_method'] = {
+    'description': 'Volcanic effects taken into account by the atmosphere model',
+    'is_open': True,
+    'members': [
+        ('high frequency solar constant anomaly', None),
+        ('stratospheric aerosols optical thickness', None),
+    ],
+}

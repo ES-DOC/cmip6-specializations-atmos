@@ -1,4 +1,4 @@
-"""A realm grid sepecialization.
+"""A realm grid specialization.
 
 For further information goto http://wordpress.es-doc.org/cmip6-model-specializations.
 

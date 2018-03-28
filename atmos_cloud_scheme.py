@@ -1,6 +1,6 @@
 """
 
-A realm process sepecialization.
+A realm process specialization.
 
 For further information goto http://wordpress.es-doc.org/cmip6-model-specializations.
 """
@@ -23,18 +23,17 @@ DESCRIPTION = 'Characteristics of the cloud scheme'
 DETAILS['toplevel'] = {
     'description': "Top level cloud scheme process properties",
     'properties': [
-        ('atmos_coupling', 'ENUM:atmos_cloud_coupling', '0.N',
-            'Atmosphere components that are linked to the cloud scheme'),
-        ('uses_separate_treatment', 'bool', '1.1',
-            'Different cloud schemes for the different types of clouds (convective, stratiform and boundary layer)'),
+        ('scheme_type', 'ENUM:cloud_scheme_type', '1.N',
+            'Describes the type(s) of cloud scheme: prognostic, diagnostic, other.'),
+        ('uses_separate_treatment', 'str', '1.1',
+            'Description for when different cloud schemes are used \
+            for different types of clouds e.g. convective, stratiform and boundary layer)'),
         ('processes', 'ENUM:processes_attributes', '1.N',
             'Processes included in the cloud scheme'),
-        ('prognostic_scheme', 'bool', '1.1',
-            'Is the cloud scheme a prognostic scheme?'),
-        ('diagnostic_scheme', 'bool', '1.1',
-            'Is the cloud scheme a diagnostic scheme?'),
         ('prognostic_variables', 'ENUM:prognostic_vars', '0.N',
             'List the prognostic variables used by the cloud scheme, if applicable.'),
+        ('atmos_coupling', 'ENUM:atmos_cloud_coupling', '0.N',
+            'Atmosphere components that are linked to the cloud scheme'),
         ]
     }
 
@@ -114,9 +113,8 @@ ENUMERATIONS['atmos_cloud_coupling'] = {
         ('atmosphere_microphysics_precipitation', None),
         ('atmosphere_turbulence_convection', None),
         ('atmosphere_gravity_waves', None),
-        ('atmosphere_solar', None),
-        ('atmosphere_volcano', None),
-        ('atmosphere_cloud_simulator', None)
+        ('atmosphere_natural_forcing', None),
+        ('atmosphere_observation_simulation', None)
     ]
 }
 
@@ -152,5 +150,14 @@ ENUMERATIONS['prognostic_vars'] = {
         ('snow', None),
         ('cloud droplet number concentration', 'To document the use of two-moment cloud microphysics schemes'),
         ('ice crystal number concentration', 'To document the use of two-moment cloud microphysics schemes'),
+        ]
+    }
+
+ENUMERATION['cloud_scheme_type'] = {
+    'description': 'Type of cloud scheme.',
+    'is_open': True,
+    'members': [
+        ('prognostic', None),
+        ('diagnostic', None),
         ]
     }

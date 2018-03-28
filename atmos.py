@@ -1,4 +1,4 @@
-"""A realm sepecialization.
+"""A realm specialization.
 
 For further information goto http://wordpress.es-doc.org/cmip6-model-specializations.
 
@@ -27,13 +27,15 @@ CHANGE_HISTORY = [
     ("0.2.0", "2016-12-02", "Charlotte Pascoe",
         "Updated process names and descriptions, added enumeration TODOs"),
     ("0.3.0", "2017-11-08", "Charlotte Pascoe",
-        "Updated following community feedback")
+        "Updated following community feedback"),
+    ("1.0.0", "2018-03-28", "Charlotte Pascoe and Eric Guilyardi",
+        "Review of atmosphere components")
     ]
 
 # --------------------------------------------------------------------
 # CMIP5_MAPPINGS_SYNCED_AT: Latest version that has been synced with CMIP5 mappings.
 # --------------------------------------------------------------------
-CMIP5_MAPPINGS_SYNCED_AT = "0.3.0"
+CMIP5_MAPPINGS_SYNCED_AT = "1.0.0"
 
 # --------------------------------------------------------------------
 # DESCRIPTION: Scientific context of this scientific realm
@@ -61,6 +63,5 @@ PROCESSES = [
 	'atmos_cloud_scheme',
     'atmos_observation_simulation',
     'atmos_gravity_waves',
-    'atmos_solar',
-    'atmos_volcanos',
+    'atmos_natural_forcing',
     ]
