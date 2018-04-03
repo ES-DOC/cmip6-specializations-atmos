@@ -23,7 +23,7 @@
                     "description": "Overview of characteristics of the dynamical core in atmos model.", 
                     "id": "cmip6.atmos.dynamical_core.overview", 
                     "cardinality": "0.1", 
-                    "type": "str", 
+                    "type": "l", 
                     "uiOrdinal": 2
                 }, 
                 {
@@ -631,7 +631,7 @@
                     "description": "Overview of characteristics of the atmosphere radiation process in atmos model.", 
                     "id": "cmip6.atmos.radiation.overview", 
                     "cardinality": "0.1", 
-                    "type": "str", 
+                    "type": "l", 
                     "uiOrdinal": 2
                 }, 
                 {
@@ -2260,7 +2260,7 @@
                     "description": "Overview of atmosphere convective turbulence and clouds in atmos model.", 
                     "id": "cmip6.atmos.turbulence_convection.overview", 
                     "cardinality": "0.1", 
-                    "type": "str", 
+                    "type": "l", 
                     "uiOrdinal": 2
                 }
             ], 
@@ -2597,7 +2597,7 @@
                             "enum": {
                                 "label": "Shallow Convection Scheme Method", 
                                 "description": "Method used for shallow convection closure for determining cloud-base mass flux..", 
-                                "isOpen": false, 
+                                "isOpen": true, 
                                 "choices": [
                                     {
                                         "label": "same as deep (unified)", 
@@ -2700,7 +2700,7 @@
                     "description": "Overview of large scale cloud microphysics and precipitation in atmos model.", 
                     "id": "cmip6.atmos.microphysics_precipitation.overview", 
                     "cardinality": "0.1", 
-                    "type": "str", 
+                    "type": "l", 
                     "uiOrdinal": 2
                 }
             ], 
@@ -2852,46 +2852,26 @@
                     "description": "Overview of characteristics of the cloud scheme in atmos model.", 
                     "id": "cmip6.atmos.cloud_scheme.overview", 
                     "cardinality": "0.1", 
-                    "type": "str", 
+                    "type": "l", 
                     "uiOrdinal": 2
                 }, 
                 {
-                    "label": "Atmos Coupling", 
-                    "description": "Atmosphere components that are linked to the cloud scheme", 
-                    "id": "cmip6.atmos.cloud_scheme.atmos_coupling", 
-                    "cardinality": "0.N", 
+                    "label": "Scheme Type", 
+                    "description": "Describes the type(s) of cloud scheme: prognostic, diagnostic, other.", 
+                    "id": "cmip6.atmos.cloud_scheme.scheme_type", 
+                    "cardinality": "1.N", 
                     "type": "enum", 
                     "enum": {
-                        "label": "Atmos Cloud Coupling", 
-                        "description": "Atmosphere components that are linked to the cloud scheme", 
-                        "isOpen": false, 
+                        "label": "Cloud Scheme Type", 
+                        "description": "Type of cloud scheme.", 
+                        "isOpen": true, 
                         "choices": [
                             {
-                                "label": "atmosphere_radiation", 
+                                "label": "prognostic", 
                                 "description": null
                             }, 
                             {
-                                "label": "atmosphere_microphysics_precipitation", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "atmosphere_turbulence_convection", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "atmosphere_gravity_waves", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "atmosphere_solar", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "atmosphere_volcano", 
-                                "description": null
-                            }, 
-                            {
-                                "label": "atmosphere_cloud_simulator", 
+                                "label": "diagnostic", 
                                 "description": null
                             }
                         ]
@@ -2900,10 +2880,10 @@
                 }, 
                 {
                     "label": "Uses Separate Treatment", 
-                    "description": "Different cloud schemes for the different types of clouds (convective, stratiform and boundary layer)", 
+                    "description": "Description for when different cloud schemes are used             for different types of clouds e.g. convective, stratiform and boundary layer)", 
                     "id": "cmip6.atmos.cloud_scheme.uses_separate_treatment", 
                     "cardinality": "1.1", 
-                    "type": "bool", 
+                    "type": "str", 
                     "uiOrdinal": 4
                 }, 
                 {
@@ -2932,22 +2912,6 @@
                         ]
                     }, 
                     "uiOrdinal": 5
-                }, 
-                {
-                    "label": "Prognostic Scheme", 
-                    "description": "Is the cloud scheme a prognostic scheme?", 
-                    "id": "cmip6.atmos.cloud_scheme.prognostic_scheme", 
-                    "cardinality": "1.1", 
-                    "type": "bool", 
-                    "uiOrdinal": 6
-                }, 
-                {
-                    "label": "Diagnostic Scheme", 
-                    "description": "Is the cloud scheme a diagnostic scheme?", 
-                    "id": "cmip6.atmos.cloud_scheme.diagnostic_scheme", 
-                    "cardinality": "1.1", 
-                    "type": "bool", 
-                    "uiOrdinal": 7
                 }, 
                 {
                     "label": "Prognostic Variables", 
@@ -2990,7 +2954,46 @@
                             }
                         ]
                     }, 
-                    "uiOrdinal": 8
+                    "uiOrdinal": 6
+                }, 
+                {
+                    "label": "Atmos Coupling", 
+                    "description": "Atmosphere components that are linked to the cloud scheme", 
+                    "id": "cmip6.atmos.cloud_scheme.atmos_coupling", 
+                    "cardinality": "0.N", 
+                    "type": "enum", 
+                    "enum": {
+                        "label": "Atmos Cloud Coupling", 
+                        "description": "Atmosphere components that are linked to the cloud scheme", 
+                        "isOpen": false, 
+                        "choices": [
+                            {
+                                "label": "atmosphere_radiation", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "atmosphere_microphysics_precipitation", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "atmosphere_turbulence_convection", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "atmosphere_gravity_waves", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "atmosphere_natural_forcing", 
+                                "description": null
+                            }, 
+                            {
+                                "label": "atmosphere_observation_simulation", 
+                                "description": null
+                            }
+                        ]
+                    }, 
+                    "uiOrdinal": 7
                 }
             ], 
             "subProcesses": [
@@ -3234,7 +3237,7 @@
                     "description": "Overview of characteristics of observation simulation in atmos model.", 
                     "id": "cmip6.atmos.observation_simulation.overview", 
                     "cardinality": "0.1", 
-                    "type": "str", 
+                    "type": "l", 
                     "uiOrdinal": 2
                 }
             ], 
@@ -3257,7 +3260,7 @@
                             "label": "Top Height Estimation Method", 
                             "description": "Cloud simulator ISSCP top height estimation methodUo", 
                             "id": "cmip6.atmos.observation_simulation.isscp_attributes.top_height_estimation_method", 
-                            "cardinality": "1.N", 
+                            "cardinality": "0.N", 
                             "type": "enum", 
                             "enum": {
                                 "label": "Isscp Top Height", 
@@ -3284,7 +3287,7 @@
                             "label": "Top Height Direction", 
                             "description": "Cloud simulator ISSCP top height direction", 
                             "id": "cmip6.atmos.observation_simulation.isscp_attributes.top_height_direction", 
-                            "cardinality": "1.1", 
+                            "cardinality": "0.1", 
                             "type": "enum", 
                             "enum": {
                                 "label": "Isscp Top Height Direction", 
@@ -3323,7 +3326,7 @@
                             "label": "Run Configuration", 
                             "description": "Cloud simulator COSP run configuration", 
                             "id": "cmip6.atmos.observation_simulation.cosp_attributes.run_configuration", 
-                            "cardinality": "1.1", 
+                            "cardinality": "0.1", 
                             "type": "enum", 
                             "enum": {
                                 "label": "Cosp Run Configuration", 
@@ -3346,7 +3349,7 @@
                             "label": "Number Of Grid Points", 
                             "description": "Cloud simulator COSP number of grid points", 
                             "id": "cmip6.atmos.observation_simulation.cosp_attributes.number_of_grid_points", 
-                            "cardinality": "1.1", 
+                            "cardinality": "0.1", 
                             "type": "int", 
                             "uiOrdinal": 3
                         }, 
@@ -3354,7 +3357,7 @@
                             "label": "Number Of Sub Columns", 
                             "description": "Cloud simulator COSP number of sub-cloumns used to simulate sub-grid variability", 
                             "id": "cmip6.atmos.observation_simulation.cosp_attributes.number_of_sub_columns", 
-                            "cardinality": "1.1", 
+                            "cardinality": "0.1", 
                             "type": "int", 
                             "uiOrdinal": 4
                         }, 
@@ -3362,7 +3365,7 @@
                             "label": "Number Of Levels", 
                             "description": "Cloud simulator COSP number of levels", 
                             "id": "cmip6.atmos.observation_simulation.cosp_attributes.number_of_levels", 
-                            "cardinality": "1.1", 
+                            "cardinality": "0.1", 
                             "type": "int", 
                             "uiOrdinal": 5
                         }
@@ -3386,7 +3389,7 @@
                             "label": "Frequency", 
                             "description": "Cloud simulator radar frequency (Hz)", 
                             "id": "cmip6.atmos.observation_simulation.radar_inputs.frequency", 
-                            "cardinality": "1.1", 
+                            "cardinality": "0.1", 
                             "type": "float", 
                             "uiOrdinal": 2
                         }, 
@@ -3394,7 +3397,7 @@
                             "label": "Type", 
                             "description": "Cloud simulator radar type", 
                             "id": "cmip6.atmos.observation_simulation.radar_inputs.type", 
-                            "cardinality": "1.1", 
+                            "cardinality": "0.1", 
                             "type": "enum", 
                             "enum": {
                                 "label": "Inputs Radar Type", 
@@ -3417,7 +3420,7 @@
                             "label": "Gas Absorption", 
                             "description": "Cloud simulator radar uses gas absorption", 
                             "id": "cmip6.atmos.observation_simulation.radar_inputs.gas_absorption", 
-                            "cardinality": "1.1", 
+                            "cardinality": "0.1", 
                             "type": "bool", 
                             "uiOrdinal": 4
                         }, 
@@ -3425,7 +3428,7 @@
                             "label": "Effective Radius", 
                             "description": "Cloud simulator radar uses effective radius", 
                             "id": "cmip6.atmos.observation_simulation.radar_inputs.effective_radius", 
-                            "cardinality": "1.1", 
+                            "cardinality": "0.1", 
                             "type": "bool", 
                             "uiOrdinal": 5
                         }
@@ -3449,7 +3452,7 @@
                             "label": "Ice Types", 
                             "description": "Cloud simulator lidar ice type", 
                             "id": "cmip6.atmos.observation_simulation.lidar_inputs.ice_types", 
-                            "cardinality": "1.1", 
+                            "cardinality": "0.1", 
                             "type": "enum", 
                             "enum": {
                                 "label": "Inputs Lidar Ice Type", 
@@ -3472,7 +3475,7 @@
                             "label": "Overlap", 
                             "description": "Cloud simulator lidar overlap", 
                             "id": "cmip6.atmos.observation_simulation.lidar_inputs.overlap", 
-                            "cardinality": "1.N", 
+                            "cardinality": "0.N", 
                             "type": "enum", 
                             "enum": {
                                 "label": "Inputs Lidar Overlap", 
@@ -3514,7 +3517,7 @@
                     "description": "Overview of characteristics of the parameterised gravity waves in the atmosphere, whether from orography or other sources in atmos model.", 
                     "id": "cmip6.atmos.gravity_waves.overview", 
                     "cardinality": "0.1", 
-                    "type": "str", 
+                    "type": "l", 
                     "uiOrdinal": 2
                 }, 
                 {
@@ -3871,25 +3874,25 @@
             ]
         }, 
         {
-            "label": "Solar", 
-            "description": "Top of atmosphere solar insolation characteristics", 
-            "id": "cmip6.atmos.solar", 
+            "label": "Natural Forcing", 
+            "description": "Natural forcing: solar and volcanic.", 
+            "id": "cmip6.atmos.natural_forcing", 
             "contact": "Charlotte Pascoe", 
             "properties": [
                 {
                     "label": "Name", 
-                    "description": "Commonly used name for the solar in atmos model.", 
-                    "id": "cmip6.atmos.solar.name", 
+                    "description": "Commonly used name for the natural forcing in atmos model.", 
+                    "id": "cmip6.atmos.natural_forcing.name", 
                     "cardinality": "0.1", 
                     "type": "str", 
                     "uiOrdinal": 1
                 }, 
                 {
                     "label": "Overview", 
-                    "description": "Overview of top of atmosphere solar insolation characteristics in atmos model.", 
-                    "id": "cmip6.atmos.solar.overview", 
+                    "description": "Overview of natural forcing: solar and volcanic. in atmos model.", 
+                    "id": "cmip6.atmos.natural_forcing.overview", 
                     "cardinality": "0.1", 
-                    "type": "str", 
+                    "type": "l", 
                     "uiOrdinal": 2
                 }
             ], 
@@ -3897,13 +3900,13 @@
                 {
                     "label": "Solar Pathways", 
                     "description": "Pathways for solar forcing of the atmosphere", 
-                    "id": "cmip6.atmos.solar.solar_pathways", 
+                    "id": "cmip6.atmos.natural_forcing.solar_pathways", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "Overview", 
                             "description": "Overview of pathways for solar forcing of the atmosphere in atmos model.", 
-                            "id": "cmip6.atmos.solar.solar_pathways.overview", 
+                            "id": "cmip6.atmos.natural_forcing.solar_pathways.overview", 
                             "cardinality": "0.1", 
                             "type": "str", 
                             "uiOrdinal": 1
@@ -3911,7 +3914,7 @@
                         {
                             "label": "Pathways", 
                             "description": "Pathways for the solar forcing of the atmosphere model domain", 
-                            "id": "cmip6.atmos.solar.solar_pathways.pathways", 
+                            "id": "cmip6.atmos.natural_forcing.solar_pathways.pathways", 
                             "cardinality": "1.N", 
                             "type": "enum", 
                             "enum": {
@@ -3940,13 +3943,13 @@
                 {
                     "label": "Solar Constant", 
                     "description": "Solar constant and top of atmosphere insolation characteristics", 
-                    "id": "cmip6.atmos.solar.solar_constant", 
+                    "id": "cmip6.atmos.natural_forcing.solar_constant", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "Overview", 
                             "description": "Overview of solar constant and top of atmosphere insolation characteristics in atmos model.", 
-                            "id": "cmip6.atmos.solar.solar_constant.overview", 
+                            "id": "cmip6.atmos.natural_forcing.solar_constant.overview", 
                             "cardinality": "0.1", 
                             "type": "str", 
                             "uiOrdinal": 1
@@ -3954,7 +3957,7 @@
                         {
                             "label": "Type", 
                             "description": "Time adaptation of the solar constant.", 
-                            "id": "cmip6.atmos.solar.solar_constant.type", 
+                            "id": "cmip6.atmos.natural_forcing.solar_constant.type", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "enum": {
@@ -3977,16 +3980,16 @@
                         {
                             "label": "Fixed Value", 
                             "description": "If the solar constant is fixed, enter the value of the solar constant (W m-2).", 
-                            "id": "cmip6.atmos.solar.solar_constant.fixed_value", 
+                            "id": "cmip6.atmos.natural_forcing.solar_constant.fixed_value", 
                             "cardinality": "0.1", 
                             "type": "float", 
                             "uiOrdinal": 3
                         }, 
                         {
                             "label": "Transient Characteristics", 
-                            "description": "solar constant transient characteristics (W m-2)", 
-                            "id": "cmip6.atmos.solar.solar_constant.transient_characteristics", 
-                            "cardinality": "1.1", 
+                            "description": "Solar constant transient characteristics (W m-2)", 
+                            "id": "cmip6.atmos.natural_forcing.solar_constant.transient_characteristics", 
+                            "cardinality": "0.1", 
                             "type": "str", 
                             "uiOrdinal": 4
                         }
@@ -3995,21 +3998,21 @@
                 {
                     "label": "Orbital Parameters", 
                     "description": "Orbital parameters and top of atmosphere insolation characteristics", 
-                    "id": "cmip6.atmos.solar.orbital_parameters", 
+                    "id": "cmip6.atmos.natural_forcing.orbital_parameters", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "Overview", 
                             "description": "Overview of orbital parameters and top of atmosphere insolation characteristics in atmos model.", 
-                            "id": "cmip6.atmos.solar.orbital_parameters.overview", 
+                            "id": "cmip6.atmos.natural_forcing.orbital_parameters.overview", 
                             "cardinality": "0.1", 
                             "type": "str", 
                             "uiOrdinal": 1
                         }, 
                         {
                             "label": "Type", 
-                            "description": "Time adaptation of orbital parameters", 
-                            "id": "cmip6.atmos.solar.orbital_parameters.type", 
+                            "description": "Type of orbital parameter", 
+                            "id": "cmip6.atmos.natural_forcing.orbital_parameters.type", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "enum": {
@@ -4032,24 +4035,24 @@
                         {
                             "label": "Fixed Reference Date", 
                             "description": "Reference date for fixed orbital parameters (yyyy)", 
-                            "id": "cmip6.atmos.solar.orbital_parameters.fixed_reference_date", 
-                            "cardinality": "1.1", 
+                            "id": "cmip6.atmos.natural_forcing.orbital_parameters.fixed_reference_date", 
+                            "cardinality": "0.1", 
                             "type": "int", 
                             "uiOrdinal": 3
                         }, 
                         {
                             "label": "Transient Method", 
                             "description": "Description of transient orbital parameters", 
-                            "id": "cmip6.atmos.solar.orbital_parameters.transient_method", 
-                            "cardinality": "1.1", 
+                            "id": "cmip6.atmos.natural_forcing.orbital_parameters.transient_method", 
+                            "cardinality": "0.1", 
                             "type": "str", 
                             "uiOrdinal": 4
                         }, 
                         {
                             "label": "Computation Method", 
                             "description": "Method used for computing orbital parameters.", 
-                            "id": "cmip6.atmos.solar.orbital_parameters.computation_method", 
-                            "cardinality": "1.1", 
+                            "id": "cmip6.atmos.natural_forcing.orbital_parameters.computation_method", 
+                            "cardinality": "0.1", 
                             "type": "enum", 
                             "enum": {
                                 "label": "Top Insolation Orbital Parameters Computation Method", 
@@ -4073,13 +4076,13 @@
                 {
                     "label": "Insolation Ozone", 
                     "description": "Impact of solar insolation on stratospheric ozone", 
-                    "id": "cmip6.atmos.solar.insolation_ozone", 
+                    "id": "cmip6.atmos.natural_forcing.insolation_ozone", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "Overview", 
                             "description": "Overview of impact of solar insolation on stratospheric ozone in atmos model.", 
-                            "id": "cmip6.atmos.solar.insolation_ozone.overview", 
+                            "id": "cmip6.atmos.natural_forcing.insolation_ozone.overview", 
                             "cardinality": "0.1", 
                             "type": "str", 
                             "uiOrdinal": 1
@@ -4087,57 +4090,39 @@
                         {
                             "label": "Solar Ozone Impact", 
                             "description": "Does top of atmosphere insolation impact on stratospheric ozone?", 
-                            "id": "cmip6.atmos.solar.insolation_ozone.solar_ozone_impact", 
+                            "id": "cmip6.atmos.natural_forcing.insolation_ozone.solar_ozone_impact", 
                             "cardinality": "1.1", 
                             "type": "bool", 
                             "uiOrdinal": 2
                         }
                     ]
-                }
-            ]
-        }, 
-        {
-            "label": "Volcanos", 
-            "description": "Characteristics of the implementation of volcanoes", 
-            "id": "cmip6.atmos.volcanos", 
-            "contact": "Charlotte Pascoe", 
-            "properties": [
-                {
-                    "label": "Name", 
-                    "description": "Commonly used name for the volcanos in atmos model.", 
-                    "id": "cmip6.atmos.volcanos.name", 
-                    "cardinality": "0.1", 
-                    "type": "str", 
-                    "uiOrdinal": 1
                 }, 
                 {
-                    "label": "Overview", 
-                    "description": "Overview of characteristics of the implementation of volcanoes in atmos model.", 
-                    "id": "cmip6.atmos.volcanos.overview", 
-                    "cardinality": "0.1", 
-                    "type": "str", 
-                    "uiOrdinal": 2
-                }
-            ], 
-            "subProcesses": [
-                {
                     "label": "Volcanoes Treatment", 
-                    "description": "Treatment of volcanoes in the atmosphere", 
-                    "id": "cmip6.atmos.volcanos.volcanoes_treatment", 
+                    "description": "Characteristics and treatment of volcanic forcing in the atmosphere", 
+                    "id": "cmip6.atmos.natural_forcing.volcanoes_treatment", 
                     "contact": "Charlotte Pascoe", 
                     "properties": [
                         {
                             "label": "Overview", 
-                            "description": "Overview of treatment of volcanoes in the atmosphere in atmos model.", 
-                            "id": "cmip6.atmos.volcanos.volcanoes_treatment.overview", 
+                            "description": "Overview of characteristics and treatment of volcanic forcing in the atmosphere in atmos model.", 
+                            "id": "cmip6.atmos.natural_forcing.volcanoes_treatment.overview", 
                             "cardinality": "0.1", 
                             "type": "str", 
                             "uiOrdinal": 1
                         }, 
                         {
+                            "label": "Volcanoes Characteristics", 
+                            "description": "Description of the general characteristics of volcanic forcing in the atmosphere.", 
+                            "id": "cmip6.atmos.natural_forcing.volcanoes_treatment.volcanoes_characteristics", 
+                            "cardinality": "0.N", 
+                            "type": "str", 
+                            "uiOrdinal": 2
+                        }, 
+                        {
                             "label": "Volcanoes Implementation", 
                             "description": "How volcanic effects are modeled in the atmosphere.", 
-                            "id": "cmip6.atmos.volcanos.volcanoes_treatment.volcanoes_implementation", 
+                            "id": "cmip6.atmos.natural_forcing.volcanoes_treatment.volcanoes_implementation", 
                             "cardinality": "1.1", 
                             "type": "enum", 
                             "enum": {
@@ -4155,7 +4140,7 @@
                                     }
                                 ]
                             }, 
-                            "uiOrdinal": 2
+                            "uiOrdinal": 3
                         }
                     ]
                 }
@@ -4181,7 +4166,7 @@
                 "description": "Overview of grid in atmos model.", 
                 "id": "cmip6.atmos.grid.overview", 
                 "cardinality": "0.1", 
-                "type": "str", 
+                "type": "l", 
                 "uiOrdinal": 2
             }
         ], 
@@ -4417,12 +4402,20 @@
                 "uiOrdinal": 1
             }, 
             {
+                "label": "Keywords", 
+                "description": "Keywords associated with atmos model code", 
+                "id": "cmip6.atmos.key_properties.keywords", 
+                "cardinality": "1.1", 
+                "type": "cs", 
+                "uiOrdinal": 2
+            }, 
+            {
                 "label": "Overview", 
                 "description": "Overview of atmos model.", 
                 "id": "cmip6.atmos.key_properties.overview", 
                 "cardinality": "1.1", 
-                "type": "str", 
-                "uiOrdinal": 2
+                "type": "l", 
+                "uiOrdinal": 3
             }, 
             {
                 "label": "Model Family", 
@@ -4445,7 +4438,7 @@
                         }
                     ]
                 }, 
-                "uiOrdinal": 3
+                "uiOrdinal": 4
             }, 
             {
                 "label": "Basic Approximations", 
@@ -4484,7 +4477,7 @@
                         }
                     ]
                 }, 
-                "uiOrdinal": 4
+                "uiOrdinal": 5
             }
         ], 
         "subProcesses": [
@@ -4560,26 +4553,26 @@
                     }, 
                     {
                         "label": "Timestep Dynamics", 
-                        "description": "Timestep for the dynamics, e.g. 30 min.", 
+                        "description": "Timestep for the dynamics in seconds", 
                         "id": "cmip6.atmos.key_properties.timestepping.timestep_dynamics", 
                         "cardinality": "1.1", 
-                        "type": "str", 
+                        "type": "int", 
                         "uiOrdinal": 2
                     }, 
                     {
                         "label": "Timestep Shortwave Radiative Transfer", 
-                        "description": "Timestep for the shortwave radiative transfer, e.g. 1.5 hours.", 
+                        "description": "Timestep for the shortwave radiative transfer in seconds.", 
                         "id": "cmip6.atmos.key_properties.timestepping.timestep_shortwave_radiative_transfer", 
                         "cardinality": "0.1", 
-                        "type": "str", 
+                        "type": "int", 
                         "uiOrdinal": 3
                     }, 
                     {
                         "label": "Timestep Longwave Radiative Transfer", 
-                        "description": "Timestep for the longwave radiative transfer, e.g. 3 hours.", 
+                        "description": "Timestep for the longwave radiative transfer in seconds.", 
                         "id": "cmip6.atmos.key_properties.timestepping.timestep_longwave_radiative_transfer", 
                         "cardinality": "0.1", 
-                        "type": "str", 
+                        "type": "int", 
                         "uiOrdinal": 4
                     }
                 ]
@@ -4600,37 +4593,37 @@
                     }, 
                     {
                         "label": "Type", 
-                        "description": "Time adaptation of the orography.", 
+                        "description": "Type of orographic representation.", 
                         "id": "cmip6.atmos.key_properties.orography.type", 
                         "cardinality": "1.1", 
                         "type": "enum", 
                         "enum": {
                             "label": "Orography Type", 
-                            "description": "Time adaptation of the orography", 
-                            "isOpen": false, 
+                            "description": "Type of orographic representation", 
+                            "isOpen": true, 
                             "choices": [
                                 {
-                                    "label": "present day", 
+                                    "label": "fixed: present day", 
                                     "description": null
                                 }, 
                                 {
-                                    "label": "modified", 
-                                    "description": null
+                                    "label": "fixed: modified", 
+                                    "description": "provide details of modification below"
                                 }
                             ]
                         }, 
                         "uiOrdinal": 2
                     }, 
                     {
-                        "label": "Changes", 
-                        "description": "If the orography type is modified describe the time adaptation changes.", 
-                        "id": "cmip6.atmos.key_properties.orography.changes", 
-                        "cardinality": "1.N", 
+                        "label": "Modified", 
+                        "description": "If the orography type is modified describe the adaptation.", 
+                        "id": "cmip6.atmos.key_properties.orography.modified", 
+                        "cardinality": "0.N", 
                         "type": "enum", 
                         "enum": {
                             "label": "Orography Changes", 
                             "description": "If the orography type is modified describe the time adaptation changes", 
-                            "isOpen": false, 
+                            "isOpen": true, 
                             "choices": [
                                 {
                                     "label": "related to ice sheets", 
@@ -4651,6 +4644,14 @@
                             ]
                         }, 
                         "uiOrdinal": 3
+                    }, 
+                    {
+                        "label": "Time-varying", 
+                        "description": "Describe any time varying orographic change", 
+                        "id": "cmip6.atmos.key_properties.orography.time-varying", 
+                        "cardinality": "0.1", 
+                        "type": "str", 
+                        "uiOrdinal": 4
                     }
                 ]
             }

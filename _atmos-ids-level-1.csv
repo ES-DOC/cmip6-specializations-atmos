@@ -55,11 +55,9 @@ cmip6.atmos.gravity_waves, Atmos > Gravity Waves, process
 cmip6.atmos.gravity_waves.orographic_gravity_waves, Atmos > Gravity Waves > Orographic Gravity Waves, subprocess
 cmip6.atmos.gravity_waves.non_orographic_gravity_waves, Atmos > Gravity Waves > Non Orographic Gravity Waves, subprocess
 , , 
-cmip6.atmos.solar, Atmos > Solar, process
-cmip6.atmos.solar.solar_pathways, Atmos > Solar > Solar Pathways, subprocess
-cmip6.atmos.solar.solar_constant, Atmos > Solar > Solar Constant, subprocess
-cmip6.atmos.solar.orbital_parameters, Atmos > Solar > Orbital Parameters, subprocess
-cmip6.atmos.solar.insolation_ozone, Atmos > Solar > Insolation Ozone, subprocess
-, , 
-cmip6.atmos.volcanos, Atmos > Volcanos, process
-cmip6.atmos.volcanos.volcanoes_treatment, Atmos > Volcanos > Volcanoes Treatment, subprocess
+cmip6.atmos.natural_forcing, Atmos > Natural Forcing, process
+cmip6.atmos.natural_forcing.solar_pathways, Atmos > Natural Forcing > Solar Pathways, subprocess
+cmip6.atmos.natural_forcing.solar_constant, Atmos > Natural Forcing > Solar Constant, subprocess
+cmip6.atmos.natural_forcing.orbital_parameters, Atmos > Natural Forcing > Orbital Parameters, subprocess
+cmip6.atmos.natural_forcing.insolation_ozone, Atmos > Natural Forcing > Insolation Ozone, subprocess
+cmip6.atmos.natural_forcing.volcanoes_treatment, Atmos > Natural Forcing > Volcanoes Treatment, subprocess

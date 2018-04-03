@@ -153,7 +153,7 @@ ENUMERATIONS['prognostic_vars'] = {
         ]
     }
 
-ENUMERATION['cloud_scheme_type'] = {
+ENUMERATIONS['cloud_scheme_type'] = {
     'description': 'Type of cloud scheme.',
     'is_open': True,
     'members': [

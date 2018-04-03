@@ -26,6 +26,13 @@
         <dt><b>Version</b></dt><dd>0.3.0</dd><dt><b>Date</b></dt><dd>2017-11-08</dd><dt><b>Person</b></dt><dd>Charlotte Pascoe</dd><dt><b>Comment</b></dt><dd>Updated following community feedback</dd>
     </dl>
   </body>
+</html></richcontent></node><node STYLE="bubble" TEXT="1.0.0"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Version</b></dt><dd>1.0.0</dd><dt><b>Date</b></dt><dd>2018-03-28</dd><dt><b>Person</b></dt><dd>Charlotte Pascoe and Eric Guilyardi</dd><dt><b>Comment</b></dt><dd>Review of atmosphere components</dd>
+    </dl>
+  </body>
 </html></richcontent></node></node><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="LEGEND"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="enum-choice"><richcontent TYPE="NOTE"><html>
   <head />
   <body>
@@ -103,18 +110,32 @@
         <dt><b>Description</b></dt><dd>Name of atmos model code</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.name</dd>
     </dl>
   </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="overview"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="keywords"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.overview</dd>
+        <dt><b>Description</b></dt><dd>Keywords associated with atmos model code</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.keywords</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.keywords</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.overview</dd>
+        <dt><b>Description</b></dt><dd>Keywords associated with atmos model code</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.keywords</dd><dt><b>Type</b></dt><dd>cs-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.keywords</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="overview"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Overview of atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.overview</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Overview of atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.overview</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="model_family"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -317,42 +338,42 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Timestep for the dynamics, e.g. 30 min.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.timestepping.timestep_dynamics</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.timestepping.timestep_dynamics</dd>
+        <dt><b>Description</b></dt><dd>Timestep for the dynamics in seconds</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.timestepping.timestep_dynamics</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.timestepping.timestep_dynamics</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Timestep for the dynamics, e.g. 30 min.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.timestepping.timestep_dynamics</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.timestepping.timestep_dynamics</dd>
+        <dt><b>Description</b></dt><dd>Timestep for the dynamics in seconds</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.timestepping.timestep_dynamics</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.timestepping.timestep_dynamics</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="timestep_shortwave_radiative_transfer"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Timestep for the shortwave radiative transfer, e.g. 1.5 hours.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.timestepping.timestep_shortwave_radiative_transfer</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.timestepping.timestep_shortwave_radiative_transfer</dd>
+        <dt><b>Description</b></dt><dd>Timestep for the shortwave radiative transfer in seconds.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.timestepping.timestep_shortwave_radiative_transfer</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.timestepping.timestep_shortwave_radiative_transfer</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Timestep for the shortwave radiative transfer, e.g. 1.5 hours.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.timestepping.timestep_shortwave_radiative_transfer</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.timestepping.timestep_shortwave_radiative_transfer</dd>
+        <dt><b>Description</b></dt><dd>Timestep for the shortwave radiative transfer in seconds.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.timestepping.timestep_shortwave_radiative_transfer</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.timestepping.timestep_shortwave_radiative_transfer</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="timestep_longwave_radiative_transfer"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Timestep for the longwave radiative transfer, e.g. 3 hours.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.timestepping.timestep_longwave_radiative_transfer</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.timestepping.timestep_longwave_radiative_transfer</dd>
+        <dt><b>Description</b></dt><dd>Timestep for the longwave radiative transfer in seconds.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.timestepping.timestep_longwave_radiative_transfer</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.timestepping.timestep_longwave_radiative_transfer</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Timestep for the longwave radiative transfer, e.g. 3 hours.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.timestepping.timestep_longwave_radiative_transfer</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.timestepping.timestep_longwave_radiative_transfer</dd>
+        <dt><b>Description</b></dt><dd>Timestep for the longwave radiative transfer in seconds.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.timestepping.timestep_longwave_radiative_transfer</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.timestepping.timestep_longwave_radiative_transfer</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="orography"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
@@ -380,42 +401,42 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Time adaptation of the orography.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.orography.type</dd><dt><b>Type</b></dt><dd>ENUM:orography_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.orography.type</dd>
+        <dt><b>Description</b></dt><dd>Type of orographic representation.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.orography.type</dd><dt><b>Type</b></dt><dd>ENUM:orography_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.orography.type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Time adaptation of the orography.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.orography.type</dd><dt><b>Type</b></dt><dd>ENUM:orography_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.orography.type</dd>
+        <dt><b>Description</b></dt><dd>Type of orographic representation.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.orography.type</dd><dt><b>Type</b></dt><dd>ENUM:orography_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.orography.type</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="present day"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="fixed: present day"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>orography_type.present day</dd>
+        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>orography_type.fixed: present day</dd>
     </dl>
   </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="modified"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="fixed: modified"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>orography_type.modified</dd>
+        <dt><b>Description</b></dt><dd>provide details of modification below</dd><dt><b>Spec. ID</b></dt><dd>orography_type.fixed: modified</dd>
     </dl>
   </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="changes"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="modified"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If the orography type is modified describe the time adaptation changes.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.orography.changes</dd><dt><b>Type</b></dt><dd>ENUM:orography_changes</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.orography.changes</dd>
+        <dt><b>Description</b></dt><dd>If the orography type is modified describe the adaptation.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.orography.modified</dd><dt><b>Type</b></dt><dd>ENUM:orography_changes</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.orography.modified</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If the orography type is modified describe the time adaptation changes.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.orography.changes</dd><dt><b>Type</b></dt><dd>ENUM:orography_changes</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.orography.changes</dd>
+        <dt><b>Description</b></dt><dd>If the orography type is modified describe the adaptation.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.orography.modified</dd><dt><b>Type</b></dt><dd>ENUM:orography_changes</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.orography.modified</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="related to ice sheets"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -446,7 +467,21 @@
         <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>orography_changes.modified variance if taken into account in model (cf gravity waves)</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node></node><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="grid"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="time-varying"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Describe any time varying orographic change</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.orography.time-varying</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.orography.time-varying</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Describe any time varying orographic change</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.orography.time-varying</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.orography.time-varying</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node></node><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="grid"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -471,14 +506,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of grid in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.grid.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.grid.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of grid in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.grid.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.grid.overview</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of grid in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.grid.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.grid.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of grid in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.grid.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.grid.overview</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="discretisation"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
@@ -793,14 +828,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of characteristics of the dynamical core in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.dynamical_core.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.dynamical_core.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of characteristics of the dynamical core in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.dynamical_core.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.dynamical_core.overview</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of characteristics of the dynamical core in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.dynamical_core.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.dynamical_core.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of characteristics of the dynamical core in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.dynamical_core.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.dynamical_core.overview</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="timestepping_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1640,14 +1675,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of characteristics of the atmosphere radiation process in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.radiation.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of characteristics of the atmosphere radiation process in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.radiation.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.overview</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of characteristics of the atmosphere radiation process in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.radiation.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of characteristics of the atmosphere radiation process in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.radiation.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.overview</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="aerosols"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -3985,14 +4020,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of atmosphere convective turbulence and clouds in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.turbulence_convection.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.turbulence_convection.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of atmosphere convective turbulence and clouds in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.turbulence_convection.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.turbulence_convection.overview</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of atmosphere convective turbulence and clouds in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.turbulence_convection.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.turbulence_convection.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of atmosphere convective turbulence and clouds in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.turbulence_convection.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.turbulence_convection.overview</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="boundary_layer_turbulence"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
@@ -4608,14 +4643,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of large scale cloud microphysics and precipitation in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.microphysics_precipitation.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.microphysics_precipitation.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of large scale cloud microphysics and precipitation in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.microphysics_precipitation.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.microphysics_precipitation.overview</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of large scale cloud microphysics and precipitation in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.microphysics_precipitation.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.microphysics_precipitation.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of large scale cloud microphysics and precipitation in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.microphysics_precipitation.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.microphysics_precipitation.overview</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="large_scale_precipitation"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
@@ -4832,91 +4867,56 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of characteristics of the cloud scheme in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.cloud_scheme.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.cloud_scheme.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of characteristics of the cloud scheme in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.cloud_scheme.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.cloud_scheme.overview</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of characteristics of the cloud scheme in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.cloud_scheme.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.cloud_scheme.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of characteristics of the cloud scheme in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.cloud_scheme.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.cloud_scheme.overview</dd>
     </dl>
   </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="atmos_coupling"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="scheme_type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Atmosphere components that are linked to the cloud scheme</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.cloud_scheme.atmos_coupling</dd><dt><b>Type</b></dt><dd>ENUM:atmos_cloud_coupling</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.cloud_scheme.atmos_coupling</dd>
+        <dt><b>Description</b></dt><dd>Describes the type(s) of cloud scheme: prognostic, diagnostic, other.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.cloud_scheme.scheme_type</dd><dt><b>Type</b></dt><dd>ENUM:cloud_scheme_type</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.cloud_scheme.scheme_type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Atmosphere components that are linked to the cloud scheme</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.cloud_scheme.atmos_coupling</dd><dt><b>Type</b></dt><dd>ENUM:atmos_cloud_coupling</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.cloud_scheme.atmos_coupling</dd>
+        <dt><b>Description</b></dt><dd>Describes the type(s) of cloud scheme: prognostic, diagnostic, other.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.cloud_scheme.scheme_type</dd><dt><b>Type</b></dt><dd>ENUM:cloud_scheme_type</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.cloud_scheme.scheme_type</dd>
     </dl>
   </body>
-</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="atmosphere_radiation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="prognostic"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>atmos_cloud_coupling.atmosphere_radiation</dd>
+        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>cloud_scheme_type.prognostic</dd>
     </dl>
   </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="atmosphere_microphysics_precipitation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="diagnostic"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>atmos_cloud_coupling.atmosphere_microphysics_precipitation</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="atmosphere_turbulence_convection"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>atmos_cloud_coupling.atmosphere_turbulence_convection</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="atmosphere_gravity_waves"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>atmos_cloud_coupling.atmosphere_gravity_waves</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="atmosphere_solar"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>atmos_cloud_coupling.atmosphere_solar</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="atmosphere_volcano"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>atmos_cloud_coupling.atmosphere_volcano</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="atmosphere_cloud_simulator"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>atmos_cloud_coupling.atmosphere_cloud_simulator</dd>
+        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>cloud_scheme_type.diagnostic</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="uses_separate_treatment"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Different cloud schemes for the different types of clouds (convective, stratiform and boundary layer)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.cloud_scheme.uses_separate_treatment</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.cloud_scheme.uses_separate_treatment</dd>
+        <dt><b>Description</b></dt><dd>Description for when different cloud schemes are used             for different types of clouds e.g. convective, stratiform and boundary layer)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.cloud_scheme.uses_separate_treatment</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.cloud_scheme.uses_separate_treatment</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Different cloud schemes for the different types of clouds (convective, stratiform and boundary layer)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.cloud_scheme.uses_separate_treatment</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.cloud_scheme.uses_separate_treatment</dd>
+        <dt><b>Description</b></dt><dd>Description for when different cloud schemes are used             for different types of clouds e.g. convective, stratiform and boundary layer)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.cloud_scheme.uses_separate_treatment</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.cloud_scheme.uses_separate_treatment</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="processes"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -4954,35 +4954,7 @@
         <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>processes_attributes.bulk cloud</dd>
     </dl>
   </body>
-</html></richcontent></node></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="prognostic_scheme"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Is the cloud scheme a prognostic scheme?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.cloud_scheme.prognostic_scheme</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.cloud_scheme.prognostic_scheme</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Is the cloud scheme a prognostic scheme?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.cloud_scheme.prognostic_scheme</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.cloud_scheme.prognostic_scheme</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="diagnostic_scheme"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Is the cloud scheme a diagnostic scheme?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.cloud_scheme.diagnostic_scheme</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.cloud_scheme.diagnostic_scheme</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Is the cloud scheme a diagnostic scheme?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.cloud_scheme.diagnostic_scheme</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.cloud_scheme.diagnostic_scheme</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="prognostic_variables"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="prognostic_variables"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
@@ -5043,6 +5015,62 @@
   <body>
     <dl>
         <dt><b>Description</b></dt><dd>To document the use of two-moment cloud microphysics schemes</dd><dt><b>Spec. ID</b></dt><dd>prognostic_vars.ice crystal number concentration</dd>
+    </dl>
+  </body>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="atmos_coupling"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Atmosphere components that are linked to the cloud scheme</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.cloud_scheme.atmos_coupling</dd><dt><b>Type</b></dt><dd>ENUM:atmos_cloud_coupling</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.cloud_scheme.atmos_coupling</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Atmosphere components that are linked to the cloud scheme</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.cloud_scheme.atmos_coupling</dd><dt><b>Type</b></dt><dd>ENUM:atmos_cloud_coupling</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.cloud_scheme.atmos_coupling</dd>
+    </dl>
+  </body>
+</html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="atmosphere_radiation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>atmos_cloud_coupling.atmosphere_radiation</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="atmosphere_microphysics_precipitation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>atmos_cloud_coupling.atmosphere_microphysics_precipitation</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="atmosphere_turbulence_convection"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>atmos_cloud_coupling.atmosphere_turbulence_convection</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="atmosphere_gravity_waves"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>atmos_cloud_coupling.atmosphere_gravity_waves</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="atmosphere_natural_forcing"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>atmos_cloud_coupling.atmosphere_natural_forcing</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="atmosphere_observation_simulation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>atmos_cloud_coupling.atmosphere_observation_simulation</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="optical_cloud_properties"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
@@ -5378,14 +5406,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of characteristics of observation simulation in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of characteristics of observation simulation in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.overview</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of characteristics of observation simulation in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of characteristics of observation simulation in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.overview</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="isscp_attributes"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
@@ -5413,14 +5441,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator ISSCP top height estimation methodUo</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.isscp_attributes.top_height_estimation_method</dd><dt><b>Type</b></dt><dd>ENUM:isscp_top_height</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.isscp_attributes.top_height_estimation_method</dd>
+        <dt><b>Description</b></dt><dd>Cloud simulator ISSCP top height estimation methodUo</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.isscp_attributes.top_height_estimation_method</dd><dt><b>Type</b></dt><dd>ENUM:isscp_top_height</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.isscp_attributes.top_height_estimation_method</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator ISSCP top height estimation methodUo</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.isscp_attributes.top_height_estimation_method</dd><dt><b>Type</b></dt><dd>ENUM:isscp_top_height</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.isscp_attributes.top_height_estimation_method</dd>
+        <dt><b>Description</b></dt><dd>Cloud simulator ISSCP top height estimation methodUo</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.isscp_attributes.top_height_estimation_method</dd><dt><b>Type</b></dt><dd>ENUM:isscp_top_height</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.isscp_attributes.top_height_estimation_method</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="no adjustment"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -5448,14 +5476,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator ISSCP top height direction</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.isscp_attributes.top_height_direction</dd><dt><b>Type</b></dt><dd>ENUM:isscp_top_height_direction</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.isscp_attributes.top_height_direction</dd>
+        <dt><b>Description</b></dt><dd>Cloud simulator ISSCP top height direction</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.isscp_attributes.top_height_direction</dd><dt><b>Type</b></dt><dd>ENUM:isscp_top_height_direction</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.isscp_attributes.top_height_direction</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator ISSCP top height direction</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.isscp_attributes.top_height_direction</dd><dt><b>Type</b></dt><dd>ENUM:isscp_top_height_direction</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.isscp_attributes.top_height_direction</dd>
+        <dt><b>Description</b></dt><dd>Cloud simulator ISSCP top height direction</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.isscp_attributes.top_height_direction</dd><dt><b>Type</b></dt><dd>ENUM:isscp_top_height_direction</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.isscp_attributes.top_height_direction</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="lowest altitude level"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -5497,14 +5525,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator COSP run configuration</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.cosp_attributes.run_configuration</dd><dt><b>Type</b></dt><dd>ENUM:cosp_run_configuration</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.cosp_attributes.run_configuration</dd>
+        <dt><b>Description</b></dt><dd>Cloud simulator COSP run configuration</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.cosp_attributes.run_configuration</dd><dt><b>Type</b></dt><dd>ENUM:cosp_run_configuration</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.cosp_attributes.run_configuration</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator COSP run configuration</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.cosp_attributes.run_configuration</dd><dt><b>Type</b></dt><dd>ENUM:cosp_run_configuration</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.cosp_attributes.run_configuration</dd>
+        <dt><b>Description</b></dt><dd>Cloud simulator COSP run configuration</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.cosp_attributes.run_configuration</dd><dt><b>Type</b></dt><dd>ENUM:cosp_run_configuration</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.cosp_attributes.run_configuration</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Inline"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -5525,42 +5553,42 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator COSP number of grid points</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.cosp_attributes.number_of_grid_points</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.cosp_attributes.number_of_grid_points</dd>
+        <dt><b>Description</b></dt><dd>Cloud simulator COSP number of grid points</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.cosp_attributes.number_of_grid_points</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.cosp_attributes.number_of_grid_points</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator COSP number of grid points</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.cosp_attributes.number_of_grid_points</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.cosp_attributes.number_of_grid_points</dd>
+        <dt><b>Description</b></dt><dd>Cloud simulator COSP number of grid points</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.cosp_attributes.number_of_grid_points</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.cosp_attributes.number_of_grid_points</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="number_of_sub_columns"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator COSP number of sub-cloumns used to simulate sub-grid variability</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.cosp_attributes.number_of_sub_columns</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.cosp_attributes.number_of_sub_columns</dd>
+        <dt><b>Description</b></dt><dd>Cloud simulator COSP number of sub-cloumns used to simulate sub-grid variability</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.cosp_attributes.number_of_sub_columns</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.cosp_attributes.number_of_sub_columns</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator COSP number of sub-cloumns used to simulate sub-grid variability</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.cosp_attributes.number_of_sub_columns</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.cosp_attributes.number_of_sub_columns</dd>
+        <dt><b>Description</b></dt><dd>Cloud simulator COSP number of sub-cloumns used to simulate sub-grid variability</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.cosp_attributes.number_of_sub_columns</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.cosp_attributes.number_of_sub_columns</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="number_of_levels"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator COSP number of levels</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.cosp_attributes.number_of_levels</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.cosp_attributes.number_of_levels</dd>
+        <dt><b>Description</b></dt><dd>Cloud simulator COSP number of levels</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.cosp_attributes.number_of_levels</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.cosp_attributes.number_of_levels</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator COSP number of levels</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.cosp_attributes.number_of_levels</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.cosp_attributes.number_of_levels</dd>
+        <dt><b>Description</b></dt><dd>Cloud simulator COSP number of levels</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.cosp_attributes.number_of_levels</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.cosp_attributes.number_of_levels</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="radar_inputs"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
@@ -5588,28 +5616,28 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator radar frequency (Hz)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.radar_inputs.frequency</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.radar_inputs.frequency</dd>
+        <dt><b>Description</b></dt><dd>Cloud simulator radar frequency (Hz)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.radar_inputs.frequency</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.radar_inputs.frequency</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator radar frequency (Hz)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.radar_inputs.frequency</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.radar_inputs.frequency</dd>
+        <dt><b>Description</b></dt><dd>Cloud simulator radar frequency (Hz)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.radar_inputs.frequency</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.radar_inputs.frequency</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator radar type</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.radar_inputs.type</dd><dt><b>Type</b></dt><dd>ENUM:inputs_radar_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.radar_inputs.type</dd>
+        <dt><b>Description</b></dt><dd>Cloud simulator radar type</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.radar_inputs.type</dd><dt><b>Type</b></dt><dd>ENUM:inputs_radar_type</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.radar_inputs.type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator radar type</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.radar_inputs.type</dd><dt><b>Type</b></dt><dd>ENUM:inputs_radar_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.radar_inputs.type</dd>
+        <dt><b>Description</b></dt><dd>Cloud simulator radar type</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.radar_inputs.type</dd><dt><b>Type</b></dt><dd>ENUM:inputs_radar_type</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.radar_inputs.type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="surface"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -5630,28 +5658,28 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator radar uses gas absorption</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.radar_inputs.gas_absorption</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.radar_inputs.gas_absorption</dd>
+        <dt><b>Description</b></dt><dd>Cloud simulator radar uses gas absorption</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.radar_inputs.gas_absorption</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.radar_inputs.gas_absorption</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator radar uses gas absorption</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.radar_inputs.gas_absorption</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.radar_inputs.gas_absorption</dd>
+        <dt><b>Description</b></dt><dd>Cloud simulator radar uses gas absorption</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.radar_inputs.gas_absorption</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.radar_inputs.gas_absorption</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="effective_radius"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator radar uses effective radius</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.radar_inputs.effective_radius</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.radar_inputs.effective_radius</dd>
+        <dt><b>Description</b></dt><dd>Cloud simulator radar uses effective radius</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.radar_inputs.effective_radius</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.radar_inputs.effective_radius</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator radar uses effective radius</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.radar_inputs.effective_radius</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.radar_inputs.effective_radius</dd>
+        <dt><b>Description</b></dt><dd>Cloud simulator radar uses effective radius</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.radar_inputs.effective_radius</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.radar_inputs.effective_radius</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="lidar_inputs"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
@@ -5679,14 +5707,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator lidar ice type</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.lidar_inputs.ice_types</dd><dt><b>Type</b></dt><dd>ENUM:inputs_lidar_ice_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.lidar_inputs.ice_types</dd>
+        <dt><b>Description</b></dt><dd>Cloud simulator lidar ice type</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.lidar_inputs.ice_types</dd><dt><b>Type</b></dt><dd>ENUM:inputs_lidar_ice_type</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.lidar_inputs.ice_types</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator lidar ice type</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.lidar_inputs.ice_types</dd><dt><b>Type</b></dt><dd>ENUM:inputs_lidar_ice_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.lidar_inputs.ice_types</dd>
+        <dt><b>Description</b></dt><dd>Cloud simulator lidar ice type</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.lidar_inputs.ice_types</dd><dt><b>Type</b></dt><dd>ENUM:inputs_lidar_ice_type</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.lidar_inputs.ice_types</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="ice spheres"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -5707,14 +5735,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator lidar overlap</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.lidar_inputs.overlap</dd><dt><b>Type</b></dt><dd>ENUM:inputs_lidar_overlap</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.lidar_inputs.overlap</dd>
+        <dt><b>Description</b></dt><dd>Cloud simulator lidar overlap</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.lidar_inputs.overlap</dd><dt><b>Type</b></dt><dd>ENUM:inputs_lidar_overlap</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.lidar_inputs.overlap</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Cloud simulator lidar overlap</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.lidar_inputs.overlap</dd><dt><b>Type</b></dt><dd>ENUM:inputs_lidar_overlap</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.lidar_inputs.overlap</dd>
+        <dt><b>Description</b></dt><dd>Cloud simulator lidar overlap</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.observation_simulation.lidar_inputs.overlap</dd><dt><b>Type</b></dt><dd>ENUM:inputs_lidar_overlap</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.observation_simulation.lidar_inputs.overlap</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="max"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -5763,14 +5791,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of characteristics of the parameterised gravity waves in the atmosphere, whether from orography or other sources in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.gravity_waves.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.gravity_waves.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of characteristics of the parameterised gravity waves in the atmosphere, whether from orography or other sources in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.gravity_waves.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.gravity_waves.overview</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of characteristics of the parameterised gravity waves in the atmosphere, whether from orography or other sources in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.gravity_waves.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.gravity_waves.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of characteristics of the parameterised gravity waves in the atmosphere, whether from orography or other sources in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.gravity_waves.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.gravity_waves.overview</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="sponge_layer"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -6235,81 +6263,81 @@
         <dt><b>Description</b></dt><dd>N/A</dd><dt><b>Spec. ID</b></dt><dd>non_orographic_gravity_wave_dissipation_scheme.wave saturation vs Richardson number</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="solar"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node></node></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="natural_forcing"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Top of atmosphere solar insolation characteristics</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar</dd>
+        <dt><b>Description</b></dt><dd>Natural forcing: solar and volcanic.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Top of atmosphere solar insolation characteristics</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar</dd>
+        <dt><b>Description</b></dt><dd>Natural forcing: solar and volcanic.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Commonly used name for the solar in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.solar.name</dd>
+        <dt><b>Description</b></dt><dd>Commonly used name for the natural forcing in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.name</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Commonly used name for the solar in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.solar.name</dd>
+        <dt><b>Description</b></dt><dd>Commonly used name for the natural forcing in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.name</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="overview"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of top of atmosphere solar insolation characteristics in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.solar.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of natural forcing: solar and volcanic. in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.overview</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of top of atmosphere solar insolation characteristics in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.solar.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of natural forcing: solar and volcanic. in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.overview</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="solar_pathways"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Pathways for solar forcing of the atmosphere</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.solar_pathways</dd>
+        <dt><b>Description</b></dt><dd>Pathways for solar forcing of the atmosphere</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.solar_pathways</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="overview"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of pathways for solar forcing of the atmosphere in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.solar_pathways.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.solar.solar_pathways.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of pathways for solar forcing of the atmosphere in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.solar_pathways.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.solar_pathways.overview</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of pathways for solar forcing of the atmosphere in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.solar_pathways.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.solar.solar_pathways.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of pathways for solar forcing of the atmosphere in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.solar_pathways.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.solar_pathways.overview</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="pathways"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Pathways for the solar forcing of the atmosphere model domain</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.solar_pathways.pathways</dd><dt><b>Type</b></dt><dd>ENUM:solar_forcing_pathways</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.solar.solar_pathways.pathways</dd>
+        <dt><b>Description</b></dt><dd>Pathways for the solar forcing of the atmosphere model domain</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.solar_pathways.pathways</dd><dt><b>Type</b></dt><dd>ENUM:solar_forcing_pathways</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.solar_pathways.pathways</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Pathways for the solar forcing of the atmosphere model domain</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.solar_pathways.pathways</dd><dt><b>Type</b></dt><dd>ENUM:solar_forcing_pathways</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.solar.solar_pathways.pathways</dd>
+        <dt><b>Description</b></dt><dd>Pathways for the solar forcing of the atmosphere model domain</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.solar_pathways.pathways</dd><dt><b>Type</b></dt><dd>ENUM:solar_forcing_pathways</dd><dt><b>Cardinality</b></dt><dd>1.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.solar_pathways.pathways</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="SW radiation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -6337,35 +6365,35 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Solar constant and top of atmosphere insolation characteristics</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.solar_constant</dd>
+        <dt><b>Description</b></dt><dd>Solar constant and top of atmosphere insolation characteristics</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.solar_constant</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="overview"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of solar constant and top of atmosphere insolation characteristics in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.solar_constant.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.solar.solar_constant.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of solar constant and top of atmosphere insolation characteristics in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.solar_constant.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.solar_constant.overview</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of solar constant and top of atmosphere insolation characteristics in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.solar_constant.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.solar.solar_constant.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of solar constant and top of atmosphere insolation characteristics in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.solar_constant.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.solar_constant.overview</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Time adaptation of the solar constant.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.solar_constant.type</dd><dt><b>Type</b></dt><dd>ENUM:top_insolation_solar_constant_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.solar.solar_constant.type</dd>
+        <dt><b>Description</b></dt><dd>Time adaptation of the solar constant.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.solar_constant.type</dd><dt><b>Type</b></dt><dd>ENUM:top_insolation_solar_constant_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.solar_constant.type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Time adaptation of the solar constant.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.solar_constant.type</dd><dt><b>Type</b></dt><dd>ENUM:top_insolation_solar_constant_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.solar.solar_constant.type</dd>
+        <dt><b>Description</b></dt><dd>Time adaptation of the solar constant.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.solar_constant.type</dd><dt><b>Type</b></dt><dd>ENUM:top_insolation_solar_constant_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.solar_constant.type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="fixed"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -6386,63 +6414,63 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If the solar constant is fixed, enter the value of the solar constant (W m-2).</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.solar_constant.fixed_value</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.solar.solar_constant.fixed_value</dd>
+        <dt><b>Description</b></dt><dd>If the solar constant is fixed, enter the value of the solar constant (W m-2).</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.solar_constant.fixed_value</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.solar_constant.fixed_value</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>If the solar constant is fixed, enter the value of the solar constant (W m-2).</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.solar_constant.fixed_value</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.solar.solar_constant.fixed_value</dd>
+        <dt><b>Description</b></dt><dd>If the solar constant is fixed, enter the value of the solar constant (W m-2).</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.solar_constant.fixed_value</dd><dt><b>Type</b></dt><dd>float</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.solar_constant.fixed_value</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="transient_characteristics"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>solar constant transient characteristics (W m-2)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.solar_constant.transient_characteristics</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.solar.solar_constant.transient_characteristics</dd>
+        <dt><b>Description</b></dt><dd>Solar constant transient characteristics (W m-2)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.solar_constant.transient_characteristics</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.solar_constant.transient_characteristics</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>solar constant transient characteristics (W m-2)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.solar_constant.transient_characteristics</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.solar.solar_constant.transient_characteristics</dd>
+        <dt><b>Description</b></dt><dd>Solar constant transient characteristics (W m-2)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.solar_constant.transient_characteristics</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.solar_constant.transient_characteristics</dd>
     </dl>
   </body>
 </html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="orbital_parameters"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Orbital parameters and top of atmosphere insolation characteristics</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.orbital_parameters</dd>
+        <dt><b>Description</b></dt><dd>Orbital parameters and top of atmosphere insolation characteristics</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.orbital_parameters</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="overview"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of orbital parameters and top of atmosphere insolation characteristics in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.orbital_parameters.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.solar.orbital_parameters.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of orbital parameters and top of atmosphere insolation characteristics in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.orbital_parameters.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.orbital_parameters.overview</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of orbital parameters and top of atmosphere insolation characteristics in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.orbital_parameters.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.solar.orbital_parameters.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of orbital parameters and top of atmosphere insolation characteristics in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.orbital_parameters.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.orbital_parameters.overview</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="type"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Time adaptation of orbital parameters</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.orbital_parameters.type</dd><dt><b>Type</b></dt><dd>ENUM:top_insolation_orbital_parameters_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.solar.orbital_parameters.type</dd>
+        <dt><b>Description</b></dt><dd>Type of orbital parameter</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.orbital_parameters.type</dd><dt><b>Type</b></dt><dd>ENUM:top_insolation_orbital_parameters_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.orbital_parameters.type</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Time adaptation of orbital parameters</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.orbital_parameters.type</dd><dt><b>Type</b></dt><dd>ENUM:top_insolation_orbital_parameters_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.solar.orbital_parameters.type</dd>
+        <dt><b>Description</b></dt><dd>Type of orbital parameter</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.orbital_parameters.type</dd><dt><b>Type</b></dt><dd>ENUM:top_insolation_orbital_parameters_type</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.orbital_parameters.type</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="fixed"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -6463,42 +6491,42 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Reference date for fixed orbital parameters (yyyy)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.orbital_parameters.fixed_reference_date</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.solar.orbital_parameters.fixed_reference_date</dd>
+        <dt><b>Description</b></dt><dd>Reference date for fixed orbital parameters (yyyy)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.orbital_parameters.fixed_reference_date</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.orbital_parameters.fixed_reference_date</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Reference date for fixed orbital parameters (yyyy)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.orbital_parameters.fixed_reference_date</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.solar.orbital_parameters.fixed_reference_date</dd>
+        <dt><b>Description</b></dt><dd>Reference date for fixed orbital parameters (yyyy)</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.orbital_parameters.fixed_reference_date</dd><dt><b>Type</b></dt><dd>int</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.orbital_parameters.fixed_reference_date</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="transient_method"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Description of transient orbital parameters</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.orbital_parameters.transient_method</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.solar.orbital_parameters.transient_method</dd>
+        <dt><b>Description</b></dt><dd>Description of transient orbital parameters</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.orbital_parameters.transient_method</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.orbital_parameters.transient_method</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Description of transient orbital parameters</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.orbital_parameters.transient_method</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.solar.orbital_parameters.transient_method</dd>
+        <dt><b>Description</b></dt><dd>Description of transient orbital parameters</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.orbital_parameters.transient_method</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.orbital_parameters.transient_method</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="computation_method"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Method used for computing orbital parameters.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.orbital_parameters.computation_method</dd><dt><b>Type</b></dt><dd>ENUM:top_insolation_orbital_parameters_computation_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.solar.orbital_parameters.computation_method</dd>
+        <dt><b>Description</b></dt><dd>Method used for computing orbital parameters.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.orbital_parameters.computation_method</dd><dt><b>Type</b></dt><dd>ENUM:top_insolation_orbital_parameters_computation_method</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.orbital_parameters.computation_method</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Method used for computing orbital parameters.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.orbital_parameters.computation_method</dd><dt><b>Type</b></dt><dd>ENUM:top_insolation_orbital_parameters_computation_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.solar.orbital_parameters.computation_method</dd>
+        <dt><b>Description</b></dt><dd>Method used for computing orbital parameters.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.orbital_parameters.computation_method</dd><dt><b>Type</b></dt><dd>ENUM:top_insolation_orbital_parameters_computation_method</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.orbital_parameters.computation_method</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="Berger 1978"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -6519,112 +6547,84 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Impact of solar insolation on stratospheric ozone</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.insolation_ozone</dd>
+        <dt><b>Description</b></dt><dd>Impact of solar insolation on stratospheric ozone</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.insolation_ozone</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="overview"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of impact of solar insolation on stratospheric ozone in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.insolation_ozone.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.solar.insolation_ozone.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of impact of solar insolation on stratospheric ozone in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.insolation_ozone.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.insolation_ozone.overview</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of impact of solar insolation on stratospheric ozone in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.insolation_ozone.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.solar.insolation_ozone.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of impact of solar insolation on stratospheric ozone in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.insolation_ozone.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.insolation_ozone.overview</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="solar_ozone_impact"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Does top of atmosphere insolation impact on stratospheric ozone?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.insolation_ozone.solar_ozone_impact</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.solar.insolation_ozone.solar_ozone_impact</dd>
+        <dt><b>Description</b></dt><dd>Does top of atmosphere insolation impact on stratospheric ozone?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.insolation_ozone.solar_ozone_impact</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.insolation_ozone.solar_ozone_impact</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Does top of atmosphere insolation impact on stratospheric ozone?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.solar.insolation_ozone.solar_ozone_impact</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.solar.insolation_ozone.solar_ozone_impact</dd>
+        <dt><b>Description</b></dt><dd>Does top of atmosphere insolation impact on stratospheric ozone?</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.insolation_ozone.solar_ozone_impact</dd><dt><b>Type</b></dt><dd>bool</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.insolation_ozone.solar_ozone_impact</dd>
     </dl>
   </body>
-</html></richcontent></node></node></node><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="volcanos"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
+</html></richcontent></node></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="volcanoes_treatment"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Characteristics of the implementation of volcanoes</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.volcanos</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Characteristics of the implementation of volcanoes</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.volcanos</dd>
-    </dl>
-  </body>
-</html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Commonly used name for the volcanos in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.volcanos.name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.volcanos.name</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Commonly used name for the volcanos in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.volcanos.name</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.volcanos.name</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="overview"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Overview of characteristics of the implementation of volcanoes in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.volcanos.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.volcanos.overview</dd>
-    </dl>
-  </body>
-</html></richcontent><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Overview of characteristics of the implementation of volcanoes in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.volcanos.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.volcanos.overview</dd>
-    </dl>
-  </body>
-</html></richcontent></node><node BACKGROUND_COLOR="#ACF0F2" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="volcanoes_treatment"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
-  <head />
-  <body>
-    <dl>
-        <dt><b>Description</b></dt><dd>Treatment of volcanoes in the atmosphere</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.volcanos.volcanoes_treatment</dd>
+        <dt><b>Description</b></dt><dd>Characteristics and treatment of volcanic forcing in the atmosphere</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.volcanoes_treatment</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="overview"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of treatment of volcanoes in the atmosphere in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.volcanos.volcanoes_treatment.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.volcanos.volcanoes_treatment.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of characteristics and treatment of volcanic forcing in the atmosphere in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.volcanoes_treatment.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.volcanoes_treatment.overview</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview of treatment of volcanoes in the atmosphere in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.volcanos.volcanoes_treatment.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.volcanos.volcanoes_treatment.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview of characteristics and treatment of volcanic forcing in the atmosphere in atmos model.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.volcanoes_treatment.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.volcanoes_treatment.overview</dd>
+    </dl>
+  </body>
+</html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="volcanoes_characteristics"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Description of the general characteristics of volcanic forcing in the atmosphere.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.volcanoes_treatment.volcanoes_characteristics</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.volcanoes_treatment.volcanoes_characteristics</dd>
+    </dl>
+  </body>
+</html></richcontent><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Description</b></dt><dd>Description of the general characteristics of volcanic forcing in the atmosphere.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.volcanoes_treatment.volcanoes_characteristics</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.volcanoes_treatment.volcanoes_characteristics</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="volcanoes_implementation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>How volcanic effects are modeled in the atmosphere.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.volcanos.volcanoes_treatment.volcanoes_implementation</dd><dt><b>Type</b></dt><dd>ENUM:volcanoes_implementation_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.volcanos.volcanoes_treatment.volcanoes_implementation</dd>
+        <dt><b>Description</b></dt><dd>How volcanic effects are modeled in the atmosphere.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.volcanoes_treatment.volcanoes_implementation</dd><dt><b>Type</b></dt><dd>ENUM:volcanoes_implementation_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.volcanoes_treatment.volcanoes_implementation</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>How volcanic effects are modeled in the atmosphere.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.volcanos.volcanoes_treatment.volcanoes_implementation</dd><dt><b>Type</b></dt><dd>ENUM:volcanoes_implementation_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.volcanos.volcanoes_treatment.volcanoes_implementation</dd>
+        <dt><b>Description</b></dt><dd>How volcanic effects are modeled in the atmosphere.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.volcanoes_treatment.volcanoes_implementation</dd><dt><b>Type</b></dt><dd>ENUM:volcanoes_implementation_method</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.volcanoes_treatment.volcanoes_implementation</dd>
     </dl>
   </body>
 </html></richcontent><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="high frequency solar constant anomaly"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
