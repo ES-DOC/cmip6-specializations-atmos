@@ -67,7 +67,7 @@ DETAILS['orography'] = {
             'Type of orographic representation.',),
         ('modified', 'ENUM:orography_changes', '0.N',
             'If the orography type is modified describe the adaptation.'),
-        ('time-varying', 'str', '0.1',
+        ('time-varying', 'l-str', '0.1',
             'Describe any time varying orographic change')
         ]
     }

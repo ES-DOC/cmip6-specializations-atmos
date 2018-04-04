@@ -722,7 +722,7 @@
                             "description": "Overview description of shortwave radiation in the atmosphere", 
                             "id": "cmip6.atmos.radiation.shortwave_radiation.overview", 
                             "cardinality": "1.1", 
-                            "type": "str", 
+                            "type": "l", 
                             "uiOrdinal": 2
                         }, 
                         {
@@ -1490,7 +1490,7 @@
                             "description": "Overview description of longwave radiation in the atmosphere", 
                             "id": "cmip6.atmos.radiation.longwave_radiation.overview", 
                             "cardinality": "1.1", 
-                            "type": "str", 
+                            "type": "l", 
                             "uiOrdinal": 2
                         }, 
                         {
@@ -4116,7 +4116,7 @@
                             "description": "Description of the general characteristics of volcanic forcing in the atmosphere.", 
                             "id": "cmip6.atmos.natural_forcing.volcanoes_treatment.volcanoes_characteristics", 
                             "cardinality": "0.N", 
-                            "type": "str", 
+                            "type": "l", 
                             "uiOrdinal": 2
                         }, 
                         {
@@ -4190,7 +4190,7 @@
                         "description": "Overview description of grid discretisation in the atmosphere", 
                         "id": "cmip6.atmos.grid.discretisation.overview", 
                         "cardinality": "1.1", 
-                        "type": "str", 
+                        "type": "l", 
                         "uiOrdinal": 2
                     }
                 ], 
@@ -4650,7 +4650,7 @@
                         "description": "Describe any time varying orographic change", 
                         "id": "cmip6.atmos.key_properties.orography.time-varying", 
                         "cardinality": "0.1", 
-                        "type": "str", 
+                        "type": "l", 
                         "uiOrdinal": 4
                     }
                 ]

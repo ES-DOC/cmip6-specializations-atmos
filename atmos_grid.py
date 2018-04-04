@@ -22,7 +22,7 @@ DESCRIPTION = 'Atmosphere grid'
 DETAILS['discretisation'] = {
     'description': 'Atmosphere grid discretisation',
     'properties': [
-        ('overview', 'str', '1.1',
+        ('overview', 'l-str', '1.1',
             'Overview description of grid discretisation in the atmosphere'),
         ]
     }

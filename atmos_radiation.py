@@ -34,7 +34,7 @@ DETAILS['toplevel'] = {
 DETAILS['shortwave_radiation'] = {
     'description': 'Properties of the shortwave radiation scheme',
     'properties': [
-        ('overview', 'str', '1.1',
+        ('overview', 'l-str', '1.1',
             'Overview description of shortwave radiation in the atmosphere'),
         ('name', 'str', '0.1',
             'Commonly used name for the shortwave radiation scheme'),
@@ -138,7 +138,7 @@ DETAILS['shortwave_gases'] = {
 DETAILS['longwave_radiation'] = {
     'description': 'Properties of the longwave radiation scheme',
     'properties': [
-        ('overview', 'str', '1.1',
+        ('overview', 'l-str', '1.1',
             'Overview description of longwave radiation in the atmosphere'),
         ('name', 'str', '0.1',
             'Commonly used name for the longwave radiation scheme.'),

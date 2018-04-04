@@ -22,14 +22,16 @@ CONTRIBUTORS = ''
 # CHANGE HISTORY: Set to list: (version, date, who, comment).
 # --------------------------------------------------------------------
 CHANGE_HISTORY = [
-	("0.1.0", "2016-11-29", "Mark Greenslade",
+    ("0.1.0", "2016-11-29", "Mark Greenslade",
         "Initialised"),
     ("0.2.0", "2016-12-02", "Charlotte Pascoe",
         "Updated process names and descriptions, added enumeration TODOs"),
     ("0.3.0", "2017-11-08", "Charlotte Pascoe",
         "Updated following community feedback"),
     ("1.0.0", "2018-03-28", "Charlotte Pascoe and Eric Guilyardi",
-        "Review of atmosphere components")
+        "Review of atmosphere components"),
+    ("1.0.1", "2018-04-04", "David Hassell",
+        "Replaced some occurences of 'str' with 'cs-str' and 'l-str'"),
     ]
 
 # --------------------------------------------------------------------

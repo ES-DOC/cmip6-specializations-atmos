@@ -33,6 +33,13 @@
         <dt><b>Version</b></dt><dd>1.0.0</dd><dt><b>Date</b></dt><dd>2018-03-28</dd><dt><b>Person</b></dt><dd>Charlotte Pascoe and Eric Guilyardi</dd><dt><b>Comment</b></dt><dd>Review of atmosphere components</dd>
     </dl>
   </body>
+</html></richcontent></node><node STYLE="bubble" TEXT="1.0.1"><richcontent TYPE="NOTE"><html>
+  <head />
+  <body>
+    <dl>
+        <dt><b>Version</b></dt><dd>1.0.1</dd><dt><b>Date</b></dt><dd>2018-04-04</dd><dt><b>Person</b></dt><dd>David Hassell</dd><dt><b>Comment</b></dt><dd>Replaced some occurences of 'str' with 'cs-str' and 'l-str'</dd>
+    </dl>
+  </body>
 </html></richcontent></node></node><node FOLDED="true" POSITION="left" STYLE="bubble" TEXT="LEGEND"><node BACKGROUND_COLOR="#FFFFFF" COLOR="#000000" STYLE="bubble" TEXT="enum-choice"><richcontent TYPE="NOTE"><html>
   <head />
   <body>
@@ -471,14 +478,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe any time varying orographic change</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.orography.time-varying</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.orography.time-varying</dd>
+        <dt><b>Description</b></dt><dd>Describe any time varying orographic change</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.orography.time-varying</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.orography.time-varying</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Describe any time varying orographic change</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.orography.time-varying</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.orography.time-varying</dd>
+        <dt><b>Description</b></dt><dd>Describe any time varying orographic change</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.key_properties.orography.time-varying</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.key_properties.orography.time-varying</dd>
     </dl>
   </body>
 </html></richcontent></node></node></node><node BACKGROUND_COLOR="#ccccff" COLOR="#000000" FOLDED="false" STYLE="bubble" TEXT="grid"><font BOLD="True" NAME="courier" SIZE="12" /><richcontent TYPE="NOTE"><html>
@@ -541,14 +548,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview description of grid discretisation in the atmosphere</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.grid.discretisation.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.grid.discretisation.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview description of grid discretisation in the atmosphere</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.grid.discretisation.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.grid.discretisation.overview</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview description of grid discretisation in the atmosphere</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.grid.discretisation.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.grid.discretisation.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview description of grid discretisation in the atmosphere</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.grid.discretisation.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.grid.discretisation.overview</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#F3FFE2" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="horizontal"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -1815,14 +1822,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview description of shortwave radiation in the atmosphere</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.radiation.shortwave_radiation.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_radiation.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview description of shortwave radiation in the atmosphere</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.radiation.shortwave_radiation.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_radiation.overview</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview description of shortwave radiation in the atmosphere</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.radiation.shortwave_radiation.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_radiation.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview description of shortwave radiation in the atmosphere</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.radiation.shortwave_radiation.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.shortwave_radiation.overview</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -2914,14 +2921,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview description of longwave radiation in the atmosphere</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.radiation.longwave_radiation.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_radiation.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview description of longwave radiation in the atmosphere</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.radiation.longwave_radiation.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_radiation.overview</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Overview description of longwave radiation in the atmosphere</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.radiation.longwave_radiation.overview</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_radiation.overview</dd>
+        <dt><b>Description</b></dt><dd>Overview description of longwave radiation in the atmosphere</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.radiation.longwave_radiation.overview</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>1.1</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.radiation.longwave_radiation.overview</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="name"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
@@ -6603,14 +6610,14 @@
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Description of the general characteristics of volcanic forcing in the atmosphere.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.volcanoes_treatment.volcanoes_characteristics</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.volcanoes_treatment.volcanoes_characteristics</dd>
+        <dt><b>Description</b></dt><dd>Description of the general characteristics of volcanic forcing in the atmosphere.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.volcanoes_treatment.volcanoes_characteristics</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.volcanoes_treatment.volcanoes_characteristics</dd>
     </dl>
   </body>
 </html></richcontent><richcontent TYPE="NOTE"><html>
   <head />
   <body>
     <dl>
-        <dt><b>Description</b></dt><dd>Description of the general characteristics of volcanic forcing in the atmosphere.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.volcanoes_treatment.volcanoes_characteristics</dd><dt><b>Type</b></dt><dd>str</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.volcanoes_treatment.volcanoes_characteristics</dd>
+        <dt><b>Description</b></dt><dd>Description of the general characteristics of volcanic forcing in the atmosphere.</dd><dt><b>Spec. ID</b></dt><dd>cmip6.atmos.natural_forcing.volcanoes_treatment.volcanoes_characteristics</dd><dt><b>Type</b></dt><dd>l-str</dd><dt><b>Cardinality</b></dt><dd>0.N</dd><dt><b>Specialization ID</b></dt><dd>cmip6.atmos.natural_forcing.volcanoes_treatment.volcanoes_characteristics</dd>
     </dl>
   </body>
 </html></richcontent></node><node BACKGROUND_COLOR="#C9D787" COLOR="#000000" FOLDED="true" STYLE="bubble" TEXT="volcanoes_implementation"><font BOLD="True" NAME="courier" SIZE="10" /><richcontent TYPE="NOTE"><html>
