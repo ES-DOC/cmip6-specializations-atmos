@@ -73,8 +73,8 @@ DETAILS['insolation_ozone'] = {
 DETAILS['volcanoes_treatment'] = {
     'description': 'Characteristics and treatment of volcanic forcing in the atmosphere',
     'properties': [
-        ('volcanoes_characteristics', 'l-str', '0.1',
-            'Description of the general characteristics of volcanic forcing in the atmosphere.'),
+        ('volcanoes_characteristics', 'l-str', '1.1',
+            'Description of how the volcanic forcing is taken into account in the atmosphere.'),
         ('volcanoes_implementation', 'ENUM:volcanoes_implementation_method', '1.1',
             'How volcanic effects are modeled in the atmosphere.'),
     ],
