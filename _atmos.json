@@ -23,7 +23,7 @@
                     "description": "Overview of characteristics of the dynamical core in atmos model.", 
                     "id": "cmip6.atmos.dynamical_core.overview", 
                     "cardinality": "0.1", 
-                    "type": "l", 
+                    "type": "l-str", 
                     "uiOrdinal": 2
                 }, 
                 {
@@ -631,7 +631,7 @@
                     "description": "Overview of characteristics of the atmosphere radiation process in atmos model.", 
                     "id": "cmip6.atmos.radiation.overview", 
                     "cardinality": "0.1", 
-                    "type": "l", 
+                    "type": "l-str", 
                     "uiOrdinal": 2
                 }, 
                 {
@@ -722,7 +722,7 @@
                             "description": "Overview description of shortwave radiation in the atmosphere", 
                             "id": "cmip6.atmos.radiation.shortwave_radiation.overview", 
                             "cardinality": "1.1", 
-                            "type": "l", 
+                            "type": "l-str", 
                             "uiOrdinal": 2
                         }, 
                         {
@@ -1490,7 +1490,7 @@
                             "description": "Overview description of longwave radiation in the atmosphere", 
                             "id": "cmip6.atmos.radiation.longwave_radiation.overview", 
                             "cardinality": "1.1", 
-                            "type": "l", 
+                            "type": "l-str", 
                             "uiOrdinal": 2
                         }, 
                         {
@@ -2260,7 +2260,7 @@
                     "description": "Overview of atmosphere convective turbulence and clouds in atmos model.", 
                     "id": "cmip6.atmos.turbulence_convection.overview", 
                     "cardinality": "0.1", 
-                    "type": "l", 
+                    "type": "l-str", 
                     "uiOrdinal": 2
                 }
             ], 
@@ -2700,7 +2700,7 @@
                     "description": "Overview of large scale cloud microphysics and precipitation in atmos model.", 
                     "id": "cmip6.atmos.microphysics_precipitation.overview", 
                     "cardinality": "0.1", 
-                    "type": "l", 
+                    "type": "l-str", 
                     "uiOrdinal": 2
                 }
             ], 
@@ -2852,7 +2852,7 @@
                     "description": "Overview of characteristics of the cloud scheme in atmos model.", 
                     "id": "cmip6.atmos.cloud_scheme.overview", 
                     "cardinality": "0.1", 
-                    "type": "l", 
+                    "type": "l-str", 
                     "uiOrdinal": 2
                 }, 
                 {
@@ -3237,7 +3237,7 @@
                     "description": "Overview of characteristics of observation simulation in atmos model.", 
                     "id": "cmip6.atmos.observation_simulation.overview", 
                     "cardinality": "0.1", 
-                    "type": "l", 
+                    "type": "l-str", 
                     "uiOrdinal": 2
                 }
             ], 
@@ -3517,7 +3517,7 @@
                     "description": "Overview of characteristics of the parameterised gravity waves in the atmosphere, whether from orography or other sources in atmos model.", 
                     "id": "cmip6.atmos.gravity_waves.overview", 
                     "cardinality": "0.1", 
-                    "type": "l", 
+                    "type": "l-str", 
                     "uiOrdinal": 2
                 }, 
                 {
@@ -3892,7 +3892,7 @@
                     "description": "Overview of natural forcing: solar and volcanic. in atmos model.", 
                     "id": "cmip6.atmos.natural_forcing.overview", 
                     "cardinality": "0.1", 
-                    "type": "l", 
+                    "type": "l-str", 
                     "uiOrdinal": 2
                 }
             ], 
@@ -4113,10 +4113,10 @@
                         }, 
                         {
                             "label": "Volcanoes Characteristics", 
-                            "description": "Description of the general characteristics of volcanic forcing in the atmosphere.", 
+                            "description": "Description of how the volcanic forcing is taken into account in the atmosphere.", 
                             "id": "cmip6.atmos.natural_forcing.volcanoes_treatment.volcanoes_characteristics", 
-                            "cardinality": "0.N", 
-                            "type": "l", 
+                            "cardinality": "1.1", 
+                            "type": "l-str", 
                             "uiOrdinal": 2
                         }, 
                         {
@@ -4166,7 +4166,7 @@
                 "description": "Overview of grid in atmos model.", 
                 "id": "cmip6.atmos.grid.overview", 
                 "cardinality": "0.1", 
-                "type": "l", 
+                "type": "l-str", 
                 "uiOrdinal": 2
             }
         ], 
@@ -4190,7 +4190,7 @@
                         "description": "Overview description of grid discretisation in the atmosphere", 
                         "id": "cmip6.atmos.grid.discretisation.overview", 
                         "cardinality": "1.1", 
-                        "type": "l", 
+                        "type": "l-str", 
                         "uiOrdinal": 2
                     }
                 ], 
@@ -4406,7 +4406,7 @@
                 "description": "Keywords associated with atmos model code", 
                 "id": "cmip6.atmos.key_properties.keywords", 
                 "cardinality": "1.1", 
-                "type": "cs", 
+                "type": "cs-str", 
                 "uiOrdinal": 2
             }, 
             {
@@ -4414,7 +4414,7 @@
                 "description": "Overview of atmos model.", 
                 "id": "cmip6.atmos.key_properties.overview", 
                 "cardinality": "1.1", 
-                "type": "l", 
+                "type": "l-str", 
                 "uiOrdinal": 3
             }, 
             {
@@ -4650,7 +4650,7 @@
                         "description": "Describe any time varying orographic change", 
                         "id": "cmip6.atmos.key_properties.orography.time-varying", 
                         "cardinality": "0.1", 
-                        "type": "l", 
+                        "type": "l-str", 
                         "uiOrdinal": 4
                     }
                 ]
