@@ -249,13 +249,13 @@ ENUMERATIONS['aerosol_types'] = {
         ('dust', None),
         ('ice', None),
         ('organic', None),
-        ('BC (black carbon / soot)', None),
-        ('SOA (secondary organic aerosols)', None),
-        ('POM (particulate organic matter)', None),
+        ('BC', 'black carbon / soot'),
+        ('SOA', 'secondary organic aerosols'),
+        ('POM', 'particulate organic matter'),
         ('polar stratospheric ice', None),
-        ('NAT (nitric acid trihydrate)', None),
-        ('NAD (nitric acid dihydrate)', None),
-        ('STS (supercooled ternary solution aerosol particle)', None),
+        ('NAT', 'nitric acid trihydrate'),
+        ('NAD', 'nitric acid dihydrate'),
+        ('STS', 'supercooled ternary solution aerosol particle'),
         ]
     }
 
