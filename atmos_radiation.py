@@ -34,8 +34,6 @@ DETAILS['toplevel'] = {
 DETAILS['shortwave_radiation'] = {
     'description': 'Properties of the shortwave radiation scheme',
     'properties': [
-        ('overview', 'l-str', '1.1',
-            'Overview description of shortwave radiation in the atmosphere'),
         ('name', 'str', '0.1',
             'Commonly used name for the shortwave radiation scheme'),
         ('spectral_integration', 'ENUM:spectral_integration', '1.1',
@@ -120,11 +118,11 @@ DETAILS['shortwave_aerosols'] = {
 # --------------------------------------------------------------------
 # SUB-PROCESS: shortwave_gases
 # --------------------------------------------------------------------
-#DETAILS['shortwave_gases'] = {
-#    'description': 'Shortwave radiative properties of gases',
-#    'properties': [
-#    ]
-#}
+DETAILS['shortwave_gases'] = {
+    'description': 'Shortwave radiative properties of gases',
+    'properties': [
+    ]
+}
 
 # --------------------------------------------------------------------
 # SUB-PROCESS: longwave_radiation
@@ -132,8 +130,6 @@ DETAILS['shortwave_aerosols'] = {
 DETAILS['longwave_radiation'] = {
     'description': 'Properties of the longwave radiation scheme',
     'properties': [
-        ('overview', 'l-str', '1.1',
-            'Overview description of longwave radiation in the atmosphere'),
         ('name', 'str', '0.1',
             'Commonly used name for the longwave radiation scheme.'),
         ('spectral_integration', 'ENUM:spectral_integration', '1.1',
@@ -218,11 +214,11 @@ DETAILS['longwave_aerosols'] = {
 # --------------------------------------------------------------------
 # SUB-PROCESS: longwave_gases
 # --------------------------------------------------------------------
-#DETAILS['longwave_gases'] = {
-#    'description': 'Longwave radiative properties of gases',
-#    'properties': [
-#    ]
-#}
+DETAILS['longwave_gases'] = {
+    'description': 'Longwave radiative properties of gases',
+    'properties': [
+    ]
+}
 
 # --------------------------------------------------------------------
 # PROCESS: ENUMERATIONS
